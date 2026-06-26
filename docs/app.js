@@ -30,6 +30,38 @@
 
   function pad2(n) { return n < 10 ? "0" + n : "" + n; }
 
+  function fmtYMD(d) { return d.getUTCFullYear() + "-" + pad2(d.getUTCMonth() + 1) + "-" + pad2(d.getUTCDate()); }
+  function fmtMD(d) { return pad2(d.getUTCMonth() + 1) + "/" + pad2(d.getUTCDate()); }
+
+  /* 주어진 월(YYYY-MM)이 걸쳐 있는 월~일 기준 주차 목록을 계산.
+     첫 주/마지막 주는 인접 월로 며칠 넘어갈 수 있음 (실제 달력 기준이라 자연스러운 동작). */
+  function getMonthWeeks(monthKey) {
+    var p = monthKey.split("-").map(Number);
+    var year = p[0], month = p[1];
+    var firstDay = new Date(Date.UTC(year, month - 1, 1));
+    var lastDay  = new Date(Date.UTC(year, month, 0));
+    var firstWeekday = firstDay.getUTCDay();
+    var daysSinceMonday = (firstWeekday + 6) % 7;
+    var cursor = new Date(firstDay);
+    cursor.setUTCDate(cursor.getUTCDate() - daysSinceMonday);
+
+    var weeks = [];
+    var idx = 1;
+    while (cursor.getTime() <= lastDay.getTime()) {
+      var weekStart = new Date(cursor);
+      var weekEnd = new Date(cursor);
+      weekEnd.setUTCDate(weekEnd.getUTCDate() + 6);
+      weeks.push({
+        label: idx + "주차 (" + fmtMD(weekStart) + " ~ " + fmtMD(weekEnd) + ")",
+        start: fmtYMD(weekStart),
+        end: fmtYMD(weekEnd)
+      });
+      cursor.setUTCDate(cursor.getUTCDate() + 7);
+      idx++;
+    }
+    return weeks;
+  }
+
   function shiftDate(dateStr, days) {
     var p = dateStr.split("-").map(Number);
     var d = new Date(Date.UTC(p[0], p[1] - 1, p[2]));
@@ -236,6 +268,50 @@
     }).join("");
   }
 
+  function populateWeeklyMonths() {
+    var months = ((state.manifest && state.manifest.months) || []).slice().sort().reverse();
+    var sel = $("weeklyMonth");
+    if (months.length === 0) {
+      sel.innerHTML = '<option value="">데이터 없음</option>';
+      $("weeklyWeek").innerHTML = '<option value="">데이터 없음</option>';
+      return;
+    }
+    sel.innerHTML = months.map(function (m) {
+      var label = m.slice(0, 4) + "년 " + m.slice(5, 7) + "월";
+      return '<option value="' + m + '">' + label + "</option>";
+    }).join("");
+  }
+
+  function populateWeeklyWeeks(monthKey, preferredDate) {
+    if (!monthKey) return [];
+    var weeks = getMonthWeeks(monthKey);
+    var sel = $("weeklyWeek");
+    sel.innerHTML = weeks.map(function (w, i) {
+      return '<option value="' + i + '">' + w.label + "</option>";
+    }).join("");
+    sel.dataset.weeksJson = JSON.stringify(weeks);
+
+    var defaultIdx = weeks.length - 1; // 기본값: 해당 월의 마지막 주차
+    if (preferredDate) {
+      for (var i = 0; i < weeks.length; i++) {
+        if (preferredDate >= weeks[i].start && preferredDate <= weeks[i].end) { defaultIdx = i; break; }
+      }
+    }
+    sel.value = defaultIdx;
+    return weeks;
+  }
+
+  function runWeeklyFromSelectors() {
+    var monthKey = $("weeklyMonth").value;
+    if (!monthKey) return;
+    var weeks = [];
+    try { weeks = JSON.parse($("weeklyWeek").dataset.weeksJson || "[]"); } catch (e) { weeks = []; }
+    var idx = parseInt($("weeklyWeek").value, 10);
+    var w = weeks[idx];
+    if (!w) return;
+    renderWeekly(w.start, w.end);
+  }
+
   // ---------------- 4. 키워드 검색 ----------------
 
   function renderSearch(keyword) {
@@ -293,6 +369,7 @@
 
       setupNav();
       populateMonthlySelectors();
+      populateWeeklyMonths();
 
       var latest = latestMonthKey();
       if (!latest) {
@@ -319,13 +396,14 @@
           renderDaily($("dailyDate").value);
         });
 
-        var weekStart = shiftDate(latestDate, -6);
-        $("weeklyStart").value = weekStart;
-        $("weeklyEnd").value = latestDate;
-        renderWeekly(weekStart, latestDate);
-        $("weeklyRun").addEventListener("click", function () {
-          renderWeekly($("weeklyStart").value, $("weeklyEnd").value);
+        $("weeklyMonth").value = latest;
+        populateWeeklyWeeks(latest, latestDate);
+        runWeeklyFromSelectors();
+        $("weeklyMonth").addEventListener("change", function () {
+          populateWeeklyWeeks(this.value);
+          runWeeklyFromSelectors();
         });
+        $("weeklyWeek").addEventListener("change", runWeeklyFromSelectors);
 
         $("monthlyMonth").value = latest;
         $("monthlyCompany").value = COMPANIES[0];
