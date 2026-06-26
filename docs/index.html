@@ -3,101 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>유통 ESG 클리핑 · GS리테일 ESG파트</title>
+<title>ESG Monitoring Dashboard · GS리테일 ESG파트</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="masthead-inner">
-    <p class="eyebrow">GS RETAIL · ESG MONITORING DESK</p>
-    <h1>유통 ESG 클리핑</h1>
-    <p class="subtitle">경쟁 유통사 ESG 동향 보도를 매일 수집·분류한 자료실입니다.</p>
-    <p class="meta" id="lastUpdated">데이터를 불러오는 중…</p>
-  </div>
-</header>
+<div class="app-shell">
 
-<div id="fallbackBanner" class="fallback-banner" hidden>
-  지금은 예시 데이터로 화면을 미리 보여주고 있습니다. 실제 수집 데이터(docs/data)가 연결되면 자동으로 전환됩니다.
-</div>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <p class="sidebar-eyebrow">GS RETAIL</p>
+      <h1 class="sidebar-title">ESG Monitoring Dashboard</h1>
+    </div>
 
-<nav class="tabbar" id="tabbar">
-  <button class="tab-btn is-active" data-tab="daily">일자별 리포트</button>
-  <button class="tab-btn" data-tab="weekly">주간 보도 랭킹</button>
-  <button class="tab-btn" data-tab="monthly">기업별 월별 모음</button>
-  <button class="tab-btn" data-tab="search">키워드 검색</button>
-</nav>
+    <nav class="sidebar-nav" id="sidebarNav">
+      <button class="nav-item is-active" data-tab="daily" data-title="일자별 리포트">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        <span>일자별 리포트</span>
+      </button>
+      <button class="nav-item" data-tab="weekly" data-title="주간 보도 랭킹">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="10" width="4" height="10" rx="1"/><rect x="10" y="6" width="4" height="14" rx="1"/><rect x="16" y="13" width="4" height="7" rx="1"/></svg>
+        <span>주간 보도 랭킹</span>
+      </button>
+      <button class="nav-item" data-tab="monthly" data-title="기업별 월별 모음">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+        <span>기업별 월별 모음</span>
+      </button>
+      <button class="nav-item" data-tab="search" data-title="키워드 검색">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <span>키워드 검색</span>
+      </button>
+    </nav>
 
-<main class="content">
+    <div class="sidebar-footer">
+      <p class="sidebar-meta" id="lastUpdated">데이터를 불러오는 중…</p>
+    </div>
+  </aside>
 
-  <!-- 1. 일자별 리포트 조회 -->
-  <section class="panel is-active" id="panel-daily" aria-labelledby="daily">
-    <div class="panel-toolbar">
-      <label class="field">
-        <span>조회 날짜</span>
-        <input type="date" id="dailyDate">
-      </label>
-      <div class="panel-toolbar-nav">
-        <button class="btn-ghost" id="dailyPrev" type="button">‹ 전날</button>
-        <button class="btn-ghost" id="dailyNext" type="button">다음날 ›</button>
+  <main class="main">
+
+    <div id="fallbackBanner" class="fallback-banner" hidden>
+      지금은 예시 데이터로 화면을 미리 보여주고 있습니다. 실제 수집 데이터(docs/data)가 연결되면 자동으로 전환됩니다.
+    </div>
+
+    <header class="main-header">
+      <h2 id="panelTitle">일자별 리포트</h2>
+    </header>
+
+    <!-- 1. 일자별 리포트 조회 -->
+    <section class="panel is-active" id="panel-daily">
+      <div class="toolbar-card">
+        <label class="field">
+          <span>조회 날짜</span>
+          <input type="date" id="dailyDate">
+        </label>
+        <div class="field-buttons">
+          <button class="btn-ghost" id="dailyPrev" type="button">‹ 전날</button>
+          <button class="btn-ghost" id="dailyNext" type="button">다음날 ›</button>
+        </div>
       </div>
-    </div>
-    <div id="dailyResult" class="result"></div>
-  </section>
+      <div id="dailyResult" class="result"></div>
+    </section>
 
-  <!-- 2. 주간 보도 랭킹 -->
-  <section class="panel" id="panel-weekly" aria-labelledby="weekly">
-    <div class="panel-toolbar">
-      <label class="field">
-        <span>시작일</span>
-        <input type="date" id="weeklyStart">
-      </label>
-      <label class="field">
-        <span>종료일</span>
-        <input type="date" id="weeklyEnd">
-      </label>
-      <button class="btn-primary" id="weeklyRun" type="button">랭킹 보기</button>
-    </div>
-    <p class="hint">같은 주제로 여러 매체가 보도한 기사일수록 상위에 표시됩니다. (관련 보도 건수 기준)</p>
-    <div id="weeklyResult" class="result"></div>
-  </section>
+    <!-- 2. 주간 보도 랭킹 -->
+    <section class="panel" id="panel-weekly">
+      <div class="toolbar-card">
+        <label class="field">
+          <span>시작일</span>
+          <input type="date" id="weeklyStart">
+        </label>
+        <label class="field">
+          <span>종료일</span>
+          <input type="date" id="weeklyEnd">
+        </label>
+        <button class="btn-primary" id="weeklyRun" type="button">랭킹 보기</button>
+      </div>
+      <p class="hint">같은 주제로 여러 매체가 보도한 기사일수록 상위에 표시됩니다. (관련 보도 건수 기준)</p>
+      <div id="weeklyResult" class="result"></div>
+    </section>
 
-  <!-- 3. 기업별 월별 모음 -->
-  <section class="panel" id="panel-monthly" aria-labelledby="monthly">
-    <div class="panel-toolbar">
-      <label class="field">
-        <span>기업</span>
-        <select id="monthlyCompany"></select>
-      </label>
-      <label class="field">
-        <span>월</span>
-        <select id="monthlyMonth"></select>
-      </label>
-    </div>
-    <div id="monthlyResult" class="result"></div>
-  </section>
+    <!-- 3. 기업별 월별 모음 -->
+    <section class="panel" id="panel-monthly">
+      <div class="toolbar-card">
+        <label class="field">
+          <span>기업</span>
+          <select id="monthlyCompany"></select>
+        </label>
+        <label class="field">
+          <span>월</span>
+          <select id="monthlyMonth"></select>
+        </label>
+      </div>
+      <div id="monthlyResult" class="result"></div>
+    </section>
 
-  <!-- 4. 키워드 검색 -->
-  <section class="panel" id="panel-search" aria-labelledby="search">
-    <div class="panel-toolbar">
-      <label class="field field-grow">
-        <span>검색어</span>
-        <input type="text" id="searchInput" placeholder="예: 탄소중립, 협력사, 지속가능경영보고서…">
-      </label>
-      <button class="btn-primary" id="searchRun" type="button">검색</button>
-    </div>
-    <p class="hint" id="searchHint">제목과 본문 요약 안에서 검색어를 찾습니다. 누적된 전체 자료를 대상으로 합니다.</p>
-    <div id="searchResult" class="result"></div>
-  </section>
+    <!-- 4. 키워드 검색 -->
+    <section class="panel" id="panel-search">
+      <div class="toolbar-card">
+        <label class="field field-grow">
+          <span>검색어</span>
+          <input type="text" id="searchInput" placeholder="예: 탄소중립, 협력사, 지속가능경영보고서…">
+        </label>
+        <button class="btn-primary" id="searchRun" type="button">검색</button>
+      </div>
+      <p class="hint">제목과 본문 요약 안에서 검색어를 찾습니다. 누적된 전체 자료를 대상으로 합니다.</p>
+      <div id="searchResult" class="result"></div>
+    </section>
 
-</main>
+    <footer class="footer">
+      <p>본 자료는 네이버 뉴스 검색 결과를 자동 수집·분류한 것으로, 보도의 정확성에 대해 보증하지 않습니다.</p>
+    </footer>
 
-<footer class="footer">
-  <p>본 자료는 네이버 뉴스 검색 결과를 자동 수집·분류한 것으로, 보도의 정확성에 대해 보증하지 않습니다.</p>
-</footer>
+  </main>
+</div>
 
 <script src="sample-data.js"></script>
 <script src="app.js"></script>
