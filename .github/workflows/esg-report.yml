@@ -2,9 +2,21 @@ name: ESG 동향 리포트 수집 및 대시보드 갱신
 
 on:
   schedule:
-    # 매일 오전 8시(KST) = UTC 23:00 (전날) 실행
+    # 매일 오전 8시(KST) = UTC 23:00 (전날) 실행 — 항상 recent 모드로 고정 (아래 env 참고)
     - cron: "0 23 * * *"
-  workflow_dispatch: {}   # 수동 실행 버튼 (테스트용)
+  workflow_dispatch:
+    inputs:
+      screening_mode:
+        description: "스크리닝 범위 (recent: 최근 N일만 / full: Naver 검색 API가 주는 전체 기간, 쿼리당 최대 1000건 — 1회성 백필용. 호출량이 크게 늘어나니 백필 후 다시 recent로)"
+        type: choice
+        options:
+          - recent
+          - full
+        default: recent
+      lookback_days:
+        description: "recent 모드일 때 며칠 전까지 볼지 (full 모드에서는 무시됨)"
+        type: string
+        default: "3"
 
 permissions:
   contents: write   # docs/data 변경분을 저장소에 커밋하기 위해 필요
@@ -32,6 +44,9 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DASHBOARD_DATA_DIR: docs/data
+          # 자동 스케줄 실행은 항상 recent로 고정. 수동(workflow_dispatch) 실행일 때만 선택값 적용.
+          SCREENING_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.screening_mode || 'recent' }}
+          LOOKBACK_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.lookback_days || '3' }}
         run: python scripts/esg_collector.py
 
       - name: docs/data 변경분 커밋 & 푸시
