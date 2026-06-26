@@ -11,9 +11,19 @@ from email.mime.text import MIMEText
 from html import unescape
 from zoneinfo import ZoneInfo
 
-KST       = ZoneInfo("Asia/Seoul")
-TODAY     = datetime.now(KST).date()
-YESTERDAY = TODAY - timedelta(days=3)
+KST   = ZoneInfo("Asia/Seoul")
+TODAY = datetime.now(KST).date()
+
+# 스크리닝 범위 설정
+#   SCREENING_MODE=recent (기본값) : LOOKBACK_DAYS 만큼만 본다 (기존 동작, 매일 자동 실행에 적합)
+#   SCREENING_MODE=full           : 날짜로 거르지 않고, Naver 검색 API가 쿼리당 내려주는
+#                                    최대 깊이(1000건)까지 페이지네이션해서 전부 스크리닝한다.
+#                                    (네이버 API 자체에 "기간" 파라미터가 없어서, "모든 기간"은
+#                                    정확히는 "API가 보여줄 수 있는 가장 깊은 범위까지"를 의미함)
+SCREENING_MODE = os.environ.get("SCREENING_MODE", "recent").lower()
+LOOKBACK_DAYS  = int(os.environ.get("LOOKBACK_DAYS", "3"))
+YESTERDAY      = TODAY - timedelta(days=LOOKBACK_DAYS)
+NAVER_MAX_START = 1000  # Naver 검색 API의 쿼리당 최대 조회 깊이
 
 RECIPIENTS = ["fahudkim@gsretail.com", "rang428@gsretail.com", "kyahn@gsretail.com", "jsyou@gsretail.com", "lhj1120@gsretail.com"]
 
@@ -116,7 +126,12 @@ GMAIL_USER          = os.environ["GMAIL_USER"]
 GMAIL_APP_PASSWORD  = os.environ["GMAIL_APP_PASSWORD"]
 GEMINI_API_KEY      = os.environ["GEMINI_API_KEY"]
 
-print("[설정] 오늘: " + str(TODAY) + ", 기준일: " + str(YESTERDAY))
+if SCREENING_MODE == "full":
+    print("[설정] 오늘: " + str(TODAY) + ", 스크리닝 모드: full (기간 제한 없음, 쿼리당 최대 " + str(NAVER_MAX_START) + "건)")
+    print("[안내] full 모드는 호출량이 크게 늘어납니다 (Naver API 호출 수 + Gemini 분석 비용 모두 증가).")
+    print("[안내] 1회성 백필 목적이라면, 백필 후에는 SCREENING_MODE=recent 로 되돌리는 것을 권장합니다.")
+else:
+    print("[설정] 오늘: " + str(TODAY) + ", 스크리닝 모드: recent (최근 " + str(LOOKBACK_DAYS) + "일: " + str(YESTERDAY) + " ~ " + str(TODAY) + ")")
 print("[설정] 수신자: " + str(RECIPIENTS))
 print("[설정] 대시보드 데이터 출력 경로: " + DASHBOARD_DATA_DIR)
 
@@ -136,6 +151,8 @@ def parse_pub_date(date_str):
 def is_recent(pub_date):
     if pub_date is None:
         return False
+    if SCREENING_MODE == "full":
+        return True
     return YESTERDAY <= pub_date.date() <= TODAY
 
 
@@ -277,16 +294,43 @@ def search_news(company, keyword, display=5):
         "X-Naver-Client-Id":     NAVER_CLIENT_ID,
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
     }
-    params = {"query": company + " " + keyword, "display": display, "sort": "date"}
-    try:
-        r = requests.get(url, headers=headers, params=params, timeout=10)
-        r.raise_for_status()
-        items = r.json().get("items", [])
-        print("  [Naver] " + company + " + " + keyword + " -> " + str(len(items)) + "건")
-        return items
-    except Exception as e:
-        print("  [Naver 오류] " + company + " / " + keyword + ": " + str(e))
-        return []
+
+    if SCREENING_MODE != "full":
+        params = {"query": company + " " + keyword, "display": display, "sort": "date"}
+        try:
+            r = requests.get(url, headers=headers, params=params, timeout=10)
+            r.raise_for_status()
+            items = r.json().get("items", [])
+            print("  [Naver] " + company + " + " + keyword + " -> " + str(len(items)) + "건")
+            return items
+        except Exception as e:
+            print("  [Naver 오류] " + company + " / " + keyword + ": " + str(e))
+            return []
+
+    # SCREENING_MODE == "full": 날짜로 거르지 않는 대신, 한 쿼리당 Naver가 허용하는
+    # 최대 깊이(1000건)까지 start를 옮겨가며 끝까지 수집한다.
+    all_items = []
+    start = 1
+    page_display = 100
+    while start <= NAVER_MAX_START:
+        params = {"query": company + " " + keyword, "display": page_display, "start": start, "sort": "date"}
+        try:
+            r = requests.get(url, headers=headers, params=params, timeout=10)
+            r.raise_for_status()
+            items = r.json().get("items", [])
+        except Exception as e:
+            print("  [Naver 오류] " + company + " / " + keyword + " (start=" + str(start) + "): " + str(e))
+            break
+        if not items:
+            break
+        all_items.extend(items)
+        if len(items) < page_display:
+            break  # 더 이상 결과가 없음
+        start += page_display
+        time.sleep(0.12)
+
+    print("  [Naver/전체기간] " + company + " + " + keyword + " -> " + str(len(all_items)) + "건")
+    return all_items
 
 
 def collect_news_by_competitor():
@@ -381,6 +425,12 @@ def format_date(pub_date):
     return pub_date.strftime("%Y-%m-%d")
 
 
+def screening_period_label():
+    if SCREENING_MODE == "full":
+        return "전체 기간 (Naver 뉴스 검색 API 제공 범위, 쿼리당 최대 " + str(NAVER_MAX_START) + "건)"
+    return str(YESTERDAY) + " ~ " + str(TODAY) + " (최근 " + str(LOOKBACK_DAYS) + "일)"
+
+
 def build_section_plain(news_map, sentiment, section_title):
     lines = [
         "",
@@ -419,7 +469,7 @@ def build_plain_report(news_map):
         "=" * 60,
         "  유통업계 ESG 동향 리포트  |  " + today_str,
         "=" * 60,
-        "검색 기간: " + str(YESTERDAY) + " ~ " + str(TODAY) + " (최근 3일)",
+        "검색 기간: " + screening_period_label(),
     ]
 
     lines += build_section_plain(news_map, "POSITIVE", "긍정 동향")
@@ -467,7 +517,7 @@ def build_section_html(news_map, sentiment, section_title, header_color):
 
 def build_html_report(news_map):
     today_str  = TODAY.strftime("%Y년 %m월 %d일")
-    period_str = str(YESTERDAY) + " ~ " + str(TODAY) + " (최근 3일)"
+    period_str = screening_period_label()
 
     rows  = build_section_html(news_map, "POSITIVE", "🟢 긍정 동향", "#1A7F37")
     rows += build_section_html(news_map, "NEGATIVE", "🔴 부정 동향", "#C0392B")
