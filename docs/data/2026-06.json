@@ -825,7 +825,7 @@
     "title": "롯데홈쇼핑, 시각장애 아동 위한 '드림보이스' 서포터즈 출범",
     "description": "위한 사회공헌 활동을 이어가겠다\"고 말했다. 롯데홈쇼핑은 대학생 재능기부를 활용한 음성도서 제작을 확대하며 시각장애 아동의 정보 접근성 개선에 나서고 있다. 참여 인원과 제작 분야를 늘려 사회공헌 프로그램의...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=202420",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-06-28",
@@ -1528,5 +1528,86 @@
     "description": "현대백화점은 한국표준협회(KSA)로부터 안전보건경영시스템 국제 인증인 'ISO 45001'을 획득했다고 30일 밝혔다. 이번 인증은 본사를 포함한 전국 사업장을 대상으로 진행됐다. ISO 45001은 국제표준화기구(ISO)가 제정한...",
     "link": "https://www.insightkorea.co.kr/news/articleView.html?idxno=249141",
     "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 7월 역대급 고객 감사행사 진행… ‘711데이’ 할인에 산리...",
+    "description": "장종봉 세븐일레븐 운영5부문장은 “매치데이는 경영주와 임직원, 고객이 함께 소통하는 대표 상생 프로그램”이라며 “앞으로도 다양한 현장 프로그램을 통해 파트너십을 더욱 강화해 나갈 계획”이라고 밝혔다.",
+    "link": "https://www.viva100.com/article/20260630500783",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "집밥 열풍에 귀해진 마늘쫑…롯데마트, 7월엔 '남해산' 푼다",
+    "description": "폭염 등 기후변화 속에서 신선도를 장기간 유지하는 유통가의 핵심 경쟁력으로 꼽힌다. 이번에 선보이는 상품은 이달 중순 롯데신선품질혁신센터에 입고된 물량으로, 롯데마트·슈퍼는 총 5톤 규모의 물량을 확보해...",
+    "link": "http://www.smedaily.co.kr/news/articleView.html?idxno=359515",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "취약 아동 돕고 쓰레기 줍고 ‘밀착형 상생’… 롯데마트, 베트남서 ESG...",
+    "description": "롯데마트는 지난 17일(현지시간)부터 20일까지 나흘 동안 베트남 하노이 일대에서 대규모 ESG 캠페인을... 김범창 롯데마트·슈퍼 HR혁신부문장은 일간스포츠에 “이번 캠페인을 통해 베트남 지역사회와 함께 성장할...",
+    "link": "https://n.news.naver.com/mnews/article/241/0003517399?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, '제4회 친환경 어린이 그림 대회' 개최… 7월 17일까지 접수",
+    "description": "현대홈쇼핑은 \"어린이들의 시선을 통해 환경의 소중함을 다시금 생각해보자는 취지에서 대회를 매년 운영하고 있다\"며 \"앞으로도 고객과 함께하는 ESG 활동을 통해 지속 가능한 가치 실현을 위해 노력하겠다\"고 말했다....",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=309597",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "\"환경보호 메시지 담는다\"... 현대홈쇼핑, 어린이 그림대회 개최",
+    "description": "현대홈쇼핑은 지난 2022년부터 친환경 어린이 그림 그리기 대회를 운영하며 어린이들의 환경 의식을 높이고 ESG 가치 확산에 힘쓰고 있다. 현대홈쇼핑 관계자는 \"어린이들의 시선을 통해 환경의 소중함을 다시...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=202623",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[리테일 인사이드] 쿠팡·현대홈쇼핑·GS25·11번가·SSG닷컴...\"고객 경...",
+    "description": "여름 성수기를 앞두고 유통업계가 할인 행사와 ESG 캠페인, 해외시장 확대, 전통시장 상생, 고객 참여형... 현대홈쇼핑 ■ 현대홈쇼핑, 친환경 어린이 그림대회 개최 현대홈쇼핑이 어린이들의 환경보호 인식 제고를...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=184722",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 대전점, 지역사회 안전 강화...'순찰차 전용구역' 조성",
+    "description": "▲ 롯데백화점 대전점 후문에 조성된 순찰차 전용 주차구역 모습. 롯데백화점 대전점이 지역사회 안전... 됐다\"며 \"앞으로도 대전점은 지역사회에 도움이 될 수 있는 다양한 상생활동을 지속적으로 펼쳐 나가겠다\"고 말했다.",
+    "link": "https://www.ggilbo.com/news/articleView.html?idxno=1166676",
+    "related_count": 3
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 안전보건경영 국제표준 획득",
+    "description": "현대백화점은 한국표준협회(KSA)로부터 안전보건경영시스템 국제표준인 ‘ISO 45001’ 인증을 획득했다고 30일 밝혔다. ISO 45001은 국제표준화기구(ISO)가 제정한 안전보건 분야 국제 인증으로, 사업장 내 위험 요인을...",
+    "link": "https://n.news.naver.com/mnews/article/015/0005304728?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, ISO 45001 인증 획득... 안전경영 체계 강화",
+    "description": "사진=현대백화점 중대재해 예방과 ESG(환경·사회·지배구조) 경영이 기업 경쟁력의 핵심 요소로 자리 잡으면서 유통업계도 사업장 안전관리 체계 고도화에 속도를 내고 있다. 고객과 협력사, 임직원이 함께 이용하는...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=202619",
+    "related_count": 3
   }
 ]
