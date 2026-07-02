@@ -1473,7 +1473,7 @@
     "title": "GS리테일, 서스틴베스트 ESG 평가 5회 연속 '최고등급 AA' 획득…전 영역...",
     "description": "사진=GS리테일  GS리테일은 국내 대표 ESG 평가기관인 서스틴베스트가 발표한 '2026년 상반기 ESG 평가'에서 평가 대상 1305개 기업 중 최고등급인 AA등급을 획득하는 것으로, 5회 연속 기록을 이어갔다고 29일 밝혔다....",
     "link": "http://www.sisacast.kr/news/articleView.html?idxno=97211",
-    "related_count": 4
+    "related_count": 3
   },
   {
     "date": "2026-06-29",
@@ -1590,7 +1590,7 @@
     "title": "롯데백화점 대전점, 지역사회 안전 강화...'순찰차 전용구역' 조성",
     "description": "▲ 롯데백화점 대전점 후문에 조성된 순찰차 전용 주차구역 모습. 롯데백화점 대전점이 지역사회 안전... 됐다\"며 \"앞으로도 대전점은 지역사회에 도움이 될 수 있는 다양한 상생활동을 지속적으로 펼쳐 나가겠다\"고 말했다.",
     "link": "https://www.ggilbo.com/news/articleView.html?idxno=1166676",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-06-30",
@@ -1609,5 +1609,14 @@
     "description": "사진=현대백화점 중대재해 예방과 ESG(환경·사회·지배구조) 경영이 기업 경쟁력의 핵심 요소로 자리 잡으면서 유통업계도 사업장 안전관리 체계 고도화에 속도를 내고 있다. 고객과 협력사, 임직원이 함께 이용하는...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=202619",
     "related_count": 3
+  },
+  {
+    "date": "2026-06-30",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 전국 사업장 'ISO 45001' 인증…안전보건 경영 '글로벌 표준...",
+    "description": "아울러 폭염, 집중호우 등 최근 변화하는 기후 환경에 대비해 철저한 안전 관리 계획을 수립하고 실질적으로 운영하고 있는 점도 인증 획득의 주요 요인으로 꼽혔다. 현대백화점은 이번 인증을 기점으로 유통업 특성을...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=80867",
+    "related_count": 1
   }
 ]
