@@ -87,7 +87,7 @@
     "title": "편의점 2026년 7월 브랜드평판...GS25, 세븐일레븐, 이마트24 順",
     "description": "2위, 세븐일레븐 편의점 브랜드는 참여지수 959,705 미디어지수 693,243 소통지수 985,995 커뮤니티지수 269,987 사회공헌지수 436,754가 되면서 브랜드평판지수 3,345,684로 분석됐다. 지난 6월 브랜드평판지수 3,348...",
     "link": "https://www.energy-news.co.kr/news/articleView.html?idxno=226506",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-07-01",
@@ -150,7 +150,7 @@
     "title": "LG유니참, 이마트와 손잡았다...100% 순면커버 생리대 '쏘피 리얼순면' ...",
     "description": "LG유니참이 고물가 시대 여성 소비자들의 필수재 구매 부담을 덜기 위해 이마트와 손을 맞잡았다. 피부에... 기업의 사회적 책임(ESG)을 다하기 위한 나눔 활동에도 박차를 가하고 있다. 지난 2013년부터 전개해 온...",
     "link": "https://www.maxmovie.com/news/articleView.html?idxno=500261",
-    "related_count": 1
+    "related_count": 2
   },
   {
     "date": "2026-07-01",
@@ -222,6 +222,33 @@
     "title": "ISO 45001 인증획득 현대백화점 '안전경영' 강화한다",
     "description": "현대백화점이 안전보건경영시스템 국제표준인 ISO 45001 인증을 받았다. 현대백화점은 한국표준협회(KSA)... 인증이 유통업계 전반의 안전관리 체계 고도화와 ESG 경영 강화에도 긍정적인 영향을 줄 것으로 전망하고 있다.",
     "link": "https://www.safetimes.co.kr/news/articleView.html?idxno=243869",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-02",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 일냈다…필수품인데 개당 '99원'이라는 '이 제품'",
+    "description": "100퍼센트 순면 커버를 유지하면서도 이마트와의 협업으로 유통 구조를 개선해 합리적인 가격을 산출함으로써 더 많은 소비자가 순면의 품질을 경험하기를 기대하고 있다. 엘지유니참은 비즈니스 영역 외에도 ESG 경영의...",
+    "link": "https://www.wikitree.co.kr/articles/1144328",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-02",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "래핑찰리, 반려가족 고객접점 강화 위해 현대백화점, 29CM, 아트박스 등...",
+    "description": "반려동물 라이프스타일 브랜드 래핑찰리(Laughing Charlie)가 현대백화점, 29CM, 컬리, 아트박스, 롯데마트 등 국내... 유기견 보호소 봉사활동과 반려동물 용품 후원 등 다양한 사회공헌 활동을 꾸준히 이어가며 건강한...",
+    "link": "https://n.news.naver.com/mnews/article/277/0005784740?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-02",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 광주점, 지역 상생 대축제 '빛남마켓' 행사",
+    "description": "롯데백화점 광주점이 지역의 우수 지역 상품을 엄선해 선보이는 지역 상생 대축제 ‘빛남마켓’ 행사를 3일부터 9일까지 지하1층 행사장에서 진행한다. 2일 롯데백화점광주점에 따르면 빛남마켓은 ‘빛고을 광주+전라남도...",
+    "link": "http://www.jndn.com/article.php?aid=1782980400435392100",
     "related_count": 1
   }
 ]
