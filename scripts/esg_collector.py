@@ -236,7 +236,7 @@ GEMINI_URL   = (
 )
 
 # 무료 티어 Gemini 2.0 Flash: 15 RPM (분당 15회) → 안전하게 12 RPM (5초 간격)로 스로틀
-GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "5.0"))
+GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "8.0"))
 GEMINI_MAX_RETRIES  = 3
 _last_gemini_call_ts = 0.0   # 마지막 호출 시각 (전역 스로틀용)
 
