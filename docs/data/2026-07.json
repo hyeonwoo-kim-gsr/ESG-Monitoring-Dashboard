@@ -420,7 +420,7 @@
     "title": "롯데마트·슈퍼 영월 농촌 체험 진행",
     "description": "롯데마트·슈퍼는 지난 4일부터 5일까지 영월군에서 임직원과 가족 46명이 참여한 '가족과 함께하는 농촌 체험 프로그램'을 진행했다고 6일 밝혔다. 이번 행사는 ESG(환경·사회·지배구조)프로젝트 '상생씨앗'의 일환으로...",
     "link": "https://n.news.naver.com/mnews/article/654/0000189204?sid=101",
-    "related_count": 3
+    "related_count": 7
   },
   {
     "date": "2026-07-06",
@@ -528,7 +528,7 @@
     "title": "현대백화점 \"서스틴베스트 ESG 평가서 6회 연속 최고 등급 'AA' 획득\"",
     "description": "현대백화점은 국내 대표 ESG 평가 기관인 서스틴베스트가 최근 발표한 '2026년 상반기 ESG 평가'에서 최고 등급인 'AA등급'을 획득했다고 밝혔다. 2023년 하반기 이후 6회 연속 AA등급 획득이다. 서스틴베스트는 주요...",
     "link": "https://sports.hankooki.com/news/articleView.html?idxno=6935977",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-07-07",
@@ -646,5 +646,95 @@
     "description": "롯데백화점은 고객 경험 전반을 개선하는 리테일 혁신을 지속해왔다. 전국 주요 점포를 중심으로 추진한 프리미엄 큐레이션 전략이 대표적이다. 인천점은 2023년 하반기부터 진행한 전관 리뉴얼을 올해 5월...",
     "link": "https://n.news.naver.com/mnews/article/003/0014052411?sid=101",
     "related_count": 1
+  },
+  {
+    "date": "2026-07-09",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "\"몽골에선 편의점=CU\" BGF리테일, 몽골 600호점 대기록",
+    "description": "이와 함께 로컬 푸드 연계 판매 공간도 별도로 조성해 지역 주민과의 상생을 도모하며 새로운 편의점 모델을 제시하고 있다. 이날 CU는 몽골 600호점 오픈 기념식도 개최했다. 행사에는 BGF리테일 진영호 상품...",
+    "link": "https://www.newstopkorea.com/news/articleView.html?idxno=46138",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-09",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 보호아동 위한 '작은도서관 101호' 개관",
+    "description": "롯데홈쇼핑은 ESG 슬로건 '오늘 실천하면 달라지는 내일' 아래 다양한 나눔 활동을 전개하고 있다. 구세군한국군국과 2013년부터 이어오고 있는 '작은도서관'은 미래세대가 책을 통해 배우고 꿈을 키울 수 있도록 친환경...",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=1389769",
+    "related_count": 5
+  },
+  {
+    "date": "2026-07-08",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "차별화 나선 롯데홈쇼핑, 'K브랜드' 수출 플랫폼 변신",
+    "description": "롯데홈쇼핑은 현재 상생 차원에서 운영하고 있는 '롯데 브랜드 엑스포'를 통해 중소기업들의 신뢰를 쌓고, 이를 플랫폼 운영 기반으로 삼는다는 계획이다. 롯데홈쇼핑은 유통기업 해외진출 지원사업의 일환으로 오는...",
+    "link": "https://www.mediapen.com/news/view/1108968",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-09",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 국가고객만족도 TV홈쇼핑 부문 1위…5년 연속",
+    "description": "현대홈쇼핑은 고객 중심의 서비스 혁신과 운영 개선, ESG 경영 실천 노력이 높은 평가를 받았다. 우선 현대홈쇼핑은 최근 인공지능(AI) 기술 기반의 '상담원 전용 AI 챗봇' 기능을 도입해 고객 만족도를 크게 높였다. 상담원...",
+    "link": "https://n.news.naver.com/mnews/article/215/0001258108?sid=103",
+    "related_count": 8
+  },
+  {
+    "date": "2026-07-08",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 5년 연속·롯데백화점 4년 만에 정상…NCSI 고객경험 경쟁 치...",
+    "description": "양사는 나란히 최고 평가를 받았지만 현대백화점은 서비스 품질과 ESG를, 롯데백화점은 공간 혁신과 AI 기반 서비스를 앞세우며 서로 다른 경쟁력을 구축했다는 평가다. 국가고객만족도(NCSI)는 한국생산성본부가 미국...",
+    "link": "https://www.seoultimes.news/news/article.html?no=2000097563",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-08",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 2026 NCSI 백화점 부문 1위 탈환…리테일 혁신으로 고객 만...",
+    "description": "[사진=롯데백화점]  롯데백화점이 고객 중심 리테일 혁신을 앞세워 2026 국가고객만족도(NCSI) 조사에서... ESG 활동도 고객 참여형으로 확대했다. 환경 캠페인 '리얼스(RE:EARTH)'를 통해 도심과 해양 정화 활동을 이어오고...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=531347",
+    "related_count": 3
+  },
+  {
+    "date": "2026-07-08",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 2026년 국가고객만족도 부문 1위 등극… 4년 만에 정상 귀환",
+    "description": "롯데백화점은 지난 2004년 업계 최초로 환경경영을 선포한 데 이어, 2022년에는 친환경 캠페인 '리얼스(RE:EARTH)'를 선보이며 ESG 경영 실천 범위를 한층 확장했다. 현재는 자원순환 프로젝트와 환경 정화 활동을 넘어...",
+    "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=42265",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-08",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 고객경험 혁신·ESG 경영 강화…NCSI 5년 연속 1위",
+    "description": "ESG 경영도 강화에도 힘쓰고 있다. 현대백화점은 2015년부터 '365 리사이클 캠페인'을 통해 고객 참여형 자원순환 활동을 이어오고 있으며, HD현대오일뱅크와 협력한 '비닐 투 비닐(Vinyl to Vinyl)' 프로세스를 구축하는...",
+    "link": "https://www.100ssd.co.kr/news/articleView.html?idxno=210956",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-09",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계백화점, 지역 생산자 협업 한우 프로젝트 진행",
+    "description": "신세계백화점은 오는 10일부터 16일까지 본점과 강남점, 센텀시티점, 대구점 식품관에서 '로컬이 신세계 한우... 브랜드 가치를 알릴 수 있는 기회를 제공하는 지속 가능한 상생 모델로 발전시켜 나가겠다\"고 말했다.",
+    "link": "https://www.ziksir.com/news/articleView.html?idxno=139577",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-09",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계백화점, 한우도 ‘로컬 스토리’ 입힌다…생산자 철학 담은 미식...",
+    "description": "신세계백화점이 지역의 숨은 가치를 발굴하는 ‘로컬이 신세계’ 프로젝트를 한우까지 확대하며 생산자와 상생하는 새로운 미식 콘텐츠를 선보인다. 단순한 상품 판매를 넘어 지역의 자연환경과 생산자의 철학을 담은...",
+    "link": "https://www.viva100.com/article/20260709500114",
+    "related_count": 2
   }
 ]
