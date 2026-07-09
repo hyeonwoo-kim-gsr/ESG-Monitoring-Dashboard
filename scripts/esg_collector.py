@@ -42,11 +42,18 @@ COMPETITOR_NAMES = [
     "현대백화점", "신세계백화점",
 ]
 
+# ESG 검색 키워드
+# 축소 전 17개 → 8개로 축소. 무료 티어 Gemini 판별 호출 수를 절반 이하로 줄이는 게 목적.
+# 제거한 키워드와 그 이유:
+#   - "지속가능성"/"지속가능경영" → "ESG"에 포함
+#   - "기후변화"/"기후대응" → "탄소중립"에 포함
+#   - "탄소절감"/"탄소저감"/"탄소배출" → "탄소중립"에 포함
+#   - "CSR" → "사회공헌"에 포함 (국내 매체 대다수가 사회공헌으로 표기)
+#   - "ISO" → 유통업 특성상 ESG 문맥에서 등장 빈도 낮음
+#   - "사회적책임" → "사회공헌"과 사실상 동의어
 ESG_KEYWORDS = [
-    "ESG", "지속가능성", "ISO", "사회공헌", "CSR",
-    "탄소중립", "기후변화", "기후대응", "지속가능경영",
-    "탄소배출", "탄소절감", "탄소저감", "상생", "사회적책임",
-    "동반성장", "지배구조", "기부",
+    "ESG", "탄소중립", "사회공헌", "상생",
+    "동반성장", "지배구조", "기부", "지속가능경영",
 ]
 
 PAYWALL_MARKERS = [
@@ -172,15 +179,24 @@ def title_has_competitor(title):
 
 
 def normalize_title(title):
-    """유사도 비교를 위한 제목 정규화 (괄호·특수문자·공백 제거)"""
-    t = re.sub(r"\[.*?\]", "", title)        # 대괄호 머리말 제거
-    t = re.sub(r"[^\w가-힣]", "", t)          # 특수문자 제거
+    """유사도 비교를 위한 제목 정규화.
+    - 대괄호 머리말 [단독], [속보], [유통], [ESG] 등 제거
+    - 언론 관용어 '···', '…' 등 축약 표시 제거
+    - 특수문자·공백 제거
+    """
+    t = re.sub(r"\[.*?\]", "", title)             # 대괄호 머리말 제거
+    t = re.sub(r"['\"·…‥]+", "", t)               # 관용 부호 제거
+    t = re.sub(r"[^\w가-힣]", "", t)               # 특수문자·공백 제거
     return t.lower()
 
 
-def find_duplicate_article(title, accepted_index, threshold=0.6):
+def find_duplicate_article(title, accepted_index, threshold=0.45):
     """이미 수집된 기사 중 유사 기사를 찾아 그 기사 dict를 반환 (없으면 None).
     동일 주제로 여러 매체가 보도한 경우 원본 기사의 related_count를 누적시키기 위해 사용.
+
+    threshold를 0.6 → 0.45로 낮춰 같은 주제의 다른 매체 기사도 잘 잡히도록 함.
+    (예: '롯데마트·슈퍼 영월 농촌 체험' vs '롯데마트·슈퍼, 임직원 가족과 농촌 체험'
+         → 이전 임계값에선 놓쳤으나 Gemini 호출 낭비의 주범이었음)
     """
     norm = normalize_title(title)
     for entry in accepted_index:
@@ -229,14 +245,14 @@ def is_paywalled(body_text):
 #    - 재시도 후에도 실패하면 UNCERTAIN 으로 저장 (기존엔 아예 제외 → 빈 리포트)
 # ----------------------------------------------------------------------------
 
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
 GEMINI_URL   = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     + GEMINI_MODEL + ":generateContent?key=" + GEMINI_API_KEY
 )
 
-# 무료 티어 Gemini 2.0 Flash: 15 RPM (분당 15회) → 안전하게 12 RPM (5초 간격)로 스로틀
-GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "8.0"))
+# 무료 티어 Gemini 2.5 Flash-Lite: 15 RPM (분당 15회) → 안전하게 4초 간격으로 스로틀
+GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "4.0"))
 GEMINI_MAX_RETRIES  = 3
 _last_gemini_call_ts = 0.0   # 마지막 호출 시각 (전역 스로틀용)
 
