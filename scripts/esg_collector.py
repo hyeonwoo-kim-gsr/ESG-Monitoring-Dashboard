@@ -214,17 +214,19 @@ def is_paywalled(body_text):
 # ----------------------------------------------------------------------------
 # Gemini 기반 기사 분석
 #
-# 개선 포인트 (오분류 사례에서 얻은 교훈):
-# 1) 한 번에 관련성+감성을 물으면 표면 키워드에 속기 쉬움 → 2단계로 분리
-#    Step A: 이 기사가 우리 대시보드 대상인가? (관련성/스코프 판별)
-#    Step B: 대상이 맞다면, 회사에 유리한가/불리한가? (감성 판별)
-# 2) 표면 매칭 방지: "준법경영", "동반성장", "컴플라이언스" 같은 단어는
-#    부정 기사에서도 자주 등장하므로, 단어 존재가 아니라 "회사가 실제로
-#    무엇을 했는지 / 무엇이 회사에 일어났는지"를 판단하도록 유도.
-# 3) 근거(evidence) 요구: JSON 형식으로 label + reason + key_phrases를 받아
-#    로그에 남긴다. 오분류 발생 시 왜 그렇게 판단했는지 추적 가능.
-# 4) 안전 기본값 변경: 판별 실패 시 예전에는 POSITIVE로 저장했지만,
-#    이제는 UNCERTAIN 으로 표시해 대시보드에서 별도 검토할 수 있게 함.
+# 설계 원칙:
+# 1) 판별 품질 유지 + rate limit 안정성 확보
+#    - 관련성/감성을 한 번의 호출로 판별하되, 프롬프트에 두 판별을 명시적으로
+#      분리해서 요청 → 품질 유지하면서 호출 수는 기사당 1회
+# 2) 표면 매칭 방지: "준법경영", "동반성장", "컴플라이언스", "최우수", "지속가능"
+#    같은 단어는 부정 기사에도 자주 등장. 단어 매칭이 아니라 "회사에 무엇이
+#    일어났는지"를 기준으로 판별하도록 유도.
+# 3) 근거 요구: JSON 형식으로 label + reason + key_phrases를 받아 로그에 남김.
+#    오분류가 발생하면 로그에서 판단 근거를 바로 확인할 수 있음.
+# 4) 429 (rate limit) 안전 처리:
+#    - 지수적 백오프로 자동 재시도 (5s → 15s → 45s)
+#    - 호출 사이 최소 간격 확보 (전역 스로틀)
+#    - 재시도 후에도 실패하면 UNCERTAIN 으로 저장 (기존엔 아예 제외 → 빈 리포트)
 # ----------------------------------------------------------------------------
 
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
@@ -233,12 +235,16 @@ GEMINI_URL   = (
     + GEMINI_MODEL + ":generateContent?key=" + GEMINI_API_KEY
 )
 
+# 무료 티어 Gemini 2.0 Flash: 15 RPM (분당 15회) → 안전하게 12 RPM (5초 간격)로 스로틀
+GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "5.0"))
+GEMINI_MAX_RETRIES  = 3
+_last_gemini_call_ts = 0.0   # 마지막 호출 시각 (전역 스로틀용)
+
 
 def _extract_json_block(text):
     """Gemini 응답에서 JSON 객체만 뽑아 dict로 반환. 실패 시 None."""
     if not text:
         return None
-    # ```json ... ``` 코드 블록 안에 있을 수도 있고 그냥 있을 수도 있음
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         return None
@@ -248,37 +254,73 @@ def _extract_json_block(text):
         return None
 
 
-def _call_gemini(prompt, timeout=20):
-    """Gemini 호출. 성공 시 응답 텍스트, 실패 시 None."""
+def _throttle_gemini():
+    """직전 호출에서 GEMINI_MIN_INTERVAL 초 이상 경과할 때까지 대기."""
+    global _last_gemini_call_ts
+    now = time.time()
+    elapsed = now - _last_gemini_call_ts
+    if elapsed < GEMINI_MIN_INTERVAL:
+        wait = GEMINI_MIN_INTERVAL - elapsed
+        time.sleep(wait)
+    _last_gemini_call_ts = time.time()
+
+
+def _call_gemini(prompt, timeout=30):
+    """Gemini 호출. 429/5xx는 지수적 백오프로 재시도. 성공 시 응답 텍스트, 최종 실패 시 None."""
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.0,     # 판별 태스크는 결정적으로
+            "temperature": 0.0,
             "responseMimeType": "application/json",
         },
     }
-    try:
-        r = requests.post(GEMINI_URL, json=payload, timeout=timeout)
-        r.raise_for_status()
-        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
-    except Exception as e:
-        print("    [Gemini 호출 실패] " + str(e))
-        return None
+
+    backoff = 5   # 초, 429 발생 시 대기 시간의 시작점
+    for attempt in range(GEMINI_MAX_RETRIES + 1):
+        _throttle_gemini()
+        try:
+            r = requests.post(GEMINI_URL, json=payload, timeout=timeout)
+
+            # 429 (rate limit) 또는 5xx (서버 오류) → 재시도
+            if r.status_code == 429 or 500 <= r.status_code < 600:
+                if attempt < GEMINI_MAX_RETRIES:
+                    print(f"    [Gemini {r.status_code}] rate limit/서버오류, {backoff}초 대기 후 재시도 ({attempt+1}/{GEMINI_MAX_RETRIES})")
+                    time.sleep(backoff)
+                    backoff *= 3   # 5 → 15 → 45
+                    continue
+                else:
+                    print(f"    [Gemini {r.status_code}] 최대 재시도 초과, 포기")
+                    return None
+
+            r.raise_for_status()
+            return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+
+        except requests.exceptions.RequestException as e:
+            if attempt < GEMINI_MAX_RETRIES:
+                print(f"    [Gemini 오류] {str(e)[:80]}, {backoff}초 대기 후 재시도")
+                time.sleep(backoff)
+                backoff *= 3
+                continue
+            print(f"    [Gemini 최종 실패] {str(e)[:80]}")
+            return None
+        except Exception as e:
+            print(f"    [Gemini 파싱 오류] {str(e)[:80]}")
+            return None
+    return None
 
 
-def screen_relevance(title, content):
-    """Step A: 대시보드에 포함할 만한 기사인지 판별.
-    반환: dict {include: bool, subject_company: str|None, esg_dimensions: [E/S/G/None],
-                 scope: 'domestic'|'overseas'|'mixed'|'unknown', reason: str}
-    """
-    prompt = "\n".join([
+def _build_analysis_prompt(title, content):
+    """관련성 판별 + 감성 판별을 한 번의 호출로 요청하는 프롬프트."""
+    return "\n".join([
         "당신은 유통업계 ESG 뉴스 클리핑 담당자입니다.",
-        "아래 기사가 '경쟁 유통사 ESG 동향 모니터링 대시보드'에 실을 만한 기사인지 판별하세요.",
+        "아래 기사에 대해 두 가지를 판별하세요:",
+        "  (1) 이 기사가 '경쟁 유통사 ESG 동향 모니터링 대시보드'에 실을 만한 기사인가?",
+        "  (2) 실을 만하다면, 해당 회사에 유리한 소식인가, 불리한 소식인가?",
         "",
-        "# 판별 규칙",
+        "===== (1) 관련성 판별 규칙 =====",
         "",
-        "## 규칙 1: 핵심 주체",
-        "기사의 '주인공'이 다음 회사 중 하나여야 합니다 (그룹 지주사·계열사 이름이 함께 등장해도, 실제 주체가 아래 회사여야 함):",
+        "## 규칙 1-A: 핵심 주체",
+        "기사의 '주인공'이 다음 회사 중 하나여야 합니다:",
         "- GS리테일, GS25, GS더프레시",
         "- BGF리테일, CU",
         "- 세븐일레븐, 코리아세븐",
@@ -287,77 +329,41 @@ def screen_relevance(title, content):
         "- 현대백화점, 현대홈쇼핑",
         "- CJ온스타일",
         "- 신세계백화점",
-        "제외 예시:",
-        "- 위 회사가 다른 브랜드의 판매채널·입점처로만 언급된 경우 (예: '이마트에서 판매하는 A제품이 인기')",
-        "- 위 회사가 시장 배경/비교 대상으로만 등장 (예: '편의점 업계 1위 GS25를 제외한 …')",
-        "- 여러 회사를 나열한 요약·종합 기사 (예: '주요 유통사 실적 종합')",
-        "- 증권사 리포트, 목표주가, 공시, 지분 매매 관련 기사",
+        "",
+        "관련 없음(include=false) 예시:",
+        "- 위 회사가 판매채널·입점처로만 언급됨 (예: '이마트에서 판매하는 A제품이 인기')",
+        "- 위 회사가 시장 배경/비교 대상으로만 등장",
+        "- 여러 회사를 나열한 요약·종합 기사",
+        "- 증권사 리포트, 목표주가, 공시, 지분 매매 기사",
         "- 부동산·정치·선거·연예·스포츠 등 유통과 무관한 기사",
         "",
-        "## 규칙 2: ESG 관련성",
-        "기사가 회사의 다음 ESG 이슈 중 하나 이상을 실질적으로 다뤄야 합니다 (긍정이든 부정이든 상관 없음):",
+        "## 규칙 1-B: ESG 관련성",
+        "기사가 회사의 다음 ESG 이슈 중 하나 이상을 실질적으로 다뤄야 합니다 (긍정/부정 무관):",
         "- E(환경): 탄소중립, 재생에너지, 친환경 포장·물류, 폐기물, 환경 인증/규제/위반",
-        "- S(사회): 사회공헌, 상생/동반성장, 협력사·가맹점 관계(갑질·불공정 포함), 소비자 이슈, 노사 이슈, 안전사고, 직원 인권, 공정거래위반, 하도급법 위반, 담합, 과징금, 리콜, 불매",
+        "- S(사회): 사회공헌, 상생/동반성장, 협력사·가맹점 관계(갑질·불공정 포함), 소비자 이슈, 노사·안전사고, 공정거래 위반, 하도급법 위반, 담합, 과징금, 리콜, 불매",
         "- G(지배구조): 이사회 개편, ESG위원회, 지속가능경영보고서, 오너 리스크, 준법경영 위반, 내부통제 실패, 횡령·배임, 감독기관 제재, 소송",
         "",
-        "중요: 단순히 'ESG', '준법경영', '지속가능', '동반성장' 같은 단어가 등장한다고 관련 기사가 아닙니다.",
+        "중요: 단순히 'ESG', '준법경영', '지속가능', '동반성장' 단어가 등장한다고 관련 기사가 아닙니다.",
         "회사가 실제로 그 이슈에서 무엇을 했는지(또는 회사에 무엇이 일어났는지)가 기사의 중심 소재여야 합니다.",
-        "예를 들어 '최우수 등급을 유지해 왔다'는 문장이 있어도, 기사 전체가 최근의 제재·논란을 다루는 내용이라면 그것은 지배구조(G) 부정 기사입니다.",
         "",
-        "## 규칙 3: 스코프",
-        "회사의 해외 법인·해외 시장 활동만을 다루는 기사는 제외합니다 (국내 이슈 포함이면 OK).",
+        "## 규칙 1-C: 스코프",
+        "회사의 해외 법인·해외 시장 활동만 다루는 기사는 제외 (국내 이슈 포함이면 OK).",
         "",
-        "## 규칙 4: 기사 형태",
-        "단일 주제를 깊이 다루는 실제 뉴스 기사여야 합니다. 여러 단신 나열, 광고성 보도자료는 제외합니다.",
+        "## 규칙 1-D: 기사 형태",
+        "단일 주제를 깊이 다루는 실제 뉴스 기사여야 합니다. 여러 단신 나열/광고성 보도자료는 제외.",
         "",
-        "# 출력",
-        "다음 JSON만 반환하세요. 다른 텍스트는 절대 포함하지 마세요.",
-        '{',
-        '  "include": true|false,',
-        '  "subject_company": "위 회사 목록 중 정확한 이름 하나 (해당 없으면 null)",',
-        '  "esg_dimensions": ["E" 또는 "S" 또는 "G" 중 해당하는 항목들의 배열, 없으면 빈 배열]',
-        '  "scope": "domestic" | "overseas" | "mixed" | "unknown",',
-        '  "reason": "한 문장으로 왜 include를 그렇게 판단했는지"',
-        '}',
-        "",
-        "# 판별할 기사",
-        "제목: " + (title or ""),
-        "본문: " + (content or ""),
-    ])
-    raw = _call_gemini(prompt)
-    if raw is None:
-        return None
-    data = _extract_json_block(raw)
-    if not isinstance(data, dict):
-        return None
-    return data
-
-
-def classify_sentiment(title, content, relevance):
-    """Step B: 관련 있는 기사에 한해 감성을 판별.
-    반환: dict {label: 'POSITIVE'|'NEGATIVE'|'NEUTRAL', reason: str, key_phrases: [str]}
-    """
-    dims = relevance.get("esg_dimensions") or []
-    dim_hint = ", ".join(dims) if dims else "판별 필요"
-    subject = relevance.get("subject_company") or "해당 회사"
-
-    prompt = "\n".join([
-        "당신은 유통업계 ESG 뉴스 담당자입니다.",
-        "이 기사는 이미 '" + subject + "'의 ESG(" + dim_hint + ") 이슈를 다루는 기사로 확인되었습니다.",
-        "이 기사가 '" + subject + "'에게 '유리한 소식'인지 '불리한 소식'인지 판별하세요.",
-        "",
-        "# 판별 기준",
+        "===== (2) 감성 판별 규칙 (관련 기사에 한해) =====",
         "",
         "## NEGATIVE (불리) — 아래 신호가 하나라도 명확하면 NEGATIVE:",
-        "- 감독기관 제재/조사/과징금/고발 (공정위, 금감원, 국세청, 검찰, 경찰 등)",
+        "- 감독기관 제재·조사·과징금·고발 (공정위·금감원·국세청·검찰·경찰)",
         "- 유죄 판결, 소송, 법원 판결, 벌금",
         "- 갑질, 불공정 거래, 하도급 위반, 담합, 부당한 판촉비 전가",
         "- 횡령, 배임, 내부통제 실패, 은폐, 회계 부정",
-        "- 협력사·가맹점주 반발, 노조 요구, 파업, 시위",
+        "- 협력사·가맹점주 반발, 노조 요구, 파업",
         "- 소비자 피해, 리콜, 불매, 안전사고, 사망 사고",
         "- 오너 리스크, CEO 리더십 비판, 준법경영 실패",
         "- 부정 등급/평가, 인증 취소, 상장폐지 우려",
-        "- 기사 논조가 문제 지적/의혹 제기/비판적 분석",
+        "- 기사 논조가 문제 지적·의혹 제기·비판적 분석",
         "",
         "## POSITIVE (유리) — 아래 신호가 명확하면 POSITIVE:",
         "- 수상, 인증 획득, 등급 상향",
@@ -365,46 +371,46 @@ def classify_sentiment(title, content, relevance):
         "- 협약, MOU, 파트너십 체결",
         "- 실질적 성과 발표 (탄소배출량 감축 달성 등)",
         "- 지속가능경영보고서 발간, 위원회 신설 등 지배구조 개선",
-        "- 기사 논조가 성과 소개/모범 사례로 우호적",
+        "- 기사 논조가 성과 소개·모범 사례로 우호적",
         "",
-        "## NEUTRAL — 위 어디에도 명확히 해당하지 않는 사실 전달 기사",
+        "## NEUTRAL — 위 어디에도 명확히 해당하지 않는 사실 전달 기사 (저장하지 않음)",
         "",
-        "# 매우 중요한 주의사항",
-        "1. 표면 단어에 속지 마세요. '준법경영', '동반성장', '컴플라이언스', '최우수', '지속가능' 같은 단어가 기사에 나와도, 그 단어들이 등장한 맥락을 봐야 합니다.",
-        "   예: 회사가 '준법경영을 강조했지만 실제로는 위반 사례가 잇따르고 있다'는 내용이면 이 기사는 NEGATIVE입니다.",
-        "   예: 회사가 '최우수 등급을 유지해왔는데 이번 판결로 등급 추락 가능성이 있다'는 내용이면 NEGATIVE입니다.",
-        "2. 기사 전체의 논조와 기자의 태도를 봐야 합니다. 제목의 '단독', '바람 잘 날 없는', '영이 안 선다', '허점', '흔들', '논란', '의혹', '단독 파헤쳐' 같은 표현은 부정 신호입니다.",
-        "3. 한 기사에 좋은 소식과 나쁜 소식이 섞여 있다면, 기사의 중심 메시지를 기준으로 판단합니다.",
-        "4. 회사 측의 해명·반론이 인용되었더라도, 기사 전체가 문제 제기 성격이면 NEGATIVE입니다.",
+        "## 감성 판별 주의사항 (매우 중요)",
+        "1. 표면 단어에 속지 마세요. '준법경영', '동반성장', '컴플라이언스', '최우수', '지속가능'이 나와도 그 단어가 등장한 맥락을 봐야 합니다.",
+        "   예: '준법경영을 강조했지만 실제로는 위반 사례가 잇따르고 있다' → NEGATIVE",
+        "   예: '최우수 등급을 유지해왔는데 이번 판결로 등급 추락 가능성이 있다' → NEGATIVE",
+        "2. 제목 표현: '[단독]', '바람 잘 날 없는', '영이 안 선다', '허점', '흔들', '논란', '의혹' → 부정 신호",
+        "3. 좋은/나쁜 소식이 섞여 있으면, 기사의 중심 메시지 기준으로 판단",
+        "4. 회사 측의 해명·반론이 인용되어도 기사 전체가 문제 제기 성격이면 NEGATIVE",
         "",
-        "# 출력",
+        "===== 출력 형식 =====",
         "다음 JSON만 반환하세요. 다른 텍스트는 절대 포함하지 마세요.",
         '{',
-        '  "label": "POSITIVE" | "NEGATIVE" | "NEUTRAL",',
-        '  "reason": "왜 그렇게 판단했는지 한 문장",',
+        '  "include": true|false,',
+        '  "subject_company": "위 회사 목록 중 정확한 이름 하나 (해당 없으면 null)",',
+        '  "esg_dimensions": ["E"/"S"/"G" 중 해당하는 것들, 없으면 []],',
+        '  "scope": "domestic" | "overseas" | "mixed" | "unknown",',
+        '  "label": "POSITIVE" | "NEGATIVE" | "NEUTRAL" | "N/A",',
+        '  "reason": "판단 근거를 한 문장으로",',
         '  "key_phrases": ["판단 근거가 된 기사 원문 표현 2~4개"]',
         '}',
+        "설명:",
+        "- include=false 인 경우 label은 \"N/A\"로 두세요.",
+        "- include=true 인 경우 label은 POSITIVE/NEGATIVE/NEUTRAL 중 하나.",
         "",
-        "# 판별할 기사",
+        "===== 판별할 기사 =====",
         "제목: " + (title or ""),
         "본문: " + (content or ""),
     ])
-    raw = _call_gemini(prompt)
-    if raw is None:
-        return None
-    data = _extract_json_block(raw)
-    if not isinstance(data, dict):
-        return None
-    return data
 
 
 def analyze_article(title, description, article_url):
-    """관련성(Step A) → 감성(Step B) 2단계로 판별.
+    """관련성 + 감성을 한 번의 Gemini 호출로 판별.
     반환: 'POSITIVE' / 'NEGATIVE' / 'UNCERTAIN' / None(제외)
-      - None      : 대상 아님 (규칙 1~4 중 하나라도 미충족)
+      - None      : 대상 아님 또는 중립 기사
       - POSITIVE  : 대상이고, 회사에 유리한 소식
       - NEGATIVE  : 대상이고, 회사에 불리한 소식
-      - UNCERTAIN : 대상이지만 감성 판별 실패 (수동 검토 필요). 대시보드에는 저장되지만 별도 표시.
+      - UNCERTAIN : Gemini 호출 자체가 실패해 판별 불가 (수동 검토 대상, 대시보드에는 표시됨)
     """
     body_text = fetch_article_body(article_url)
 
@@ -416,26 +422,29 @@ def analyze_article(title, description, article_url):
     if not body_text:
         print("    [본문 없음] description으로 대체 판단 -> " + title[:40])
 
-    # --- Step A: 관련성 판별 ---
-    relevance = screen_relevance(title, content)
-    if relevance is None:
-        # Gemini 호출 자체가 실패 → 안전하게 제외 (기존에는 POSITIVE로 저장했으나 오분류의 원인)
-        print("    [Gemini 관련성 판별 실패] 제외 -> " + title[:40])
-        return None
+    prompt = _build_analysis_prompt(title, content)
+    raw = _call_gemini(prompt)
 
-    if not relevance.get("include"):
-        print("    [관련성 없음] " + str(relevance.get("reason", ""))[:80] + " -> " + title[:40])
-        return None
-
-    # --- Step B: 감성 판별 ---
-    sentiment = classify_sentiment(title, content, relevance)
-    if sentiment is None:
-        print("    [Gemini 감성 판별 실패] UNCERTAIN 으로 저장 -> " + title[:40])
+    if raw is None:
+        # 재시도까지 모두 실패했을 때만 이 분기에 도달.
+        # 여기서 그냥 None(제외)로 처리하면 rate limit 발생 순간부터 리포트가 텅 비어버림.
+        # → UNCERTAIN으로 저장해 대시보드에서 수동 검토할 수 있게 함.
+        print("    [Gemini 판별 실패] UNCERTAIN 으로 저장 -> " + title[:40])
         return "UNCERTAIN"
 
-    label = str(sentiment.get("label", "")).upper()
-    reason = str(sentiment.get("reason", ""))[:100]
-    phrases = sentiment.get("key_phrases") or []
+    data = _extract_json_block(raw)
+    if not isinstance(data, dict):
+        print("    [Gemini JSON 파싱 실패] UNCERTAIN 으로 저장 -> " + title[:40])
+        return "UNCERTAIN"
+
+    if not data.get("include"):
+        reason = str(data.get("reason", ""))[:80]
+        print("    [관련성 없음] " + reason + " -> " + title[:40])
+        return None
+
+    label = str(data.get("label", "")).upper()
+    reason = str(data.get("reason", ""))[:100]
+    phrases = data.get("key_phrases") or []
     phrase_str = " / ".join(str(p) for p in phrases[:3])
 
     if label == "POSITIVE":
@@ -445,11 +454,10 @@ def analyze_article(title, description, article_url):
         print("    [Gemini] 부정 -> " + title[:40] + " | 근거: " + reason + " | 표현: " + phrase_str)
         return "NEGATIVE"
     if label == "NEUTRAL":
-        # 중립 기사는 저장하지 않음 (대시보드는 긍정/부정만 표시하는 구조)
         print("    [Gemini] 중립 제외 -> " + title[:40] + " | 근거: " + reason)
         return None
 
-    # 라벨을 알 수 없는 경우도 UNCERTAIN
+    # 라벨 불명 (include=true인데 label이 이상한 경우)
     print("    [Gemini] 라벨 불명(" + label + ") UNCERTAIN -> " + title[:40])
     return "UNCERTAIN"
 
@@ -575,7 +583,6 @@ def collect_news_by_competitor():
                 }
                 result[company][sentiment].append(article)
                 accepted_index.append({"norm": normalize_title(title), "article": article})
-                time.sleep(0.1)
 
         for senti in ("POSITIVE", "NEGATIVE", "UNCERTAIN"):
             result[company][senti].sort(key=lambda x: x["pub_date"], reverse=True)
