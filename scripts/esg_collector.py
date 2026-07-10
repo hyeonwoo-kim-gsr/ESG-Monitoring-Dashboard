@@ -205,7 +205,7 @@ def count_retailers_in_title(title):
     return count
 
 
-def is_multi_retailer_briefing(title, threshold=3):
+def is_multi_retailer_briefing(title, threshold=6):
     """제목에 유통사가 threshold 개 이상 나열되어 있으면 True.
     '[유통딜리버리] 신세계百·이마트·BGF리테일·세븐일레븐·GS25·...' 같은
     브리핑성 종합 기사를 자동으로 걸러내기 위한 근본 방어책이다.
