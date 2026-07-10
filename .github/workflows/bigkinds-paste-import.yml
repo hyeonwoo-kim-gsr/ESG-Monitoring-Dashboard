@@ -1,1 +1,63 @@
+name: 빅카인즈 붙여넣기 배치 처리
 
+on:
+  # 붙여넣기 파일이 변경되어 main 에 push 될 때만 실행
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/data/bigkinds_paste.tsv'
+
+  # Actions 탭에서 수동 실행도 가능
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "dry-run 모드 (실제 저장 없이 결과만 확인)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  process-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 붙여넣기 배치 처리 실행
+        env:
+          # esg_collector.py 가 import 시점에 요구하는 환경변수들
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DASHBOARD_DATA_DIR: docs/data
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/bigkinds_paste_import.py --dry-run
+          else
+            python scripts/bigkinds_paste_import.py
+          fi
+
+      - name: 변경 사항 커밋 & 푸시
+        # dry-run 모드에서는 변경 사항이 없으므로 자연스럽게 skip 됨
+        run: |
+          git config user.name "bigkinds-import-bot"
+          git config user.email "bigkinds-import-bot@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "변경 사항 없음"
+          else
+            git commit -m "chore: 빅카인즈 배치 처리 결과 반영 ($(date -u +%Y-%m-%d))"
+            git push
+          fi
