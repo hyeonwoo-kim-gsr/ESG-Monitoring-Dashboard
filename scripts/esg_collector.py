@@ -79,6 +79,14 @@ TITLE_EXCLUDE_PATTERNS = [
     r"유통레이더",
     r"유통소식",
     r"유통단신",
+    r"유통딜리버리",
+    r"유통 딜리버리",
+    r"주간 유통",
+    r"주간유통",
+    r"유통 트렌드",
+    r"유통트렌드",
+    r"유통 브리핑",
+    r"유통브리핑",
     r"유통[/·]식음료",
     r"\[유통가\]",
     r"유통가[,\s]*<",
@@ -169,6 +177,41 @@ def is_excluded_by_title(title):
             print("    [제목 필터] 제외 -> " + title[:50])
             return True
     return False
+
+
+# 유통사 나열형 종합 기사 감지에 사용하는 확장 리스트.
+# COMPETITOR_NAMES에 없는 유통 관련 회사 이름들도 포함해서,
+# 여러 회사가 나열된 브리핑성 기사를 잡아냄.
+RETAIL_ORG_NAMES_FOR_COUNTING = COMPETITOR_NAMES + [
+    "GS25", "CU", "SSG닷컴", "쿠팡", "홈플러스", "롯데쇼핑",
+    "신세계", "홈앤쇼핑", "위메프", "티몬", "무신사", "올리브영",
+    "29CM", "전자랜드", "CJ대한통운", "배민", "요기요",
+    "다이소", "농협하나로마트", "롯데온",
+]
+
+
+def count_retailers_in_title(title):
+    """제목에 등장하는 유통 관련 회사 이름 개수를 반환.
+    긴 이름을 우선적으로 매칭해 부분 문자열 중복 카운트를 방지한다.
+    (예: '이마트24'가 들어있으면 '이마트'는 별개로 세지 않음)
+    """
+    remaining = title
+    count = 0
+    # 긴 이름부터 매칭하여 겹치는 부분 문자열 중복 카운트 방지
+    for name in sorted(set(RETAIL_ORG_NAMES_FOR_COUNTING), key=len, reverse=True):
+        while name in remaining:
+            count += 1
+            remaining = remaining.replace(name, " ", 1)
+    return count
+
+
+def is_multi_retailer_briefing(title, threshold=3):
+    """제목에 유통사가 threshold 개 이상 나열되어 있으면 True.
+    '[유통딜리버리] 신세계百·이마트·BGF리테일·세븐일레븐·GS25·...' 같은
+    브리핑성 종합 기사를 자동으로 걸러내기 위한 근본 방어책이다.
+    """
+    n = count_retailers_in_title(title)
+    return n >= threshold
 
 
 def title_has_competitor(title):
@@ -370,16 +413,37 @@ def _build_analysis_prompt(title, content):
         "",
         "===== (2) 감성 판별 규칙 (관련 기사에 한해) =====",
         "",
-        "## NEGATIVE (불리) — 아래 신호가 하나라도 명확하면 NEGATIVE:",
+        "## 가장 중요한 원칙: 방향성 판별 (반드시 먼저 확인)",
+        "",
+        "부정적으로 보이는 단어(사죄·반성·절도·피해·사고·논란 등)가 등장했을 때,",
+        "그 단어의 주체와 대상이 무엇인지를 반드시 먼저 파악하세요.",
+        "",
+        "구조 A) 회사가 잘못을 저지르거나 회사에 나쁜 일이 일어남 → NEGATIVE",
+        "  예: 회사가 소비자를 속임, 회사가 제재를 받음, 회사 제품에 사고 발생",
+        "  예: '이마트, 제품 결함으로 리콜' → NEGATIVE",
+        "",
+        "구조 B) 외부에서 발생한 사건을 회사가 사회공헌 등으로 승화 → POSITIVE",
+        "  예: 소비자가 과거 잘못을 뉘우치며 회사에 보상금을 보냈고, 회사가 이를 기부로 환원",
+        "  예: 지역사회의 어려움을 회사가 후원으로 해결",
+        "  예: '이마트, 소비자 사죄 편지·보상금 기부단체에 전달' → POSITIVE (미담)",
+        "",
+        "구조 C) 회사가 스스로 반성·사과 → 사안에 따라 판단",
+        "  회사가 자기 잘못을 인정하며 사과문을 냈다면 NEGATIVE (문제 발생이 원인)",
+        "  단, 회사가 이를 계기로 개선 프로그램을 발표한 것이 기사 중심이면 POSITIVE 가능",
+        "",
+        "핵심: '누가 누구에게 무엇을 했는가'의 화살표 방향이 회사→피해자 인지, 외부→회사 인지",
+        "반드시 구분하세요. 단어만 보고 판단하지 마세요.",
+        "",
+        "## NEGATIVE (불리) — 아래 신호가 하나라도 명확하고 회사가 유발/책임 주체이면 NEGATIVE:",
         "- 감독기관 제재·조사·과징금·고발 (공정위·금감원·국세청·검찰·경찰)",
         "- 유죄 판결, 소송, 법원 판결, 벌금",
         "- 갑질, 불공정 거래, 하도급 위반, 담합, 부당한 판촉비 전가",
         "- 횡령, 배임, 내부통제 실패, 은폐, 회계 부정",
         "- 협력사·가맹점주 반발, 노조 요구, 파업",
-        "- 소비자 피해, 리콜, 불매, 안전사고, 사망 사고",
+        "- 회사가 원인이 된 소비자 피해, 리콜, 불매, 안전사고, 사망 사고",
         "- 오너 리스크, CEO 리더십 비판, 준법경영 실패",
         "- 부정 등급/평가, 인증 취소, 상장폐지 우려",
-        "- 기사 논조가 문제 지적·의혹 제기·비판적 분석",
+        "- 기사 논조가 회사에 대한 문제 지적·의혹 제기·비판적 분석",
         "",
         "## POSITIVE (유리) — 아래 신호가 명확하면 POSITIVE:",
         "- 수상, 인증 획득, 등급 상향",
@@ -387,7 +451,9 @@ def _build_analysis_prompt(title, content):
         "- 협약, MOU, 파트너십 체결",
         "- 실질적 성과 발표 (탄소배출량 감축 달성 등)",
         "- 지속가능경영보고서 발간, 위원회 신설 등 지배구조 개선",
-        "- 기사 논조가 성과 소개·모범 사례로 우호적",
+        "- 기부, 후원, 취약계층 지원, 상생 프로그램 운영",
+        "- 외부 사건을 사회공헌·기부·상생 활동으로 승화한 미담",
+        "- 기사 논조가 성과 소개·모범 사례·미담으로 우호적",
         "",
         "## NEUTRAL — 위 어디에도 명확히 해당하지 않는 사실 전달 기사 (저장하지 않음)",
         "",
@@ -395,9 +461,12 @@ def _build_analysis_prompt(title, content):
         "1. 표면 단어에 속지 마세요. '준법경영', '동반성장', '컴플라이언스', '최우수', '지속가능'이 나와도 그 단어가 등장한 맥락을 봐야 합니다.",
         "   예: '준법경영을 강조했지만 실제로는 위반 사례가 잇따르고 있다' → NEGATIVE",
         "   예: '최우수 등급을 유지해왔는데 이번 판결로 등급 추락 가능성이 있다' → NEGATIVE",
-        "2. 제목 표현: '[단독]', '바람 잘 날 없는', '영이 안 선다', '허점', '흔들', '논란', '의혹' → 부정 신호",
-        "3. 좋은/나쁜 소식이 섞여 있으면, 기사의 중심 메시지 기준으로 판단",
-        "4. 회사 측의 해명·반론이 인용되어도 기사 전체가 문제 제기 성격이면 NEGATIVE",
+        "2. 반대로, 부정적 단어가 있어도 회사가 그 대상이 아닌 경우에 주의하세요.",
+        "   예: '절도·사죄·반성' 같은 단어가 있어도, 회사는 오히려 그것을 사회공헌으로 승화한 주체 → POSITIVE",
+        "   예: '피해자 돕는 이마트' → POSITIVE (회사가 피해자를 지원한 것)",
+        "3. 제목 표현: '[단독]', '바람 잘 날 없는', '영이 안 선다', '허점', '흔들', '논란', '의혹' → 부정 신호",
+        "4. 좋은/나쁜 소식이 섞여 있으면, 기사의 중심 메시지 기준으로 판단",
+        "5. 회사 측의 해명·반론이 인용되어도 기사 전체가 회사에 대한 문제 제기 성격이면 NEGATIVE",
         "",
         "===== 출력 형식 =====",
         "다음 JSON만 반환하세요. 다른 텍스트는 절대 포함하지 마세요.",
@@ -406,13 +475,14 @@ def _build_analysis_prompt(title, content):
         '  "subject_company": "위 회사 목록 중 정확한 이름 하나 (해당 없으면 null)",',
         '  "esg_dimensions": ["E"/"S"/"G" 중 해당하는 것들, 없으면 []],',
         '  "scope": "domestic" | "overseas" | "mixed" | "unknown",',
+        '  "direction": "회사가 잘못/문제를 유발" | "회사에 나쁜 일이 발생" | "회사가 좋은 일을 함" | "외부 사건을 회사가 미담으로 승화" | "해당 없음",',
         '  "label": "POSITIVE" | "NEGATIVE" | "NEUTRAL" | "N/A",',
-        '  "reason": "판단 근거를 한 문장으로",',
+        '  "reason": "판단 근거를 한 문장으로 (특히 방향성 판단을 명시)",',
         '  "key_phrases": ["판단 근거가 된 기사 원문 표현 2~4개"]',
         '}',
         "설명:",
-        "- include=false 인 경우 label은 \"N/A\"로 두세요.",
-        "- include=true 인 경우 label은 POSITIVE/NEGATIVE/NEUTRAL 중 하나.",
+        "- include=false 인 경우 label과 direction은 각각 \"N/A\", \"해당 없음\"으로 두세요.",
+        "- include=true 인 경우 direction과 label을 반드시 채우세요.",
         "",
         "===== 판별할 기사 =====",
         "제목: " + (title or ""),
@@ -460,14 +530,16 @@ def analyze_article(title, description, article_url):
 
     label = str(data.get("label", "")).upper()
     reason = str(data.get("reason", ""))[:100]
+    direction = str(data.get("direction", ""))[:40]
     phrases = data.get("key_phrases") or []
     phrase_str = " / ".join(str(p) for p in phrases[:3])
+    dir_suffix = " | 방향: " + direction if direction and direction != "해당 없음" else ""
 
     if label == "POSITIVE":
-        print("    [Gemini] 긍정 -> " + title[:40] + " | 근거: " + reason)
+        print("    [Gemini] 긍정 -> " + title[:40] + " | 근거: " + reason + dir_suffix)
         return "POSITIVE"
     if label == "NEGATIVE":
-        print("    [Gemini] 부정 -> " + title[:40] + " | 근거: " + reason + " | 표현: " + phrase_str)
+        print("    [Gemini] 부정 -> " + title[:40] + " | 근거: " + reason + dir_suffix + " | 표현: " + phrase_str)
         return "NEGATIVE"
     if label == "NEUTRAL":
         print("    [Gemini] 중립 제외 -> " + title[:40] + " | 근거: " + reason)
@@ -555,6 +627,13 @@ def collect_news_by_competitor():
 
                 # 1차: 제목 패턴 필터
                 if is_excluded_by_title(title):
+                    company_seen.add(link)
+                    seen_links.add(link)
+                    continue
+
+                # 1.5차: 유통사 3개 이상 나열 (종합·브리핑 기사) 자동 제외
+                if is_multi_retailer_briefing(title):
+                    print("    [종합 기사] 유통사 " + str(count_retailers_in_title(title)) + "개 나열 제외 -> " + title[:50])
                     company_seen.add(link)
                     seen_links.add(link)
                     continue
