@@ -969,7 +969,7 @@
     "title": "롯데홈쇼핑, 보호아동 위한 '작은도서관 101호' 개관…친환경 독서·학습...",
     "description": "롯데홈쇼핑은 ESG 슬로건인 '오늘 실천하면 달라지는 내일'을 바탕으로 다양한 사회공헌 활동을 전개하고 있다. 2013년부터 구세군한국군국과 함께 추진 중인 '작은도서관' 사업은 미래세대가 책을 통해 배우고 꿈을 키울...",
     "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065576125797435",
-    "related_count": 6
+    "related_count": 3
   },
   {
     "date": "2026-07-10",
@@ -1015,5 +1015,50 @@
     "description": "박채영 BGF리테일 ESG팀장은 \"전국 물류 인프라와 CU 네트워크를 기반으로 하는 생활 플랫폼으로서 '우리 사회에 좋은 친구'라는 기업 정신을 실천해 나갈 것\"이라고 말했다.",
     "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=266119",
     "related_count": 3
+  },
+  {
+    "date": "2026-07-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 동자동 쪽방촌에 3000여 개 긴급 구호물품 지원",
+    "description": "BGF리테일은 7월 12일 서울역 인근 동자동 쪽방촌 주민들을 돕기 위해 음료와 과자 등 3000여 개 분량의... 박채영 ESG팀장은 폭염이 취약계층의 생명과 직결되는 중대한 재난이라는 점을 상기시키며, 지자체 및...",
+    "link": "http://www.ttlnews.com/news/articleView.html?idxno=3124833",
+    "related_count": 4
+  },
+  {
+    "date": "2026-07-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "CU 운영사 BGF리테일, 폭염 앞두고 쪽방촌에 손길... 민간기업 중 유일하...",
+    "description": "박채영 BGF리테일 ESG팀장은 폭염이 취약계층의 생명과 직결되는 문제인 만큼 관계기관과의 협력을 통한 빠른 대응이 중요하다고 강조했다. 이어 전국 물류망과 CU 매장 네트워크를 바탕으로 도움이 필요한 곳에 가장...",
+    "link": "https://www.tournews21.com/news/articleView.html?idxno=138423",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-13",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, NCSI TV홈쇼핑 부문 5년 연속 1위",
+    "description": "현대홈쇼핑은 고객 중심의 서비스 혁신과 운영 개선, ESG 경영 실천 등에서 높은 평가를 받았다. 특히 상담원 전용 AI 챗봇을 도입해 문의 처리 속도를 높이고 대기 시간을 줄이는 등 상담 품질을 개선했으며 온라인몰...",
+    "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=519728",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-13",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 저스피스재단과 세계유산기금 모금 캠페인 협력",
+    "description": "저스피스재단은 글로벌 아티스트 지드래곤(G-DRAGON)의 저작권 기부를 바탕으로 설립된 공익재단이다. 롯데백화점은 지난 10일, 재단과 MOU(업무협약)을 체결했다. 세계유산보호의 가치를 알리고 이에 대한 사회적 관심을...",
+    "link": "https://n.news.naver.com/mnews/article/016/0002669237?sid=101",
+    "related_count": 4
+  },
+  {
+    "date": "2026-07-12",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점 김해점, 김해시미래인재장학재단에 3000만 원 기탁",
+    "description": "김해점은 초록우산 어린이재단에도 매년 5000만 원 희망장학금을 전달하는 등 지역사회 공헌과 상생에... 사회적 책무\"라며 \"지역사회와 함께 성장하며 김해시와 상생하는 신세계백화점 김해점이 되겠다\"고 말했다.",
+    "link": "https://www.idomin.com/news/articleView.html?idxno=2009910",
+    "related_count": 4
   }
 ]
