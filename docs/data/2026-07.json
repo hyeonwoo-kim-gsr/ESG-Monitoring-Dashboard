@@ -1275,7 +1275,7 @@
     "title": "GS리테일, 폭염 취약계층에 영양식 지원",
     "description": "박경량 GS리테일 ESG파트장은 \"GS리테일은 지역사회와 함께 성장하는 기업으로서 폭염 취약계층의 생활 안정에 실질적인 도움이 되는 사회공헌활동을 지속적으로 확대해 나가겠다\"며 \"앞으로도 환경재단과 함께 기후격차...",
     "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5041144",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-07-15",
@@ -1329,7 +1329,7 @@
     "title": "세븐일레븐, 세종 36개 점포 '무더위·한파쉼터'로 운영",
     "description": "세븐일레븐은 지역사회 연계 ESG 활동도 이어가고 있다. 지난 4월 경영주와 임직원, 협력업체가 참여한 지역 농가 상생 프로그램을 통해 수확물을 지역 아동센터에 기부했으며, 어린이날에는 보바스병원 환아를 위한 나눔...",
     "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=126966",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-07-15",
@@ -1428,6 +1428,105 @@
     "title": "[리테일 인사이드] 쿠팡·배민·GS리테일·신세계百·현대百...\"디지털 전...",
     "description": "서울시 종로구 돈의동 온기창고에서 취약계층 여름나기 물품 전달식을 마치고 박경랑 GS리테일 ESG파트장... 15일 서울시 양천구 현대백화점 목동점 지하 2층 식품관에서 직원들이 '장호준의 명품게우 통전복죽'을...",
     "link": "http://www.kdfnews.com/news/articleView.html?idxno=185229",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-17",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24, 한국콘텐츠진흥원과 맞손...콘텐츠IP 협업 확대",
+    "description": "발굴과 상생 협력기반 조성 등을 위해 긴밀히 협력하기로 했다. 이마트24는 국내 우수 캐릭터 및 콘텐츠IP를 활용한 상품을 개발하고, 자사 유통망과 마케팅 노하우를 바탕으로 콘텐츠IP의 사업화를 적극 지원할...",
+    "link": "https://www.slist.kr/news/articleView.html?idxno=752389",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-17",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24-콘진원, 국내 콘텐츠 산업 성장 지원 위해 업무협약",
+    "description": "발굴과 상생 협력 기반 조성을 위해 협력하기로 했다. 이마트24는 국내 우수 캐릭터 및 콘텐츠 IP를 활용한 상품을 개발하고, 편의점 유통망과 마케팅 노하우를 바탕으로 콘텐츠 IP의 사업화를 지원할 계획이다. 최진일...",
+    "link": "https://n.news.naver.com/mnews/article/001/0016200156?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트 '암각화 고래밥' 출시…지역문화 마케팅 확대",
+    "description": "이번 상품은 반구천의 암각화에 새겨진 고래 문양과 오리온의 대표 스낵인 고래밥을 결합한 지역상생... 이마트24는 지난해 문화체육관광부의 지역문화 활성화 사업인 '로컬100'과 연계한 스탬프투어를 운영했다....",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2114851",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 23일 신세계푸드와 포괄적 주식교환 마무리, 완전 자회사 편입",
+    "description": "5031313주를 받기로 했다. 이마트는 앞서 자회사와 중복 상장 구조를 해소하고, 지배구조를 단순화해 의사 결정 효율성을 높이기 위해 포괄적 주식교환 방식으로 신세계푸드를 완전 자회사로 편입한다고 밝혔다.",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=442563",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-16",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "7천년 전 암각화가 ‘고래밥’ 봉지에?…롯데마트, 울산 상생 스낵 출시",
+    "description": "지난해부터 이어온 롯데마트·슈퍼 지역상생 프로젝트의 세 번째 협업 상품으로, 부산광역시·강원특별자치도에 이어 올해는 울산을 대표하는 세계유산 '반구천의 암각화'를 소재로 삼았다. 이번 협업은 반구천의...",
+    "link": "https://n.news.naver.com/mnews/article/117/0004085347?sid=103",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 지역 상생 상품 확대… 울산 세계유산 담은 '고래밥' 단...",
+    "description": "업계에서는 ESG 경영과 지역 상생에 대한 소비자 관심이 높아지면서 이러한 협업이 더욱 다양해질 것으로 전망하고 있다. 이화석 롯데마트·슈퍼 기호식품팀 MD는 \"울산의 상징인 '고래'를 키워드로 가장 울산다운 상생...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=203951",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 장바구니 물가 잡고 농업인도 돕는 '농할' 할인전 진행",
+    "description": "현대홈쇼핑 관계자는 \"국산 농축산물 소비 촉진과 함께 고객에게 실질적인 혜택을 제공하기 위해 이번 행사를 진행하게 됐다\"며 \"앞으로도 고객 수요에 부합하는 혜택을 마련하고 상생 협력을 위해 꾸준히 노력하겠다\"고...",
+    "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=266870",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "\"장바구니 물가 부담 완화\"···현대홈쇼핑, 국산 농축산물 할인 행사 ...",
+    "description": "현대홈쇼핑 관계자는 \"이번 행사는 국산 농축산물 소비 촉진과 함께 고객에게 실질적인 혜택을 제공하기 위해 진행하게 됐다\"며 \"앞으로도 고객 수요에 부합하는 다양한 혜택을 마련하고 상생 협력을 위해 지속적으로...",
+    "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2449799",
+    "related_count": 3
+  },
+  {
+    "date": "2026-07-15",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "알짜 홈쇼핑 품는 지주사… 현대백화점그룹 '투자 사령탑' 띄운다",
+    "description": "현대백화점그룹 측은 이번 개편에 대해 \"현대홈쇼핑은 미디어 환경 변화와 고객 구조 변화 등으로 본업을... 이번 지배구조 개편이 그룹 차원의 투자 확대와 맞물려 사업 확장으로 이어질지 관심이 쏠린다.신사업 추진을...",
+    "link": "https://www.asiatoday.co.kr/kn/view.php?key=20260716010005952",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "CJ온스타일",
+    "sentiment": "UNCERTAIN",
+    "title": "[유통가 오늘] CJ프레시웨이ㆍ현대홈쇼핑ㆍ하이트진로ㆍ홈앤쇼핑",
+    "description": "이에 CNB뉴스가 16일 하루 동안 온·오프라인에서 일어난 유통업계 전반의 다양한 소식들을 엄선해 전합니다. <편집자주> CJ프레시웨이, '맛남상생' 캠페인 통해 고창수박 판로 확대 지원 CJ프레시웨이는 고창군과 협력해...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1008388",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-16",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "천기옥 울산 동구청장, 현대백화점 동구점 복합개발 논의",
+    "description": "현대백화점의 전신인 울산점 동구지점을 민간임대주택과 상업시설로 변경하는 사업과 관련해 천기옥 울산... 이 같은 소식에 지역 사회 일각에서는 유감을 표명하고 주민 쇼핑권 보장과 상권 상생을 위한 공식 논의기구...",
+    "link": "https://n.news.naver.com/mnews/article/014/0005549289?sid=102",
     "related_count": 1
   }
 ]
