@@ -1536,7 +1536,7 @@
     "title": "이마트24·콘진원, 콘텐츠 IP 업무협약",
     "description": "양측은 중소 콘텐츠 기업의 우수 지식재산(IP)을 활용한 상품 개발, 유통사 협업을 통한 사업화와 유통망 구축, 우수 콘텐츠 IP 발굴 및 상생 협력 기반 조성 등을 추진하기로 했다. 최진일 이마트24 대표(오른쪽)는...",
     "link": "https://n.news.naver.com/mnews/article/015/0005311096?sid=102",
-    "related_count": 5
+    "related_count": 4
   },
   {
     "date": "2026-07-18",
@@ -1545,7 +1545,7 @@
     "title": "현대홈쇼핑, '농할' 행사 진행…국산 농축산물 최대 20% 할인",
     "description": "현대홈쇼핑 관계자는 \"국산 농축산물 소비 촉진과 함께 고객에게 실질적인 혜택을 제공하기 위해 이번 행사를 진행하게 됐다\"며 \"앞으로도 고객 수요에 부합하는 혜택을 마련하고 상생 협력을 위해 지속적으로...",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=311594",
-    "related_count": 4
+    "related_count": 1
   },
   {
     "date": "2026-07-19",
@@ -1554,6 +1554,33 @@
     "title": "정지영의 현대백화점, 매출은 늘리고 탄소는 줄였다",
     "description": "◆LED 조명 하나로 시작된 탄소 감축, 그 3년의 기록 현대백화점은 2025년 국가 온실가스 감축목표에 맞춰 2030년 및 2050년 온실가스 배출량 감축 목표를 상향 조정했고, 2035년 중기 목표도 새로 수립했다. ESG...",
     "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=362228",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "\"현업 과제 풀 AI 찾았다\"…GS리테일, 5개 스타트업과 디지털 전환 맞손",
+    "description": "GS리테일이 유통 산업의 체질을 개선하고 일선 사업 현장의 당면 과제를 해결하기 위해 인공지능(AI)... 퓨처 리테일을 유통 현업의 고충 해결과 실제 사업 적용을 가장 빠르고 정교하게 잇는 독보적인 상생 플랫폼으로...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=82529",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "코트라, 롯데홈쇼핑과 LA서 'K-뷰티·라이프스타일 팝업스토어' 운영",
+    "description": "대한무역투자진흥공사(코트라)는 롯데홈쇼핑과 함께 '유통기업 해외진출 지원사업'의 일환으로 7월 17일... 위한 '환경·사회·지배구조(ESG) 실무역량 강화·코칭 과정'을 운영한다. 코트라 무역투자24 누리집 등을 통해...",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=847573",
+    "related_count": 3
+  },
+  {
+    "date": "2026-07-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "코트라·롯데홈쇼핑, LA에 K브랜드 수출 플랫폼 구축",
+    "description": "com 코트라는 롯데홈쇼핑과 함께 '유통기업 해외진출 지원사업'의 일환으로 7월 17일부터 8월 15일까지 미국... 강경성 코트라 사장은 \"유통기업의 해외 진출과 함께 중소 K-소비재 기업의 판로를 넓히는 상생형 지원 모델...",
+    "link": "https://www.ajunews.com/view/20260720084357049",
     "related_count": 1
   }
 ]
