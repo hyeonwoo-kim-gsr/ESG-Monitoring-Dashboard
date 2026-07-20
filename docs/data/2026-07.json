@@ -1572,7 +1572,7 @@
     "title": "코트라, 롯데홈쇼핑과 LA서 'K-뷰티·라이프스타일 팝업스토어' 운영",
     "description": "대한무역투자진흥공사(코트라)는 롯데홈쇼핑과 함께 '유통기업 해외진출 지원사업'의 일환으로 7월 17일... 위한 '환경·사회·지배구조(ESG) 실무역량 강화·코칭 과정'을 운영한다. 코트라 무역투자24 누리집 등을 통해...",
     "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=847573",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-07-20",
@@ -1582,5 +1582,50 @@
     "description": "com 코트라는 롯데홈쇼핑과 함께 '유통기업 해외진출 지원사업'의 일환으로 7월 17일부터 8월 15일까지 미국... 강경성 코트라 사장은 \"유통기업의 해외 진출과 함께 중소 K-소비재 기업의 판로를 넓히는 상생형 지원 모델...",
     "link": "https://www.ajunews.com/view/20260720084357049",
     "related_count": 1
+  },
+  {
+    "date": "2026-07-20",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "점포 줄고 해지 늘고…이마트24·세븐일레븐 가맹점 유지 '빨간불'",
+    "description": "GS리테일은 계약 만료 시기와 점포 재배치 전략 등에 따라 명의변경 규모에 연도별 차이가 발생할 수... 2024년 정보공개서 기준 CU는 상생지원 협약을 체결한 24시간 운영 점포에 월 최대 50만원, 비24시간 운영...",
+    "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166059",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-20",
+    "company": "세븐일레븐",
+    "sentiment": "NEGATIVE",
+    "title": "공정위, ‘가맹업법 위반 혐의’ 이마트24·CU·세븐일레븐·GS25 현장조...",
+    "description": "공정거래위원회가 이마트24·CU·세븐일레븐·GS25의 가맹거래사업법 위반 혐의에 대해 현장조사에 착수한... 당시 편의점 4사는 문제가 된 행동을 고치고 납품업체와 상생하기 위해 83억원을 내놓겠다면서 동의의결을...",
+    "link": "https://n.news.naver.com/mnews/article/366/0001180433?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-21",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24, 폭염·한파 속 배달라이더 모바일 금액권 지원 확대",
+    "description": "확대하면서 ESG 경영과 공공성 강화 경쟁이 본격화하는 모습이다. 배달라이더들은 지급받은 모바일 금액권을 활용해 전국 이마트24 매장에서 음료와 먹거리 등을 구매하며 휴식을 취할 수 있다. 주류·담배·서비스...",
+    "link": "https://n.news.naver.com/mnews/article/421/0009069502?sid=101",
+    "related_count": 3
+  },
+  {
+    "date": "2026-07-20",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 신세계푸드 흡수합병 마무리…완전자회사 편입 후 '시너지' 본격...",
+    "description": "주식교환이 완료되면 신세계푸드는 이마트의 100% 자회사가 되며, 이후 자발적 상장폐지 절차를 밟는다. 업계에서는 이번 완전자회사 편입의 가장 큰 의미로 지배구조 단순화를 꼽는다. 상장 자회사 체제에서는...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=345414",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-21",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 美 LA에 '작은도서관' 조성",
+    "description": "한편, 롯데홈쇼핑은 ESG 슬로건 '오늘 실천하면 달라지는 내일' 아래 다양한 사회공헌 활동을 이어가고 있다. 2013년부터 구세군 한국군국과 함께 '작은도서관' 사업을 운영하며 전국 도서관, 지역아동센터, 특수학교 등에...",
+    "link": "https://n.news.naver.com/mnews/article/277/0005792191?sid=101",
+    "related_count": 6
   }
 ]
