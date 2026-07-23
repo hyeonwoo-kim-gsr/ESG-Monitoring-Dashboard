@@ -1662,7 +1662,7 @@
     "title": "\"편의점서 쉬고 충전하세요\"…이마트24, 배달라이더 지원 확대",
     "description": "이마트24는 단순한 금액권 지원을 넘어 전국 점포 네트워크를 활용한 생활밀착형 ESG 활동을 강화한다는 계획이다. 배달라이더의 안전한 근무 환경 조성과 휴식 문화 확산에도 기여하겠다는 방침이다. 이마트24...",
     "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065596363238098",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-07-21",
@@ -1671,7 +1671,7 @@
     "title": "제6회 유통상생대회 개최…현대百·이마트·11번가·롯데온 상생 우수기...",
     "description": "올해는 현대백화점과 이마트가 공정거래위원장 표창을, 11번가가 국회 정무위원장 표창을, 롯데온이... 시장에서는 유통기업들의 상생 활동이 ESG 경영의 일환을 넘어 중소기업의 온라인 판로 확대와 유통 생태계 경쟁력...",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=312047",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-07-22",
@@ -1716,6 +1716,69 @@
     "title": "신세계백화점, 제주 제철 먹거리 특집 행사 진행",
     "description": "이번 행사는 제주의 제철 식재료와 생산자 이야기를 함께 소개하는 지역 상생 미식 프로젝트로 마련됐다. 신세계백화점은 지난해 제주특별자치도와 업무협약을 맺고 제주 식문화와 생산자 콘텐츠를 지속 선보이고 있다....",
     "link": "https://n.news.naver.com/mnews/article/421/0009071498?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-22",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 해양환경 보호·자원순환 문화 확산 앞장",
+    "description": "이창열 이마트 ESG 담당은 \"가플지우는 생활 속 플라스틱 수거부터 자원순환, 해안 정화 활동까지 연결하는 고객 참여형 ESG 플랫폼\"이라며 \"앞으로도 전국 다양한 지역에서 해양환경 보호 활동을 이어가고 다양한...",
+    "link": "https://n.news.naver.com/mnews/article/009/0005710755?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-22",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 직원가족과 함께하는 농촌체험 프로그램",
+    "description": "지난 7월 4~5일 강원도 영월군에서 진행된 이번 프로그램은 롯데마트·슈퍼가 추진 중인 ESG(환경·책임·투명경영) 프로젝트 '상생씨앗'의 일환으로 마련됐다. 임직원과 가족은 프로그램을 통해 우리 농산물의 가치와 친환경...",
+    "link": "https://n.news.naver.com/mnews/article/009/0005710754?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-21",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 美 LA서 '작은도서관' 조성... 교육·문화 지원 나서",
+    "description": "대표 사회공헌사업인 '작은도서관'을 해외에 처음 조성했다. 지난 17일 LA한국교육원에서 진행된 전달식에는 김재겸 롯데홈쇼핑 대표를 비롯해 김영완 주LA 대한민국 총영사, 최학선 한미교육재단 이사장, 이병승...",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=133213",
+    "related_count": 3
+  },
+  {
+    "date": "2026-07-23",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 입점 상담 AI로 간소화…검토 시간 최대 80% 단축",
+    "description": "지역 상생 등 다양한 협업 아이디어를 제안할 수 있다. 별도의 회원 가입 없이 휴대전화 인증만으로 접수할 수 있으며 처리 과정과 피드백은 모바일을 통해 안내한다. 롯데백화점은 2024년 외국인 고객을 위한 'AI 통역...",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=1394354",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-22",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 유네스코 세계유산기금 모금 공식파트너로",
+    "description": "롯데백화점이 부산에서 열리는 제48차 유네스코(UNESCO) 세계유산위원회를 맞아 저스피스재단과 함께... 저스피스재단은 글로벌 아티스트 지드래곤(G-DRAGON)의 저작권 기부를 바탕으로 설립된 공익재단으로 예술을 통한...",
+    "link": "https://n.news.naver.com/mnews/article/009/0005710752?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-23",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "성남시, 현대백화점 판교서 중소기업 마켓 ‘남다른상점’ 개막",
+    "description": "성남시는 성남산업진흥원, 현대백화점 판교점, 현대그린푸드와 공동으로 중소기업 유망브랜드마켓... 지역 기업들이 소비자와 직접 소통하며 제품을 알리고, 대형 백화점 유통망으로 진출할 수 있도록 돕는 상생 플랫폼...",
+    "link": "https://www.viva100.com/article/20260723500059",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-22",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, ESG평가서 6회 연속 최고등급 'AA' 획득",
+    "description": "현대백화점이 국내 대표 ESG 평가 기관인 서스틴베스트의 ESG 평가에서 6회 연속 최고 등급인 'AA'를 획득하며 ESG 경영 모범 기업으로서의 입지를 강화하고 있다. 현대백화점은 서스틴베스트가 최근 발표한 '2026년...",
+    "link": "https://n.news.naver.com/mnews/article/009/0005710751?sid=101",
     "related_count": 1
   }
 ]
