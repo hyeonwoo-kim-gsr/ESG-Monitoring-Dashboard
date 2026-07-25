@@ -1824,7 +1824,7 @@
     "title": "롯데홈쇼핑, 美 LA에 ‘작은도서관’ 조성…K-문화 알리기 나서",
     "description": "한국교육원·한국문화원에 도서·기자재 기증…한인 청소년·현지인 문화 접점 확대 롯데홈쇼핑은 미국 로스앤젤레스(LA)에 사회공헌 사업인 ‘작은도서관’을 조성하고 한국어 교육과 문화 확산 지원에 나선다....",
     "link": "https://sateconomy.co.kr/news/view/1065595590564453",
-    "related_count": 4
+    "related_count": 1
   },
   {
     "date": "2026-07-24",
@@ -1851,6 +1851,24 @@
     "title": "성남시, 지역 중소기업 판로 확대···현대백화점 판교점서 '남다른상...",
     "description": "성남시는 지역 중소기업의 판로 확대를 지원하기 위해 성남산업진흥원, 현대백화점 판교점... 지역 기업들이 소비자와 직접 만나 제품을 홍보하고 판매할 수 있도록 지원하며, 백화점 유통망 진출 기회를 넓히는 상생...",
     "link": "https://www.kmaeil.com/news/articleView.html?idxno=646421",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-23",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24, 폭염·한파 배달라이더 쉼터 전국 확대",
+    "description": "이마트24 관계자는 \"3년 연속 배달라이더 지원 사업을 이어오며 폭염과 한파 속에서 일하는 라이더들에게 실질적인 도움이 될 수 있도록 지원 범위를 확대했다\"며 \"앞으로도 편의점 인프라를 활용한 다양한 사회공헌...",
+    "link": "https://www.namdonews.com/news/articleView.html?idxno=917834",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-24",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "탱크데이·물류센터 화재…이마트·쿠팡, 예상 밖 악재에 실적 먹구름",
+    "description": "단기적으로는 비용 부담이 늘어나겠지만 장기적으로는 물류 운영 안정성과 ESG 경영 측면에서 필요한 투자라는 평가가 나온다. 시장에서는 두 기업의 악재를 같은 잣대로 보기 어렵다는 시각도 적지 않다. 이마트의 경우...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=345881",
     "related_count": 1
   }
 ]
