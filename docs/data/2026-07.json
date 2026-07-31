@@ -2095,5 +2095,59 @@
     "description": "이투데이=호남취재본부 조경환 기자 | “지역 소외계층 위한 사회공헌 이어갈 것” 롯데백화점 전주점이 취약계층 아동의 독서 지원에 나서며 지역사회에 따뜻한 온기를 전하고 있다. 30일 롯데백화점 전주점에 따르면...",
     "link": "https://www.etoday.co.kr/news/view/2608998",
     "related_count": 1
+  },
+  {
+    "date": "2026-07-30",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 오늘] BGF리테일ㆍ롯데GRSㆍBBQㆍ이마트",
+    "description": "BBQ, 올해 7개월간 치킨 1만 5000마리 기부…전국 11개 지역에 온기 전해 국내 최대 치킨 프랜차이즈 제너시스BBQ 그룹은 '치킨대학 착한기부', '패밀리와 함께하는 치킨릴레이', '찾아가는 치킨릴레이' 등 사회공헌 활동을...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1009797",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "농촌진흥청·세븐일레븐, 지역 농산물 활용 에이드 3종 출시",
+    "description": "농촌진흥청과 세븐일레븐은 2021년 업무협약을 체결한 이후 천혜향, 딸기, 추황배 등을 활용한 음료 10여 종을 선보였다. 이 사업은 지난해 농림축산식품부와 한국농수산식품유통공사(aT)의 농업-기업 간 상생협력...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202607301927458029f4ab64559d_12",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 지역상생 음료 1200만개 팔렸다... 농가 판로 확대 '성과'",
+    "description": "선신정 세븐일레븐 커뮤니케이션팀 ESG담당은 \"농촌진흥청과의 지속적인 협력을 통해 지역 농가에는 안정적인 판로를 제공하고 고객에게는 가치소비의 기회를 확대하고자 이번 상생 프로모션을 기획했다\"며 \"앞으로도...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=204980",
+    "related_count": 1
+  },
+  {
+    "date": "2026-07-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 농진청과 지역 농산물 판로 확대…상생 프로모션 진행",
+    "description": "선신정 세븐일레븐 커뮤니케이션팀 ESG담당은 \"앞으로도 국내 우수 농산물을 활용한 차별화 상품 개발과 다양한 상생 활동을 통해 ESG 경영을 지속적으로 실천해 나갈 것\"이라고 말했다.",
+    "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=127615",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-29",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"중기와의 동행\" 세븐일레븐 '델리황 황태칩'",
+    "description": "세븐일레븐은 환경·사회·지배구조(ESG) 경영을 실천하고자 지난 4월 편의점 업계에서 유일하게 동행축제에 참여했다. 30일 출시되는 델리황 황태칩은 헬시플레저 트렌드를 반영한 고단백·저당 스낵이다. 황태를 두 번...",
+    "link": "https://n.news.naver.com/mnews/article/018/0006338815?sid=101",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-30",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 전주점, 전주시에 300만원 기탁",
+    "description": "롯데백화점 전주점은 사회적 약자 후원금 전달 외에도 소상공인과 함께하는 지역 상생 플리마켓 운영, 지역 환경정화 활동 등 사회공헌 활동을 실천하고 있다.",
+    "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=853559",
+    "related_count": 2
   }
 ]
