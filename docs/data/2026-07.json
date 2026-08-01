@@ -2130,7 +2130,7 @@
     "title": "세븐일레븐, 농진청과 지역 농산물 판로 확대…상생 프로모션 진행",
     "description": "선신정 세븐일레븐 커뮤니케이션팀 ESG담당은 \"앞으로도 국내 우수 농산물을 활용한 차별화 상품 개발과 다양한 상생 활동을 통해 ESG 경영을 지속적으로 실천해 나갈 것\"이라고 말했다.",
     "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=127615",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-07-29",
@@ -2149,5 +2149,41 @@
     "description": "롯데백화점 전주점은 사회적 약자 후원금 전달 외에도 소상공인과 함께하는 지역 상생 플리마켓 운영, 지역 환경정화 활동 등 사회공헌 활동을 실천하고 있다.",
     "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=853559",
     "related_count": 2
+  },
+  {
+    "date": "2026-07-31",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "농진청-세븐일레븐, 딸기·천혜향 등 지역농산물 활용 음료 출시",
+    "description": "농촌진흥청은 지역특화 농산물을 활용한 '지역 상생 에이드 무설탕·무가당' 음료 3종을 전국 세븐일레븐 매장에 선보였다고 31일 밝혔다. 이번에 출시된 음료는 ▲ 세븐셀렉트 명인 딸기 에이드 제로슈거 ▲ 세븐셀렉트...",
+    "link": "https://n.news.naver.com/mnews/article/001/0016226151?sid=101",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "남서울대, 롯데마트 성정점서 탄소중립 조형물 전시회 성료",
+    "description": "남서울대학교는 지난 27일부터 31일까지 롯데마트 성정점 1층에서 '예술로 잇는 탄소중립' 전시회를... 한편, 남서울대 앵커사업단은 천안시와 협력해 탄소중립 시민교육, 전문가 양성, ESG 교육, 기업 컨설팅 등 다각도의...",
+    "link": "http://www.dtnews24.com/news/articleView.html?idxno=813864",
+    "related_count": 2
+  },
+  {
+    "date": "2026-07-31",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 장애가정 장학사업 확대...ESG 경영 박차",
+    "description": "유통 업계 관계자는 \"현대홈쇼핑의 ESG 전략은 홈쇼핑 사업 과정의 환경 부담은 줄이고, 장애가정·청년·협력사에 대한 지원은 늘리며, 경영 의사결정의 투명성을 높이고 있다\"고 설명했다. 그러면서 \"장학사업 확대도...",
+    "link": "https://www.job-post.co.kr/news/articleView.html?idxno=222635",
+    "related_count": 5
+  },
+  {
+    "date": "2026-07-31",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[ESG 한발 더] 폭염 속 따뜻한 나눔…BBQ·빙그레·현대홈쇼핑·스타벅스...",
+    "description": "BBQ, 진천국가대표선수촌에 치킨 전달 빙그레, 해군 장병에 아이스크림 선물 현대홈쇼핑, 장애가정 대학생에 장학금 지원 스타벅스, 장애인복지관에 음료·냉풍기·냉방이불 전달 [뉴스투데이=강이슬 기자] 폭염이...",
+    "link": "https://www.news2day.co.kr/article/20260731500108",
+    "related_count": 1
   }
 ]
