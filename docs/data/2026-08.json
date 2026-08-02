@@ -7,5 +7,41 @@
     "description": "남서울대학교는 지난 27일부터 31일까지 닷새간 롯데마트 성정점 1층에서 '예술로 잇는 탄소중립' 전시회를... 한편, 남서울대 앵커사업단은 천안시와 긴밀히 협력해 탄소중립 시민교육, 전문가 양성, ESG 교육, 기업 컨설팅...",
     "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901738",
     "related_count": 3
+  },
+  {
+    "date": "2026-08-03",
+    "company": "이마트24",
+    "sentiment": "NEGATIVE",
+    "title": "핫한 건 다 하는데…이마트24 ‘적자의 벽’ 여전",
+    "description": "이마트24는 이에 대해 “본사가 기존 월회비 수입 감소를 감수하면서도 경영주와의 동반성장을 우선한 상생 조치”라고 설명했다. 이와 관련, 최근 디저트 특화점포와 라면 전문점, 프로토타입 점포 등 이색 점포를...",
+    "link": "https://www.fntimes.com/html/view.php?ud=202607312249445527dd55077bc2_18",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-02",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 햇 건고추 사전예약…'오더픽'으로 무료 제분까지",
+    "description": "이마트는 햇 건고추가 나오는 시기에 앞서 이마트앱 '오더픽'을 통해 사전예약 판매를 오는 12일까지... 농가는 출하 초기부터 안정적인 판매처를 확보할 수 있어 유통업체와 산지가 상생하는 구조를 구축했다는 평가다.",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=442166",
+    "related_count": 2
+  },
+  {
+    "date": "2026-08-03",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 홈쇼핑 브랜드평판 8월 빅데이터 분석 1위...\"사회공헌 지표...",
+    "description": "롯데홈쇼핑 브랜드의 세부 지표를 보면 참여지수 375,753, 미디어지수 374,683, 소통지수 494,353, 커뮤니티지수 404,085, 사회공헌지수 296,353을 기록했다. 특히 소통지수 494,353이 5개 세부 지표 가운데 가장 높은 수치를...",
+    "link": "http://www.thebigdata.co.kr/view.php?ud=202608030753116163d0a8833aad_23",
+    "related_count": 4
+  },
+  {
+    "date": "2026-08-03",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 현대H몰에 '경동시장' 온라인몰 입점",
+    "description": "현대홈쇼핑은 공식 온라인몰 현대H몰 내 온누리상품권 전용관인 '온누리샵'에 '경동시장 스토어'가... 온라인 제휴 네트워크를 지속 확대해 상생을 실천할 수 있는 차별화된 콘텐츠를 지속 발굴하겠다\"고 말했다.",
+    "link": "https://n.news.naver.com/mnews/article/277/0005797826?sid=101",
+    "related_count": 3
   }
 ]
