@@ -375,7 +375,7 @@
     "title": "CJ온스타일, 중소협력사·자립준비청년 지원 통합 브랜드 '온도(ON:DO)' 출...",
     "description": "결합한 ESG 프로젝트다. CJ온스타일 관계자는 \"'온도'를 통해 협력사 및 지역사회와 함께 성장하는 지속... 사회공헌 대표 프로그램인 '청년사장 루키즈 온(ON)'은 MD·PD 멘토링을 통해 자립준비청년이 상품 개발부터...",
     "link": "http://www.sisacast.kr/news/articleView.html?idxno=98595",
-    "related_count": 6
+    "related_count": 5
   },
   {
     "date": "2026-08-07",
@@ -394,5 +394,32 @@
     "description": "| 이코노미사이언스 김연옥 기자 | 현대백화점이 한국콘텐츠진흥원(콘진원)과 손잡고 국내 패션 브랜드의... 직접 만날 수 있는 기회를 확대하고, K패션의 글로벌 경쟁력을 높이는 새로운 상생 모델이 마련될 것으로 기대된다.",
     "link": "https://www.e-science.co.kr/news/articleView.html?idxno=133166",
     "related_count": 5
+  },
+  {
+    "date": "2026-08-09",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "“문과생도 AI 전문가로”…GS리테일 ‘자주연’의 AX 실험 [AI가 유통을...",
+    "description": "활용한 ESG 동향 및 뉴스레터 자동화 체계를 구축해 운영하고 있다”면서 “데이터 대시보드 구축 등 AI를 활용한 업무 고도화도 준비 중”이라고 했다. “AI가 곧 경쟁력”…‘현장 중심 AX’ 강화 나서 GS리테일이...",
+    "link": "https://n.news.naver.com/mnews/article/243/0000101399?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-08",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "CJ제일제당-CJ온스타일-CJ ENM, AI 플랫폼 'Food AI 360' 론칭...사회공헌...",
+    "description": "CJ온스타일은 그동안 개별적으로 추진해 온 활동들을 '온도'로 통합하고, 상품 기획과 콘텐츠 제작... 중소기업 브랜드와 크리에이터의 공동구매에 친환경 패키징과 기부 캠페인을 결합한 ESG 프로젝트다. 사회공헌...",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=316159",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-09",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 앰배서더 2기 모집…지방 특화 크리에이터 대폭 확대",
+    "description": "롯데백화점이 백화점 업계 최초의 인플루언서 성장 지원 프로그램인 '롯데백화점 앰배서더' 2기... 올해 5월 출범한 1기는 100대 1의 경쟁률을 기록하며 브랜드와 크리에이터가 함께 성장하는 상생 모델로 주목받았다....",
+    "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=308544",
+    "related_count": 3
   }
 ]
