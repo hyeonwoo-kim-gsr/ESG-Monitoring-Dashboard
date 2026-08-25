@@ -1167,7 +1167,7 @@
     "title": "[THE CEO] 정지선 현대백화점그룹 회장",
     "description": "이후 현대지에프홀딩스는 현대백화점과 현대그린푸드를 자회사로 편입하며 그룹 지배구조의 중심으로 올라섰다. 올해는 마지막 큰 퍼즐을 맞췄다. 지난 2월 현대홈쇼핑을 현대지에프홀딩스의 완전자회사로 편입하는...",
     "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=726474",
-    "related_count": 1
+    "related_count": 2
   },
   {
     "date": "2026-08-24",
@@ -1176,6 +1176,51 @@
     "title": "[TOP's Pick] [유통] 코스맥스, 현대홈쇼핑과 뷰티 공동 개발 업무협약 ...",
     "description": "◆ 코스맥스, 현대홈쇼핑과 뷰티 공동 개발 업무협약 체결 코스맥스는 현대홈쇼핑과 맞춤형 뷰티 제품 공동... 인스파이어의 ESG 프로젝트인 ‘사운드 비욘드 히어링(Sound Beyond Hearing)’의 일환으로 추진. 인스파이어는...",
     "link": "https://www.topdaily.kr/articles/111596",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[유통갤러리] 롯데백화점, 백화점을 미술관으로…'롯데아트위크' 개최 ...",
+    "description": "◆현대그린푸드, 농림축산식품부 ‘모두의 상생 프로젝트’ 첫 시범사업 맡는다 현대백화점그룹 계열... ◆GS25, 인기 도시락 다시 꺼냈다…역대 베스트 '넘버원' 출시 GS리테일이 운영하는 편의점 GS25가 과거...",
+    "link": "https://theviewers.co.kr/View.aspx?No=4197675",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-25",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, ‘끓는 바다’에 광어 공급망 방어..제주 양식장 취수관 연장 ...",
+    "description": "이에 회사는 생산자와 유통사가 함께 경쟁력을 높이는 상생 모델을 구축한다. 협력사 경쟁력 강화부터 안정적 상품 공급, 고객 만족을 통한 이마트 경쟁력 향상으로 이어지는 선순환 구조를 형성할 계획이다. 이마트...",
+    "link": "https://kpenews.com/View.aspx?No=4197811",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-26",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "‘상생 경영’ 롯데마트, 바이오차 비료 전달",
+    "description": "롯데마트가 농가 상생 프로젝트 ‘상생씨앗’의 일환으로 청년농부들의 친환경 농업 실천을 지원하기 위해 친환경 비료 ‘바이오차’ 전달식을 진행했다. 롯데마트는 지난 13일 서울 송파구 롯데월드타워에서 전달식을...",
+    "link": "https://n.news.naver.com/mnews/article/081/0003673530?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "대구 수성구 ‘뚜비’, 롯데홈쇼핑 ‘벨리곰’과 IP 협력",
+    "description": "대구 수성구 대표 캐릭터 ‘뚜비’가 롯데홈쇼핑 캐릭터 ‘벨리곰’과 손잡고 지식재산(IP) 사업 확대에... 연계한 ESG 활동 등 5개 분야에서 협력한다.수성구는 망월지 두꺼비를 모티브로 한 ‘뚜비’를 문화·환경...",
+    "link": "https://www.kbsm.net/news/view.php?idx=531573",
+    "related_count": 2
+  },
+  {
+    "date": "2026-08-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "수성구, 롯데홈쇼핑과 손잡고 캐릭터 활용 지역경제 활성화 나서",
+    "description": "수성구는 지난 24일 서울 영등포에 위치한 롯데홈쇼핑 사옥에서 양측 주요 관계자들이 참석한 가운데 캐릭터... (환경·사회·지배구조) 캠페인 등을 다각도로 전개한다. 협업의 첫 포문은 지역 명소인 수성못에서 열린다....",
+    "link": "http://www.newsprime.co.kr/news/article.html?no=745030",
     "related_count": 1
   }
 ]
