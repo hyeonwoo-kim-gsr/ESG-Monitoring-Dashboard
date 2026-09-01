@@ -1401,7 +1401,7 @@
     "title": "롯데마트, 발달장애 예술인 협업 상품 단독 출시… '가치소비' 영토 넓...",
     "description": "롯데마트)가 발달장애 예술인의 창작 생태계를 지원하는 ESG(환경·사회·지배구조) 연계형 단독 상품을... 이서영 롯데마트·슈퍼 라이프스타일팀 MD는 \"향기와 미술이라는 감성적 매개체를 통해 편견 없는 공감을...",
     "link": "http://www.newsdream.kr/news/articleView.html?idxno=117114",
-    "related_count": 2
+    "related_count": 3
   },
   {
     "date": "2026-08-30",
@@ -1465,5 +1465,32 @@
     "description": "SSG닷컴은 이마트가 강점을 지닌 그로서리(식료품) 중심 사업경쟁력 강화에 주력하고 신세계몰은 백화점이... 당장 지배구조에 변화는 없지만 앞으로 양사의 SSG닷컴, 신세계몰 지분 교환거래 등을 통해 각사가 보유한...",
     "link": "https://n.news.naver.com/mnews/article/008/0005405981?sid=101",
     "related_count": 1
+  },
+  {
+    "date": "2026-08-31",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[유통갤러리] 롯데홈쇼핑, 자체 개발 음료 브랜드 ‘엘:보틀’ 유통 확...",
+    "description": "9월3일까지 롯데백화점 본점에서 앵콜 팝업스토어를 운영하는 한편, 편의점 ‘세븐일레븐’에도 입점한다.... 지역사회와 상생을 위해 매년 홍보라벨 제품을 출시하고 있다. 과거 10만 병 수준의 홍보라벨 제품 출시...",
+    "link": "https://theviewers.co.kr/View.aspx?No=4205277",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-31",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "영주 농특산물 ‘전국 장바구니’ 공략…현대홈쇼핑과 유통길 넓힌다",
+    "description": "유통시장에서 지속해서 선택받을 수 있는 상품 경쟁력과 판매 구조를 갖추느냐가 관건이다. 영주시와 현대홈쇼핑의 협력이 일회성 판촉을 넘어 지역 농업의 안정적인 유통망을 만드는 상생 모델로 자리 잡을지 주목된다.",
+    "link": "https://n.news.naver.com/mnews/article/277/0005809798?sid=102",
+    "related_count": 1
+  },
+  {
+    "date": "2026-08-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, '네팔 대홍수 긴급모금' 매치그랜트 고객기부 캠페인...글로...",
+    "description": "공존하는 사회 공헌 문화를 전방위로 전파하겠다는 현대백화점의 주도적인 나눔 경영 의지와 궤를 같이한다. 이번 활동은 가입자와 회사가 공동으로 성금을 마련하는 매칭 그랜트 제도로 운영된다. 고객이 에이치포인트...",
+    "link": "http://www.updownnews.co.kr/news/articleView.html?idxno=318568",
+    "related_count": 6
   }
 ]
