@@ -60,7 +60,7 @@
     "title": "홈쇼핑 브랜드평판 9월 빅데이터 분석결과…1위 롯데홈쇼핑·2위 공영홈...",
     "description": "1위를 차지한 롯데홈쇼핑은 참여지수 328,481, 미디어지수 251,406, 소통지수 337,502, 커뮤니티지수 581,079, 사회공헌지수 491,032를 기록하며 브랜드평판지수 1,989,501로 집계됐다. 지난 8월 브랜드평판지수 1,945...",
     "link": "https://www.cbci.co.kr/news/articleView.html?idxno=602792",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-09-01",
@@ -70,5 +70,113 @@
     "description": "현대백화점은 작가 지원과 문화예술 협업을 통한 상생 메세나 활동도 확대할 계획이다. 한국메세나협회의 '1기업 1작가 후원 사업'을 통해 국립현대미술관 '올해의 작가' 후보인 이해민선 작가의 창작 활동을 지원하고...",
     "link": "https://www.gokorea.kr/news/articleView.html?idxno=876885",
     "related_count": 5
+  },
+  {
+    "date": "2026-09-02",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 임직원 동참 속 자원순환 캠페인 성료",
+    "description": "박경랑 GS리테일 ESG파트장은 \"앞으로도 전국 GS25와 GS더프레시 매장을 기반으로 고객과 임직원이 함께 참여할 수 있는 다양한 자원순환 활동을 지속 확대해 나가겠다\"고 말했다.",
+    "link": "https://sports.hankooki.com/news/articleView.html?idxno=6938910",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-02",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 폐전자제품 1000여점 모아 자원순환 실천",
+    "description": "박경랑 GS리테일 ESG파트장은 \"임직원들이 일상에서 자원순환의 가치를 직접 실천한 뜻깊은 자리였다\"며 \"앞으로도 GS25와 GS더프레시 등 전국 점포를 기반으로 고객과 임직원이 함께 참여하는 다양한 자원순환 활동을...",
+    "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=239304",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-02",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "'폐전자제품·업사이클링' 자원순환에 진심인 GS리테일",
+    "description": "2021년 캠페인 시작 이후 올해까지 누적 참여자는 1만2380명, 기부 물품은 약 45만6000점으로 집계됐다. GS리테일은 해당 물품의 재사용과 업사이클링을 통해 약 81톤의 탄소배출을 줄이는 효과를 거뒀다. GS리테일은 향후...",
+    "link": "https://biz.newdaily.co.kr/site/data/html/2026/09/02/2026090200093.html",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-02",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 166만명 정보 유출…전담조직도 없었다, 허연수·허서홍 책임은...",
+    "description": "아닌 지배구조와 내부통제 문제로 판단했기 때문이다. 68억원 받은 전 대표…보안 실패는 평가에 반영됐나 GS리테일 사업보고서에 따르면 허연수 전 부회장은 2025년 급여와 상여, 퇴직소득을 합쳐 약 68억8000만원을...",
+    "link": "https://www.the-today.com/news/articleView.html?idxno=89344",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-02",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 오늘] CJ프레시웨이ㆍ세븐일레븐ㆍ다이닝브랜즈그룹ㆍ동원홈푸...",
+    "description": "세븐일레븐, 국내 시네마 브랜드 팝콘 업계 최초 상품화…100% 당첨 쿠폰 동봉 코리아세븐이 운영하는... 대통령상 한우를 낙찰 받으며 한우 농가와의 상생에 앞장서고 고객들에게 건강한 단백질을 제공하고 있다.",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1014037",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-03",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[ESG] 바다는 지키고 플라스틱은 살리는 이마트의 가플지우",
+    "description": "|중앙이코노미뉴스 엄현식 기자|[사진=이마트]  매년 수백만 톤의 플라스틱이 바다로 흘러들고 있습니다.... *ESG전략컨설팅그룹 파이브세컨즈가 발행하는 리더뉴 뉴스레터는 전문 에디터와 함께하며...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=545176",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-01",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "[똑똑한소비] N32, 삼천리자전거, 매드포갈릭, 현대홈쇼핑, 롯데마트, 블...",
+    "description": "N32는 '기업은 세상을 이롭게 해야 한다'는 경영철학 아래 이어져 온 시몬스의 ESG 경영을 투영해 선보이는... 심영준 롯데마트·슈퍼 판촉마케팅팀장은 “가을철 맞이 제철 먹거리부터 집밥과 나들이에 활용하기 좋은...",
+    "link": "https://www.ekn.kr/web/view.php?key=20260901026508945",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-02",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "쿤달, 발달장애 예술가 작품 담은 ‘향기마을’ 디퓨저 롯데마트 입점",
+    "description": "진행하는 ESG(환경·사회·지배구조) 캠페인이다. 예술가의 작품을 쿤달 제품과 결합해 소비자에게 소개하는 방식으로 운영되고 있다. 쿤달은 이번 롯데마트 입점을 계기로 향기마을 프로젝트의 유통 채널과 관련...",
+    "link": "http://www.thevaluenews.co.kr/news/view.php?idx=201250",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-02",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "\"크리에이터를 콘텐츠 커머스 새 동력으로\"...CJ온스타일, 매칭 플랫폼 ...",
+    "description": "이번 플랫폼 출범은 크리에이터의 취향과 전문성을 고유한 지식재산권(IP)으로 육성하여 고객 유입과 매출을 동시에 조율하기 위한 상생 전략의 일환이다. CJ온스타일이 크리에이터를 영상 기반 콘텐츠 커머스의 새로운...",
+    "link": "http://www.updownnews.co.kr/news/articleView.html?idxno=318600",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-02",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "전북창조경제혁신센터-현대백화점, 유망 스타트업 발굴?판로 개척‘맞손...",
+    "description": "전북창조경제혁신센터(이하 전북센터)가 주식회사 현대백화점과 손잡고 혁신 기술을 보유한 우수 창업기업... 제품 홍보 지원 및 협력 ▲ 지역 내 창업 생태계 활성화를 위한 상생 협력 등 다각적인 분야에서 적극적으로...",
+    "link": "https://sjbnews.com/news/news.php?number=886677",
+    "related_count": 3
+  },
+  {
+    "date": "2026-09-03",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 中 BFC와 업무협약 체결",
+    "description": "최근 현대백화점은 강남 해비타트 서울지회에 독립유공자 후손의 주거환경 개선을 위한 후원금 2억 원을 전달했다. 이번 후원금은 고객 7,000여 명이 참여한 멤버십 포인트 기부금과 현대 자체 후원금을 더해...",
+    "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227375",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-02",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계백화점, 한가위 맞아 '장인의 손길' 담은 무형유산ㆍ고품격 여행...",
+    "description": "신세계백화점은 로컬 콘텐츠 프로젝트 '로컬이신세계'와 프리미엄 여행 플랫폼 '비아신세계'를 통해 이번... 생산자·장인과의 상생을 통해 지역 고유의 가치를 소개하는 데 주력해왔다. 이번 한가위를 맞아 '로컬이신세계...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1014018",
+    "related_count": 1
   }
 ]
