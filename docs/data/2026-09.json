@@ -312,7 +312,7 @@
     "title": "현대홈쇼핑 영주 특산물 판로 뚫는다",
     "description": "한편 현대홈쇼핑은 지난 2023년 12월 경북 안동시와도 협약을 맺고 TV홈쇼핑과 모바일 라이브커머스 '쇼라'로 지역 특산물을 판매했습니다. 최근 유통업계는 지자체와의 상생 협업을 강화하며 지역 우수 농가 발굴과 ESG...",
     "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3074322",
-    "related_count": 5
+    "related_count": 1
   },
   {
     "date": "2026-09-04",
@@ -339,6 +339,69 @@
     "title": "[N2 현장] 롯데백화점 전주점, 지역과 공익을 잇다",
     "description": "지역과 함께 성장하는 유통기업의 경쟁력이 단순한 매출을 넘어 지역사회에 어떤 경험과 가치를 돌려주느냐로 확장되는 가운데, 롯데백화점 전주점의 이 같은 시도가 지역 상생형 유통공간의 한 사례로 주목된다.",
     "link": "https://www.news2day.co.kr/article/20260905500015",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 채용전제형 인턴 모집→CU, 몽골 이태준 선생 기념공원에 ...",
+    "description": "편의점 세븐일레븐이 오는15일까지 '신입사원 채용전제형 인턴'을 모집한다. 이번 채용은 가맹점 운영... 지난 3일 몽골에서 열린 기부금 전달식에서 BGF리테일 해외사업실 윤승환 책임, 프리미엄 넥서스 치메드도르즈...",
+    "link": "https://www.slist.kr/news/articleView.html?idxno=764079",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-06",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "\"불꽃축제 고마워요\"...여의도 인근 이마트24 점포 매출 '10배' 뛰었다",
+    "description": "'한화와 함께하는 서울세계불꽃축제 2026'이 열린 어제(5일) 서울 여의도 인근 이마트24 점포 매출이 전주... 2000년 시작한 이 행사는 올해로 22회째를 맞은 한화의 대표 사회공헌활동이다. 수십만명의 관람객이...",
+    "link": "https://www.insight.co.kr/news/572103",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-06",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "신세계·이마트, SSG 순자산 1.37조 사업별 분리…온라인도 ‘수익성 책...",
+    "description": "신세계그룹의 지배구조 변화도 같은 방향으로 움직여왔다. 이명희 신세계그룹 총괄회장은 이마트와 신세계 두 축의 독립경영 기반을 만들어왔다. 정용진 신세계그룹 회장은 지난해 이 총괄회장이 보유했던 이마트...",
+    "link": "http://sateconomy.co.kr/news/view/1065592880041500",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-06",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 추석 앞두고 협력사 1만곳에 2738억 조기 지급",
+    "description": "신세계그룹도 이마트와 신세계백화점, SSG닷컴 등 3개사가 중소 협력사의 납품대금을 최대 12일 앞당겨... 대금 등을 마련하기 위해 단기 자금을 별도로 조달하는 부담을 줄이는 대표적인 상생 지원책으로 자리 잡고 있다.",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2117551",
+    "related_count": 3
+  },
+  {
+    "date": "2026-09-07",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "[단독] 대형마트가 마라톤까지…롯데마트, 업계 첫 3000명 '통큰런'",
+    "description": "유통업계에서는 이를 단순한 사회공헌 행사라기보다 ‘통큰’ 브랜드를 키우기 위한 투자로 보고 있다. 롯데마트는 올해부터 롯데슈퍼와 함께 매달 대규모 할인 행사인 ‘통큰데이’를 열고 있다. 장어와 한우, 삼겹살...",
+    "link": "https://n.news.naver.com/mnews/article/015/0005329312?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-06",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "영주 별사과부터 도라지까지…현대홈쇼핑, 판로 확대",
+    "description": "현대홈쇼핑 관계자는 “영주시의 우수한 농특산물의 인지도 제고와 시장 경쟁력 확보를 위해 다양한 협업을 진행할 계획”이라며 “앞으로도 지역 업체들의 상생을 위한 협업을 지속 확대해 나갈 것”이라고 말했다.",
+    "link": "https://n.news.naver.com/mnews/article/468/0001264365?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[K-기업, 가치를 잇다] '함께 가는 가치' 롯데백화점, 'ESG 라이프스타일...",
+    "description": "<편집자주> 투데이코리아=김채윤 기자 | 다시 지구를 새롭게, 함께 더 나은 지구를 위해라는 슬로건에 발맞춰 본격적인 ESG 경영을 추진하고 있는 롯데백화점은 함께 가는 가치를 바탕으로 다양한 활동을 이어오고 있다....",
+    "link": "https://www.todaykorea.co.kr/news/articleView.html?idxno=405645",
     "related_count": 1
   }
 ]
