@@ -403,5 +403,41 @@
     "description": "<편집자주> 투데이코리아=김채윤 기자 | 다시 지구를 새롭게, 함께 더 나은 지구를 위해라는 슬로건에 발맞춰 본격적인 ESG 경영을 추진하고 있는 롯데백화점은 함께 가는 가치를 바탕으로 다양한 활동을 이어오고 있다....",
     "link": "https://www.todaykorea.co.kr/news/articleView.html?idxno=405645",
     "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 NOW] 롯데슈퍼, 아모레퍼시픽, 현대백화점, 무신사, 선앤엘, 깨...",
+    "description": "◇ 롯데슈퍼, 쿠팡이츠와 손잡고 퀵커머스 뛰어든다 롯데슈퍼가 7일부터 전국 170여개 점포에서 퀵커머스... 올해 하반기부터는 기존에 별도로 운영해 온 브랜드와 기술 부문을 '브랜드 트랙'과 '테크 트랙'으로 통합해 연...",
+    "link": "https://www.ekn.kr/web/view.php?key=20260907025411383",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 영주시 농특산물 판로 지원",
+    "description": "한광영 현대홈쇼핑 대표는 “영주시 우수 농특산물의 인지도 제고와 시장 경쟁력 확보를 위해 다양한 협업을 진행할 것”이라며 “향후 지역 업체와 상생을 위한 협업을 지속 확대할 것”이라고 했다.",
+    "link": "https://n.news.naver.com/mnews/article/382/0001292534?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "CJ온스타일, 더마 뷰티 '르누베르'와 맞손… \"2027년 취급고 300억원 목표...",
+    "description": "CJ온스타일과 르누베르는 4일 '국내외 시장 확대 및 공동 성장을 위한 전략적 업무협약(MOU)'을 체결했다고... 확대해 차별화된 상품 경쟁력을 확보하고 파트너사와 동반성장하는 생태계를 강화해 나갈 것\"이라고 말했다.",
+    "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=85601",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-07",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 오늘] BGF리테일ㆍ배달의민족ㆍ코웨이ㆍ경동나비엔",
+    "description": "<편집자주> CU, 몽골 이태준 선생 기념공원에 광복 81주년 캠페인 수익금 기부 편의점 CU가 지난 8월 진행한... 코웨이, 롯데백화점 평촌점에 비렉스 팝업스토어 운영 코웨이가 오는 17일까지 롯데백화점 평촌점 지하 1층...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1014679",
+    "related_count": 1
   }
 ]
