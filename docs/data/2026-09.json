@@ -636,7 +636,7 @@
     "title": "BGF리테일, CU 가맹점주·임직원과 독도 방문...14년째 후원 이어가",
     "description": "이번 행사는 BGF리테일이 독도에 대한 관심을 높이고 나라사랑의 의미를 되새기기 위해 2012년부터 진행해온 사회공헌 활동이다. 코로나19로 독도 방문이 중단된 기간을 제외하고 매년 현장을 찾아 관련 활동을...",
     "link": "https://www.e-science.co.kr/news/articleView.html?idxno=135327",
-    "related_count": 4
+    "related_count": 2
   },
   {
     "date": "2026-09-11",
@@ -708,7 +708,7 @@
     "title": "추석 선물만 건넨 게 아니다…롯데마트·슈퍼, 어르신 '디지털 문턱' 낮...",
     "description": "이날 행사에는 김범창 롯데마트·슈퍼 HR혁신부문장, 박찬욱 희망친구 기아대책 ESG나눔본부장, 이순호 문정노인종합복지관장 등 관계자 23명이 참석했다. 김범창 롯데마트·슈퍼 HR혁신부문장은 \"어르신들에게 필요한...",
     "link": "https://www.ngonews.kr/news/articleView.html?idxno=237936",
-    "related_count": 4
+    "related_count": 3
   },
   {
     "date": "2026-09-11",
@@ -745,5 +745,41 @@
     "description": "비건 매트리스 브랜드 N32가 서울 송파구 롯데백화점 잠실점 9층에 팝업스토어를 열었다. 이번 매장은... N32는 '기업은 세상을 이롭게 해야 한다'는 시몬스의 경영철학을 바탕으로 ESG 경영을 반영해 만든 프리미엄 비건...",
     "link": "https://www.goodkyung.com/news/articleView.html?idxno=291283",
     "related_count": 1
+  },
+  {
+    "date": "2026-09-13",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 협력사 초청 상생 행사 '굿 프렌즈 데이' 개최",
+    "description": "유로베이크는 프렌즈 크리에이티브상을, 푸드플래닛·청미·원푸드림은 프렌즈 파트너십상을, 미다솜은 ESG 우수협력사에 각각 선정됐다. BGF리테일은 중소 협력사와의 동반성장을 위해 상생협력펀드 운영, 역량 강화...",
+    "link": "https://n.news.naver.com/mnews/article/421/0009166585?sid=101",
+    "related_count": 4
+  },
+  {
+    "date": "2026-09-13",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 추석 앞두고 '디지털 소외' 고령층 지원… 상생 보폭 넓...",
+    "description": "유통 업계에서는 이번 롯데마트·슈퍼의 행보를 두고 기업의 사회적 책임(ESG) 활동이 시대적 변화에 발맞춰 진화하고 있는 대표적 사례로 꼽는다. 최근 대형마트와 슈퍼마켓 등 오프라인 채널은 무인 결제기와 모바일 앱...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=318515",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-13",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 고객 참여형 ESG 활동 '제4회 친환경 어린이 그림대회' 성료",
+    "description": "현대홈쇼핑이 주최하는 ESG 프로그램 '친환경 어린이 그림대회'가 뜨거운 응원 열기 속에 행사를 성공적으로 마쳤다. 현대홈쇼핑은 5세부터 13세까지 2천여 명이 참가한 '제4회 친환경 어린이 그림대회'가 약 두 달간의...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=132747",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-12",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "N32, 비건 인증·5대 안전 인증 갖춘 매트리스 롯데백화점 잠실점 팝업스...",
+    "description": "(사진= 롯데백화점 잠실점 9층에 문을 연 'N32 팝업스토어' 전경]  사진제공=N32 혼수·수면 제품을 직접... N32는 시몬스의 '기업은 세상을 이롭게 해야 한다'는 경영철학과 ESG 경영 방향을 반영한 프리미엄 비건 매트리스...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=486252",
+    "related_count": 4
   }
 ]
