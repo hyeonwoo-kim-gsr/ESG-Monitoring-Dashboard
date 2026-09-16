@@ -979,5 +979,41 @@
     "description": "프리미엄 비건 매트리스 브랜드 N32가 서울 강남구 대치동 롯데백화점 강남점 8층 매장을 리뉴얼 오픈했다.... N32는 시몬스의 ESG 경영 철학을 반영해 선보인 프리미엄 비건 매트리스 브랜드다. '전에 없던 새로운 하루...",
     "link": "https://www.mediafine.co.kr/news/articleView.html?idxno=89704",
     "related_count": 2
+  },
+  {
+    "date": "2026-09-16",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 2600억 투입 부산 물류센터 준공…영남권 배송 재편",
+    "description": "'굿 프렌즈 데이'는 BGF리테일과 중소 협력사 임직원들이 업무에서 벗어나 자연스럽게 교류하고 소통하며 상생협력과 파트너십을 강화하기 위해 마련한 화합 행사다. BGF리테일 임직원과 협력사 임직원이 조를 이뤄...",
+    "link": "https://www.ekn.kr/web/view.php?key=20260916029515318",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-15",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "“나눔 러닝 페스티벌” 롯데마트·슈퍼, ‘통큰런’이 온다",
+    "description": "차우철 롯데마트·슈퍼 대표는 “‘통큰’을 매개로 건강한 즐거움과 나눔을 결합한 러닝 페스티벌을 마련했다”며 “향후 ‘통큰’을 사회적 가치를 나누는 상생 브랜드로 키울 것”이라고 했다.",
+    "link": "https://n.news.naver.com/mnews/article/382/0001294170?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-15",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "기아대책, 롯데마트·슈퍼와 함께 달리고 기부하는 '통큰런' 개최",
+    "description": "이로운넷 = 최봉애 기자 희망친구 기아대책은 롯데마트·슈퍼와 오는 11월 14일 서울 상암 월드컵공원 평화의... 일반인 참가자 2천명의 참가비 전액을 기부한다. 주최 측 임직원과 가족·지인 1000명, 일반 시민 2000명 등 총...",
+    "link": "https://www.eroun.net/news/articleView.html?idxno=90081",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-15",
+    "company": "현대홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "현대百 지배구조 개편 막바지… 현대홈쇼핑 분할, 방미통위 문턱 넘을까",
+    "description": "이진협 한화투자증권 연구원은 \" 지배구조 개편안은 현대홈쇼핑의 저평가를 해소하기 위한 구조적 변화가 요구되는 시점에서 그 변화의 시발점이 될 것”이라며 “홈쇼핑 본업의 경쟁력 제고가 가능해지면서...",
+    "link": "https://n.news.naver.com/mnews/article/366/0001192552?sid=101",
+    "related_count": 1
   }
 ]
