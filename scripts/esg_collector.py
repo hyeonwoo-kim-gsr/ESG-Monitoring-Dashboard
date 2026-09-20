@@ -133,6 +133,16 @@ TITLE_EXCLUDE_PATTERNS = [
     r"어린이.*도서관", r"월드컵.*중계",
     r"모내기", r"농산업",
     r"벤처스",
+    r"똑똑한리빙",
+    r"똑똑한나들이",
+    r"유통갤러리",
+    r"유통 & NOW",
+    r"똑똑한소비",
+    r"똑똑한유통",
+    r"유통가오늘",
+    r"이주의 유통포인트"
+    r"[마켓 HOT 뉴스]"
+    r"
 ]
 
 NAVER_CLIENT_ID     = os.environ["NAVER_CLIENT_ID"]
