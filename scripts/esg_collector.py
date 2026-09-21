@@ -141,8 +141,7 @@ TITLE_EXCLUDE_PATTERNS = [
     r"똑똑한유통",
     r"유통가오늘",
     r"이주의 유통포인트"
-    r"[마켓 HOT 뉴스]"
-    r"
+    r"[마켓 HOT 뉴스]",
 ]
 
 NAVER_CLIENT_ID     = os.environ["NAVER_CLIENT_ID"]
