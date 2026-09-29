@@ -1626,7 +1626,7 @@
     "title": "[이마트] 경기도 취약계층에 친환경 농산물 지원 / '스타필드 마켓 군산...",
     "description": "이마트가 지역 거점 점포 혁신과 먹거리 사회공헌을 통해 지역사회와의 접점을 확대하고 있다. 28일 웹이코노미 취재 등을 종합하면, 이마트는 전북 군산점을 쇼핑·외식·문화·휴식을 결합한 '스타필드 마켓 군산점...",
     "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2317603",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-09-27",
@@ -1690,5 +1690,68 @@
     "description": "롯데백화점이 사회공헌 캠페인 '리조이스(REJOICE)'와 친환경 캠페인 '리얼스(RE:EARTH)'를 앞세워 사회적 가치... 판매 수익금 전액은 탄소중립 '학교숲' 조성 사업에 기부할 계획이다. 환경의 가치를 알리는 체험...",
     "link": "https://n.news.naver.com/mnews/article/009/0005740295?sid=101",
     "related_count": 1
+  },
+  {
+    "date": "2026-09-28",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "김재겸 롯데홈쇼핑 대표 국감 증인 채택…중소기업 보호 '역행' 도마",
+    "description": "홈쇼핑 재승인과 중소 납품업체 보호, 상생 방안 등으로 도마에 올랐다. 특히 롯데홈쇼핑은 재승인 조건을... 5개 홈쇼핑 사업자(쇼핑엔티·KT알파·CJ ENM·GS리테일) 가운데 전년 실적 대비 올해 목표 감소액이 300억원을...",
+    "link": "https://www.1conomynews.co.kr/news/articleView.html?idxno=50596",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-29",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 제주 특산물 사용한 '제로 스낵' 3종 출시",
+    "description": "해당 상품은 롯데마트·슈퍼 지역상생 프로젝트의 네 번째 협업 사례다. 롯데마트·슈퍼는 지난해부터... 3종 모두 롯데마트·슈퍼 전 지점에서 운영되며, 미니감귤케이크는 세븐일레븐에서도 함께 판매된다. 제주에서...",
+    "link": "https://www.econovill.com/news/articleView.html?idxno=752132",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-29",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "부산·강원·울산 거쳐 제주로…롯데마트 상생상품 잇는다",
+    "description": "미니 감귤케이크는 세븐일레븐에서도 선보여 판매 채널을 넓힌다. 이번 상품은 롯데마트·슈퍼가 지난해부터 진행해 온 지역상생 프로젝트의 네 번째 사례다. 첫 협업은 지난해 7월 부산에서 이뤄졌다. 부산시, 농심과...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2118813",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-29",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "폐플라스틱이 벤치로… 이마트, 쉼터 조성",
+    "description": "이마트 관계자는 “고객의 자원순환 실천이 많은 시민이 이용하는 용산역의 업사이클링 벤치로 재탄생해 뜻깊다”며 “앞으로도 ESG 경영에 앞장설 것”이라고 전했다.",
+    "link": "https://n.news.naver.com/mnews/article/081/0003684213?sid=101",
+    "related_count": 2
+  },
+  {
+    "date": "2026-09-28",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "【ESG 채용】하이브, 이마트, 퀀티파이드이에스지",
+    "description": "보러가기 이마트 - 2027년 신입사원 채용, 경영지원(ESG) 직무 (신입) [주요업무] ESG(환경·사회·거버넌스) 전략 기획 및 실행 친환경 캠페인 기획으로 지속가능경영 문화 확산 학사학위 이상 기졸업 또는 2027년 8월 이전...",
+    "link": "https://www.impacton.net/news/articleView.html?idxno=30051",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-28",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "전남광주 서구, ㈜와이마트와 손잡고 지역 청년 맞춤형 취업 지원",
+    "description": "민관 상생을 한층 강화하겠다는 의지를 피력했다. 김성진 ㈜와이마트 물류 대표이사 역시 지역에 뿌리를 둔 기업으로서 청년과 주민들이 지역 내에서 안정적으로 일할 수 있는 터전을 마련하는 데 최선을 다하고, 서구와...",
+    "link": "https://www.newsworker.co.kr/news/articleView.html?idxno=506077",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-29",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 대구·상인점, 친환경 프로모션 진행",
+    "description": "롯데백화점 대구점과 상인점은 다음달 28일까지 각 점 사은행사장에서 명절 선물세트 보랭가방을... 이번 행사는 명절 이후 버려지는 보랭가방을 회수해 자원 재활용을 실천하고 ESG 가치를 전달하기 위해...",
+    "link": "https://n.news.naver.com/mnews/article/016/0002702813?sid=101",
+    "related_count": 2
   }
 ]
