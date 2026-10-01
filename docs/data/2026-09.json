@@ -1752,7 +1752,7 @@
     "title": "롯데백화점 대구·상인점, 친환경 프로모션 진행",
     "description": "롯데백화점 대구점과 상인점은 다음달 28일까지 각 점 사은행사장에서 명절 선물세트 보랭가방을... 이번 행사는 명절 이후 버려지는 보랭가방을 회수해 자원 재활용을 실천하고 ESG 가치를 전달하기 위해...",
     "link": "https://n.news.naver.com/mnews/article/016/0002702813?sid=101",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-09-30",
@@ -1842,6 +1842,33 @@
     "title": "백화점 브랜드평판 2026년 9월 빅데이터 분석결과…1위 롯데백화점·2위...",
     "description": "2위를 기록한 현대백화점 브랜드는 참여지수 205,040, 미디어지수 280,665, 소통지수 930,172, 커뮤니티지수 473,238, 사회공헌지수 80,514로 브랜드평판지수 1,969,628을 나타내 지난 8월 브랜드평판지수 2,017,008과...",
     "link": "https://www.cbci.co.kr/news/articleView.html?idxno=610333",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-30",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[디-테일] BGF의 복잡한 셈법···③친인척은 지분 '엑시트', 이사회는...",
+    "description": "◇무너진 ESG 가치, 거버넌스 불신으로 사업회사인 BGF리테일이 지주사에 수백억원의 배당과 수수료를 지급하고 핵심 계열사들에 거액의 일감을 몰아주는 구조가 공고해지고 있음에도, 이를 통제해야 할 이사회는...",
+    "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2475434",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 재난 현장 장병에 4천만원 물품 지원",
+    "description": "김미소 세븐일레븐 커뮤니케이션팀 ESG담당 선임수석은 \"국군의 날을 맞아 국가 안보는 물론 각종 재난 현장에서 묵묵히 헌신하는 제2작전사령부 장병들에게 깊은 감사의 마음을 전하고자 실질적인 도움이 되는 맞춤형...",
+    "link": "https://www.ngetnews.com/news/articleView.html?idxno=553903",
+    "related_count": 1
+  },
+  {
+    "date": "2026-09-30",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 13년간 군부대에 6억원 지원…올해도 4000만원 위문품",
+    "description": "김미소 세븐일레븐 커뮤니케이션팀 ESG담당 선임수석은 \"국군의 날을 맞아 국가 안보와 재난 현장에서 활동하는 장병들에게 감사의 마음을 전하고자 위문품을 마련했다\"며 \"지난 13년간 이어온 나라사랑 캠페인을...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=209825",
     "related_count": 1
   }
 ]
