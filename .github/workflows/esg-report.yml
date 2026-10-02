@@ -21,6 +21,11 @@ on:
 permissions:
   contents: write   # docs/data 변경분을 저장소에 커밋하기 위해 필요
 
+# docs/data 를 쓰는 워크플로(평소 리포트 / 네이버 백필)가 동시에 돌지 않도록 직렬화
+concurrency:
+  group: esg-data-write
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
