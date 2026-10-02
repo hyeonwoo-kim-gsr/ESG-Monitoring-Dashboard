@@ -78,17 +78,35 @@ def parse_date(s):
     return datetime.strptime(s, "%Y-%m-%d").date()
 
 
+# 과거 표기 -> 대시보드 표준 회사명 (날짜와 무관하게 항상 GS리테일로 통합)
+# GS홈쇼핑 / GS SHOP 은 GS리테일에 합병되기 전의 별도 법인이었지만, 대시보드에서는 GS리테일로 집계
+COMPANY_ALIASES = {
+    "GS홈쇼핑": "GS리테일",
+    "GS SHOP": "GS리테일",
+    "GS샵": "GS리테일",
+    "GSSHOP": "GS리테일",
+}
+
+
+def canonical(name):
+    return COMPANY_ALIASES.get(name, name)
+
+
 def detect_company(title):
-    """제목에서 가장 앞에 나오는 경쟁사(동일 위치면 더 긴 이름 우선)."""
+    """제목에서 가장 앞에 나오는 경쟁사(동일 위치면 더 긴 이름 우선, 대소문자 무시).
+    반환: (표준 회사명, 기사에 실제 표기된 이름) 또는 (None, None)"""
+    up = title.upper()
     best = None
-    for name in ec.COMPETITOR_NAMES:
-        pos = title.find(name)
+    for name in list(ec.COMPETITOR_NAMES) + list(COMPANY_ALIASES):
+        pos = up.find(name.upper())
         if pos < 0:
             continue
         key = (pos, -len(name))
         if best is None or key < best[0]:
             best = (key, name)
-    return best[1] if best else None
+    if not best:
+        return None, None
+    return canonical(best[1]), best[1]
 
 
 def title_excluded(title):
@@ -162,7 +180,8 @@ def naver_search(query, start_date, end_date):
 
 def build_queries(extra):
     kws = list(ec.ESG_KEYWORDS) + (EXTRA_KEYWORDS if extra else [])
-    return [(c, c + " " + k) for c in ec.COMPETITORS for k in kws]
+    names = list(ec.COMPETITORS) + list(COMPANY_ALIASES)  # 과거 표기(GS홈쇼핑 등)도 검색
+    return [(c, c + " " + k) for c in names for k in kws]
 
 
 def collect(start_date, end_date, extra, verbose=True):
@@ -172,7 +191,7 @@ def collect(start_date, end_date, extra, verbose=True):
     queries = build_queries(extra)
     for i, (company, q) in enumerate(queries, 1):
         items, total, oldest = naver_search(q, start_date, end_date)
-        s = stats.setdefault(company, {"oldest": None, "queries": 0, "in_range": 0, "capped": 0})
+        s = stats.setdefault(canonical(company), {"oldest": None, "queries": 0, "in_range": 0, "capped": 0})
         s["queries"] += 1
         s["in_range"] += len(items)
         if oldest is not None and (s["oldest"] is None or oldest < s["oldest"]):
@@ -200,11 +219,12 @@ def prefilter(cands):
         if ec.is_multi_retailer_briefing(t):
             cnt["multi_retailer"] += 1
             continue
-        comp = detect_company(t)
+        comp, raw_name = detect_company(t)
         if not comp:
             cnt["no_company"] += 1
             continue
         c["company"] = comp
+        c["source_company"] = raw_name
         ok.append(c)
     return ok, cnt
 
@@ -322,7 +342,8 @@ def build_batch_prompt(batch):
     ]
     for i, c in enumerate(batch, 1):
         lines.append("[기사 %d]" % i)
-        lines.append("회사: " + c["company"])
+        src = c.get("source_company")
+        lines.append("회사: " + c["company"] + (" (기사 표기: %s)" % src if src and src != c["company"] else ""))
         lines.append("제목: " + c["title"])
         lines.append("내용: " + c["content"])
         lines.append("")
@@ -482,11 +503,15 @@ def main():
                     store.mark_touched(art)
                     merged += 1
                 continue
-            store.add({
+            rec = {
                 "date": c["date"], "company": c["company"], "sentiment": sentiment,
                 "title": c["title"], "description": c["description"],
                 "link": c["link"], "related_count": 1,
-            })
+            }
+            src = c.get("source_company")
+            if src and src != c["company"]:
+                rec["source_company"] = src  # 통합 전 원래 표기(GS홈쇼핑 등) 보존
+            store.add(rec)
             new_rec += 1
         store.flush()
         save_state(args.output_dir, state)
