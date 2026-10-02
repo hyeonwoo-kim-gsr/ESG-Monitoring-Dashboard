@@ -1,0 +1,77 @@
+name: 네이버 뉴스 과거기사 백필 (일일 상한 + 이어하기)
+
+on:
+  schedule:
+    # 매일 KST 02:00 (= UTC 17:00). 평소 리포트(KST 08:00)와 겹치지 않는 시간대
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "백필 시작일 (YYYY-MM-DD)"
+        required: false
+        default: "2024-01-01"
+      daily_cap:
+        description: "이번 실행의 Gemini 호출 상한(회)"
+        required: false
+        default: "300"
+      batch_size:
+        description: "Gemini 1회 호출당 기사 수"
+        required: false
+        default: "8"
+      diagnose:
+        description: "진단만 실행 (Gemini 호출 없음)"
+        type: boolean
+        required: false
+        default: false
+
+# 데이터 파일을 쓰는 워크플로끼리 동시에 돌지 않도록 (esg-report.yml 에도 같은 그룹을 추가 권장)
+concurrency:
+  group: esg-data-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run backfill
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_USER: dummy@example.com
+          GMAIL_APP_PASSWORD: dummy
+          GEMINI_MIN_INTERVAL: "6"
+          BACKFILL_START: ${{ github.event.inputs.start || '2024-01-01' }}
+          DAILY_CAP: ${{ github.event.inputs.daily_cap || '300' }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '8' }}
+          DIAGNOSE: ${{ github.event.inputs.diagnose || 'false' }}
+        run: |
+          EXTRA=""
+          if [ "$DIAGNOSE" = "true" ]; then EXTRA="--diagnose"; fi
+          python scripts/naver_backfill.py --start "$BACKFILL_START" $EXTRA
+
+      - name: Commit & push (요약 데이터만)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "네이버 백필 진행 (자동, $(date -u +%Y-%m-%d))"
+            git pull --rebase
+            git push
+          fi
