@@ -43,6 +43,21 @@ os.environ.setdefault("GEMINI_MIN_INTERVAL", "6")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import esg_collector as ec  # noqa: E402
 
+# ---- 메일 발송 완전 차단 (백필은 수신자에게 리포팅하지 않음) ----
+# 1) 수신자 목록 비움  2) SMTP 연결 자체를 예외 처리  3) 워크플로에도 Gmail 실계정 미전달
+import smtplib  # noqa: E402
+
+ec.RECIPIENTS = []
+
+
+def _blocked_smtp(*_a, **_k):
+    raise RuntimeError("백필 스크립트에서는 메일 발송이 차단되어 있습니다.")
+
+
+smtplib.SMTP = _blocked_smtp
+smtplib.SMTP_SSL = _blocked_smtp
+print("[안전] 메일 발송 차단됨 (수신자 0명, SMTP 비활성)")
+
 KST = ec.KST
 STATE_FILENAME = "backfill_state.json"
 MAX_ATTEMPTS = 3  # Gemini 응답에서 반복적으로 누락되는 기사는 3회 후 포기
