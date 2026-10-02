@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2014-05-01",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 풀무원 매장 사망노동자 5일째 장례 못 치러...",
+    "description": "2일부터 이마트천안점 앞에서 집회를 가질 예정이다. 유가족들은 조퇴 승인 책임자가 나타나지 않고 사과조차 하지 않는 상태에서 고인을 보낼 수 없다는 입장이다. 유가족들은 \"누가 봐도 업무와 관련된 산업재해임에도...",
+    "link": "http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0001987008",
+    "related_count": 1
+  },
+  {
+    "date": "2014-05-29",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵, '최복호 인견이불 세트' 기부방송",
+    "description": "기부방송 외에도 인터넷쇼핑몰 GS샵(gsshop.com)과 고객참여형 테마 쇼핑몰 ‘디토(ditto.gsshop.com)’ 등에서도 함께 판매하고 있다. 이번 기부방송 대상인 ‘최복호 인견이불 세트’는 인견홑이불 1장, 매트 1장, 베개...",
+    "link": "http://www.asiatoday.co.kr/view.php?key=20140529010014003",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-05-29",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵 “홈쇼핑에서도 ‘윤리적 소비’ 활발”",
+    "description": "GS샵 기부 방송 역대 최고 매출은 지적 장애인들이 생산한 ‘위캔쿠키’ 판매 방송으로, 지난해 2월22일 방송 30분만에 2000세트가 넘게 판매됐다. 올해 진행된 기부방송 4회에서도 사회적기업이 만든 꿀 세트, 쿠키...",
+    "link": "http://www.etoday.co.kr/news/section/newsview.php?idxno=922935",
+    "related_count": 3,
+    "source_company": "GS샵"
+  }
+]

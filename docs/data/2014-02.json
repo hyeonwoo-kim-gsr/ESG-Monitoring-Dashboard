@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2014-02-18",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트와 홈플러스, 롯데마트 등 불공정 약관 무더기 시정 조치",
+    "description": "유형의 불공정약관조항을 시정조치했다고 밝혔다. 심사대상 대형유통업체는 이마트, 홈플러스, 롯데마트 등... 익스프레스, 이마트 에브리데이 등 기업형 슈퍼마켓(SSM) 4곳이다. 공정위에 따르면 대형마트와 기업형...",
+    "link": "http://news.mtn.co.kr/newscenter/news_viewer.mtn?gidx=2014021818454313385",
+    "related_count": 2
+  },
+  {
+    "date": "2014-02-21",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "유한양행·GS샵과 함께 한 따뜻한 '金心'",
+    "description": "/사진제공=유한양행 (오른쪽)21일 서울 영등포구 GS 강서타워에서 GS홈쇼핑 직원들이 점심 한끼 비용을 절약해... 서울 영등포구 문래동 GS샵의 임직원들도 마음만은 든든한 점심 한때를 보냈다. 사내 봉사동아리...",
+    "link": "http://www.mt.co.kr/view/mtview.php?type=1&no=2014022114205532841&outlink=1",
+    "related_count": 1,
+    "source_company": "GS샵"
+  }
+]

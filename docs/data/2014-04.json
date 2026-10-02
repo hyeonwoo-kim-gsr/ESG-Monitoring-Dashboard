@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2014-04-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[fn사설] 대기업 롯데홈쇼핑의 ‘甲질’",
+    "description": "‘乙’ 납품업체서 뒷돈 챙겨..결국 고객 주머니 터는 꼴 롯데홈쇼핑이 '갑질'을 하다 검찰에 걸렸다.... 이들에게 상품선택권과 편성시간권을 가진 홈쇼핑 임직원들은 슈퍼갑이다. 롯데홈쇼핑은 이런 구조적 갑을 관계를...",
+    "link": "http://www.fnnews.com/view?ra=Sent1801m_01A&corp=fnnews&arcid=201404030100033200001424&cDateYear=2014&cDateMonth=04&cDateDay=02&",
+    "related_count": 2
+  },
+  {
+    "date": "2014-04-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "검찰 ‘슈퍼갑’ 롯데홈쇼핑 납품 비리 적발",
+    "description": "롯데홈쇼핑의 생활부문장이었던 47살 이 모씨는 자기가 맡은 분야에서 이 황금시간대에 방송할 업체를 선정할 수 있었습니다. 이른바 '슈퍼 갑'인 이씨는 2008년 12월부터 2년 동안 납품업체 5곳으로부터 9억 원을 받은...",
+    "link": "http://news.kbs.co.kr/news/NewsView.do?SEARCH_NEWS_CODE=2837337&ref=A",
+    "related_count": 1
+  },
+  {
+    "date": "2014-04-07",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑'甲질'은 빙산의 일각",
+    "description": "당시 GS샵·홈앤쇼핑·현대홈쇼핑·NS홈쇼핑 등 4개사 직원들이 무더기로 사법처리됐으며, 이번 사건까지 합치면 총 6개의 홈쇼핑업체 중 5곳에서 같은 범죄가 발생해 '구조적 문제'라는 분석이 지배적이다. 이처럼 여론이...",
+    "link": "http://biz.newdaily.co.kr/news/article.html?no=10034116",
+    "related_count": 1
+  },
+  {
+    "date": "2014-04-14",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "'뒷돈 수수' 롯데홈쇼핑 수사 급물살…\"내년 재승인 불투명\"",
+    "description": "뿌리 깊은 유통업계의 갑질이 또 다시 수면 위로 드러나자 정부도 칼을 빼 들었습니다. 미래창조과학부는... 롯데홈쇼핑을 비롯해 현대와 NS홈쇼핑이 당장 내년 재승인 심사를 받아야 하는 상황이어서 업계 긴장감이...",
+    "link": "http://news.mtn.co.kr/newscenter/news_viewer.mtn?gidx=2014041417532242790",
+    "related_count": 1
+  },
+  {
+    "date": "2014-04-14",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS SHOP, 서울시 평가서 최우수",
+    "description": "서울시의 인터넷쇼핑몰 평가에서 GS SHOP(종합)과 YES24(도서)가 공동 1위를 차지했다. 서울시는 지난 한 해... 준수정도 △보안 개인정보 보호정책 회원 탈퇴방법 고객 불만 게시판운영 청약철회시 배송비부담...",
+    "link": "http://www.m-economynews.com/news/article.html?no=8228",
+    "related_count": 2,
+    "source_company": "GS SHOP"
+  },
+  {
+    "date": "2014-04-14",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "인터넷쇼핑몰 만족도, GS샵-YES24 공동 1위",
+    "description": "종합쇼핑부문은 GS샵, 도서부문은 예스24가 최우수 쇼핑몰로 공동 선정됐다고 14일 밝혔다. 이 두... 설치 등을 통해 개인정보관리에 더 힘쓸 것\"이라고 말했다. [딱하나! 머니인사이트 딱TV]['스페셜 걸' 포토]",
+    "link": "http://www.mt.co.kr/view/mtview.php?type=1&no=2014041201094017016&outlink=1",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-04-15",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑의 ‘슈퍼甲질’ 백태…가족계좌 총동원",
+    "description": "롯데 홈쇼핑의 전직 임직원들이 '슈퍼 갑'의 힘을 이용해 갖가지 방법으로 납품업체들을 등친 것으로 드러났습니다. 임원은 가족 명의 계좌로 정기 상납을 받았고, 직원은 고급 승용차까지 받아냈습니다. 이윤상...",
+    "link": "http://news.ichannela.com/society/3/03/20140415/62793853/2",
+    "related_count": 1
+  }
+]

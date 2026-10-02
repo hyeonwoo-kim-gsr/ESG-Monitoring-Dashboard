@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2014-08-14",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[더벨]'납품비리' 롯데홈쇼핑, 영업이익률 급상승 왜?",
+    "description": "경쟁사 현대홈쇼핑의 경우도 2012년·2013년 각각 77.8%, 80%로 나타났다. 일반적으로 영업이익에 영향을 미치는... 롯데홈쇼핑에 대한 수사를 마무리 지은 바 있다. 대기업 유통가의 '갑질논란'이 지속적으로 불거지던...",
+    "link": "http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201408130100018890001195",
+    "related_count": 1
+  },
+  {
+    "date": "2014-08-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[안전 경영] GS리테일, 5~9월 식품안전 강화 기간, 점포·협력사 위생점...",
+    "description": "이 회사는 식품 사고 발생 가능성이 특히 높은 5월1일부터 9월31일까지를 ‘GS리테일 식품안전관리 특별강화기간’으로 정한다. 각 점포와 협력사 대상 위생 점검을 평소보다 두 배 이상 강화하는 동시에 즉석식품 판매...",
+    "link": "http://www.hankyung.com/news/app/newsview.php?aid=2014081948791",
+    "related_count": 1
+  },
+  {
+    "date": "2014-08-20",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[안전 경영] 현대홈쇼핑, '고객정보 보호' 안심번호 사용…여직원 집에...",
+    "description": "홍성일 현대홈쇼핑 영업기획팀장은 “개인정보를 보호하고자 이달 들어 모든 상품에 안심번호를 적용하고 있다”며 “업무상 불편함이 있더라도 정보 유출을 막을 수 있는 다양한 정책을 도입할 것”이라고 말했다....",
+    "link": "http://www.hankyung.com/news/app/newsview.php?aid=2014081949041",
+    "related_count": 1
+  },
+  {
+    "date": "2014-08-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[일찍 온 추석]GS샵, 사회적 기업 상품 '아름다운 선물세트' 판매",
+    "description": "= GS샵은 추석을 맞아 29일 오후 3시20분 도네이션(기부) 방송을 통해 사회적 기업이 만든 '아름다운 선물세트'를 판매한다. 아름다운 선물세트는 '다래월드', '누야하우스', '이엠에코', '자작나눔' 등 4곳의 사회적...",
+    "link": "http://www.newsis.com/ar_detail/view.html?ar_id=NISX20140827_0013133263&cID=10408&pID=10400",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-08-28",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵 \"추석선물은 착한 생활용품으로\"",
+    "description": "GS샵은 29일 오후 3시 20분부터 도네이션(기부) 방송을 통해 '아름다운 선물세트'를 판매한다고 28일 밝혔다. '아름다운 선물세트'는 명절선물로 인기가 많은 생활용품 선물세트를 사회적기업 상품들로 구성한...",
+    "link": "http://www.naeil.com/news_view/?id_art=119765",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-08-29",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "'빵집 일감몰아주기' 신세계·이마트에 벌금 1억원 구형",
+    "description": "공정위는 지난 2012년 신세계SVN 등에 판매수수료를 낮춰 부당지원한 혐의로 신세계와 이마트, 에브리데이리테일 등 신세계 계열 3개사에 시정명령과 과징금 40억6천만원을 부과한 바 있다. 이후 경제개혁연대가 이들을...",
+    "link": "http://www.smedaily.co.kr/news/articleView.html?idxno=50149",
+    "related_count": 2
+  },
+  {
+    "date": "2014-08-29",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "검찰, 허인철 前 이마트 대표에 징역 3년 구형(종합)",
+    "description": "또 신세계(004170)와 이마트에 각각 과징금 1억원을 부과했다. 검찰 구형 후 이어진 변론에서 변호인 측은... 허 전 대표 등은 2010년 7월 신세계백화점과 이마트, 에브리데이리테일 등에 입점한 신세계SVN의 매출을 늘리기...",
+    "link": "http://www.newstomato.com/ReadNews.aspx?no=494894",
+    "related_count": 1
+  }
+]

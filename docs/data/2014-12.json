@@ -1,0 +1,166 @@
+[
+  {
+    "date": "2014-12-03",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "기로에 선 롯데홈쇼핑",
+    "description": "우리홈쇼핑 인수 당시만 해도 홈쇼핑 시장의 '값진 기업'으로 도약하겠다고 공언했지만 8년 만에 '갑질 기업... CJ·GS·현대홈쇼핑(057050)에 이어 만년 4위에 머물고 있다. '유통 공룡'인 롯데지만 유독 홈쇼핑 시장에서 힘을...",
+    "link": "https://n.news.naver.com/mnews/article/011/0002608516?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-05",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵, 방통위 방송평가 '홈쇼핑 부문 1위'",
+    "description": "준수 △개인정보보호 등 10개 항목에서 만점을 기록했다. 협력업체 만족도, 내부감사 및 회계 관리제도, 경영사항 공시의 적정성, 방송기술 투자 등 4개 항목에서도 홈쇼핑 업체 6곳 중 최고점을 받았다. GS샵...",
+    "link": "http://www.seoulfn.com/news/articleView.html?idxno=210896",
+    "related_count": 18,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-12-08",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "“롯데백화점 ‘갑질’에 과징금 적법”",
+    "description": "ㆍ롯데, 45억 납부 취소 패소 법원이 입점 납품업체에 ‘갑질’을 한 롯데백화점에 과징금을 부과한 것은 적법하다고 판결했다. 서울고법 행정7부(민중기 부장판사)는 롯데백화점을 운영하는 롯데쇼핑이...",
+    "link": "http://www.khan.co.kr/kh_news/art_view.html?artid=201412082140555&code=940301",
+    "related_count": 24
+  },
+  {
+    "date": "2014-12-08",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "[판결] 입점 납품업체에 할인행사 강요 롯데백화점",
+    "description": "만약 이를 따르지 않으면 마진 인상과 매장 이동 등 불이익을 줬다. 공정위는 대규모유통업법을 위반했다는 이유로 롯데백화점을 운영하는 롯데쇼핑에 과징금 45억원을 부과했다.",
+    "link": "http://www.lawtimes.co.kr/LawNews/News/NewsContents.aspx?serial=89365",
+    "related_count": 2
+  },
+  {
+    "date": "2014-12-08",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "롯데백화점, '갑질'도 모자라 소송 냈지만 본전도 못 찾아",
+    "description": "서울고법 행정7부(민중기 부장판사)는 롯데백화점이 공정거래위원회를 상대로 낸 시정명령 및 과징금납부명령 취소 소송에서 원고 패소 판결했다고 8일 밝혔다. 공정위에 따르면 롯데백화점은 2012년 1월부터 5월까지 35개...",
+    "link": "http://www.m-i.kr/news/articleView.html?idxno=144451",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-08",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "'갑의 횡포'로 과징금 부과받은 롯데백화점 소송…법원 “과징금 부과 ...",
+    "description": "납품업체에 강제로 할인 행사를 요구하는 등 ’갑의 횡포‘를 부린 롯데백화점이 과징금 조치에 불복해 법원에 소송을 냈지만 패소했다. 서울고법 행정7부(부장 민중기)는 롯데쇼핑(롯데백화점)이 공정거래위원회를...",
+    "link": "http://biz.heraldcorp.com/view.php?ud=20141208000089",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "공정위, 롯데마트 '슈퍼 갑질' 제동 걸었다",
+    "description": "롯데마트가 제품 홍보를 위한 시식행사 비용을 전액 납품업체에 떠넘기는 '갑질'을 해오다 공정거래위원회에 제동이 걸렸다. 공정위는 15일 납품업체에 판매촉진행사 비용을 부당하게 전가해 대규모유통업법을 위반한...",
+    "link": "http://www.kgnews.co.kr/news/articleView.html?idxno=403371",
+    "related_count": 2
+  },
+  {
+    "date": "2014-12-15",
+    "company": "현대백화점",
+    "sentiment": "NEGATIVE",
+    "title": "[정지선 현대백화점 회장 고민] 아울렛 진출, 곳곳에 지뢰밭",
+    "description": "관련 혐의로 45억원대의 과징금을 부과 받았던 롯데백화점은 '과징금 취소소송'을 제기했다가 최근 패소했다. 현대백화점의 경우, 경영 정보를 요구한 것 외에 다른 횡포가 적발되진 않았지만 공정위는 불공정한 관행을...",
+    "link": "http://www.sisaweek.com/news/articleView.html?idxno=33169",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트, 시식행사 비용까지 ‘갑질’",
+    "description": "공정거래위원회는 납품업체에 판매촉진 행사 비용을 전가한 롯데마트, 경영 정보를 부당하게 제출하라고 지시한 현대백화점과 이마트에 대해 시정명령과 과징금을 부과하기로 했다고 15일 밝혔다. 롯데마트는 작년...",
+    "link": "http://news.mk.co.kr/news_forward.php?domain=news&no=1529774&year=2014",
+    "related_count": 4
+  },
+  {
+    "date": "2014-12-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트·이마트·현대백화점, 납품업체에 '갑질'",
+    "description": "19억6900만원의 과징금을 부과하기로 결정했다고 15일 밝혔다. 다만 롯데마트는 이번 법위반행위에 대한... 이어 \"지난해 말 롯데백화점에 이어, 이번에는 현대백화점과 이마트의 경영정보 제공 요구행위에 대해 엄중히...",
+    "link": "http://www.weeklytoday.com/news/articleView.html?idxno=28937",
+    "related_count": 5
+  },
+  {
+    "date": "2014-12-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "공정위, 시식행사 비용 떠넘긴 롯데마트에 20억 과징금",
+    "description": "공정위는 15일 롯데마트 이마트 현대백화점이 납품회사에 판촉행사 비용을 전가하고 경영정보 제출을 강요한 데 대해 19억6900만 원의 과징금을 부과했다고 밝혔다. 롯데마트는 지난해 3월부터 올해 4월까지 1456회의...",
+    "link": "http://www.businesspost.co.kr/news/articleView.html?idxno=7563",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "납품업체에 영업비밀도 요구한 이마트·현대百 '갑질' 백태",
+    "description": "납품업체에 매출액과 마진율(판매수수료율) 등 경영정보를 부당하게 요구한 이마트]와 현대백화점은 대규모유통업법 위반으로 시정명령과 각각 2억9000만원의 과징금을 부과받았다. 또 롯데마트는 제품 홍보를 위한...",
+    "link": "http://www.choicenews.co.kr/news/articleView.html?idxno=14356",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "납품업체 고혈 짜낸 롯데마트 갑질",
+    "description": "공정거래위원회는 납품업체에 판매촉진행사 비용을 전가한 롯데마트, 경영정보를 부당하게 제출하라고 지시한 현대백화점와 이마트에 대해 시정명령과 과징금을 부과하기로 했다고 15일 밝혔다. 롯데마트는 작년...",
+    "link": "http://news.mk.co.kr/news_forward.php?domain=news&no=1528764&year=2014",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "공정위, 끄나풀 강요한 이마트·현대白 '철퇴'…롯데마트 갑질도 예고",
+    "description": "아울러 시식행사 비용을 납품업체에 모두 떠넘긴 롯데마트도 추가 제재 후 확정된 과징금이 부과될 예정이다. 공정거래위원회는 경영정보 제출을 강요한 이마트ㆍ현대백화점에 대해 시정명령 및 과징금 총 5억8000만원을...",
+    "link": "http://www.ajunews.com/view/20141215133829450",
+    "related_count": 2
+  },
+  {
+    "date": "2014-12-15",
+    "company": "현대백화점",
+    "sentiment": "NEGATIVE",
+    "title": "납품업체에 '甲질' 현대백화점·이마트, 결국…",
+    "description": "공정거래위원회는 대규모유통업법을 위반한 롯데마트, 현대백화점, 이마트에 시정명령을 내리고 과징금을 부과한다고 15일 밝혔다. 현대백화점과 이마트는 각 2억9000만원의 과징금을 부과했으며, 롯데마트는 향후...",
+    "link": "http://www.etnews.com/20141215000126",
+    "related_count": 1
+  },
+  {
+    "date": "2014-12-15",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데·이마트·현대百, 납품업체에 '갑질'…과징금 19억원",
+    "description": "공정거래위원회는 15일 납품업체에게 판매촉진행사 비용을 부당하게 전가(롯데마트)하거나 경영정보 제출을 강요(현대백화점ㆍ이마트)한 대형유통업체 3개사에 대해 시정명령과 함께 총 19억6900만원의 과징금을...",
+    "link": "http://www.newspim.com/common/redirect.jsp?newsId=20141215000063",
+    "related_count": 2
+  },
+  {
+    "date": "2014-12-18",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵, 19일 신생아살리기 모자 뜨기 캠페인",
+    "description": "‘신생아살리기 모자뜨기캠페인’은 저체온증으로 고통받는 아프리카와 아시아 등지의 영·유아를 살리기 위해 털모자를 만들어 보내는 세이브더칠드런(사무총장 김미셸)의 참여형 기부 캠페인이다. GS샵은...",
+    "link": "http://sports.donga.com/3/all/20141218/68622699/1",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2014-12-22",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트·이마트·현대백화점 유통업체 ‘갑질’ 여전",
+    "description": "\" 공정거래위원회는 롯데마트에 과징금 13억 8천만 원을 부과하기로 잠정 결정했고, 이마트와 현대백화점에는 2억 9천만 원을 각각 부과했습니다. KBS 뉴스 이경진입니다. 이경진기자 (taas@kbs.co.kr) ▶ ▶ KBS뉴스 SNS...",
+    "link": "http://news.kbs.co.kr/news/NewsView.do?SEARCH_NEWS_CODE=2984689&ref=A",
+    "related_count": 1
+  }
+]

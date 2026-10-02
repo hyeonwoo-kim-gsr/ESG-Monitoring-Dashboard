@@ -1,0 +1,65 @@
+[
+  {
+    "date": "2014-06-08",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "이상발 롯데홈쇼핑 수석부장, 중소기업과 소상공인 위해 기여",
+    "description": "이상발 롯데홈쇼핑 수석부장 \"중소기업과 소상공인, 예비창업자, 소비자에게 가장 합리적인 선택을 할 수... 적재적소의 판로개척을 통한 상품 판매가 이뤄져야 매출향상은 물론 지속적인 경영가능 구도가 가능해진다\"고...",
+    "link": "http://www.mt.co.kr/view/mtview.php?type=1&no=2014060612404517887&outlink=1",
+    "related_count": 1
+  },
+  {
+    "date": "2014-06-23",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "'납품·횡령 비리' 신헌 롯데홈쇼핑 前사장 등 24명 기소",
+    "description": "비롯해 GS홈쇼핑, CJ홈쇼핑, 현대홈쇼핑, NS홈쇼핑, 홈앤쇼핑 등 6개 업체들이 독과점 시장을 형성하고 있다는... 공정거래위원회도 홈쇼핑 납품 비리와 관련한 실태를 조사하고 있다. 지난 5월에는 납품업체에 불공정한...",
+    "link": "http://www.lawtimes.co.kr/LawNews/News/NewsContents.aspx?serial=85453",
+    "related_count": 1
+  },
+  {
+    "date": "2014-06-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "'슈퍼갑질' 롯데홈쇼핑, 사장부터 사원까지 '뒷돈'",
+    "description": "[뉴데일리경제-진보라 기자] 롯데홈쇼핑이 대표이사부터 상품기획자(MD)까지 납품업체를 상대로 '슈퍼갑질'을 행사해온 것으로 드러났다. 서울중앙지검 첨단범죄수사1부(서영민 부장검사)는 리베이트를 챙기거나...",
+    "link": "http://biz.newdaily.co.kr/news/article.html?no=10039946",
+    "related_count": 3
+  },
+  {
+    "date": "2014-06-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "신동빈 \"롯데홈쇼핑 비리, 공든탑 무너진 느낌\"",
+    "description": "발생한 안전사고'는 무관용 원칙을 적용해 지위고하를 막론하고 엄중히 문책하겠다\"고 경고했다. 앞서 23일 롯데홈쇼핑 횡령·납품비리 의혹을 수사해온 서울중앙지검 첨단범죄수사1부(부장검사 서영민)는 회사...",
+    "link": "http://www.moneyweek.co.kr/news/mwView.php?type=1&no=2014062416448027246&outlink=1",
+    "related_count": 8
+  },
+  {
+    "date": "2014-06-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "신동빈 회장 “롯데홈쇼핑 충격과 실망…부정비리 발본색원(拔本塞源)해...",
+    "description": "신동빈 롯데그룹 회장이 24일 롯데홈쇼핑의 납품비리 사건과 관련 강력한 부정비리 척결의지를 밝혔다. 신... 많은 롯데그룹의 특성상 사업장 안전관리는 매우 중요하다”며 “철저한 안전점검으로 사고 발생을 사전에...",
+    "link": "http://biz.heraldcorp.com/view.php?ud=20140624000984",
+    "related_count": 2
+  },
+  {
+    "date": "2014-06-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[사설] 빙산의 일각, 롯데홈쇼핑 납품비리",
+    "description": "2012년에도 검찰이 현대홈쇼핑을 비롯한 업체 4곳에서 벌어진 대규모 비리 사건을 적발해 파문이 일기도 했다.... 그러나 홈쇼핑업계는 우월적 지위를 악용한 ‘갑질’로 영세한 납품업체들한테 원성을 사고 있다. 사건이...",
+    "link": "http://www.hani.co.kr/arti/opinion/editorial/643874.html",
+    "related_count": 2
+  },
+  {
+    "date": "2014-06-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[사설] 혀 내두를 슈퍼甲질, 롯데홈쇼핑뿐이겠나",
+    "description": "[서울신문] 롯데홈쇼핑 임직원들의 추악한 납품 비리는 상상을 초월할 정도다. 그제 검찰이 공개한 그들의... 무엇보다도 전처의 생활비나 부친의 도박 빚을 떠넘기는 등 납품업체들을 봉으로 여기는 그들의 ‘슈퍼갑(甲)...",
+    "link": "http://www.seoul.co.kr/news/newsView.php?id=20140625031017",
+    "related_count": 1
+  }
+]
