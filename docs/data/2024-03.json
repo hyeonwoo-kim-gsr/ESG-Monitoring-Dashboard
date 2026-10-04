@@ -133,5 +133,167 @@
     "description": "대상으로 사회공헌 활동 계획을 가지고 다양한 활동을 추진해 나아갈 계획이다. 이날 기탁식에 참여한 ㈜이마트에브리데이 관계자는 “화성시 관내 ㈜이마트에브리데이 점포들이 화성시민들로부터 받은 관심과 사랑을...",
     "link": "http://www.shinailbo.co.kr/news/articleView.html?idxno=1842796",
     "related_count": 1
+  },
+  {
+    "date": "2024-03-14",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 주총 이인무ㆍ윤종원 사외이사 재선임 반대 권고 왜?",
+    "description": "동안 ESG위원회 위원장 및 감사위원회 위원 등의 역할을 수행하며, 리스크 관리에 대한 중요성을... 좋은기업지배구조연구소는 \"GS리테일은 2021년 GS홈쇼핑을 흡수합병했는데, 이인무 후보는 2020년 3월 GS홈쇼핑...",
+    "link": "http://www.lawleader.co.kr/news/articleView.html?idxno=12672",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-15",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 취약계층 돕는 사회복지 플랫폼 역할 수행하며 ESG 활동 펼쳐",
+    "description": "오늘경제 사진=GS홈쇼핑 GS리테일은 GS25 편의점 및 GS더프레시 수퍼 등 18,400여 점의 전국 유통 채널을 적극 활용해 취약 계층을 지원하며 사회 복지 플랫폼의 역할을 지속적으로 펼쳐 나가고 있다고 밝혔다. GS리테일이...",
+    "link": "http://www.startuptoday.co.kr/news/articleView.html?idxno=183035",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-17",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "LG생건‧현대백화점면세점‧롯데백화점, '독일 iF 디자인 어워드' 수상...",
+    "description": "사진=LG생활건강 매일일보 = 강소슬 기자  |  LG생활건강, 현대백화점면세점, 롯데백화점은 독일... 현대백화점면세점은 2년 연속 커뮤니케이션 부문 본상을 수상했다. 올해 수상작인 '플라스틱 비닐 가방 재활용 프로젝트...",
+    "link": "http://www.m-i.kr/news/articleView.html?idxno=1102208",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "편의점 주문물품, 노인들이 걸어서 배달한다…서울시·GS리테일 협약",
+    "description": "서울시가 지에스(GS)리테일과 함께 근거리 도보배달 일자리 1000개를 60살 이상 시민에게 제공하기로 했다.... 선발되면 4∼5월에 애플리케이션 사용 방법, 안전사고 예방 등의 기본교육을 받은 뒤 서비스에 투입된다....",
+    "link": "https://www.hani.co.kr/arti/area/capital/1132859.html",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-21",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 세계 물의 날 기념 '성내천 하천 정화' 개최",
+    "description": "행사는 롯데마트슈퍼 임직원 뿐만 아니라 본사가 위치한 송파구의 하천 관리를 주관하는 송파구시설관리공단과 함께 협업해 더욱 의미가 있었다\"며 \"앞으로도 사업장 주변 생태 환경의 보전을 위해 지역 사회와 연계한...",
+    "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=20809",
+    "related_count": 24
+  },
+  {
+    "date": "2024-03-21",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, \"하천 생태 환경 지킨다\"",
+    "description": "행사는 롯데마트슈퍼 임직원 뿐만 아니라 본사가 위치한 송파구의 하천 관리를 주관하는 송파구시설관리공단과 함께 협업해 더욱 의미가 있었다\"며 \"앞으로도 사업장 주변 생태 환경의 보전을 위해 지역 사회와 연계한...",
+    "link": "http://www.greenpostkorea.co.kr/news/articleView.html?idxno=216681",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-24",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "SK티비엠지오스톤, 이마트24에 리필 스테이션 마",
+    "description": "일정 조건을 거치면 완전히 생분해되어 자연으로 돌아가는 '썩는 플라스틱'이다. 이를 통해 이마트24 그린필박스에서는 매립이나 소각 시 분해되지 않는 일반 플라스틱 용기를 재활용하는 기존 리필...",
+    "link": "https://weekly.hankooki.com/news/articleView.html?idxno=7086326",
+    "related_count": 19
+  },
+  {
+    "date": "2024-03-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, ESG 활동 강화",
+    "description": "GS리테일은 점포에는 시스템적인 처리 방식으로 업무 효율화에 도움이 될 것이며, 본부는 정확한 수거 데이터 확보 및, 수거 이후 바이오디젤로 재활용되는 가공 실적까지 확인이 가능할 것으로 예상하고 있다. GS25와...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202403252100558509204ead0791_12",
+    "related_count": 20
+  },
+  {
+    "date": "2024-03-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 폐식용유 300톤… 바이오디젤로 전환할 계획",
+    "description": "GS리테일은 이번 협력으로 폐식용유 수거 데이터 확보·수거 이후 바이오디젤로 재활용되는 가공 실적까지 확인할 수 있다. 기존에는 점포에서 발생한 폐식용유 수거를 위해서 수거 요청 접수, 단가 확인, 수거 방문일...",
+    "link": "https://www.dt.co.kr/contents.html?article_no=2024032602101532102004&ref=naver",
+    "related_count": 12
+  },
+  {
+    "date": "2024-03-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 플랫폼 통한 폐식용유 리사이클 체인 구축",
+    "description": "GS리테일이 바이오디젤로 재활용되는 폐식용유 수거 방식 개선을 통해 점포 운영 편리성 제고 및 환경적으로 보다 투명한 탄소 발생량 저감 활동에 기여한다. 편의점 GS25와 슈퍼마켓 GS더프레시는 내달 15일부터 플랫폼을...",
+    "link": "http://www.e-platform.net/news/articleView.html?idxno=84324",
+    "related_count": 6
+  },
+  {
+    "date": "2024-03-25",
+    "company": "이마트에브리데이",
+    "sentiment": "POSITIVE",
+    "title": "㈜이마트에브리데이, ㈜트윈프로 고양시사회복지협의회에 물품 후원",
+    "description": "기부해 주신 물품은 꼭 필요한 곳에 전달하겠다\"라고 했다. ㈜이마트에브리데이가 생필품 3종 후원해 지역 내 사회복지기관 3곳에 나누어 배분된다. 한편, 지난 21일에는 ㈜이마트에브리데이가 100만원 상당의 생필품...",
+    "link": "http://www.mygoyang.com/news/articleView.html?idxno=78502",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-26",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일·CJ제일제당·아워홈, '폐식용유'에 꽂힌 까닭",
+    "description": "폐식용유를 바이오연료로 전환하거나 친환경 플라스틱 생산에 활용하는 식이다.  ESG(환경·사회·지배구조) 경영의 일환으로 기업 간 자원 선순환 협력을 강화하겠다는 취지다. GS리테일은 올해 약 300톤 이상의...",
+    "link": "http://news.bizwatch.co.kr/article/consumer/2024/03/25/0020",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-27",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 폐현수막 업사이클 사업 착수식 실시",
+    "description": "슈퍼 준법지원부문장은 \"롯데마트는 이번 사업을 통해 폐현수막 새활용 기술 발전에 이바지하고 순환경제 가치가 확산되길 희망한다\"며 앞으로도 ESG 실천을 위해 친환경, 상생가치 실현이 동반되는 다양한 사회공헌...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202403272059367986204ead0791_12",
+    "related_count": 17
+  },
+  {
+    "date": "2024-03-27",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트 순환경제 활성화 나선다, 폐현수막 재활용해 건축자재로 탈바...",
+    "description": "진주태 롯데마트·슈퍼 준법지원부문장은 \"롯데마트는 이번 사업을 통해 폐현수막 새활용 기술 발전에 이바지하고 순환경제 가치가 확산되길 희망한다\"며 \"앞으로도 ESG(환경·사회·지배구조) 실천을 위해 친환경...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=346997",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-27",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "경기환경에너지진흥원-롯데마트, 순환경제 가치 확산 및 지역 소상공인...",
+    "description": "만드는 재활용사업이다. 생산된 자재는 오래된 전통시장 구조물로 활용될 예정이다. 경기환경에너지진흥원과 롯데마트는 사업을 더욱 발전시켜 다양한 제품을 개발하고 지역사회와의 소통을 강화할 계획이다. 환경부에...",
+    "link": "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1080485",
+    "related_count": 2
+  },
+  {
+    "date": "2024-03-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, '자동 수요반응' 시스템 8천 7백여 개 GS25 매장에 도입",
+    "description": "오늘경제 사진=GS홈쇼핑 GS리테일은 지난 26일 전력거래소, 공간 관리 전문 기업 'S&ICorp,' 에너지 IT 기업... 편의점 GS25 매장 내 '자동 수요반응(AUTO DR·Demand Response)' 시스템 도입을 위한 전략적 업무협약(MOU)을...",
+    "link": "http://www.startuptoday.co.kr/news/articleView.html?idxno=186854",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-28",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "\"아이들의 꿈과 미래 응원\"…롯데홈쇼핑, ESG 경영 확대",
+    "description": "롯데홈쇼핑은 음성도서 제작사업 '드림보이스', 문화소외계층 아동을 위한 친환경 학습공간 '작은도서관' 등 ESG(환경·사회·지배구조) 경영 활동을 확대하고 있다고 28일 밝혔다. 롯데홈쇼핑은 지난해 환경, 나눔, 공존...",
+    "link": "https://www.news1.kr/articles/5365579",
+    "related_count": 1
+  },
+  {
+    "date": "2024-03-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "'함께 가면 멀리'…롯데마트, 우수 파트너사에 감사장",
+    "description": "동반성장 펀드를 통해 자금 유동성을 지원하는 한편 ESG 역량 강화도 돕는다. 앞으로는 해외 판로 지원, 농어촌 파트너사의 생산성 향상을 위한 장비 지원 등으로 상생 활동의 폭을 넓힐 계획이다. 진주태 롯데마트·슈퍼...",
+    "link": "https://www.yna.co.kr/view/AKR20240330048600030?input=1195m",
+    "related_count": 3
   }
 ]
