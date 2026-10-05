@@ -204,7 +204,7 @@
     "title": "현대백화점·홈쇼핑, 2026 고객만족도(KCSI) 1위 등극",
     "description": "ESG 활동 분야에서도 높은 평가를 받았다. 현대홈쇼핑은 고객 가정 내 폐가전을 재활용하는 '전자폐기물 자원순환 캠페인'과 어린이 환경보호 인식 제고를 위한 '친환경 어린이 그림대회' 등을 운영 중이다. 한편...",
     "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=366611",
-    "related_count": 6
+    "related_count": 1
   },
   {
     "date": "2026-10-02",
@@ -240,7 +240,7 @@
     "title": "롯데마트, 친환경 청년농부 키운다…잠실서 농산물 판매 지원",
     "description": "서주연 롯데마트·슈퍼 ESG조직문화팀 담당자는 “이번 팝업스토어를 통해 청년농부들이 소비자와 직접 만나 친환경 농산물의 가치를 알리고 새로운 판로를 개척하는 계기가 되길 기대한다”며 “농업 역량 강화부터 생산...",
     "link": "https://www.socialvalue.kr/news/view/1065591338160457",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-04",
@@ -249,7 +249,7 @@
     "title": "\"저탄소 배부터 바질페스토까지\"…롯데마트·슈퍼, 잠실서 '청년농부 팝...",
     "description": "롯데마트·슈퍼가 7일까지 롯데마트 제타플렉스 잠실점 야외 행사장에서 농가 상생 프로젝트 '상생씨앗'의... 구축하여 ESG 경영 및 지속 가능한 농업 생태계 조성을 가속화하려는 유통-농가 동반성장 전략으로 풀이된다....",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=320996",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-10-03",
@@ -277,5 +277,41 @@
     "description": "성금은 고객 참여 모금과 회사 매칭 기부, 오프라인 행사 수익금으로 조성됐다. 현대백화점은 지난 8월 28일부터 9월 13일까지 그룹 통합 멤버십 H포인트 앱에서 긴급 모금 캠페인을 진행했다. 고객 1만4266명이 총 5000만...",
     "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130615",
     "related_count": 1
+  },
+  {
+    "date": "2026-10-05",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트24, 캄보디아 주유소 품고 출점 확대… 현지 공략 속도",
+    "description": "이마트24는 지난 8월 캄보디아 진출 2주년을 맞아 현지 언론과 주요 인사 등이 참석한 기념행사를 열고 현지 사업 성과와 향후 비전을 공유했다. 행사에서는 앙코르 어린이병원에 기부금을 전달하는 등 현지 사회공헌...",
+    "link": "https://www.viva100.com/article/20261005500229",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-05",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "SSG닷컴 분할 임박, 이마트 정용진號 미래 탄탄대로 열리나",
+    "description": "이는 오랫동안 정용진 신세계그룹 회장이 이끄는 이마트 부문-정유경 신세계 회장이 이끄는 백화점 부문 등... 또 법인 분할은 그룹 내 계열분리·지배구조를 정리하는데도 효율을 높일 것으로 본다. 이사회가 오는 23일...",
+    "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=278672",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-05",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, '청년농부 팝업스토어'로 농가와 상생한다",
+    "description": "서주연 롯데마트·슈퍼 ESG조직문화팀 담당자는 \"이번 팝업스토어를 통해 청년농부들이 소비자와 직접 만나 친환경 농산물의 가치를 알리고 새로운 판로를 개척하는 계기가 되길 기대한다\"며 \"앞으로도 청년농부의 농업...",
+    "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5068378",
+    "related_count": 5
+  },
+  {
+    "date": "2026-10-04",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 네팔 수해 복구 재건 위한 성금 3억 원 전달",
+    "description": "중심의 사회공헌 활동과 구분된다. 이번 성금은 한국해비타트를 통해 네팔 수해 피해 지역의 주거시설 복구와 이재민들의 생활 기반 회복을 위한 지원에 사용될 예정이다. 현대백화점은 국내외 재난 발생 시 기부와 지원...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=209204",
+    "related_count": 5
   }
 ]
