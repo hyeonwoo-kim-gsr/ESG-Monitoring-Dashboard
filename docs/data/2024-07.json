@@ -349,5 +349,68 @@
     "description": "점검하는 등 관리 시스템을 강화해온 것도 긍정적 요인으로 작용했다고 부연했다.CJ온스타일 관계자는 \"ESG(환경·사회·지배구조) 경영에 힘써 규범을 준수하는 윤리적인 기업으로 자리매김할 것\"이라고 말했다. 장지영",
     "link": "https://www.asiatoday.co.kr/view.php?key=20240719010012588",
     "related_count": 29
+  },
+  {
+    "date": "2024-07-21",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "대구적십자사, 현대홈쇼핑 후원 언니의 선물 위생용품 지원사업",
+    "description": "언니의 선물 위생용품 지원사업은 현대홈쇼핑 후원으로 전국적으로 이뤄지며, 대구지역에는 한부모가정, 조손가정, 자립준비청년 등 취약계층 여성청소년 182명을 대상으로, 인당 위생용품세트 2세트가 지원된다. 박명수...",
+    "link": "http://www.ksmnews.co.kr/news/view.php?idx=492986",
+    "related_count": 3
+  },
+  {
+    "date": "2024-07-24",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "CU편의점 전광판에 ‘제복 경찰’ 소개·응원메시지… 서울경찰·BGF 업...",
+    "description": "서울경찰청 기동본부와 BGF리테일은 24일 오후 BGF리테일 서울 삼성동 사옥에서 업무협약식을 열었다고... 서울경찰은 “지금 이 순간에도 국민의 든든한 봉사자로 사회의 안전을 지키고 있는 경찰관들의 노고를 알려...",
+    "link": "https://news.heraldcorp.com/view.php?ud=20240724050534",
+    "related_count": 1
+  },
+  {
+    "date": "2024-07-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 “어린이에게 꿈을 선물합니다”",
+    "description": "‘오늘 실천하면 달라지는 내일’을 ESG(환경·사회·지배구조) 경영 슬로건으로 친환경 사업과 연계해 어린이들이 건강한 환경에서 학습할 수 있는 기회를 제공하고 있다. 25일 롯데홈쇼핑에 따르면 서울 구로구...",
+    "link": "https://www.etoday.co.kr/news/view/2383256",
+    "related_count": 1
+  },
+  {
+    "date": "2024-07-29",
+    "company": "CJ온스타일",
+    "sentiment": "NEGATIVE",
+    "title": "[기업 Check!] [CJ온스타일] ③ 홈쇼핑 '상생 꼴찌' 불명예 어쩌나",
+    "description": "롯데홈쇼핑(25.3%), GS SHOP(30.3%), 현대홈쇼핑(25.3%), 홈앤쇼핑(26.6%), NS홈쇼핑(30.3%), 공영쇼핑(16.5%)를 앞지른... 구체적으로 CJ온스타일은 지난해 동반성장 지원사를 70개에서 134개로 확대하고, 협력사 지원 사업을 대폭...",
+    "link": "https://www.topdaily.kr/articles/98337",
+    "related_count": 1
+  },
+  {
+    "date": "2024-07-29",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[Who Is ?] 정지선 현대백화점그룹 회장",
+    "description": "또 다른 계열사 현대홈쇼핑은 아이스팩 재활용 캠페인을 통해 7만 명의 고객에게서 124만 개의 아이스팩을 수거해 신선식품 배송에 재활용했다. 현대홈쇼핑은 이런 노력을 인정받아 2019년 대통령표창을 받았다....",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=360387",
+    "related_count": 1
+  },
+  {
+    "date": "2024-07-30",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 국가보훈부와 보훈 문화 확산 MOU 체결",
+    "description": "1절, 광복절 등 보훈기념일에 사회공헌 캠페인을 진행하며 자체 O4O 앱 포켓CU 등을 활용해 고객 참여를 독려할 계획이다. 지난해에도 BGF리테일은 사회복지법인 연탄은행과 손잡고 핫팩을 선보인 후 총 6000개 핫팩을...",
+    "link": "http://theviewers.co.kr/View.aspx?No=3317503",
+    "related_count": 15
+  },
+  {
+    "date": "2024-07-31",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 미래세대 아동 위한 ESG 활동 지속...친환경 학습 공간에 도...",
+    "description": "지난 2022년부터는 롯데홈쇼핑 MZ세대 직원이 제안한 '친환경 업사이클링' 제도를 반영해 섬유 폐기물을 가공한 섬유패널을 건축 자재, 소품으로 재활용해 '작은도서관'을 구축하고 있다. 의류폐기물 1톤을 재가공해...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=231236",
+    "related_count": 1
   }
 ]
