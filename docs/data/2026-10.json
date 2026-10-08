@@ -321,7 +321,7 @@
     "title": "“저탄소·친환경” 롯데마트·슈퍼, ‘청년농부 팝업스토어’ 운영",
     "description": "서주연 롯데마트·슈퍼 ESG조직문화팀 담당자는 “향후 청년농부의 농업 역량 강화, 생산 지원, 판로 확대로 이어지는 상생 활동을 통해 지속 가능한 농업 생태계 조성에 힘쓰겠다”고 했다.",
     "link": "https://n.news.naver.com/mnews/article/382/0001297232?sid=101",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-10-06",
@@ -402,7 +402,7 @@
     "title": "롯데홈쇼핑, 쇼핑축제 '광클절' 개막…콘서트 고객 1만3000명 초청",
     "description": "강재준 롯데홈쇼핑 영업본부장은 \"올해 광클절은 상품과 쇼핑 혜택을 중심으로 콘서트와 오프라인 프로그램을 더해 다양한 세대가 함께 즐길 수 있도록 기획했다\"고 말했다. 쇼핑 행사에 공연과 기부 프로그램을...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=210237",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-06",
@@ -420,7 +420,7 @@
     "title": "롯데홈쇼핑 '광클절' 개막… 쇼핑 넘어 공연·오프라인으로 확장",
     "description": "사회공헌도 행사와 연계한다. 롯데홈쇼핑은 광클절 이벤트 참여 건수에 따라 구세군 한국군국에 최대 5,000만원을 기부할 예정이다. 강재준 롯데홈쇼핑 영업본부장은 \"올해는 쇼핑 혜택을 중심으로 콘서트와 오프라인...",
     "link": "https://www.sisaweek.com/news/articleView.html?idxno=238225",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-10-06",
@@ -456,6 +456,132 @@
     "title": "현대백화점, 네팔 수해 복구 성금 3억 원 전달",
     "description": "고객 1만4266명이 보유한 H포인트 5000만 점을 기부했으며, 현대백화점이 고객 기부액과 동일한 금액을 더하는 '매칭 그랜트' 방식으로 총 1억 원을 마련했다. H포인트는 1포인트당 1원으로 환산됐다. 여기에 지난달 4일부터...",
     "link": "http://www.ktnews.com/news/articleView.html?idxno=149092",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF, 지배구조 개편…유통·플라스틱·반도체 소재 3개 축 재편",
+    "description": "매일일보 = 강소슬 기자   |  BGF가 그룹 지배구조를 개편하고 유통과 엔지니어링 플라스틱, 반도체 소재 등 3개 사업 부문 중심의 경영 체제를 구축한다. 지배구조 단순화를 통해 의사결정 속도를 높이고 미래...",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=2003859",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-07",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 오늘] BGF리테일ㆍ이랜드ㆍLG유니참ㆍ다이소",
+    "description": "<편집자주> BGF리테일 X 산돌, 한글날 맞아 CU 공식 폰트 '좋은친구' 선봬 편의점 CU를 운영하는 BGF리테일이... 걸친 ESG 경영을 강화하며 선한 영향력을 전한다고 7일 밝혔다. LG유니참은 2023년 업계 최초로 메인 생산...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1018497",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "종가보다 17% 비싸게…BGF에코머티리얼즈, 150억 자사주 공개매수",
+    "description": "BGF는 해당 지분을 인수하면서 KNW를 직접 지배하는 구조로 바꾼다. BGF그룹은 기존 유통·엔지니어링 플라스틱 중심 구조에서 반도체 소재 사업까지 지주사 산하에 직접 배치하는 방향으로 지배구조를 손질하는...",
+    "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1727148",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "[드림Talk] 차남이 키운 '반도체소재' 장남 품으로…BGF, 승계판 다시 짜...",
+    "description": "거래가 완료되면 'BGF→BGF에코머티리얼즈→케이엔더블유→비지에프에코스페셜티'로 이어지는 BGF그룹의 반도체 소재부문 지배구조는 'BGF→케이엔더블유→비지에프에코스페셜티'로 단순화됩니다. 케이엔더블유는...",
+    "link": "http://www.newsdream.kr/news/articleView.html?idxno=119592",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "BGF, KNW 자회사 편입...유통·소재·반도체 '삼각편대' 지배구조 재편",
+    "description": "BGF 관계자는 \"이번 지배 구조 개편으로 미래 성장 동력을 전략적으로 육성할 수 있는 토대를 마련하고 책임 경영 체제를 확립해 모든 사업 부문의 역량을 극대화함으로써 그룹 전반의 경쟁력을 높여 나갈 것\"이라고...",
+    "link": "https://www.getnews.co.kr/news/articleView.html?idxno=882965",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "BGF, 반도체 소재 사업 직접 챙긴다…KNW 지분 56.9% 인수",
+    "description": "BGF가 자회사 BGF에코머티리얼즈가 보유한 케이엔더블유(KNW) 지분 전량을 인수하며 그룹 지배구조 개편에 나선다. BGF는 케이엔더블유 보통주 911만3891주(지분율 56.9%)를 매입한다고 7일 공시했다. 이번 거래로 기존...",
+    "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130784",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-07",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "[똑똑한쇼핑] 이마트, NS홈쇼핑, 현대백화점, 쿠팡, 컬리, 홈플러스, 롯...",
+    "description": "쿠팡의 상생 전문관 '착한상점'을 통해 금산 인삼 원물을 비롯해 홍삼과 수삼, 인삼청, 액기스, 절편... 크리스피크림도넛과 세븐일레븐, 롯데면세점 등 롯데 계열사 혜택도 마련했다. 롯데온 관계자는...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261007024113292",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-07",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "[편의점 브리핑] CU 공식 폰트·GS25 김혜자 도시락·세븐일레븐 가을 와...",
+    "description": "기부금은 결식 우려 아동 지원 사업 등에 사용할 예정이다. 세븐일레븐이 가을 시즌을 맞아 레드와인 '지아코모 보르고뇨 노네임'을 출시하고 이달 말까지 와인 119종 할인 행사를 진행한다. /사진=세븐일레븐...",
+    "link": "http://www.issuenbiz.com/news/articleView.html?idxno=80396",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "[똑똑한쇼핑] 이마트, 롯데마트·슈퍼, CJ온스타일, 11번가, KT알파 쇼핑...",
+    "description": "◇ 이마트, 고등어·생새우 등 제철 먹거리 할인 이마트가 이달 8일부터 14일까지 일주일간 가을철 제철... 롯데온은 행사장에 '온누리상생스토어' 홍보 공간을 마련하고 전통시장 상인을 대상으로 온라인 입점 절차와...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261008026383661",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-07",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "CJ제일제당, 여주시·이마트와 맞손… 프리미엄 '햇반 여주쌀밥' 출시",
+    "description": "가능한 동반성장 체계를 공고히 다져왔다. CJ제일제당 관계자는 \"대한민국 대표 프리미엄 쌀인 여주쌀과 CJ제일제당의 독보적인 기술력, 이마트의 유통 인프라가 만나 뛰어난 맛품질의 제품을 선보이게 됐다\"라며...",
+    "link": "https://www.nbntv.kr/news/articleView.html?idxno=340919",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-08",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "새벽배송 규제 풀리나…이마트·롯데마트 '점포+온라인' 선제 대응 나섰...",
+    "description": "롯데마트 제타 스마트센터 부산 내에서 이동 벨트를 통해 상품이 담긴 토트가 이동하고 있다. 사진=롯데마트... 있도록 상생 방안을 논의해야 한다고 밝혔다. 대형마트 규제 완화 문제를 두고 관련 이해관계자들과 사회적...",
+    "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=321600",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-07",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑 임직원이 직접 뛴다…기부 넘어 봉사까지",
+    "description": "7일 유통업계에 따르면 롯데홈쇼핑이 ESG 경영 슬로건 '오늘 실천하면 달라지는 내일'을 바탕으로 임직원 참여형 사회공헌 프로그램을 확대하고 있다. 대표적인 사례는 '리:턴(RE:TURN) 자원순환 캠페인'이다. 임직원이...",
+    "link": "http://www.newsprime.co.kr/news/article.html?no=750197",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데백화점, K뷰티 브랜드와 LA 공략…체험형 팝업 선봬",
+    "description": "브랜드와 상생하는 선순환 구조를 구축할 것”이라고 밝혔다. 한편, 롯데백화점 K-뷰티 상품군의 외국인 매출은 최근 3개월간 전년 대비 110% 증가세를 기록했다. 특히 북미권 고객의 매출은 120% 오르는 등 미주 고객의...",
+    "link": "https://www.g-enews.com/view.php?ud=202610081102522738056c162803_1",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[똑똑한뷰티] 구다이글로벌, 롯데백화점 K-뷰티, LG생활건강 숨37°, 랜딩...",
+    "description": "행사는 롯데백화점이 발굴한 브랜드를 해외 고객과 연결하고 협력사의 성장 가능성을 함께 모색하는 자리\"라며 “앞으로도 유망 브랜드 발굴과 판로 지원을 확대해 상생 구조를 강화하겠다\"고 밝혔다. ◇ LG생활건강...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261008023103696",
     "related_count": 1
   }
 ]
