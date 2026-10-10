@@ -591,7 +591,7 @@
     "title": "편의점 넘어 ‘반도체 소재’ 키우는 BGF…구조 개편으로 ‘3개 축’ 성...",
     "description": "BGF 관계자는 “지배구조를 단순화해 중간 단계를 줄이면서 보다 신속한 의사결정이 가능해지고, 기존 구조에서는 공정거래법상 원칙적으로 불가능했던 외부 자금 조달도 가능해진다”며 “반도체 소재 사업은 아직...",
     "link": "https://www.kukinews.com/article/view/kuk202610080143",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-08",
@@ -627,6 +627,24 @@
     "title": "유승민 회장도 주목한 브리지…현대백화점 ‘에피원’서 챔피언십 6차 ...",
     "description": "바랍니다\"라며 \"백화점이 물건을 구매하는 곳을 넘어 브리지라는 문화를 만들고 체험하는 장소로 자리매김하면서 사회공헌 측면에서도 의미가 크다. 앞으로도 고객이 함께 즐길 수 있는 문화 콘텐츠를 꾸준히...",
     "link": "https://m.sports.naver.com/general/article/449/0000363525",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "BGF, 817억 들여 KNW 품는다…반도체 소재 ‘새 성장축’",
+    "description": "기존 4단계 지배구조도 3단계로 줄어듭니다. 그동안 KNW의 자회사인 BGF에코스페셜티는 지주사의 증손회사에 해당해 외부 투자 유치에 제약이 있었지만, 이번 개편으로 자금조달의 선택지를 넓히겠다는 구상입니다....",
+    "link": "https://www.sentv.co.kr/article/view/sentv202610080078",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-08",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑, 초대형 쇼핑축제 ‘광클절’ 개막",
+    "description": "롯데홈쇼핑은 8일부터 18일까지 초대형 쇼핑축제 ‘광클절’을 진행한다고 밝혔다. 올해는 구매 고객을... 고객 응모 건수와 연계해 구세군 한국군국에 최대 5000만 원을 기부할 예정이다. 한편, ‘광클콘서트’는 14일과...",
+    "link": "https://www.thebigdata.co.kr/view.php?ud=202610081411055315570d99e4c8_23",
     "related_count": 1
   }
 ]
