@@ -25,5 +25,339 @@
     "description": "롯데백화점이 6일 서울 잠실 롯데월드몰 일대에서 유통사 유일의 러닝축제 '스타일런 위드(with) 송파구'를... 달리기를 완주한 참가자들에게는 키링으로도 활용이 가능한 플라스틱 리사이클링 메달을 증정했다....",
     "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=254624",
     "related_count": 1
+  },
+  {
+    "date": "2024-10-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "해변 정화에 롯데홈쇼핑 임직원 자발 참여…쓰레기 200㎏ 수거",
+    "description": "나선 롯데홈쇼핑 임직원들이 기념촬영을 하고 있다. 롯데홈쇼핑 제공 롯데홈쇼핑이 지난달 30일 인천 중구... 번째 활동을 진행하게 됐다”며 “친환경 활동 지속으로 ESG 경영을 통한 사회적 책임을 실천하겠다”고 말했다.",
+    "link": "http://www.segye.com/newsView/20241002513070?OutUrl=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 임직원 참여 '반려해변 정화활동' 진행",
+    "description": "이동규 롯데홈쇼핑 마케팅부문장은 \"친환경 사회공헌 활동의 일환으로 지난해 5월부터 반려해변 입양을 통한 해양환경 정화활동을 시작했으며 향후에도 임직원이 참여하는 친환경 활동을 지속하며 ESG 경영을 통한...",
+    "link": "http://www.100ssd.co.kr/news/articleView.html?idxno=114045",
+    "related_count": 2
+  },
+  {
+    "date": "2024-10-02",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "한국장애인재활협회, 현대홈쇼핑과 함께하는 'H!두드림투게더'",
+    "description": "현대홈쇼핑 담당자는 \"H!두드림투게더는 현대홈쇼핑의 대표 사회공헌 사업.\"이라며 \"앞으로도 멘토링 활동이 잘 이뤄질 수 있도록 적극 돕겠다.\"고 밝혔다. 한편, 현대홈쇼핑은 그동안 H!두드림투게더에 13억5,100만 원을...",
+    "link": "http://www.welfarenews.net/news/articleView.html?idxno=104620",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-08",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "‘동반성장’ 최우수 기업 롯데건설·BGF리테일·SK실트론 등 44곳",
+    "description": "중견기업 3곳은 농심, 파리크라상, BGF리테일이다. 지난해 동반성장지수 평가 결과, 제조·가맹점 업종에서 최우수 등급 기업이 늘었고 건설·식품 업종에서는 줄었다. 공정거래위원회 관계자는 “평가 결과 최우수...",
+    "link": "https://biz.chosun.com/policy/policy_sub/2024/10/08/5RXYLPIDVNAVRHBYRSMZD7YIOE/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "related_count": 3
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "\"수산물 구매하고 바다사랑 실천\"...롯데마트, '바다愛진심' 기부 캠페인",
+    "description": "롯데마트는 16일까지 수산물 프로모션을 진행하고, 행사 수산물 구매 시 구매 금액의 1%가 어촌의 해양 환경 개선을 위한 활동에 기부되는 캠페인을 진행한다고 8일 밝혔다. 이번 행사는 ESG(환경사회지배구조) 캠페인...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2070851",
+    "related_count": 20
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, '바다愛진심' 프로젝트 4탄... \"수산물 구매하면 1% 기부\"",
+    "description": "롯데마트는 오는 16일까지 ESG(환경∙사회∙지배구조) 캠페인 '바다愛(애)진심' 프로젝트 일환으로 수산물... 내용은 '롯데마트GO' 앱 내 이벤트 페이지에서 확인할 수 있다. 권영인 롯데마트·슈퍼 ESG팀 담당자는...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=141021",
+    "related_count": 5
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[브리프] 롯데마트 LF몰 무신사 아모레퍼시픽 애경",
+    "description": "롯데마트·슈퍼 ESG팀 담당자는 \"롯데마트는 '바다愛(애)진심' 프로젝트를 시리즈로 선보이면서 해양 환경과 어촌 상생, 해양 보존 의식 고취 등 다양한 관점에서 ESG 활동을 진행해왔다\"며 \"4탄으로 기획된 이번 기부...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=322707",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 고객 참여 기부 캠페인 '바다애' 진행…\"구매액 1% 자동 기부...",
+    "description": "캠페인을 통해 조성된 기부금으로 생분해성 그물을 구매, 어촌 공동체에 제공할 예정이다. 바다愛(애)... 권영인 롯데마트·슈퍼 ESG팀 담당자는 \"이번 프로젝트를 선보이면서 해양 환경과 어촌 상생, 해양 보존 의식...",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=768104",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트 “수산물 구매액 1%로 해양환경 개선 지원”",
+    "description": "기부금 적립 완료 여부는 행사 수산물 구매 시 영수증을 통해 확인할 수 있다. 권영인 롯데마트·슈퍼 ESG팀 담당자는 “롯데마트는 바다애진심 프로젝트를 시리즈로 선보이면서 해양 환경과 어촌 상생, 해양 보존...",
+    "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01266086639050952",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[ESG] 롯데홈쇼핑, 서울 월계중에 12번째 친환경 숲 조성",
+    "description": "롯데홈쇼핑은 서울 노원구에 있는 월계중학교에 미세먼지 저감을 위한 친환경 녹지공간 ‘숨;편한 포레스트’ 12호를 조성했다고 8일 밝혔다. 약 400㎡ 면적에 소나무와 벚나무, 영산홍, 조팝나무 등 교목과 관목류...",
+    "link": "https://mydaily.co.kr/page/view/2024100812202175148",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-08",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 광복점, 샤롯데 봉사단 자갈치 축체 참여 봉사",
+    "description": "사진=롯데백화점 광복점 롯데백화점 광복점(점장 조석민) 샤롯데 봉사단이 지난 6일 부산 중구 자갈치 축제에 참여했다. 백화점 관계자는 \"당일 광어회 1500인분 무료 나눔 및 환경 정화 봉사 활동을 선보였다\" 전했다.",
+    "link": "https://www.nbntv.kr/news/articleView.html?idxno=333126",
+    "related_count": 2
+  },
+  {
+    "date": "2024-10-09",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS25·GS홈쇼핑, 동반성장지수 `최우수·우수` 등급 획득",
+    "description": "GS리테일은 자사가 운영하는 편의점 GS25와 홈쇼핑 GS샵이 동반성장위원회에서 발표한 2023년 동반성장지수... GS샵은 '홈쇼핑업' 분야에서 협력사와의 ESG(환경·사회·지배구조)경영 지원 등 성과를 인정 받아 '우수...",
+    "link": "https://www.dt.co.kr/contents.html?article_no=2024100902109932031006&ref=naver",
+    "related_count": 11,
+    "source_company": "GS홈쇼핑"
+  },
+  {
+    "date": "2024-10-09",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 동반성장지수 평가서 첫 최우수 등급",
+    "description": "편의점 CU를 운영하는 BGF리테일이 동반성장위원회가 주관하는 '2023년도 동반성장지수 평가'에서 처음으로 최우수 등급을 받았다고 9일 밝혔다. 2011년 도입된 동반성장지수는 대-중소기업 간 동반성장을 촉진하고자...",
+    "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=254802",
+    "related_count": 19
+  },
+  {
+    "date": "2024-10-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "유통가 ESG 1등 현대백화점, 고객 개인정보 활용 현황 공개",
+    "description": "고객은 개인정보의 주체로서 불필요하거나 잘못된 정보가 수집됐다고 판단될 경우 현대백화점에 개인정보 삭제 또는 정정을 요구할 수 있다. 실제 현대백화점은 공식 홈페이지를 통한 개인정보 보호 강화 노력을...",
+    "link": "https://www.econovill.com/news/articleView.html?idxno=669187",
+    "related_count": 36
+  },
+  {
+    "date": "2024-10-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "“유통업계 첫 시도”...현대백화점, 다들 박수 칠 '깜짝 소식' 하나가 ...",
+    "description": "현대백화점은 이를 통해 개인정보 보호에 대한 사회적 책임을 다하겠다는 방침이다. 박근호 현대백화점 회원운영관리담당(CPO·개인정보 보호책임자) 상무는 고객의 개인정보 활용 현황 공개가 법적 의무는 아니지만...",
+    "link": "https://www.wikitree.co.kr/articles/989599",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "홈페이지에 '개인정보 보호센터' 신설...현대백화점, 업계 첫 고객 정보...",
+    "description": "고객은 개인정보의 주체로서 불필요하거나 잘못된 정보가 수집됐다고 판단될 경우 현대백화점에 개인정보 삭제 또는 정정을 요구할 수 있다. 또한 마이 프라이버시 항목 외에도 개인정보 보호원칙과 처리방침, 관련...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2070862",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 정지영 사장 직속 '개인정보 보호센터' 오픈",
+    "description": "고객은 개인정보의 주체로서 불필요하거나 잘못된 정보가 수집됐다고 판단될 경우 현대백화점에 개인정보 삭제 또는 정정을 요구할 수 있다. 또한 마이 프라이버시 항목 외에도 개인정보 보호원칙과 처리방침, 관련...",
+    "link": "https://biz.newdaily.co.kr/site/data/html/2024/10/09/2024100900021.html",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-10",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "금산군 - 베트남국영방송 현대홈쇼핑 협약",
+    "description": "금산군은 지난 8일 제42회 금산세계인삼축제장에서 베트남국영방송(VTV)현대홈쇼핑과 금산인삼 수출을 위한 업무협약을 체결했다. 이번 협약을 통해 양측은 금산인삼 세계화를 위한 베트남 판로 개척, 금산인삼 브랜드...",
+    "link": "http://www.cctimes.kr/news/articleView.html?idxno=814842",
+    "related_count": 6
+  },
+  {
+    "date": "2024-10-11",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "CJ온스타일, 지역 사회 문화 행사 '까리따스 가을행사' 진행",
+    "description": "컵 재활용 통한 공기정화 반려식물 옮겨심기가 준비됐다. 뿐만 아니라 지역주민 재능 나눔 부스를 통해 주민들이 함께 교류할 수 있는 기회도 마련했다. 한편 CJ온스타일은 지난 2008년 방배노인종합복지관을 건립해...",
+    "link": "https://www.youthdaily.co.kr/news/article.html?no=167241",
+    "related_count": 4
+  },
+  {
+    "date": "2024-10-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 4분기 만에 증익 전환... 기존점 회복세 지속",
+    "description": "한편 편의점 CU를 운영하는 BGF리테일은 동반성장위원회가 주관하는 '2023년도 동반성장지수 평가'에서 처음으로 최우수 등급을 받았다. 2011년 도입된 동반성장지수는 대-중소기업 간 동반성장을 촉진하고자 기업의...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=292775",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-13",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 키즈 오케스트라 '찾아가는 음악회' 개최",
+    "description": "롯데백화점은 고객들의 다양한 꿈과 도전을 응원하기 위해 출범한 ESG(환경·사회·지배구조) 캠페인 '리조이스'(RE:JOICE)의 일환으로 지난해 키즈 오케스트라를 창단했으며 올해도 72명의 2기 단원들과 활동하고 있다.",
+    "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=254952",
+    "related_count": 3
+  },
+  {
+    "date": "2024-10-14",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "말뿐이었던 ‘동반성장’?… GS리테일, 공정거래 관련 과징금 쿠팡 다음...",
+    "description": "이에 GS리테일은 시정명령과 과징금이 부당하다며 공정위를 상대로 시정명령 및 과징금 납부 명령 취소 소송(소송가액 10억5000만 원)을 제기한 상태다. 이밖에도 공정위에 따르면 GS리테일은 2022년 추가로 1건, 또...",
+    "link": "https://www.donga.com/news/Economy/article/all/20241014/130212280/1",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-15",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 15개 중소협력사와 日 '도쿄 한류박람회' 참가",
+    "description": "현대홈쇼핑은 앞으로도 협력사 수요에 맞는 해외 진출을 적극적으로 도와 실효성 있는 동반성장에 힘쓰겠다는 계획이다. 한광영 현대홈쇼핑 대표이사는 \"올해 도쿄 박람회에서는 해외뿐만 아니라 국내 판로 확대도...",
+    "link": "https://www.job-post.co.kr/news/articleView.html?idxno=116823",
+    "related_count": 30
+  },
+  {
+    "date": "2024-10-15",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 2017년부터 협력사 해외 진출 꾸준히 지원",
+    "description": "현대홈쇼핑은 앞으로도 협력사 수요에 맞는 해외 진출을 적극적으로 도와 실효성 있는 동반성장에 힘쓰겠다는 입장이다. 실제 지난 2022년 10월 베트남에서 열린 한류박람회에 현대홈쇼핑과 함께 참여한...",
+    "link": "http://www.bizwnews.com/news/articleView.html?idxno=89886",
+    "related_count": 6
+  },
+  {
+    "date": "2024-10-15",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, '2024 도쿄 한류박람회' 해외 진출 희망 중소협력사와 함께...",
+    "description": "현대홈쇼핑은 앞으로도 협력사 수요에 맞는 해외 진출을 적극적으로 도와 실효성 있는 동반성장에 힘쓰겠다는 계획이다. 실제 지난 2022년 10월 베트남에서 열린 한류박람회에 현대홈쇼핑과 함께 참여한...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=155958",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-15",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "동반위, 롯데백화점과 4년 연속 협력사 ESG 지원",
+    "description": "이로써 4년 연속 사업에 참여하는 롯데백화점은 상생협력기금을 출연하고 협력사들에 실질적인 혜택을 주고자 협력사 ESG(환경·사회·지배구조) 전반에 대한 컨설팅 프로그램을 제공할 계획이다. 동반위는 중소기업...",
+    "link": "http://www.kbiznews.co.kr/news/articleView.html?idxno=103289",
+    "related_count": 4
+  },
+  {
+    "date": "2024-10-16",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "'T.FLEX 투명 LED'로 새롭게 탄생한 세븐일레븐 동대문던던점, MZ세대 핫...",
+    "description": "9% 줄이고 전력 소모를 40% 절감하여 에너지 절약과 탄소 저감에 기여한다. 이는 10년생 소나무 486837그루를 매년 심는 것과 같은 효과를 낸다. 한편 세븐일레븐에 설치된 T.FLEX 투명 LED에 대한 보다 자세한 정보는...",
+    "link": "https://www.etnews.com/20241016000068",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-16",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[ESG] 이마트, '친환경 녹색 문화' 이어간다...나무심기로 기후 위기 대...",
+    "description": "■ 탄소중립 실천 발걸음...기후 변화 완화에 중요 역할 이마트 뿐 아니라 국내기업들의 나무심기 활동은 더욱 확대되는 모양새다. 앞서 유한킴벌리는 약 40년 동안 공익 캠페인 '우리강산 푸르게 푸르게'를 전개하며...",
+    "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=354101",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-24",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "동반위·이마트, '협력사 ESG지원사업' 협약 체결",
+    "description": "동반성장위원회(동반위)는 이마트와 '2024년 협력사 ESG 지원사업' 참여 협약을 체결했다고 24일 밝혔다. 협약에 따라 이마트는 3년 연속 ESG 지원사업에 참여한다. 이마트는 상생협력기금을 출연해 협력사 ESG 전반에...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=359148",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[ESG평가] 신한금융 메리츠금융 현대백화점그룹 현대산업개발 포스코퓨...",
+    "description": "통합 A등급 이상을 받은 계열사는 지주회사인 현대지에프홀딩스를 비롯해 현대백화점, 현대홈쇼핑, 한섬... 중장기 탄소중립 로드맵을 수립하는 등 진정성 있고 투명한 ESG 경영 실천에 앞장설 것\"이라고 말했다....",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=323911",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[POP!유통가] 현대백화점그룹, 10개 상장사 2년 연속 ESG 평가 '통합 A 등...",
+    "description": "통합 A 등급 이상을 받은 계열사는 지주회사인 현대지에프홀딩스를 비롯해 현대백화점, 현대홈쇼핑... 업무협약을 맺었다. CRK는 우수한 냉장 및 냉동 기술력을 바탕으로 AI 무인 판매기 솔루션을 제공한다. 해당...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=67094",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, ESG통합 등급 A+ 획득…\"역대 최고 수준\"",
+    "description": "특히 사회 부문에서 지난해 대비 1단계 상승한 A+를 획득하며 통합 등급을 끌어올리는 데 결정적인 역할을 했으며, 환경, 지배구조 부문에서는 전년과 동일한 A+, A 등급을 각각 획득했다. GS리테일은 이상기온, 도시...",
+    "link": "http://www.inews24.com/view/1776299",
+    "related_count": 31
+  },
+  {
+    "date": "2024-10-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "유통 `ESG A+`는 현대百·아모레·GS리테일…해태·교촌 등 `최하위`",
+    "description": "한국ESG기준원(KCGS)에서 주관하는 ESG(환경·사회·지배구조) 평가를 받아든 유통기업들의 표정이 엇갈렸다.... 27일 유통업계에 따르면, KCGS가 최근 공개한 ESG 평가에서 현대백화점과 아모레퍼시픽그룹, GS리테일...",
+    "link": "https://www.dt.co.kr/contents.html?article_no=2024102702109932102006&ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "\"역대 최고 ESG 통합 등급\" GS리테일, 한국ESG기준원 A+ 획득",
+    "description": "2024.10.27./사진=GS리테일  GS리테일은 한국ESG기준원이 발표한 2024년 정기 ESG(환경, 사회, 지배구조) 등급 평가에서 역대 최고 성과인 통합 등급 A+(매우 우수)를 획득했다고 27일 밝혔다. GS리테일은 기후 위기에...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2071938",
+    "related_count": 2
+  },
+  {
+    "date": "2024-10-27",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 패딩 조끼 2000벌 쪽방촌 거주민에 전달",
+    "description": "현대홈쇼핑은 지난달 서울시자원봉사센터가 주관하는 '청년 ESG 기획봉사' 사업에 파트너 기업으로 참여했다. 청년 ESG 기획봉사는 2021년부터 서울시자원봉사센터가 운영하고 있는 사회공헌 사업이다. 매년...",
+    "link": "https://www.mk.co.kr/article/11151435",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-28",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "롯데쇼핑·GS리테일, ‘ESG 평가’ 파란불",
+    "description": "▲ 롯데쇼핑,GS리테일,ESG,GS25,GS더프레시 지난 5월 롯데쇼핑이 명동페스티벌에서 친환경 캠페인의... 환경 부문에서는 2040년 탄소중립 목표 달성을 위한 감축 로드맵과 세부 전략 우수로 A등급을, 지배구조 분야에서...",
+    "link": "https://weekly.cnbnews.com/news/article.html?no=164375",
+    "related_count": 1
+  },
+  {
+    "date": "2024-10-28",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 송파점서 '올아트페어' 행사 개최",
+    "description": "'자선 경매'에서는 행사에 참여하는 모든 고객을 대상으로 미술품 판매를 진행, 경매를 통해 얻게 되는 판매 수익금의 일부를 어린이재단에 기부할 예정이다. 전유라 롯데마트∙슈퍼 헬 스테넌트팀 MD(상품기획자)는...",
+    "link": "https://www.newstof.com/news/articleView.html?idxno=24621",
+    "related_count": 11
   }
 ]
