@@ -646,5 +646,41 @@
     "description": "롯데홈쇼핑은 8일부터 18일까지 초대형 쇼핑축제 ‘광클절’을 진행한다고 밝혔다. 올해는 구매 고객을... 고객 응모 건수와 연계해 구세군 한국군국에 최대 5000만 원을 기부할 예정이다. 한편, ‘광클콘서트’는 14일과...",
     "link": "https://www.thebigdata.co.kr/view.php?ud=202610081411055315570d99e4c8_23",
     "related_count": 1
+  },
+  {
+    "date": "2026-10-11",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐, '윤남노 복담주' 20만병 완판…토마토 막걸리로 흥행 잇는...",
+    "description": "정민혁 세븐일레븐 음료주류팀 상품기획자(MD)는 \"최근 2030세대가 이끄는 전통주 시장은 맛과 멋, 재미를 함께 소비하는 방향으로 변화하고 있다\"며 \"앞으로도 지역 농가 상생과 국산 전통주 다변화에 힘쓰겠다\"고...",
+    "link": "https://n.news.naver.com/mnews/article/421/0009220230?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-11",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐 '힙통주' 돌풍...토마토 결합 전통주 신제품 출시",
+    "description": "정민혁 세븐일레븐 음료주류팀 담당MD는 최근 2030세대가 이끄는 전통주 시장이 맛과 재미를 함께 소비하는 문화로 진화하고 있다며, 앞으로도 지역 농가와의 상생을 바탕으로 이색 식재료를 활용한 차별화 상품을...",
+    "link": "https://news.bbsi.co.kr/news/articleView.html?idxno=4111355",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-11",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 기부 패딩으로 머플러…팔릴 때마다 아동에 기부",
+    "description": "현대백화점은 고객이 기부한 소재를 제품으로 되살리는 데 더해 구매가 추가 기부로 이어지도록 이번 사업을 설계했다. 자원순환 활동에 참여한 고객과 제품을 구매한 고객이 함께 아동의 겨울나기를 지원하는 구조다....",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2119511",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-11",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "\"고객이 모은 패딩의 변신\" … 현대백화점, '업사이클 다운 머플러' 선 ...",
+    "description": "현대백화점이 고객과 함께하는 친환경 사회공헌 활동인 '따뜻한 자원순환 프로젝트'를 꾸준히 이어간다. 현대백화점은 고객이 기부한 패딩의 충전재를 재활용해 만든 머플러를 선보이고, 상품 1개가 팔릴 때마다 동일한...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=135518",
+    "related_count": 1
   }
 ]
