@@ -682,5 +682,77 @@
     "description": "현대백화점이 고객과 함께하는 친환경 사회공헌 활동인 '따뜻한 자원순환 프로젝트'를 꾸준히 이어간다. 현대백화점은 고객이 기부한 패딩의 충전재를 재활용해 만든 머플러를 선보이고, 상품 1개가 팔릴 때마다 동일한...",
     "link": "http://www.popcornnews.net/news/articleView.html?idxno=135518",
     "related_count": 1
+  },
+  {
+    "date": "2026-10-12",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[CEO X파일] BGF에코머티리얼즈_홍정혁 대표, 자사주엔 17% 웃돈·KNW 경영...",
+    "description": "동시에 주식 소각으로 최대주주 측 지분율이 높아질 수 있다는 점에서 주주환원 효과와 지배구조 변화를 함께 살펴볼 필요가 있다. 지주사는 성장사업 확보, 상장 자회사는 차입금 상환…주주 몫은 BGF 측은 반도체...",
+    "link": "https://www.newsworker.co.kr/news/articleView.html?idxno=507849",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-11",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "[오늘의신상]윤남노 복담주 20만병 완판…세븐일레븐, 이번엔 토마토 막...",
+    "description": "편의점 세븐일레븐은 오는 15일 강원도 영월산 토마토를 활용한 막걸리 신제품 '즐토막'을 출시한다고 11일... 이어갈 예정이며, 앞으로도 지역 농가 상생 및 국산 전통주 다변화와 대중화에 힘써나갈 것\"이라고 말했다.",
+    "link": "https://n.news.naver.com/mnews/article/277/0005826799?sid=101",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-11",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐, 토마토 막걸리 '즐토막' 출시 … 2030 겨냥 이색 전통주 흥...",
+    "description": "농가 상생 및 국산 전통주 다변화와 대중화에 힘써나갈 것\"이라고 말했다. 편의점 전통주 시장은 지역 특산물과 새로운 맛, 개성 있는 패키지를 결합한 상품을 통해 소비층을 넓히는 모습이다. 세븐일레븐은 계절별...",
+    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=90274",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-12",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "유한킴벌리, '크리넥스 미용티슈 슥삵' 이마트24 입점",
+    "description": "이마트24는 입점을 기념해 10월 한 달간 행사카드 결제 시 70% 할인 혜택을 제공한다. 유한킴벌리 관계자는 \"공감형 숲·생물다양성 콘텐츠를 지속 선보여 대표 ESG 캠페인의 선한 영향력을 확장해 나가겠다\"고 전했다.",
+    "link": "https://daily.hankooki.com/news/articleView.html?idxno=1413631",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-12",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "청년농부 키우고 판로도 열어 주고… 롯데마트 ‘상생씨앗’ 결실",
+    "description": "서주연 롯데마트·슈퍼 ESG조직문화팀 담당자는 “이번 팝업스토어를 통해 청년농부들이 소비자와 직접 만나 친환경 농산물의 가치를 알리고 새로운 판로를 개척하는 계기가 됐기를 기대한다”며 “앞으로도 청년농부의...",
+    "link": "https://n.news.naver.com/mnews/article/020/0003754167?sid=102",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-12",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, 베트남서 '커넥션 위크'…현지 40개 기업에 유통망 연다",
+    "description": "1대1 바이어 매칭 및 입점 상담·심사 지원 출점↑ 동남아 거점 강화…상생 ESG 실천  롯데마트가 베트남 현지 기업 40곳에 자사 유통망 문을 활짝 열었다. 호찌민시 무역투자진흥센터(ITPC)와 함께 현지 상품 전시...",
+    "link": "https://www.theguru.co.kr/news/article.html?no=108103",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-12",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "고객이 모은 패딩의 변신… 현대백화점, ‘업사이클 다운 머플러’ 제작",
+    "description": "패딩 충전재를 재활용해 만든 머플러 현대백화점(대표 정지영)이 고객과 함께하는 친환경 사회공헌 활동인 ‘따뜻한 자원순환 프로젝트’를 올해도 이어간다. 현대백화점은 고객이 기부한 패딩의 충전재를 재활용해...",
+    "link": "https://www.fashionbiz.co.kr/article/230178",
+    "related_count": 4
+  },
+  {
+    "date": "2026-10-11",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 콘진원 손잡고 패션 브랜드 수출길 넓힌다",
+    "description": "현대백화점은 지난 8월 콘진원과 패션 디자이너 브랜드 해외 진출 활성화 및 동반성장을 위한 업무협약(MOU)을 맺었다. 서울 중구 CKL기업지원센터에서 열린 협약식에는 정지영 현대백화점 사장과 김윤지 콘진원 원장 등이...",
+    "link": "https://n.news.naver.com/mnews/article/015/0005341145?sid=101",
+    "related_count": 1
   }
 ]
