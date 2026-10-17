@@ -303,7 +303,7 @@
     "title": "GS리테일, 또다시 유출된 개인정보 '홈쇼핑까지 털렸다'",
     "description": "27일 GS리테일은 “2024년 6월 21일부터 올해 2월 13일 사이 GS홈쇼핑 웹사이트에서 개인정보 유출 정황을 확인했다”며 “해당 고객들에게 오늘 통지문을 발송했다”고 공지했다. 유출된 것으로 추정되는 개인정보는...",
     "link": "https://www.tfmedia.co.kr/news/article.html?no=179562",
-    "related_count": 9
+    "related_count": 13
   },
   {
     "date": "2025-02-27",
@@ -312,7 +312,154 @@
     "title": "GS홈쇼핑 고객정보 158만건 유출…연락처·주소 등 포함",
     "description": "GS홈쇼핑 웹사이트에서 158만건의 개인정보 유출 정황을 확인했다고 GS리테일이 27일 밝혔다. 지난달에는 해킹 공격으로 편의점 홈페이지에서 9만여명의 개인정보가 유출됐다. GS리테일은 “지난 달 다른 사이트에서...",
     "link": "http://www.segye.com/newsView/20250227518709?OutUrl=naver",
-    "related_count": 19,
+    "related_count": 49,
     "source_company": "GS홈쇼핑"
+  },
+  {
+    "date": "2025-02-27",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 지원받은 닥터서플라이, 해외서 매출 4배 성장",
+    "description": "한편 롯데홈쇼핑은 중소기업의 해외 진출을 돕는 다양한 프로그램을 운영하며 성장 기회를 제공하고 있다. 중소기업 해외진출 지원사업 '대한민국 브랜드 엑스포', 중소기업 상생방송(수수료 무료 방송), 동반성장펀드...",
+    "link": "https://daily.hankooki.com/news/articleView.html?idxno=1184644",
+    "related_count": 1
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일, 홈쇼핑서 128만건 더 해킹당했다",
+    "description": "27일 GS리테일은 GS홈쇼핑 웹사이트에서 약 158만건의 개인정보 유출 정황이 추가로 확인돼 개인정보 유출 의심 고객에게 이날 통지문을 발송했다고 했다. 앞서 지난달 6일 GS리테일은 지난해 12월27일부터 지난달 4일까지...",
+    "link": "https://www.betanews.net/article/view/beta202502270084",
+    "related_count": 4
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "개인 통관 번호까지… 홈쇼핑 GS샵의 개인정보 158만 건 몰래 빠져나갔...",
+    "description": "GS리테일은 27일 \"2024년 6월 21일부터 2025년 2월 13일 사이 GS홈쇼핑 웹사이트에서 약 158만 건의 개인 정보가 유출된 정황을 확인해 해당 고객에게 안내 문자를 발송했다\"고 밝혔다. 유출이 추정되는 정보는 △이름...",
+    "link": "https://www.hankookilbo.com/News/Read/A2025022713340004915?did=NA",
+    "related_count": 3,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 홈쇼핑 158만 명 고객 개인정보 유출… 지난달 편의점 이어 추...",
+    "description": "GS리테일의 홈쇼핑 웹사이트(GS샵)에서 158만 건의 개인정보 유출이 발생했다. 지난달 GS리테일의 편의점 GS25에서도 고객 9만 명의 정보가 유출된 데 이어 추가 정황이 발견된 것이다. 27일 GS리테일은 모든 운영사이트의...",
+    "link": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20250227.99099008219",
+    "related_count": 10
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 개인정보 158만 건 추가 유출, \"보안강화 최우선 과제 삼을 것...",
+    "description": "GS리테일 홈쇼핑 사업부에서 개인정보 158만 건이 유출된 것으로 파악됐다. GS리테일에 따르면 1월 외부에서 유출된 아이디와 비밀번호를 이용한 대량 로그인 시도가 감지됐다. 이후 자체 분석을 통해 편의점...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=385129",
+    "related_count": 10
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "'개인정보 유출' GS리테일 홈쇼핑도 추가 확인…\"재발 방지 최선\"",
+    "description": "사진=GS리테일 GS리테일은 지난달 편의점에 이어 홈쇼핑(GS샵) 웹사이트에서도 지난해 6월부터 최근까지 개인정보가 추가로 유출됐다고 27일 밝혔다. GS리테일은 지난 1월 다른 사이트에서 유출된 아이디와 비밀번호를...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=324322",
+    "related_count": 10
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "“편의점 이어 홈쇼핑도”...GS리테일, 대규모 개인정보 유출",
+    "description": "158만건의 개인정보가 유출된 정황이 확인됐다. GS리테일은 홈쇼핑 웹사이트를 통해 유출된 것으로 추정되는 개인정보가 ▲이름 ▲성별 ▲생년월일 ▲연락처 ▲주소 ▲아이디 ▲이메일 ▲기혼 여부 ▲결혼기념일...",
+    "link": "https://www.dailian.co.kr/news/view/1467061/?sc=Naver",
+    "related_count": 5
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일, 고객정보 유출 관련 고개 숙여 사과... \"재발 방지에 최선\"",
+    "description": "GS리테일, 개인정보 유출 추가 발견...고개 숙여 사과지난달 편의점 GS25를 통해 GS리테일 웹사이트가 해킹 공격을 받아 고객 9만명의 개인정보가 유출된 지 한 달여 만에 또 GS샵 고객 개인정보 158만여건이 유출되는 사고가...",
+    "link": "https://www.insight.co.kr/news/493597",
+    "related_count": 3
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "이쯤이면 공공재? GS샵, GS25 이어 개인정보 158만건 털려",
+    "description": "이름·연락처·주소 등…금융정보는 미유출 GS리테일의 홈쇼핑 업체 GS샵에서 158만건의 고객의 개인정보가 유출됐다. 27일 GS리테일에 따르면, GS샵은 지난해 6월21일부터 이달 13일까지 웹사이트 해킹 공격으로 고객...",
+    "link": "https://www.ilyosisa.co.kr/news/article.html?no=247688",
+    "related_count": 3,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "[종합] GS리테일, 한달 새 잇단 고객 개인정보 사과...경영진 참여 대책...",
+    "description": "GS샵에서 발생한 개인정보 유출 역시 지난번 해킹과 유사한 과정으로 이뤄진 것으로 전해진다. GS리테일이 파악한 고객 개인정보 유출 시기는 지난해 6월 21일부터 올해 2월 13일까지다. 회사 측은 공지글을 통해...",
+    "link": "https://www.newspim.com/news/view/20250227000362",
+    "related_count": 1
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "\"GS샵, 158만 건 개인정보 유출 충격… 개인통관고유번호까지 털렸다\"",
+    "description": "지난해 6월부터 올해 2월까지 8개월간 해킹 피해… GS리테일 \"금융정보는 안전\" 최고경영진 참여 정보보호대책위원회 발족… \"보안 강화에 총력 기울일 것\" GS리테일의 개인정보 유출 여부 확인 사이트. (사진GS리테일)...",
+    "link": "https://thecurrents.news/gs%ec%83%b5-158%eb%a7%8c-%ea%b1%b4-%ea%b0%9c%ec%9d%b8%ec%a0%95%eb%b3%b4-%ec%9c%a0%ec%b6%9c-%ec%b6%a9%ea%b2%a9-%ea%b0%9c%ec%9d%b8%ed%86%b5%ea%b4%80%ea%b3%a0%ec%9c%a0%eb%b2%88%ed%98%b8/",
+    "related_count": 3,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "해킹으로 고객 정보 털린 GS리테일...9만명 유출됐다더니 158만명 더 있었...",
+    "description": "이번에 추가로 확인된 건 GS샵에 가입한 고객들의 개인정보로 기존 9만 명 외에 158만 명 이상이 더 피해를 입은 것으로 추정됩니다. 조사 대상 기간은 지난해 6월 21일부터 지난 13일까지로 아직 정확한 피해 규모가...",
+    "link": "https://news.jtbc.co.kr/article/NB12236958?influxDiv=NAVER",
+    "related_count": 1
+  },
+  {
+    "date": "2025-02-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "'구멍난' GS리테일, GS25이어 한달만에 GS샵서 또 고객정보 유출",
+    "description": "GS리테일의 개인정보 유출 사고가 잇따라 발생하면서 소비자들의 우려가 커지고 있다. 특히 대형 유통업체에서 고객 정보 유출사고가 연이어 발생하면서 해당 기업에 대한 불신도 확산되는 모습이다. 27일 업계에...",
+    "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=240489",
+    "related_count": 1
+  },
+  {
+    "date": "2025-02-28",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 개인정보 보안 구멍 '숭숭', 허서홍 'O4O 승부수' 빨간불 켜져",
+    "description": "섹타나인은 보안 관리 부실로 1만7천여 명의 개인정보가 유출한 책임을 물어 총 15억 원 규모의 과징금을 부과받았다. 선례가 형성된 만큼 GS리테일을 비롯한 주요 유통사들도 보안 강화에 소홀할 경우 규제 압박을...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=385345",
+    "related_count": 1
+  },
+  {
+    "date": "2025-02-28",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 개인정보 유출...오너가의 이익만을 위한 '인화'에서 비롯됐나...",
+    "description": "GS리테일 홈쇼핑(GS샵) 웹사이트에서 개인정보 158만건이 유출된 사건도 이 같은 관점에 해석할 수 있다. 사건의 발단의 해킹으로부터 비롯됐지만, 회사가 개인 정보 보호와 보안 강화를 게을리 했기 때문이다....",
+    "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=611696",
+    "related_count": 2
+  },
+  {
+    "date": "2025-02-28",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "[GS리테일 4세 경영] ③ 개인정보 유출 사과했지만..위기관리 능력 시험...",
+    "description": "유통업계 한 관계자는 \"GS리테일은 매해 개인정보 이슈가 되풀이됐다\"며 \"정보 보안을 대하는 조직 문화가 뿌리째 바뀔 필요가 있지만 가능할지 의문\"이라고 했다. 그러면서 \"터질 게 터진 것\"이라고 덧붙였다.",
+    "link": "https://www.bloter.net/news/articleView.html?idxno=632411",
+    "related_count": 1
   }
 ]
