@@ -1212,7 +1212,7 @@
     "title": "롯데홈쇼핑, 팀 단위 봉사 'TEAM 나눔런치' 도입…\"이웃과 온정 나눠요\"",
     "description": "한편 롯데홈쇼핑은 지난 2015년부터 이어온 대표 반찬 나눔 사업 '희망수라간'의 조리시설을 올해 전면 리뉴얼한 데 이어, 이번 임직원 참여형 런치 봉사를 통해 지역사회 밀착형 ESG 경영을 한층 강화하고 있다. 더퍼블릭",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=322397",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-15",
@@ -1293,7 +1293,7 @@
     "title": "세븐일레븐 경영주·임직원의 ESG 동행",
     "description": "세븐일레븐이 점포 쇼핑 환경 개선을 통한 고객 만족도 증진을 위해 팔을 걷어붙였다. ESG(환경·사회·지배구조) 경영으로 매출 활성화를 지원하겠다는 의도로 풀이된다. 세븐일레븐은 경영주와 임직원이 함께 참여하는...",
     "link": "https://www.econovill.com/news/articleView.html?idxno=753930",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-16",
@@ -1365,6 +1365,51 @@
     "title": "현대백화점그룹 ICT 전문기업 현대퓨처넷, 미디어 아트 공모전 작품 공...",
     "description": "현대백화점그룹 ICT 전문기업 현대퓨처넷이 신진 작가의 미디어 작품 알리기에 적극 나서고 있다. 15일... 현대퓨처넷은 사회공헌 사업의 일환으로 2023년부터 한국메세나협회·대안공간아트포럼리와 함께...",
     "link": "https://www.ngonews.kr/news/articleView.html?idxno=240613",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-19",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트24, 웹툰 '재혼 황후'와 간편식·디저트 7종 출시",
+    "description": "편의점 유통망과 공공기관의 콘텐츠 지원 사업을 연계해 중소 콘텐츠기업의 우수 IP 판로를 개척하고 국내 콘텐츠 생태계의 동반성장을 도모한다는 취지다. 이마트24는 앞서 애니메이션 '브레드이발소', 컴투스의...",
+    "link": "http://www.newsdream.kr/news/articleView.html?idxno=120198",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-19",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "\"웹툰 황실 만찬이 편의점으로\"…이마트24, '재혼 황후' 손잡고 K-콘텐츠...",
+    "description": "공기업과 유통사가 협업해 중소 콘텐츠 기업의 우수 IP를 발굴하고 유통 판로를 열어주는 상생 모델이라는 점에서 업계의 주목을 받는다. 체험형 오프라인 공간 조성에도 공을 들였다. 이마트24는 주요 제휴 결제 수단...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=91062",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-18",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "[유통] 신세계 18개 계열사 '쓱데이' / 롯데마트 온라인 할인 / 현대백화...",
+    "description": "신세계그룹, 18개 계열사 참여 '쓱데이' 개최 신세계그룹은 10월 30일부터 11월 8일까지 열흘간 이마트와... 탄소중립포인트 녹색생활실천 회원에게는 100원의 추가 인센티브를, 현대백화점 카드 회원에게는...",
+    "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2338166",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-19",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "기부받은 에코백을 장바구니로... 현대백화점, 친환경 캠페인 '리백' 진...",
+    "description": "여기에 기후에너지환경부가 운영하고 있는 '탄소중립포인트 녹색생활실천' 회원인 고객은 추가로 100원을 인센티브로 지급받는다. 현대백화점 카드 회원일 경우에는 그린프렌즈 마일리지 100점도 받을 수 있다....",
+    "link": "https://www.fashionbiz.co.kr/article/230377",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-19",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 고객 기부 에코백에 '새 생명'…장바구니로 다시 쓴다",
+    "description": "기후에너지환경부가 운영하는 '탄소중립포인트 녹색생활실천' 회원은 리백 이용 시 100원의 인센티브를 추가로 받을 수 있다. 현대백화점 카드 회원에게는 그린프렌즈 마일리지 100점도 적립된다. 그린프렌즈 마일리지는...",
+    "link": "https://www.apnews.kr/news/articleView.html?idxno=3052210",
     "related_count": 1
   }
 ]
