@@ -1428,7 +1428,7 @@
     "title": "롯데백화점 국가보훈부 보훈 문화 확산 협약",
     "description": "롯데백화점,정현석 롯데백화점(대표 정현석)이 국가유공자와 유가족을 예우하는 일상 속 보훈문화 조성 및... 브랜드 가치를 높이기 위해 공익기관과 연계한 진정성 있는 ESG 사회공헌 활동을 적극 도입하고 있습니다.",
     "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3079239",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-10-20",
@@ -1464,6 +1464,87 @@
     "title": "현대백화점, 에코백 재사용 장바구니 '리백' 캠페인 전개",
     "description": "여기에 기후에너지환경부가 운영하고 있는 '탄소중립포인트 녹색생활실천' 회원인 고객은 추가로 100원을 인센티브로 지급받는다. 현대백화점 카드 회원일 경우에는 그린프렌즈 마일리지 100점도 받을 수 있다....",
     "link": "https://www.cnbnews.com/news/articleView.html?idxno=1019848",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "aT·GS리테일, 전통주 유통망 넓힌다",
+    "description": "양 기관은 지역 농산물 활용과 로컬브랜드 육성을 통한 지역 상생에도 협력할 계획이다. 우선 GS리테일의 온라인 주류 주문·수령 서비스인 '와인25플러스'를 활용해 소비자가 모바일로 전통주 정보를 확인하고 주문한...",
+    "link": "http://www.newsfarm.co.kr/news/articleView.html?idxno=102665",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[더벨][지배구조 분석 | BGF] 반도체 소재 재편, 327억 손실 감수한 '직할...",
+    "description": "다만 BGF에코머티리얼즈에는 손실이 확정되는 구조다. BGF에코머티리얼즈는 확보한 현금을 엔지니어링 플라스틱 사업 경쟁력 강화와 재무구조 개선, 주주가치 제고에 나눠 사용할 계획이다. 유럽의 재생 플라스틱...",
+    "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610152200478560101696",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-20",
+    "company": "이마트24",
+    "sentiment": "NEGATIVE",
+    "title": "이마트24 차액가맹금 소송 추진…본사 \"사전 안내·동의 거쳤다\"",
+    "description": "이마트24 관계자는 \"향후 실제 소송이 제기될 경우 소장과 청구내용을 면밀히 검토해 법적 절차에 따라 성실히 대응할 예정\"이라며 \"이와 별개로 경영주들과의 지속적인 소통을 통해 점포 경쟁력 강화와 상생을 위한 제도...",
+    "link": "https://daily.hankooki.com/news/articleView.html?idxno=1416749",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-19",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "[리테일 인사이드] SSG닷컴·배민·11번가·G마켓·이마트24·쿠팡...\"가을...",
+    "description": "SSG닷컴과 G마켓은 대형 할인 행사를 준비하고, 이마트24는 웹툰을 활용한 협업 상품을 선보인다.... 쿠팡 사회공헌실 관계자는 \"지역 소상공인이 실제 온라인 판매 경험을 쌓고 판로 확대와 매출 성장으로 이어질 수...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=189499",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-19",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트24, 네이버웹툰 '재혼 황후' IP 협업 상품 출시",
+    "description": "이번 협업은 이마트24가 지난 7월 한국콘텐츠진흥원과 체결한 업무협약(MOU)의 첫 번째 IP협업 사례다. 양사는 국내 콘텐츠 산업의 동반성장을 위해 중소 콘텐츠기업의 우수 IP를 활용한 상품 개발, 유통사와의 협업을...",
+    "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=367573",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "“점심시간에 나눔 실천” 롯데홈쇼핑, ‘팀 나눔런치’ 도입",
+    "description": "정기 운영하며, 매회 새로운 메뉴를 선보인다는 게 회사 측 설명이다. 이동규 롯데홈쇼핑 커뮤니케이션부문장은 “임직원 참여를 기반으로 일상 속 나눔이 자연스럽게 이어지는 사회공헌 문화를 조성할 것”이라고 했다.",
+    "link": "https://n.news.naver.com/mnews/article/382/0001300055?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[Weekly 백화점·면세점] 신세계·롯데·현대백화점·신세계·신라면세점",
+    "description": "식품관에서 리백을 사용하는 고객에게는 결제금액 100원 할인과 탄소중립포인트, 그린프렌즈 마일리지 등 혜택을 제공한다. 다음 달 20일까지 리백을 반납하는 고객에게는 H포인트 2000점도 지급한다. 현대백화점은...",
+    "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=816547",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-20",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "쇼핑 공간 넘어 보훈문화 알린다···'롯데백화점'의 새로운 시도",
+    "description": "롯데백화점 입장에서도 기존 사회공헌 활동에 보훈 분야를 추가하면서 고객과 소통할 수 있는 새로운 프로그램을 마련할 수 있게 됐다. 특히 청년층을 대상으로 한 참여형 캠페인이 실제로 운영된다면 보훈문화를 보다...",
+    "link": "https://www.enetnews.co.kr/news/articleView.html?idxno=55501",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-20",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "“숭고한 희생과 용기, 잊지 않겠습니다” 롯데백화점-국가보훈부, 일상...",
+    "description": "그간 국가유공자와 독립유공자를 지원하기 위해 다양한 사회공헌 활동을 진행했다. 판매 수익금을... 이어가고 사회와 소통하도록 힘을 보탰다는 게 회사 측 설명이다. 정현석 롯데백화점 대표는 “국가유공자의 숭고한...",
+    "link": "https://n.news.naver.com/mnews/article/382/0001300063?sid=101",
     "related_count": 1
   }
 ]
