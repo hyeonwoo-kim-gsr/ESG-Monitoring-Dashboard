@@ -1446,7 +1446,7 @@
     "title": "기부 에코백 →장바구니로 변신… 현대백화점, 자원 순환가치 캠페인 '...",
     "description": "현대백화점이 고객이 기부한 에코백을 활용해 장바구니로 재사용하는 자원순환 캠페인에 박차를 가한다.... 이에 식품 및 유통업계에선 친환경 소재 개발이나 물류 혁신을 통해 ESG경영을 실천하고 있는 중이다....",
     "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=44601",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-19",
@@ -1545,6 +1545,96 @@
     "title": "“숭고한 희생과 용기, 잊지 않겠습니다” 롯데백화점-국가보훈부, 일상...",
     "description": "그간 국가유공자와 독립유공자를 지원하기 위해 다양한 사회공헌 활동을 진행했다. 판매 수익금을... 이어가고 사회와 소통하도록 힘을 보탰다는 게 회사 측 설명이다. 정현석 롯데백화점 대표는 “국가유공자의 숭고한...",
     "link": "https://n.news.naver.com/mnews/article/382/0001300063?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 아태소매업자대회서 유통혁신 대상…AI·O4O 성과 인정",
+    "description": "해외 사업 확대와 사회공헌 활동도 수상 배경으로 꼽혔다. GS리테일은 '우리동네GS' 앱을 중심으로 편의점 GS25와 슈퍼마켓 GS더프레시 등 전국 1만8600여 개 매장을 연결하고 있다. 앱에서는 퀵커머스와 와인25플러스...",
+    "link": "https://www.etoday.co.kr/news/view/2638729",
+    "related_count": 4
+  },
+  {
+    "date": "2026-10-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일-aT, '전통주 소비 활성화'와 '지역 양조장 판로 확대' 위해 '맞...",
+    "description": "이를 통해 지역 전통주 산업 활성화와 로컬브랜드 육성을 통한 지역 상생을 도모하는 한편, GS리테일은 차별화된 전통주 상품과 콘텐츠를 바탕으로 플랫폼 경쟁력을 강화하기로 했다. 전진혁 GS리테일 O4O부문장은 \"이번...",
+    "link": "http://www.bizwnews.com/news/articleView.html?idxno=149628",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-22",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "GS리테일 O4O AI 혁신으로 세계 인정",
+    "description": "(왼쪽)곽창헌 GS리테일 지속가능경영부문장이 수상하고 있는 모습. GS리테일 제공 GS리테일(대표 허서홍)은 일본 도쿄에서 열린 '2026 아시아·태평양 소매업연합회(FAPRA) 어워즈'에서 유통혁신 부문 대상을 수상했다고...",
+    "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3079647",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-22",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "GS리테일, FAPRA 어워즈 '유통혁신 대상' 수상…글로벌 경쟁력 인정받아",
+    "description": "확산, 사회공헌 실천 등에서 높은 평가를 받았다. GS리테일은 '우리동네GS' 앱을 중심으로 GS25, GS더프레시 등 전국 1만8600여 매장을 하나의 유통망으로 연결했다. 해당 앱에는 퀵커머스, 와인25플러스, 나만의 냉장고...",
+    "link": "https://www.newsmap.co.kr/news/articleView.html?idxno=4265",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트24로 번진 차액가맹금 분쟁··· 점주 \"돌려달라\" vs 본사 \"동의 ...",
+    "description": "CU·GS25·세븐일레븐 등 경쟁 편의점은 이익을 배분하는 정률제 모델을 채택하고 있다. 본부 수익이... 이마트24 관계자는 \"경영주들과의 지속적인 소통을 통해 점포 경쟁력 강화와 상생을 위한 제도 개선 노력도...",
+    "link": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307773",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "﻿피자헛 '차액가맹금' 후폭풍…이마트24 점주들 '반환소송' 움직임",
+    "description": "편의점 이마트24의 일부 가맹점주들이 본사를 상대로 차액가맹금 반환 청구 소송을 추진하고 있는 것으로... 이어 \"이와 별개로 경영주들과의 지속적인 소통을 통해 점포 경쟁력 강화와 상생을 위한 제도 개선 노력도...",
+    "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=620031",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-22",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트·슈퍼, 하림과 '사과먹은 동물복지 닭고기' 출시",
+    "description": "롯데마트·슈퍼는 하림과 공동 기획한 단독 상품 '사과먹은 동물복지 닭고기' 2종을 22일 출시한다고 밝혔다.... 롯데쇼핑 지속가능경영보고서에 따르면 2021년 기준 동물복지 닭고기는 롯데마트 전체 닭고기 매출의 약 40%를...",
+    "link": "https://n.news.naver.com/mnews/article/030/0003477455?sid=103",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-22",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "[똑똑한쇼핑] 롯데백화점, SSG닷컴, KT알파 쇼핑, G마켓, ABC마트, 롯데온...",
+    "description": "◇ 롯데백화점 '롯데몰 벨리타운 청량리' 23일 개장 롯데백화점이 이달 23일 서울 동대문구에 복합쇼핑몰... 체험하는 사회공헌 프로그램을 진행했다. KT알파 쇼핑은 지난 21일 우리동네키움센터 양천구6호점 학생...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261022029259615",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[민주 유통가] W컨셉·현대백화점·청호나이스",
+    "description": "현대백화점은 오는 30일까지 무역센터점에서 'H포인트' 회원을 대상으로 '리백(Re:Bag)' 캠페인을 진행한다.... 청호나이스는 오는 23일까지 서울 강남구 코엑스에서 진행되는 '2026 대한민국 ESG 친환경대전'에서 식수대를...",
+    "link": "http://www.iminju.net/news/articleView.html?idxno=171212",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-21",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "\"단순 전시 넘어 도심을 갤러리\"…현대백화점그룹, ICT·유통·공익 잇는...",
+    "description": "현대백화점사회복지재단은 장학사업 등 사회공헌 활동을 담당한다. 현대백화점그룹의 문화예술 관련 활동은 계열사마다 활용하는 자원이 다르다는 점이 특징이다. 현대퓨처넷은 디지털 매체를 통한 작품 공개...",
+    "link": "https://www.polinews.co.kr/news/articleView.html?idxno=746408",
     "related_count": 1
   }
 ]
