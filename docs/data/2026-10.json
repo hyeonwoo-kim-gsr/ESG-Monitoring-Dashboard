@@ -1671,7 +1671,7 @@
     "title": "현대홈쇼핑, 스타트업 5곳과 AI·신사업 실증…유통 혁신 속도 낸다",
     "description": "AX 혁신을 가속화하고, 건강한 상생 생태계를 만들어 갈 것”이라고 말했다. 한편, 현대홈쇼핑은 올해 상반기 별도 기준 매출 5520억원, 영업이익 529억원을 기록했다. 이는 전년 동기 대비 각각 1.7%, 10.9% 증가한 수치다.",
     "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065618980770875",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-10-22",
@@ -1735,5 +1735,77 @@
     "description": "신세계백화점 노사가 올해 임금 및 단체협약(임단협)을 위한 상견례를 갖고 본격적인 협상에 돌입했다.... 노사는 임금과 근로조건 등에 대한 입장을 조율하며 상생의 노사관계 구축을 위한 대화를 이어갈 계획이다.",
     "link": "https://n.news.naver.com/mnews/article/421/0009245040?sid=101",
     "related_count": 2
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계그룹, 정기 임원인사 단행…정용진 회장, 이마트 대표이사 내정",
+    "description": "대외협력본부장은 이마트 판매본부장과 사회공헌활동(CSR) 담당, 이마트에브리데이 사업부장 등을 거쳤다.... 배광수 : ㈜이마트 ED B2B사업담당 한정철 : ㈜이마트 컴플라이언스담당 ☐ ㈜이마트24 - 전무 승진 최진일...",
+    "link": "http://www.efnews.co.kr/news/articleView.html?idxno=133422",
+    "related_count": 3
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "정용진, 이마트 직접 지휘···신세계 인사, 책임경영·독립체제 재편...",
+    "description": "한채양 대표는 2023년 9월 이마트와 이마트에브리데이, 이마트24 등 오프라인 유통 사업을 총괄하는 대표로... 박 신임 대외협력본부장은 이마트 판매본부장과 사회공헌(CSR) 담당, 이마트에브리데이 사업부장 등을 거쳤다....",
+    "link": "https://www.smartbizn.com/news/articleView.html?idxno=157345",
+    "related_count": 3
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "\"정용진 13년 만에 이마트 대표 복귀\"...신세계그룹, 2027년 정기인사 단...",
+    "description": "박 신임 본부장은 이마트 판매본부장과 사회공헌(CSR) 담당, 이마트에브리데이 사업부장 등을 거쳤다.... 컴플라이언스담당 ▲이마트24 ◇전무 ▷최진일 대표이사 ◇상무보 ▷이정재 영업1담당 ▷안종욱 지원담당...",
+    "link": "https://www.seoultimes.news/news/article.html?no=2000101287",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "급식 떼고 B2B 키우는 신세계푸드…이마트 '식품 공급기지'로",
+    "description": "지배구조 재편도 사업 경쟁력 강화에 힘을 보태고 있다. 신세계푸드는 지난 8월 상장폐지를 거쳐 이마트의 100% 자회사로 편입됐다. 이에 따라 상품 기획·판매를 맡는 이마트와 제조·생산을 담당하는 신세계푸드 간...",
+    "link": "https://n.news.naver.com/mnews/article/421/0009246877?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "[정용진 책임경영 검증①] 이마트·신세계프라퍼티 직접 경영…'책임경...",
+    "description": "지배구조 측면에서도 논란의 여지가 있다. 정 회장은 지난 2013년 이마트와 신세계 등기이사에서 물러난 이후 13년 만에 핵심 계열사의 등기임원 복귀를 추진하고 있다. 정 회장은 지난 6월 대표이사 선임 추진 당시 \"앞으로...",
+    "link": "https://news.ifm.kr/news/articleView.html?idxno=482451",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-23",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑, 오픈이노베이션 성과공유회 'H.I.G.H 임팩트 데이' 진행",
+    "description": "서울 강동구 현대홈쇼핑 본사에서 열린 오픈이노베이션 성과공유회에서 H.I.G.H 프로그램 선발 스타트업... 업무 전반의 AX 혁신을 가속화하고 건강한 상생 생태계를 만들어 갈 것이다\"라고 말했다. [비즈월드= / ]",
+    "link": "http://www.bizwnews.com/news/articleView.html?idxno=149845",
+    "related_count": 3
+  },
+  {
+    "date": "2026-10-23",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[떠나는 자, 남는 자, 오르는 자 : 미리 보는 유통가 인사] ④현대백화점...",
+    "description": "현대홈쇼핑은 연말 대규모 지배구조 개편을 앞두고 있고, 현대면세점은 수익성 개선에 성공한 반면 매트리스·가구 기업 지누스는 대규모 적자를 기록하며 희비가 크게 엇갈렸다. 계열사별 성적표에 따라 정지선...",
+    "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1728897",
+    "related_count": 2
+  },
+  {
+    "date": "2026-10-23",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "정용진 신세계그룹 유통 실적 반등에 승부수 : 김홍극 이마트·SSG닷컴 ...",
+    "description": "신세계백화점과 접점이 큰 라이프스타일 사업을 분리하는 한편, SSG닷컴의 사업 무게중심을 이마트의 상품·점포·물류 인프라와 연계할 수 있는 영역으로 옮긴 것이다. 정 회장이 SSG닷컴의 지배구조를 정리한 시점도...",
+    "link": "https://www.huffingtonpost.kr/article/261475",
+    "related_count": 1
   }
 ]
