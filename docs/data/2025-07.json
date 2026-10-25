@@ -927,7 +927,7 @@
     "title": "[오늘의 편의점] CU·GS25·세븐일레븐",
     "description": "/사진=BGF리테일 #CU 초저가 1900원 득템 닭백숙 출시 득템 닭백숙은 중복과 말복을 앞두고 계속되는 외식... 주었다\"며 \"앞으로도 ESG 가치를 실천하는 다양한 활동을 통해 지속가능한 사회를 만들어가겠다\"고 말했다.",
     "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=36043",
-    "related_count": 1
+    "related_count": 4
   },
   {
     "date": "2025-07-29",
@@ -973,5 +973,68 @@
     "description": "배달의민족의 물류서비스를 전담하는 우아한청년들(대표이사 김병우)은 31일부터 고용노동부, 이마트24와... 만큼 동반성장 파트너인 라이더들을 위해 현장의 목소리를 꾸준히 반영하고 실질적인 도움이 되는...",
     "link": "https://www.gokorea.kr/news/articleView.html?idxno=834372",
     "related_count": 13
+  },
+  {
+    "date": "2025-07-30",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "불황에 롯데쇼핑·이마트·현대백화점 버티는 법, 신입 덜 뽑고 비정규...",
+    "description": "30일 롯데쇼핑과 이마트, 현대백화점 등이 내놓은 올해 지속가능경영보고서를 살펴보면 최근 수년 사이 인력 구성과 관련한 변화가 두드러진다. 변화의 큰 흐름은 전체 인력 규모는 줄이는 대신 비정규직은...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=405549",
+    "related_count": 1
+  },
+  {
+    "date": "2025-07-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "유통업계, '포장 줄이기' 본격 확산... 컬리·쿠팡·롯데홈쇼핑 등 포장...",
+    "description": "또한 완충재와 테이프를 종이 소재로 전환해 친환경 부자재 사용을 확대하고 있다. 최우수상은 쿠팡과 롯데홈쇼핑이 받았다. 쿠팡은 비닐 포장재 두께를 약 10%, 종이박스 중량을 12% 줄이는 한편, 재생 원료 사용을 늘리고...",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=112932",
+    "related_count": 1
+  },
+  {
+    "date": "2025-07-30",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 광주점, 광주천 환경정화 활동",
+    "description": "롯데백화점 광주점 샤롯데봉사단이 30일 집중호우로 피해를 입은 광주천 주변 환경정화활동을 실시했다. 이번 봉사활동에는 광주점 봉사단원 10여 명이 참여했으며 광주시민들의 소중한 쉼터인 광주천의 일대 천교에서...",
+    "link": "http://www.jndn.com/article.php?aid=1753849756414580011",
+    "related_count": 3
+  },
+  {
+    "date": "2025-07-31",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "[단독] GS리테일 '불공정 파견·판촉비' 재판 패소, 홈쇼핑 갑질 관행에...",
+    "description": "GS홈쇼핑을 운영하는 GS리테일이 ​홈쇼핑 업계의 ‘관행’에 대해 ​공정거래위원회가 ​​내린 시정명령을 취소해달라며 소송을 제기했으나 법원에서 기각됐다.​ 이번 판결은 10억 원대 과징금을 물게 한 공정위...",
+    "link": "https://www.bizhankook.com/bk/article/30052",
+    "related_count": 1
+  },
+  {
+    "date": "2025-07-31",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "광주아동보호전문기관·세븐일레븐, 아동학대 예방 캠페인 전개",
+    "description": "세븐일레븐·CU·이마트24·GS25 등 4대 편의점 운영사 간 업무협약을 통해 본격화됐다. 각 기관은 아동 보호체계 강화를 위해 역할을 분담해 협력 중이다. 아동보호전문기관은 초록우산 광주지역본부의 후원을 받아 아동학대...",
+    "link": "http://www.namdonews.com/news/articleView.html?idxno=828423",
+    "related_count": 1
+  },
+  {
+    "date": "2025-07-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 업계 최초 CDP SEA 평가서 최고 등급 'A' 획득",
+    "description": "차별화된 탄소중립 실천 활동과 정책들이 좋은 평가를 받았다고 평가했다. 민왕일 현대백화점 경영지원본부 부사장은 \"유통업체로서 다양한 이해관계자들과 함께 지속 가능한 문화를 만들고 관련 정보를...",
+    "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=32041",
+    "related_count": 35
+  },
+  {
+    "date": "2025-07-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 글로벌 환경평가 CDP 'A-리스트' 유통업계 유일 선정",
+    "description": "회사는 앞으로도 공급망 파트너와의 협력을 통한 탄소중립 실현, 순환경제 모델 구축, 친환경 상품 확대 등을 통해 지속가능한 유통 생태계 조성에 앞장선다는 방침이다. 현대백화점의 CDP A-리스트 선정은 국내...",
+    "link": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=303137",
+    "related_count": 3
   }
 ]
