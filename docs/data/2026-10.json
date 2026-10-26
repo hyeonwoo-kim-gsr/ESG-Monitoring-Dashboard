@@ -1788,7 +1788,7 @@
     "title": "현대홈쇼핑, 오픈이노베이션 성과공유회 'H.I.G.H 임팩트 데이' 진행",
     "description": "서울 강동구 현대홈쇼핑 본사에서 열린 오픈이노베이션 성과공유회에서 H.I.G.H 프로그램 선발 스타트업... 업무 전반의 AX 혁신을 가속화하고 건강한 상생 생태계를 만들어 갈 것이다\"라고 말했다. [비즈월드= / ]",
     "link": "http://www.bizwnews.com/news/articleView.html?idxno=149845",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-10-23",
@@ -1815,6 +1815,42 @@
     "title": "GS리테일, 아태소매업자대회서 '유통혁신 부문 대상'…\"AI 혁신 인정\"",
     "description": "해외 시장 진출을 통해 한국 유통 모델을 확산하고, 사회공헌 활동을 꾸준히 수행해 온 점도 수상 배경으로 꼽혔다. GS리테일은 '우리동네GS' 앱과 편의점 GS25, 슈퍼마켓 GS더프레시 등 전국 1만 8600여 개 매장을...",
     "link": "https://n.news.naver.com/mnews/article/079/0004202343?sid=101",
-    "related_count": 6
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계그룹 인사 방점='정용진 책임경영'…이마트·SSG닷컴 경쟁력 강화",
+    "description": "박 신임 대외협력본부장도 이마트 판매본부장과 사회공헌담당 등을 역임했다. 이는 유통 현장과 주요 계열사 운영 경험을 갖춘 인력을 그룹 핵심 관리조직에 배치한 인사다. 신세계그룹은 신규 임원 36명을 발탁하며...",
+    "link": "https://sateconomy.co.kr/news/view/1065580385877516",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트에브리데이",
+    "sentiment": "UNCERTAIN",
+    "title": "정용진, 이마트 대표 맡고 그룹 쇄신 전면에 … 신세계그룹, 36명 신규 ...",
+    "description": "박 신임 대외협력본부장은 이마트 판매본부장과 사회공헌(CSR) 담당, 이마트에브리데이 사업부장 등을 거쳤다. 그룹이 유통과 개발사업을 넘어 AI·콘텐츠·엔터테인먼트 분야로 사업을 확대하는 만큼 대외 소통과 그룹...",
+    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=90846",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-23",
+    "company": "이마트에브리데이",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계그룹, 정용진 이마트 직접 경영…김홍극 대표 발탁·세대교체",
+    "description": "박 신임 본부장은 이마트 판매본부장과 사회공헌(CSR)담당, 이마트에브리데이 사업부장 등을 역임했다. 계열사 경영진도 일부 교체됐다. 신세계까사 대표에는 CJ올리브영 대표를 지낸 허민호 대표가 영입됐다. 허 대표는...",
+    "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5075213",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-25",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[포토뉴스]롯데백화점 대구점, 대구 떡볶이 페스티벌 연계 팝업 부스 운...",
+    "description": "롯데백화점 대구점은 지난 23일부터 25일까지 열린 ‘대구 떡볶이 페스티벌’에 참여해 지역 상생 팝업 부스를 운영했다. 현장에서 행운의 에어볼 뽑기, 어린이 색칠 체험, 떡볶이 풍선 증정 등 다양한 이벤트를 진행했다....",
+    "link": "https://n.news.naver.com/mnews/article/016/0002714033?sid=101",
+    "related_count": 1
   }
 ]
