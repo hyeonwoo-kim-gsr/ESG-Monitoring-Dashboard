@@ -1852,5 +1852,59 @@
     "description": "롯데백화점 대구점은 지난 23일부터 25일까지 열린 ‘대구 떡볶이 페스티벌’에 참여해 지역 상생 팝업 부스를 운영했다. 현장에서 행운의 에어볼 뽑기, 어린이 색칠 체험, 떡볶이 풍선 증정 등 다양한 이벤트를 진행했다....",
     "link": "https://n.news.naver.com/mnews/article/016/0002714033?sid=101",
     "related_count": 1
+  },
+  {
+    "date": "2026-10-28",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 구룡마을 화재 피해 주민에 '구호물품' 2000여개 지원",
+    "description": "박경랑 GS리테일 ESG파트장은 \"갑작스러운 화재로 어려움을 겪고 있는 구룡마을 주민들에게 보탬이 되고자 긴급 지원을 결정했다\"며 \"전국 단위의 인프라를 바탕으로 지역 사회의 안전망 역할을 이어가겠다\"고...",
+    "link": "https://n.news.naver.com/mnews/article/421/0009255394?sid=101",
+    "related_count": 4
+  },
+  {
+    "date": "2026-10-28",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "20년간 재난 현장 지킨 GS리테일, 구룡마을 화재에도 신속 대응",
+    "description": "박경랑 GS리테일 ESG파트장은 \"구룡마을 주민들이 갑작스러운 화재로 어려움을 겪고 있어 이번 긴급 지원을 진행하게 됐다\"며 \"GS리테일은 전국 단위 인프라를 통해 신속한 지원을 제공하며 지역 사회의 안전망...",
+    "link": "https://www.insight.co.kr/news/579503",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-26",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 한섬 자사주 매입에 동반 매수…지주사 배당수익 확대 기조",
+    "description": "지배구조 개편이 끝나면 한섬 배당은 지주사로 곧장 들어간다. 현대홈쇼핑은 6월 주식교환을 거쳐 현대지에프홀딩스의 완전자회사가 됐다. 12월15일에는 한섬 지분 등을 관리하는 투자부문을 떼어내 신설 투자회사를...",
+    "link": "https://n.news.naver.com/mnews/article/293/0000092152?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-28",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "백화점 브랜드평판 10월 빅데이터…1위 현대백화점 2위는?",
+    "description": "2위 롯데백화점은 참여지수 400,664, 미디어지수 405,900, 소통지수 806,241, 커뮤니티지수 622,338, 사회공헌지수 80,622가 되면서 브랜드평판지수 2,315,765를 기록했다. 지난 9월 브랜드평판지수 2,430,064 대비 4.70...",
+    "link": "https://www.cbci.co.kr/news/articleView.html?idxno=620218",
+    "related_count": 4
+  },
+  {
+    "date": "2026-10-28",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "\"옛 마산 롯데백화점은 시민 품으로\"…창원시의회, 지역 현안 해결 촉구...",
+    "description": "지 의원은 전북 부안군이 옛 해양경찰서를 상생협력센터로 정비한 사례와 서울시의 비영리단체 협업 공간 조성 사례를 들며 \"옛 롯데백화점 마산점이 단체 간 교류와 원도심 상권 활성화를 동시에 잡는 거점이 될 수 있다...",
+    "link": "https://www.pointe.co.kr/news/articleView.html?idxno=86715",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-28",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 10월 브랜드평판 1위…롯데 제치고 지수 43.88% 상승",
+    "description": "참여지수는 40만664, 미디어지수는 40만5900, 소통지수는 80만6241, 커뮤니티지수는 62만2338, 사회공헌지수는 8만622로 집계됐다. 9월 평판지수 243만64보다 4.70% 하락했다. 롯데백화점은 참여지수와 미디어지수에서...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=499044",
+    "related_count": 1
   }
 ]
