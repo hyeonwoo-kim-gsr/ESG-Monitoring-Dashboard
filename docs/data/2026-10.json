@@ -1887,7 +1887,7 @@
     "title": "백화점 브랜드평판 10월 빅데이터…1위 현대백화점 2위는?",
     "description": "2위 롯데백화점은 참여지수 400,664, 미디어지수 405,900, 소통지수 806,241, 커뮤니티지수 622,338, 사회공헌지수 80,622가 되면서 브랜드평판지수 2,315,765를 기록했다. 지난 9월 브랜드평판지수 2,430,064 대비 4.70...",
     "link": "https://www.cbci.co.kr/news/articleView.html?idxno=620218",
-    "related_count": 4
+    "related_count": 2
   },
   {
     "date": "2026-10-28",
@@ -1932,6 +1932,123 @@
     "title": "[현대백화점그룹 2.0] 현대지에프홀딩스, 3년새 차입 10배…계열지분 매...",
     "description": "지배구조 개편으로 향후 자회사 배당수익이 늘어날 것으로 예상되는 가운데 늘어난 차입금을 얼마나 빨리... 주는 구조는 이어진 셈이다. 향후 변수는 현대홈쇼핑 투자부문 합병 이후의 배당수익이다. 주요 계열사...",
     "link": "https://dealsite.co.kr/articles/171461",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 국가보훈보와 손잡고 유공자 지원 확대",
+    "description": "문화경제 CNB저널 | CNB저널 | 씨앤비저널 GS리테일이 국가보훈부와 손잡았다. 국가유공자 예우와 지원을 위한... 사회공헌이 ESG 경영의 중요한 축이자 오래 지속되는 기업문화로 자리 잡을 수 있도록 최선을 다하겠다\"고...",
+    "link": "https://www.cnbizm.com/news/articleView.html?idxno=319821",
+    "related_count": 5
+  },
+  {
+    "date": "2026-10-30",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "잊혀진 영웅 알린다... GS리테일, 독립유공자 묘소 18곳에 안내판 지원",
+    "description": "GS리테일과 국가보훈부가 국가유공자 지원을 위한 협력 체계를 구축했다. 30일 GS리테일은 전날(29일) 서울... 사회공헌이 ESG 경영의 중요한 축이자 오래 지속되는 기업문화로 자리 잡을 수 있도록 최선을 다하겠다\"라고...",
+    "link": "https://www.insight.co.kr/news/579867",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일 \"나라사랑 활동, 보훈 지원으로 넓힌다\"",
+    "description": "봉사와 독립유공자 묘역 환경정비 활동도 확대할 계획이다. 곽창헌 GS리테일 지속가능경영부문장은 \"지난 10년간 진행한 나라사랑 활동을 국가유공자와 보훈가족에게 직접 도움이 되는 지원으로 확대하겠다\"고 말했다.",
+    "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2486332",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "권유리도 목소리 보탰다…롯데홈쇼핑, 시각장애 아동 위해 11년째 책 읽...",
+    "description": "권유리는 롯데홈쇼핑의 중소기업 상생 프로그램 '대한민국 브랜드 엑스포' 대표 모델로 활동하면서 회사와... GS리테일은 다문화가정 아동을 대상으로 목소리 기부에 나섰다. 지난 5월 임직원과 가족 30여명이...",
+    "link": "https://n.news.naver.com/mnews/article/022/0004171070?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-28",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "[상생경영] GS리테일 \"신속한 도움, 구룡마을 안전망\" 구호식량 2천개 지...",
+    "description": "GS리테일이 화재로 어려움을 겪고 있는 개포동 구룡마을 주민들을 위해 생수 800병, 비상식량 1200개 등을 긴급 지원한다고 28일 밝혔다. GS리테일은 화재 피해 주민들에게 필요한 물품을 신속하게 지원하기 위해 총...",
+    "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=283126",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-29",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트·네이버 할인전과 겹친 ‘코리아 그랜드 페스티벌’…골목상권...",
+    "description": "신세계그룹(회장 정용진)은 30일부터 다음 달 8일까지 이마트와 신세계백화점, SSG닷컴 등 18개 계열사가... 정부는 네이버의 소상공인 상생마켓과 쿠팡의 착한상점 등 온라인 플랫폼을 통한 중소기업 판로 확대도...",
+    "link": "https://sateconomy.co.kr/news/view/1065575610292920",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑, 배우 권유리 '드림보이스' 동참…시각장애 아동에 목소리 ...",
+    "description": "롯데홈쇼핑의 드림보이스는 홈쇼핑 업의 특성을 살린 사회공헌 사업으로, ESG 슬로건 '오늘 실천하면 달라지는 내일'을 내세우며 2016년부터 한국장애인재단과 함께 운영하고 있다. 쇼호스트와 음악감독 등 방송 전문가의...",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=901414",
+    "related_count": 7
+  },
+  {
+    "date": "2026-10-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "“목소리로 꿈과 희망을”…롯데홈쇼핑, 배우 권유리와 음성도서 제작",
+    "description": "권유리는 롯데홈쇼핑의 중소기업 상생 프로그램 ‘대한민국 브랜드 엑스포’ 대표 모델로 활동하며 인연을 맺었다. 이후 드림보이스의 취지에 공감해 자발적으로 참여했다. 지난달 22일 서울 영등포구 양평동...",
+    "link": "https://www.etoday.co.kr/news/view/2642205",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑, 장애인 지원 등 ESG 사회공헌 활동 이어가",
+    "description": "롯데홈쇼핑은 ESG 활동의 하나로 장애인 지원 사업을 진행하고 있다. 드림보이스는 방송 분야의 전문성을 음성도서 제작에 활용하고, 완성된 도서를 복지시설에 전달하는 방식으로 운영된다. 이번 권유리의 참여는...",
+    "link": "https://www.datasom.co.kr/news/articleView.html?idxno=210581",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "\"시각장애 아동에 희망을\"…권유리, 롯데홈쇼핑 '드림보이스' 목소리·출...",
+    "description": "한편 롯데홈쇼핑은 지난 2016년부터 '오늘 실천하면 달라지는 내일'이라는 환경·사회·지배구조(ESG) 비전 아래 한국장애인재단과 손잡고 드림보이스 사업을 펼쳐왔다. 방송 사업자의 역량을 십분 발휘한 이 캠페인을 통해...",
+    "link": "https://www.widedaily.com/news/articleView.html?idxno=302516",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[현대백화점그룹 2.0] 현대지에프홀딩스, 순익 절반 '염가매수차익'…순...",
+    "description": "시험대 현대지에프홀딩스가 지배구조 개편 속에서 매년 상당한 규모의 계열사 지분 관련 염가매수차익을... 현대지에프홀딩스는 현대홈쇼핑 분할 및 투자부문 흡수 등 개편작업이 마무리되면 배당수익이 1000억원...",
+    "link": "https://dealsite.co.kr/articles/171585",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-29",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점, 2인 부회장 승진…경영 안정·연속성 선택(종합)",
+    "description": "지난 4월 열린 임시주주총회에서 해당 안건은 현대지에프홀딩스 참석 의결권의 97.7%, 현대홈쇼핑 참석 의결권의 94.5% 찬성으로 통과됐다. 지배구조 개편의 핵심 절차를 큰 차질 없이 마무리한 것이다. 다만 지배구조 개편...",
+    "link": "https://www.newsway.co.kr/news/view?ud=2026102916491329623",
+    "related_count": 1
+  },
+  {
+    "date": "2026-10-29",
+    "company": "CJ온스타일",
+    "sentiment": "UNCERTAIN",
+    "title": "CJ온스타일, '크리에이터 커머스' 첫발… 관람객 65% 수익화 동참",
+    "description": "단순 관람을 넘어 실제 판매와 수익화로 직결되는 상생 플랫폼 모델을 입증했다는 평가다. CJ온스타일은 22일부터 24일까지 서울 강남구 코엑스에서 개최한 '크리에이터 커머스 페스티벌 코리아 2026(CCFK)' 결과, 전체...",
+    "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=88478",
     "related_count": 1
   }
 ]
