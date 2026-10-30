@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2025-11-01",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 전국 경영주들과 와인 테마로 한 '상품 인사이트 투어' 상...",
+    "description": "세븐일레븐은 가맹점과의 공존·공영을 통한 동반성장 문화 정착에도 힘쓰고 있다. 매년 초 가맹점의 매출 활성화 및 동반성장을 위해 가맹점 상생협약을 체결해오고 있으며, 올해 협약에서는 푸드 폐기지원 50%로 업계...",
+    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=76263",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-01",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[2025 국감] 이마트, '기간제법 회피' 공방…\"유통환경 탓\" 해명에도 국...",
+    "description": "이어 \"이 같은 고용 구조는 국민 세금 부담 전가와 산업재해 위험 증가로 이어지고 있다\"고 지적했다. 정 의원의 질의는 당초 한채양 이마트 대표에게 이뤄질 예정이었으나, 대표가 APEC(아시아·태평양경제협력체) 참석을...",
+    "link": "http://www.rightknow.co.kr/news/articleView.html?idxno=32570",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-02",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "KB금융-현대백화점, 금융·유통 결합 위해 협력",
+    "description": "이를 통해 소상공인과의 동반 성장에 바탕을 둔 지속가능한 사회적 가치를 창출한다는 방침이다. 한편, 오는 11월에는 현대백화점에서 시니어 고객을 위한 금융·비금융 콜라보 강좌를 개최한다. 투자전략·가업승계...",
+    "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=303446",
+    "related_count": 38
+  }
+]
