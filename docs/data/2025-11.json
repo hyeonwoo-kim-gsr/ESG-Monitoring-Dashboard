@@ -231,7 +231,7 @@
     "title": "현대백화점, 서울시 에너지 취약계층에 업사이클 다운 2천벌 전달",
     "description": "이번에 전달된 다운 베스트는 지난 3월 진행한 '365 리사이클 캠페인'에 참여한 고객 3000명이 기부한 패딩 약 4000벌(2.5톤)을 재활용해 제작됐다. 현대백화점은 사회적기업과 협력해 패딩을 선별·분해한 뒤 재활용이...",
     "link": "https://www.ngetnews.com/news/articleView.html?idxno=540627",
-    "related_count": 43
+    "related_count": 45
   },
   {
     "date": "2025-11-11",
@@ -276,7 +276,7 @@
     "title": "롯데백화점 대전점, '따뜻한 겨울나기 김장 대봉사' 참여·후원금 기부",
     "description": "겨울나기 김장 대봉사' 행사에 참여했다고 밝혔다. 정승욱 롯데백화점 대전점장과 샤롯데 봉사단 10여명이 참여했고, 소외계층을 위한 후원금도 기부했다. 2025.11.12 [롯데백화점 대전점 제공. 재판매 및 DB 금지]",
     "link": "https://www.yna.co.kr/view/PYH20251112180400063?input=1196m",
-    "related_count": 4
+    "related_count": 6
   },
   {
     "date": "2025-11-12",
@@ -286,5 +286,365 @@
     "description": "한편 한국타이어는 2011년부터 15년째 이웃사랑 실천 활동을 이어오고 있다.롯데백화점 대전점 정승욱 점장과 샤롯데 봉사단 10여 명이 12일 엑스포 남문광장에서 열린 '따뜻한 겨울나기 김장 대봉사'에 참여해 김장...",
     "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=858477",
     "related_count": 1
+  },
+  {
+    "date": "2025-11-13",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 동반위와 5년 연속 '중소 협력사 ESG 지원'",
+    "description": "동반성장위원회(동반위)는 13일 롯데백화점과 '2025년 협력사 ESG(환경·사회·지배구조) 지원사업' 추진을 위한 업무 협약을 체결하고 중소기업 ESG 경영 확산에 나선다고 밝혔다. 양 기관은 지난 2021년부터 5년째 중소...",
+    "link": "https://www.newsis.com/view/NISX20251113_0003401076",
+    "related_count": 5
+  },
+  {
+    "date": "2025-11-13",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "동반위·롯데백화점 '진정한 파트너십', 상생 위해 5년 연속 양해각서 ...",
+    "description": "동반성장위원회와 롯데백화점이 13일 '2025년 협력사 ESG 지원사업' 추진을 위한 업무협약(MOU)을 체결했다고 밝혔다. 양 기관은 2021년 이후 5년째 중소 협력사의 ESG(환경·사회·지배구조) 경영 역량 강화를 함께 이어오며...",
+    "link": "https://www.mt.co.kr/economy/2025/11/13/2025111309125580520",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-13",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 \"고객 참여형 친환경 캠페인 진행\"",
+    "description": "지난 9월에는 고객 약 7,000명으로부터 1만여 개의 플라스틱 장난감을 기부받았는데, 현대백화점은 세척·선별 등의 과정을 거쳐 재사용 가능한 장난감은 그대로, 나머지는 도서 거치대로 업사이클해 지역 아동센터에...",
+    "link": "https://sports.hankooki.com/news/articleView.html?idxno=6915892",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-14",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 무라벨 용기에 '설향 딸기' 선봬… ESG 실천",
+    "description": "롯데마트는 이번 상품을 단순한 품목 확대가 아닌 ESG 실천 의지를 담은 상징적 시도로 보고 있다. 연간... 롯데마트는 지난해 롯데슈퍼에도 스마트팜 딸기를 도입해 판매를 시작했으며, 올 딸기 시즌에는 롯데마트...",
+    "link": "https://www.newscj.com/news/articleView.html?idxno=3340088",
+    "related_count": 37
+  },
+  {
+    "date": "2025-11-14",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "\"딸기 품질·환경 모두 잡는다\" 롯데마트, 1단 무라벨 설향 도입",
+    "description": "이는 단순 상품 확장을 넘어, ESG 실천 의지를 담은 상징적 시도다. 롯데마트는 연간 판매량 1위 과일인 딸기... 지난 해에는 롯데슈퍼에도 스마트팜 딸기를 도입해 판매를 시작했으며, 이번 딸기 시즌에는 롯데마트·슈퍼...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=465377",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-14",
+    "company": "현대백화점",
+    "sentiment": "NEGATIVE",
+    "title": "현대백화점, 여성임원 비율 3년째 10%대... \"성별 다양성 확보해야\"",
+    "description": "현대백화점과 달리 신세계백화점과 롯데백화점은 여성 임직원 비중을 늘리고 있다. 지난해 기준... 전문가들은 이러한 구조적 한계가 ESG 평가와 브랜드 이미지에 부정적인 영향을 줄 수 있다고 우려한다. 성효용...",
+    "link": "https://www.meconomynews.com/news/articleView.html?idxno=123213",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-14",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 전주점 '사랑의 연탄' 배달",
+    "description": "롯데백화점 전주점 ESG 김세정 리더는 \"겨울철 추운 날씨로 어려움을 겪을 이웃에게 조금이나마 도움이 되고자 연탄을 배달하게 됐다\"며 \"전달된 연탄 한 장 한 장이...",
+    "link": "http://www.breaknews.com/1161615",
+    "related_count": 4
+  },
+  {
+    "date": "2025-11-15",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 \"재판매 가능한 의류 기부하세요\"",
+    "description": "현대백화점은 2015년부터 고객 기부를 기반으로 한 '365 리사이클 캠페인'을 지속 운영하고 있다. 지난 9월에는 약 7000명이 1만여 개의 플라스틱 장난감을 기부했다. 현대백화점은 세척·선별 등 과정을 거쳐 재사용 가능한...",
+    "link": "https://www.newspenguin.com/news/articleView.html?idxno=20716",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-16",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24본사·가맹점·팔등로기부거리상인회 나눔 동참",
+    "description": "울산시 남구 신정1동 행정복지센터는 지난 14일 이마트24본사와 가맹점, 팔등로 기부거리상인회와 함께 후원물품 전달식을 개최했다.",
+    "link": "http://www.ujeil.com/news/articleView.html?idxno=376678",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 레이더] 롯데홈쇼핑이 키워온 작은 꿈 100번째 결실... '작은도...",
+    "description": "롯데홈쇼핑 ESG위원장, 남민 서울특별시 어린이병원 원장, 김재겸 롯데홈쇼핑 대표, 김병윤 구세군... '푸드픽'은 쓱닷컴이 이마트와 협업해 인기 가공식품을 저렴한 가격에 선보이며 당일배송도 제공하는 할인 행사다....",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=333196",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[CEO 직썰] 김재겸 롯데홈쇼핑 대표 \"미래세대 아이들의 동등한 학습 환...",
+    "description": "김광재 롯데홈쇼핑 ESG위원장, 남민 서울특별시 어린이병원 원장, 김재겸 롯데홈쇼핑 대표, 김병윤 구세군 한국군국 사령관이 지난 13일 서울 서초구 내곡동에 위치한 국내 유일의 발달장애 아동 재활전문 공공병원인...",
+    "link": "https://www.ziksir.com/news/articleView.html?idxno=112376",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "12년 나눔의 결실...롯데홈쇼핑, 작은도서관 100호 특별관 열어",
+    "description": "이날 행사에 김재겸 롯데홈쇼핑 대표, 김광재 ESG위원장, 이동규 커뮤니케이션부문장, 남민 서울시 어린이병원 원장, 김병윤 구세군 한국군국 사령관이 참석했다. 행사에 앞서 발달장애 아동과 청소년으로 구성된...",
+    "link": "https://www.mt.co.kr/living/2025/11/17/2025111609311962767",
+    "related_count": 10
+  },
+  {
+    "date": "2025-11-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 어린이병원에 '희망의 책장' 선물",
+    "description": "작은도서관은 롯데홈쇼핑과 구세군 한국군국이 2013년부터 12년 동안 이어오고 있는 사회 공헌 사업이다. 서울 강서구 1호점을 시작으로 전국 각지에 작은도서관을 설립했다. 현재까지 누적 기부금은 30억 원 이상이며...",
+    "link": "https://www.sedaily.com/NewsView/2H0H7XVVLH",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-17",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "초록우산, 한수원·BGF리테일과 업무협약 체결",
+    "description": "민승배 BGF리테일 대표이사는 “CU 플랫폼이 디지털 사회공헌 채널로 새로운 역할을 하게 되어 기쁘다”고 했으며, 황영기 초록우산 회장은 “3자 협력을 통해 실질적...",
+    "link": "https://www.venturesquare.net/1014639",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-17",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "서스틴베스트, 하반기 ESG 평가 발표…현대홈쇼핑 '톱'",
+    "description": "'ESG Best Companies' 선정은 자산 규모에 따라 ▲2조원 이상 상장사 50곳 ▲5000억~2조원 미만 30곳 ▲5000억원 미만 20곳으로 나뉘어 이뤄졌으며, 2조원 이상 상위 기업으로는 현대홈쇼핑, 현대백화점, 유한양행, 5천억원...",
+    "link": "http://www.seoulwire.com/news/articleView.html?idxno=680922",
+    "related_count": 4
+  },
+  {
+    "date": "2025-11-17",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 레이더] 버려진 유니폼, 시민 쉼터로 부활... 신세계백화점, '리...",
+    "description": "플러스넬은 온, 습도의 변화에 강하고 별도의 유지 보수가 필요하지 않은 뛰어난 내구성을 자랑해 벤치 및... CJ온스타일은 4일부터 12일까지 '2025 겨울 패션위크' 매출을 중간 집계한 결과, 퍼·양모 등 헤어리(hairy)...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=333204",
+    "related_count": 5
+  },
+  {
+    "date": "2025-11-17",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[함께가자 우리ESG] 신세계백화점, 폐유니폼으로 만든 '리뉴' 벤치 기증",
+    "description": "신세계백화점이 지난 6일광주광역시 서구 치평동 운천어린이공원에서 '리뉴 벤치 기증식'을 갖고 총 10개의 친환경 벤치를 지역 사회에 전달했다고 17일 밝혔다. 이번에 기증한 벤치에 신세계백화점은 '쓰임을 다한...",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=119553",
+    "related_count": 22
+  },
+  {
+    "date": "2025-11-17",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "다 쓴 유니폼 1만 벌로 벤치를 만들었다? 신세계백화점의 색다른 기증",
+    "description": "신세계백화점은 6일 광주 서구 치평동 운천어린이공원에서 '리뉴 벤치 기증식'을 열고 10개의 친환경 벤치를 전달했다고 17일 밝혔다. '쓰임을 다한 유니폼이 시민을 위한 쉼터로 새롭게 재탄생했다'는 의미가 담긴 리뉴(Re...",
+    "link": "https://www.hankookilbo.com/News/Read/A2025111714160004670?did=NA",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-18",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일 부패방지경영 국제표준 '인증'",
+    "description": "CU를 운영하는 BGF리테일의 조직 시스템이 국제표준에 부합하는 ESG경영으로 인정받았다. BGF리테일은 부패방지경영시스템에 대한 국제표준 ISO 37001 인증을 취득했다고 18일 밝혔다. ISO 37001은 부패방지경영시스템 수립...",
+    "link": "https://www.safetimes.co.kr/news/articleView.html?idxno=236544",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-18",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[N2 유통] BGF리테일 ‘ISO 37001’·교촌 ‘ISO/IEC 27001’ 인증 획득",
+    "description": "민승배 BGF리테일 대표이사(왼쪽)와 이일형 LRQA(로이드 인증원) 대표이사가 지난 14일 서울시 강남구... 이번 인증 획득은 정보보호, 개인정보보호, IT 인프라 운영 등 교촌에프앤비의 모든 정보보호경영체계가 국제...",
+    "link": "https://www.news2day.co.kr/article/20251118500134",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-18",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데칠성-빙그레-이마트 업무용 차량 탄소 제로 ‘전기차 시대’ 본격화",
+    "description": "빙그레, 이마트 등 국내 유통기업들이 업무용 차량을 전기차로 전환하고 있다. 배송·영업용 차량 비중이 큰 업계 특성상 전기차 전환은 곧 탄소 감축으로 이어지는 만큼, 이를 통해 ESG 경영을 강화하는 모습이다....",
+    "link": "https://www.socialvalue.kr/news/view/1065586645855191",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-18",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, '서스틴 베스트' ESG 평가서 1·2위 석권",
+    "description": "현대백화점그룹은 현대홈쇼핑과 현대백화점이 국내 ESG 평가기관인 서스틴베스트가 발표한 '2025년 ESG 베스트 기업 100' 2조원 이상 상장사 부문에서 각각 1위와 2위를 차지했다고 18일 밝혔다. 현대그린푸드는 5000억원...",
+    "link": "https://www.mydaily.co.kr/page/view/2025111822010380190",
+    "related_count": 115
+  },
+  {
+    "date": "2025-11-18",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑 현대백화점, 서스틴베스트 ESG 평가서 1~2위 석권",
+    "description": "현대백화점그룹은 현대홈쇼핑과 현대백화점이 국내 ESG 평가기관인 서스틴베스트가 발표한 '2025년 ESG 베스트 기업 100' 2조 원 이상 상장사 부문에서 각각 1위와 2위를 차지했다고 18일 밝혔다. 현대백화점그룹이...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=420493",
+    "related_count": 4
+  },
+  {
+    "date": "2025-11-18",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 'ESG 베스트 기업 100'에 6개 계열사 선정",
+    "description": "현대백화점그룹은 국내 ESG 평가기관 서스틴베스트가 발표한 '2025년 ESG 베스트 기업 100'에서 현대홈쇼핑과 현대백화점이 2조 원 이상 상장사 부문 1위와 2위를 각각 차지했다고 18일 밝혔다. 현대그린푸드는 5000억 원...",
+    "link": "http://www.whitepaper.co.kr/news/articleView.html?idxno=254641",
+    "related_count": 5
+  },
+  {
+    "date": "2025-11-19",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[브리프]롯데백화점 이마트 롯데마트 배달의민족 쿠팡이츠서비스 GS리테...",
+    "description": "■GS리테일, ESG 평가 A+ 획득! \"2년 연속 최고 등급 달성\" 출처=GS리테일 GS리테일이 한국ESG기준원(KCGS)이... GS25는 올해 동반성장위원회에서 발표한 '동반성장지수 평가'에서 2년 연속 가맹업 부문 '최우수' 등급을...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=343879",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, KCGS ESG 평가 2년 연속 A+…환경·사회 부문 최고등급",
+    "description": "GS리테일이 '바다숨프로젝트'의 일환으로 제주 동복 연안 정화 활동을 진행했다. GS리테일이... 사회 분야에서는 가맹점 상생 강화와 동반성장지수 '최우수' 등급(2년 연속), 취약계층 자립 지원형 매장 확대(전국...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=171153",
+    "related_count": 41
+  },
+  {
+    "date": "2025-11-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 2025년 정기 ESG 등급 평가서 A+ 등급 획득",
+    "description": "사진=GS리테일 GS리테일은 한국ESG기준원(KCGS)이 발표한 2025년 정기 ESG 등급 평가에서 통합 A+ 등급을... GS25는 올해 동반성장위원회에서 발표한 '동반성장지수 평가'에서 2년 연속 가맹업 부문 '최우수' 등급을 획득하며...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=186599",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-19",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 한국ESG기준원 평가서 첫 통합 A+ 달성",
+    "description": "BGF리테일은 한국ESG기준원(KCGS) 2025년 ESG(환경·사회·지배구조) 평가에서 처음으로 통합 등급 A+를 획득했다고 19일 밝혔다. 직전 5년 연속 통합 A등급을 유지한 데 이어, 환경(E) 부문에서 A+를 획득하며 등급이 한...",
+    "link": "https://www.mydaily.co.kr/page/view/2025111920313224966",
+    "related_count": 26
+  },
+  {
+    "date": "2025-11-19",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24 군산소룡타운점, 소룡동 착한가게 가입",
+    "description": "군산시 소룡동 소재 이마트24 군산소룡타운점(대표 임석동, 63호점)이 착한가게에 신규 가입하며 나눔 활동에... 송정석 지역사회보장협의체 위원장은 \"기부에 동참해준 모든 분께 깊은 감사를 전한다\"며 \"이러한 선한...",
+    "link": "http://www.jjn.co.kr/news/articleView.html?idxno=1023473",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-19",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "‘114억 배임’ 파문… 이마트, 미등기 임원 고소에 ‘ESG 빨간불’",
+    "description": "이마트가 최근 미등기 임원 이모씨를 배임 혐의(특정경제범죄 가중처벌 등에 관한 법률 위반)로 고소하며 ESG(환경·사회·지배구조)경영에 빨간불이 들어왔다. 19일 전자공시시스템에 따르면 전날 이마트는 미등기 임원...",
+    "link": "https://www.mydaily.co.kr/page/view/2025111916285761482",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-19",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "CJ온스타일, 이롬과 '아쇼라' 판매 수익 기부",
+    "description": "CJ온스타일 관계자는 \"아쇼라와 이롬이 함께 실천하는 이번 기부는 고객에게 합리적인 쇼핑 경험을 제공함과 동시에 나눔의 가치를 전할 수 있어 더욱 뜻깊다\"며 \"앞으로도 파트너사와 협력해 다양한 사회 공헌 활동을...",
+    "link": "http://www.sisaon.co.kr/news/articleView.html?idxno=177642",
+    "related_count": 13
+  },
+  {
+    "date": "2025-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 국가유공자ㆍ유가족ㆍ제대군인 위한 생활 밀착 할인 서비스...",
+    "description": "한편 세븐일레븐은 '나라사랑 캠페인' 외에도 쪽방촌 후원, 해변정화 플로깅, 친환경 동전 모금 활동 등 다양한 ESG 사회공헌 프로그램을 운영하고 있으며, 올해로 32회를 맞은 '어린이 환경미술대회'를 통해 환경보호...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=186676",
+    "related_count": 18
+  },
+  {
+    "date": "2025-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 보훈가족 상시 할인 도입… 편의점 최초 '보훈 마켓' 참여",
+    "description": "한편 세븐일레븐은 '나라사랑 캠페인' 외에도 쪽방촌 후원, 해변정화 플로깅, 친환경 동전 모금 활동 등 다양한 ESG 사회공헌 프로그램을 운영하고 있으며, 올해로 32회를 맞은 '어린이 환경미술대회'를 통해 환경보호...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=467402",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, '나라사랑 캠페인' 공공 협력 범위로 확대",
+    "description": "세븐일레븐은 '나라사랑 캠페인' 외에도 쪽방촌 후원, 해변정화 플로깅, 친환경 동전 모금 활동 등 다양한 ESG 사회공헌 프로그램을 운영하고 있으며 올해로 32회를 맞은 ‘어린이 환경미술대회’를 통해 환경보호...",
+    "link": "http://theviewers.co.kr/View.aspx?No=3861862",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐 보훈대상자 최대 15% 할인…애국 마케팅 가속",
+    "description": "코리아세븐 측은 \"세븐일레븐은 해군순항훈련, 군부대 장병 후원 등 나라사랑을 테마로 한 차별화 ESG활동을 꾸준히 전개해오고 있다. 이번 보훈 마켓 사업 참여 역시 이러한 당사 ESG 전략 기조와 결을 함께하며...",
+    "link": "https://www.newsway.co.kr/news/view?ud=2025111915170425647",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 국가보훈부와 손잡고 '보훈 마켓' 할인 서비스 첫 도입",
+    "description": "올해도 사관생도 합동순항훈련에 1천만 원 규모의 후원물품을 지원하는 등 군 장병과 보훈가족에 대한 다양한 지원을 이어가고 있다. 박상준 세븐일레븐 상생협력팀장은 \"보훈가족을 위한 이번 할인서비스는...",
+    "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=280875",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-20",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "ESG 경영 등급 나란히 A+ 받은 이마트·㈜신세계... \"남매 경영, 성공\"",
+    "description": "이마트와 신세계가 한국ESG기준원(KCGS)의 2025년 ESG 등급 평가에서 나란히 A+ 등급을 받아 시장의 주목을 받고 있습니다. 신세계그룹이 남매(정용진 회장·정유경 회장) 경영 체제로 전환된 이후, 지배구조·환경·사회 전...",
+    "link": "https://www.insight.co.kr/news/529964",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-20",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 왕십리점, 성동구자원봉사센터에 김장김치 400박스 후원",
+    "description": "사진=성동구자원봉사센터  이마트 왕십리점은 (사)성동구자원봉사센터에 사회적 약자를 지원하기 위한 김장김치 400박스를 후원했다고 20일 밝혔다. 이마트 왕십리점은 상반기에 누룽지 250박스와 김장김치 3.5kg...",
+    "link": "http://www.sisacast.kr/news/articleView.html?idxno=86301",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-20",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[N2 유통] 현대홈쇼핑·빙그레·롯데웰푸드, ‘KCGS ESG평가’ A등급 받아",
+    "description": "통합 A등급 이상을 받은 계열사는 그룹 지주회사인 현대지에프홀딩스를 비롯해 현대백화점, 현대홈쇼핑... [사진=롯데웰푸드] 롯데웰푸드는 KCGS 2025년 ESG 평가에서 통합 등급 'A'를 획득했다. 2년 연속 기록이다....",
+    "link": "https://www.news2day.co.kr/article/20251120500092",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-20",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, KCGS 평가서 12개 상장사 통합 A 등급 이상 획득",
+    "description": "현대백화점그룹은 최근 발표된 서스틴베스트 ESG 평가에서도 괄목할 만한 성적을 거둔 바 있다. 현대홈쇼핑과 현대백화점이 2조원 이상 상장사 부문 1·2위를 차지했으며, 현대그린푸드는 5,000억~2조원 미만 상장사...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=186739",
+    "related_count": 4
   }
 ]
