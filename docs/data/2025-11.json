@@ -483,7 +483,7 @@
     "title": "현대백화점그룹, '서스틴 베스트' ESG 평가서 1·2위 석권",
     "description": "현대백화점그룹은 현대홈쇼핑과 현대백화점이 국내 ESG 평가기관인 서스틴베스트가 발표한 '2025년 ESG 베스트 기업 100' 2조원 이상 상장사 부문에서 각각 1위와 2위를 차지했다고 18일 밝혔다. 현대그린푸드는 5000억원...",
     "link": "https://www.mydaily.co.kr/page/view/2025111822010380190",
-    "related_count": 115
+    "related_count": 117
   },
   {
     "date": "2025-11-18",
@@ -519,7 +519,7 @@
     "title": "GS리테일, KCGS ESG 평가 2년 연속 A+…환경·사회 부문 최고등급",
     "description": "GS리테일이 '바다숨프로젝트'의 일환으로 제주 동복 연안 정화 활동을 진행했다. GS리테일이... 사회 분야에서는 가맹점 상생 강화와 동반성장지수 '최우수' 등급(2년 연속), 취약계층 자립 지원형 매장 확대(전국...",
     "link": "http://www.kdfnews.com/news/articleView.html?idxno=171153",
-    "related_count": 41
+    "related_count": 42
   },
   {
     "date": "2025-11-19",
@@ -573,7 +573,7 @@
     "title": "세븐일레븐, 국가유공자ㆍ유가족ㆍ제대군인 위한 생활 밀착 할인 서비스...",
     "description": "한편 세븐일레븐은 '나라사랑 캠페인' 외에도 쪽방촌 후원, 해변정화 플로깅, 친환경 동전 모금 활동 등 다양한 ESG 사회공헌 프로그램을 운영하고 있으며, 올해로 32회를 맞은 '어린이 환경미술대회'를 통해 환경보호...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=186676",
-    "related_count": 18
+    "related_count": 19
   },
   {
     "date": "2025-11-20",
@@ -646,5 +646,320 @@
     "description": "현대백화점그룹은 최근 발표된 서스틴베스트 ESG 평가에서도 괄목할 만한 성적을 거둔 바 있다. 현대홈쇼핑과 현대백화점이 2조원 이상 상장사 부문 1·2위를 차지했으며, 현대그린푸드는 5,000억~2조원 미만 상장사...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=186739",
     "related_count": 4
+  },
+  {
+    "date": "2025-11-21",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "친환경·상생 노력 보람 있네…이마트·신세계·현대百 'ESG 우등생' 등극",
+    "description": "GS리테일도 가맹점 상생·동반성장 강화, 상생나눔플랫폼 점포 확대, 일·가정 양립 제도 등을 운영 중이다. 다만 공통적으로 지배구조 등급이 A+에 오른 유통사는 없다는 점은 향후 과제로 꼽힌다. 유통업은 다양한...",
+    "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1687762",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-21",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 백혈병·소아암 환아 1억원 지원",
+    "description": "▲(사진=GS리테일 제공) GS리테일이 백혈병·소아암 환아 지원을 위해 신규 사회공헌사업 'GS리테일 드림온'을... 건강한 성장을 돕고 지역사회와 함께하는 ESG(환경·사회·지배구조) 경영을 실천해 나가겠다\"고 말했다.",
+    "link": "https://idsn.co.kr/news/view/1065596534570559",
+    "related_count": 65
+  },
+  {
+    "date": "2025-11-21",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[더벨]'우등생' 이마트, '배임영향' ESG 등급 타격 입나",
+    "description": "한국ESG기준원(옛 한국기업지배구조원)에 따르면 그간 이마트는 유통업계 ESG 우등생으로 통했다. ESG 통합등급은 2021년 A, 2022년 A, 2023년 A, 2024년 A, 2025년에는 A+ 최고 등급을 받았다. 'S', 'A+', 'A', 'B+', 'B', 'C', 'D'까지 총...",
+    "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202511200003520410101133",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-21",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[초점] 이마트, '6개월 쪼개기' 기간제법 회피 의혹…노조 개입 논란까...",
+    "description": "높아져 산업재해 발생 가능성이 커질 수 있다는 것이다. 정 의원은 \"계속되는 인력 교체로 산재 위험도 함께 높아지고 있다\"고 지적했다. 30일 강인석 이마트 본부장은 국회 기후에너지환경노동위원회 종합감사에 증인으로...",
+    "link": "http://www.rightknow.co.kr/news/articleView.html?idxno=32696",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-23",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, \"유기동물 보호\"사료 기부·입양 캠페인",
+    "description": "지난 14일 이마트는 하림펫푸드와 함께 코리안독스 레인보우쉼터에 3000만원 상당의 사료를 기부하고 이마트와 하림펫푸드의 임직원 40여 명이 봉사활동에 참여해 견사 청소, 시설 정비, 유기견 산책 등의 활동을 진행하며...",
+    "link": "https://www.mk.co.kr/article/11474858",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-23",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 외부 라벨 완전히 제거,폐기물 발생 최소화",
+    "description": "이는 단순 상품 확장을 넘어, ESG(환경·책임·투명경영) 실천 의지를 담은 상징적 시도다. 롯데마트는 연간 판매량 1위 과일인 딸기, 그중에서도 매출 비중이 가장 높은 '설향' 품종을 적용 대상으로 선정했다. 대표 품목에...",
+    "link": "https://www.mk.co.kr/article/11474862",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-23",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 패딩 기부·국산 농산물 소비 촉진 프로젝트",
+    "description": "이번에 전달된 다운 베스트는 지난 3월 진행한 '365 리사이클 캠페인'에 참여한 고객 3000명이 기부한 패딩 약 4000벌(2.5톤)을 재활용해 제작됐다. 현대백화점은 사회적기업과 협력해 패딩을 선별·분해한 뒤 재활용이...",
+    "link": "https://www.mk.co.kr/article/11474859",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-23",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, 폐유니폼 활용해 만든 벤치 기증",
+    "description": "벤치'가 함께 어우러진 공간 속에서 시민들은 휴식을 넘어 일상 속에서 친환경의 의미를 생각해 보는 시간까지 누릴 수 있을 것으로 기대된다. '리뉴 벤치' 기증 외에도 신세계백화점은 다양한 사회 공헌 활동을 펼치고 있다.",
+    "link": "https://www.mk.co.kr/article/11474861",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-23",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, 강남점서 국내 단독 '2025 마마 어워즈' 팝업 운영",
+    "description": "신세계백화점은 글로벌 대표 K팝 시상식 '2025 마마 어워즈(2025 MAMA AWARDS)'의 공식 팝업을 국내 단독으로... 교육 기회 확대 및 환경 개선을 위한 기부금으로 활용된다. 현장에는 관련 캠페인 전시존도 함께 운영된다.",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=415177",
+    "related_count": 14
+  },
+  {
+    "date": "2025-11-23",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, '2025 MAMA AWARDS' 국내 단독 팝업 연다",
+    "description": "판매는 신세계백화점 팝업에서만 단독 진행된다. 팝업의 판매 수익금의 일부는 유네스코를 통해 기부되어 개발도상국 소녀들의 교육 기회 확대 및 환경 개선을 위해 사용된다. 또한 팝업 내에 '소녀교육...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=468035",
+    "related_count": 4
+  },
+  {
+    "date": "2025-11-23",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "홍콩서 열리는 2025 MAMA AWARDS의 열기…신세계백화점에서 먼저 느껴보...",
+    "description": "판매는 신세계백화점 팝업에서만 단독 진행된다. 팝업의 판매 수익금의 일부는 유네스코를 통해 기부되어 개발도상국 소녀들의 교육 기회 확대 및 환경 개선을 위해 사용된다. 또한 팝업 내에 '소녀교육...",
+    "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=226367",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-24",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[살맛나는 세상 이야기]이마트, 유기동물 향한 진심으로 골목길 안전 지...",
+    "description": "2023년 이마트가 유기동물 봉사에 나선 모습. 이마트는 단발성에 그치지 않고 꾸준한 봉사로 진정성을 보이고 있다/이마트 ◆'진정성' 있는 발걸음 이마트가 보여주는 일련의 활동들은 유통 기업이 가진 인프라와 영향력을...",
+    "link": "http://www.metroseoul.co.kr/article/20251124500255",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 ‘작은도서관’ 100호 열었다",
+    "description": "개관식에는 김재겸 롯데홈쇼핑 대표, 김광재 환경·사회·지배구조(ESG) 위원장, 이동규 커뮤니케이션부문장, 남민 어린이병원장, 김병윤 구세군 한국군국 사령관 등이 참석했다. 행사에 앞서 병원 내 발달장애 아동...",
+    "link": "http://www.fnnews.com/news/202511241810017119",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-24",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 'ESG 경영 모범 기업' 입지 강화",
+    "description": "현대백화점그룹은 최근 발표된 서스틴베스트 ESG 평가에서도 괄목할 만한 성적을 거둔 바 있다. 현대홈쇼핑과 현대백화점이 2조원 이상 상장사 부문 1·2위를 차지했으며, 현대그린푸드는 5,000억~2조원 미만 상장사...",
+    "link": "https://sports.hankooki.com/news/articleView.html?idxno=6916950",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "하동군·롯데홈쇼핑, '엘보틀' 공동 개발 협력",
+    "description": "이번 협약에 따라 하동군은 고품질 말차를 우수 조건으로 우선 공급하고, 롯데홈쇼핑은 '엘보틀' 판매와 연계한 지역 상생 활동에 나선다. 양측은 안정적 원료 공급 체계 구축과 지역 농가 소득 증대라는 공동 목표 아래...",
+    "link": "http://www.gnmaeil.com/news/articleView.html?idxno=575486",
+    "related_count": 55
+  },
+  {
+    "date": "2025-11-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 광주광역시 '교통안전 솔루션' 설치",
+    "description": "현대백화점그룹이 안전한 어린이 교통안전 환경 조성에 나선 건 그룹 ESG(환경·사회·지배구조) 경영의 일환이다. 현대백화점그룹은 '리그린(Re.Green), 위드림(We.Dream)'을 그룹의 ESG 슬로건으로 삼고, 환경보호와...",
+    "link": "http://www.sisacast.kr/news/articleView.html?idxno=86643",
+    "related_count": 26
+  },
+  {
+    "date": "2025-11-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 초록우산어린이재단과 손잡고 안전 등하굣길 조성 지원",
+    "description": "현대백화점그룹은 ESG(환경·사회·지배구조) 경영의 하나로 안전한 어린이 교통안전 환경 조성에 나서고 있다. 현대백화점그룹은 '리그린(Re.Green), 위드림(We.Dream)'을 그룹의 ESG 슬로건으로 삼고 환경보호와 사회공헌을...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=421303",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 어린이 교통안전 챙긴다..광주시 초등학교에 '스마트 ...",
+    "description": "현대백화점그룹이 안전한 어린이 교통안전 환경 조성에 나선 건 그룹 ESG(환경·사회·지배구조) 경영의 일환이다. 현대백화점그룹은 '리그린(Re.Green), 위드림(We.Dream)'을 그룹의 ESG 슬로건으로 삼고, 환경보호와...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2101199",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-26",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[AT 유통]GS25·CU·세븐일레븐",
+    "description": "BGF리테일은 그동안 아동 안전을 위한 ESG 활동을 집중 전개해 온 만큼 이번 기부처 역시 아동과 관련된 비영리단체로 지정했다고 설명했다. 세븐일레븐, SK하이닉스와 HBM 스낵 출시 ‘세븐셀렉트 허니바나나맛 HBM...",
+    "link": "https://www.asiatime.co.kr/article/20251126500057",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-26",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, CU ‘착한 100원 기부 캠페인’ 시행",
+    "description": "BGF리테일은 그동안 아동 안전을 위한 ESG 활동을 집중 전개해 온 만큼 이번 기부처 역시 아동과 관련된 비영리단체로 지정했다. 체결식에 홍정국 BGF리테일 부회장과 민승배 대표를 비롯해 조미진 유니세프...",
+    "link": "http://www.thebigdata.co.kr/view.php?ud=20251126090827497602251a9c03_23",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-26",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "하동차&바이오진흥원·롯데홈쇼핑, 유통·마케팅 협력 업무협약",
+    "description": "이번 협약으로 하동군은 고품질 말차를 롯데홈쇼핑에 우선 공급하게 되며, 롯데홈쇼핑은 '엘:보틀(L:Bottle)' 판매와 연계한 지역 상생 프로그램을 추진할 예정이다. 양측은 원료 공급 안정화와 농가 소득 증대, 말차 산업의...",
+    "link": "https://www.gnnews.co.kr/news/articleView.html?idxno=624432",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-26",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 대학 산학협력 라방 '크리에이터 클래스' 실습 성료 … \"대...",
+    "description": "'크리에이터 클래스'는 롯데홈쇼핑이 인재 양성 프로그램 '상생 일자리'의 일환으로 2018년부터 운영하고 있다. 현재 4기까지 130명 이상이 수료했으며, 쇼호스트, 유튜버 등 미디어 산업 현장에서 활동 중이다. 올해...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=187270",
+    "related_count": 30
+  },
+  {
+    "date": "2025-11-26",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 청년 크리에이터 해외연수·채용 지원…실전형 인재 발굴 ...",
+    "description": "'크리에이터 클래스'는 롯데홈쇼핑이 인재 양성 프로그램 '상생 일자리'의 일환으로 2018년부터 운영하고 있다. 현재 4기까지 130명 이상이 수료했으며, 쇼호스트, 유튜버 등 미디어 산업 현장에서 활동 중이다. 올해...",
+    "link": "https://www.100ssd.co.kr/news/articleView.html?idxno=203328",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-26",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 산학 라방 실습 첫 결실… \"대학생이 만든 방송, 300만뷰 터...",
+    "description": "롯데홈쇼핑의 '크리에이터 클래스'는 인재 양성 프로그램 '상생 일자리'의 일환으로 2018년부터 운영해 왔다. 현재 4기까지 130명 이상이 수료했으며 일부는 쇼호스트, 유튜버 등 미디어 산업에서 활동 중이다. 올해...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=171722",
+    "related_count": 2
+  },
+  {
+    "date": "2025-11-26",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 국제 정보보호 표준 'ISO 27001' 인증 획득",
+    "description": "현대백화점 관계자는 \"고객 정보를 보호하는 것은 기업 신뢰의 기본이자 필수 요소\"라며 \"앞으로도 ESG(환경·사회·지배구조) 경영 측면에서 지속 가능한 정보보안 컴플라이언스 체계를 강화해 나가겠다...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2101336",
+    "related_count": 16
+  },
+  {
+    "date": "2025-11-27",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "하림펫푸드, 이마트 몰리스와 사료 2.5톤 기부 및 봉사활동 진행",
+    "description": "하림펫푸드는이마트의 반려동물 전문 브랜드 ‘몰리스(Molly's)’와 함께 지난 14일, 경기도 용인시에위치한 유기동물 보호소 ‘코리안독스’를 방문해 총 2.5톤 규모의 사료 기부와 봉사활동을 진행했다고 27일 밝혔다....",
+    "link": "http://www.beyondpost.co.kr/view.php?ud=20251127161550879546a9e4dd7f_30",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-27",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[포토] 롯데마트, 동반성장 대통령표창·지속가능성지수 1위",
+    "description": "진주태 롯데마트·슈퍼 준법지원부문장은 \"이번 수상은 롯데마트가 추진해온 상생 협력과 ESG 경영 전반의 노력이 종합적으로 인정받은 값진 결실\"이라며 “앞으로도 파트너사 및 지역사회와의 동반성장을...",
+    "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=05408726642369984",
+    "related_count": 14
+  },
+  {
+    "date": "2025-11-27",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 라이브커머스 '엘라이브', 미래 방송인재 육성을 위한 등용...",
+    "description": "27일 롯데홈쇼핑에 따르면 '크리에이터 클래스'는 2018년부터 운영 중인 인재 양성 프로그램 '상생 일자리'의 일환이다. 2023년 신설돼 현재까지 130명 이상이 수료했으며, 다수는 쇼호스트·유튜버 등 미디어 업계에...",
+    "link": "https://www.asiatoday.co.kr/view.php?key=20251127010014304",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-27",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "크리에이터 등용문된 엘라이브…롯데홈쇼핑, 인재 육성 프로그램 경쟁률...",
+    "description": "이에 롯데홈쇼핑은 라이브커머스 크리에이터를 희망하는 청년들을 위해 이론 위주의 교육 한계를 보완하고... 프로그램 ‘상생 일자리’의 일환이다. 라이브커머스 크리에이터를 희망하는 청년들에게 전문 교육부터...",
+    "link": "https://www.viva100.com/article/20251124501521",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-27",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "대구 신세계백화점, 사랑의 김장김치 담그기 행사",
+    "description": "대구 신세계백화점은 동구 제일감리교회에서 지역사회 나눔을 위한 '사랑의 김장김치 담그기' 행사를... 행사는 매년 동절기에 추진하는 대표 사회공헌 활동으로 총 2000㎏의 김장 김치를 마련해 동구 지역 소외계층...",
+    "link": "https://www.newsis.com/view/NISX20251127_0003419811",
+    "related_count": 3
+  },
+  {
+    "date": "2025-11-27",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "대전신세계백화점, 온누리상품권 1000만원 나눔 실천",
+    "description": "대전신세계백화점은 27일 대전시자원봉사센터에서 지역사회 나눔 실천 전달식을 갖고 대전 5개 구 취약계층이 따뜻한 겨울을 보낼 수 있도록 1000만원 규모 온누리상품권을 기부했다. 이날 전달식에는 유학선 대전신세계...",
+    "link": "https://www.hankyung.com/article/202511279557h",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-28",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "“치료 넘어 치유로”…롯데홈쇼핑이 12년간 묵묵히 쌓아 올린 100번째 ...",
+    "description": "롯데홈쇼핑은 2022년 경북 구미 72호점을 시작으로 현재까지 총 17톤의 폐섬유를 도서관 건립 자재로 활용하며 ESG 경영을 실천하고 있다. 롯데홈쇼핑의 ‘작은도서관’ 사업은 2013년 서울 강서구 1호점을 시작으로 12년간...",
+    "link": "https://www.sportsseoul.com/news/read/1566466?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-28",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "백화점 안팎에 심은 '숲'…현대백화점 '초록 자산' 전략",
+    "description": "현대백화점그룹은 2021년 산림청과 협약을 맺고 용인시 내 국유림에 '탄소중립의 숲'을 조성하기 시작했다. '탄소중립의 숲 1호'에는 2022년부터 전나무·상수리나무 등 2만 그루가 식재됐으며, 2027년까지 16만5000...",
+    "link": "https://www.ngetnews.com/news/articleView.html?idxno=542014",
+    "related_count": 1
+  },
+  {
+    "date": "2025-11-30",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[브리핑] 롯데마트, 인도네시아 이주노동자 지원 프로그램 진행",
+    "description": "이번 기프트박스는 롯데마트의 탄소중립 실천 캠페인 '리얼스 푸르깅 넷제로 크루'를 통해 조성한... 사진=세븐일레븐 ◇ 세븐일레븐, 연말맞이 즉석식품 대규모 할인·증정 프로모션 세븐일레븐은 신선식품 중심으로...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2101663",
+    "related_count": 20
+  },
+  {
+    "date": "2025-11-30",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "\"직원 걸음 모아 기부\" 롯데마트, 인니 이주노동자에 생활용품 전달",
+    "description": "지난 27일 경기도 안산시 단원구에 위치한 안산시외국인주민지원본부에서 롯데마트·슈퍼 및... 이번 기프트박스는 롯데마트의 탄소중립 실천 캠페인 ‘리얼스 푸르깅 넷제로 크루’를 통해 조성한 기부금으로...",
+    "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01134886642370968",
+    "related_count": 2
   }
 ]
