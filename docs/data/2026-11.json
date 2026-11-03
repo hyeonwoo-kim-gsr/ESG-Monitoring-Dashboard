@@ -51,7 +51,7 @@
     "title": "롯데홈쇼핑 브랜드평판 1위…홈앤쇼핑은 전월 대비 5.8% 반등",
     "description": "브랜드평판지수는 소비자들의 온라인 습관이 브랜드 소비에 미치는 영향을 분석해 참여, 미디어, 소통, 커뮤니티, 사회공헌지수 등 5개 항목으로 측정됐다. 상위권 순위는 롯데홈쇼핑, 공영홈쇼핑, 현대홈쇼핑...",
     "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280150",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-11-02",
@@ -69,7 +69,7 @@
     "title": "[현대백화점그룹 2.0] 현대지에프홀딩스, 반년새 시총 67% 껑충…밸류업...",
     "description": "특히 그룹 차원의 밸류업 성과가 지배구조 정점인 지주사에 집중됐다는 분석이 나온다. 주주환원 확대가 그룹 전반의 기업가치 개선으로 이어질 수 있을지 지켜봐야 한다는 평가가 나오고 있다. 현대지에프홀딩스...",
     "link": "https://dealsite.co.kr/articles/171702",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-01",
@@ -115,5 +115,122 @@
     "description": "남다른상점은 성남시와 현대백화점이 공동으로 추진하는 지역상생 협력사업이다. 2019년 첫 개최 이후 지역 중소기업 제품을 소비자에게 소개하고 유통 판로를 확대하기 위한 행사로 운영되고 있다. 이번 행사에는 총 21개...",
     "link": "https://www.m-i.kr/news/articleView.html?idxno=2012933",
     "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[똑똑한쇼핑] 신세계그룹 ‘쓱데이’, 쿠팡, 롯데마트·슈퍼, CJ ONE, 현대...",
+    "description": "◇ NS홈쇼핑, 성남시 'ESG 나눔기업' 인증…지역사회 후원 지속 NS홈쇼핑이 성남시와... 김요한 GS리테일 홈쇼핑AX부문장은 “AWS와의 협업을 통해 현장 중심의 AI 개발 역량을 강화했다\"며 “실무자가 직접 업무 문제를...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261103021464561",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[Who Is ?] 정지영 현대백화점 대표이사 사장",
+    "description": "민승배 BGF리테일 대표와 기념사진을 찍고 있다. <연합뉴스> △국제백화점협회, 더현대 서울서 CEO... \" \"ESG 경영을 지속 실천한 결과, 한국ESG기준원 평가에서 3년 연속 통합 A+ 등급을 획득했다. 앞으로도 고객과 주주...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=450682",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "편의점 브랜드평판 11월 빅데이터…1위 CU·2위 GS25·3위 세븐일레븐",
+    "description": "커뮤니티지수, 사회공헌지수로 세분화해 산출했다. 2026년 11월 편의점 브랜드평판 순위는 CU, GS25, 세븐일레븐, 이마트24, 미니스톱, 스토리웨이, 씨스페이스, 포시즌마트, 365플러스, 블루25, 로그인...",
+    "link": "https://www.cbci.co.kr/news/articleView.html?idxno=622123",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-03",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "원주시, 이마트 내 로컬푸드매장 현장 점검 및 활성화 간담회",
+    "description": "원주시는 김정남 원주부시장과 관계자, 매장 내 로컬푸드 직매장 관리자 등이 참석한 가운데 이마트... 김정남 원주부시장은 “대형유통업체와 지역 농가가 함께 성장할 수 있는 상생 방안을 지원하고 농가에 실질적인...",
+    "link": "https://n.news.naver.com/mnews/article/087/0001228131?sid=102",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "(유통 공룡 심층진단)이마트, 본업 회복에도 온라인 부진…수익구조 정...",
+    "description": "(사진=이마트 제공) 신세계·롯데쇼핑·이마트·현대백화점 등 국내 유통 대기업 4개사의 재무 성과와 ESG·지배구조 지표를 비교한 결과, 수익성과 현금창출력, 재무건전성에서 기업별 격차가 뚜렷하게 나타났습니다....",
+    "link": "http://www.newstomato.com/ReadNews.aspx?no=1318898&inflow=N",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "[민주 유통가] 롯데마트·쿠팡·NS홈쇼핑",
+    "description": "민주신문=김혜인 기자｜롯데마트·슈퍼는 김천시와 공동 개발한 품질 인증제도를 통해 엄격한 기준을... 경기사회복지공동모금회로부터 ESG 나눔기업 인증패를 받았다. 이번 인증은 1000만 원 이상을 기부하고 기업의...",
+    "link": "http://www.iminju.net/news/articleView.html?idxno=171835",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "【ESG 채용】그리너리, 이알엠코리아, 산일전기, 롯데마트·롯데슈퍼",
+    "description": "(롯데마트·롯데슈퍼) - 에너지 및 온실가스(ESG) 담당 [주요업무] 온실가스 배출량 관리·에너지 절감(ESG 규제 대응 전반) 온실가스 배출량 산정 및 인벤토리 관리 기후변화 대응 및 ESG 규제 관리 수도광열비 및...",
+    "link": "https://www.impacton.net/news/articleView.html?idxno=30498",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "배우 권유리, 롯데홈쇼핑 '드림보이스' 참여…음성도서 낭독·출연료 기...",
+    "description": "권유리는 롯데홈쇼핑의 중소기업 상생 프로그램인 '대한민국 브랜드 엑스포' 대표 모델로 활동하며 회사와 인연을 맺었으며, 이번 사업에는 자발적으로 참여했다. 권유리는 지난달 22일 서울 영등포구 양평동 롯데홈쇼핑...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=212424",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[브랜드평판] 홈쇼핑 11월 빅데이터 1위 롯데홈쇼핑·2위 공영홈쇼핑·3...",
+    "description": "커뮤니티지수, 사회공헌지수로 세분화해 산출했다. 2026년 11월 TV홈쇼핑 브랜드평판 순위는 롯데홈쇼핑, 공영홈쇼핑, 현대홈쇼핑, CJ온스타일, 홈앤쇼핑, NS홈쇼핑, GS홈쇼핑 순으로 집계됐다. 1위를...",
+    "link": "https://www.cbci.co.kr/news/articleView.html?idxno=622119",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-01",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "경기도·롯데백화점, 중소기업 판로 확대 맞손...의왕서 상생 팝업스토...",
+    "description": "주요 지원사업은 롯데백화점 상품기획자(MD)의 컨설팅과 '2026 경기도 동반성장페어' 연계 품평회, 온·오프라인 판로 지원 및 우수기업의 드림플라자 입점 지원 등으로, 기업들이 제품 개선부터 유통기업 상담과 실제...",
+    "link": "https://www.ajunews.com/view/20261101114126424",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-02",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "성남산업진흥원, 판교 현대백화점서 '남다른상점' 연다",
+    "description": "남다른상점은 성남시와 현대백화점이 함께 추진하는 지역상생 협력사업이다. 2019년 첫 행사 이후 경쟁력 있는 성남시 중소기업 제품을 소비자에게 선보이며 판로 확대와 브랜드 인지도 제고를 지원해 왔다. 기능성 비건...",
+    "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487488",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-02",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "정지선 현대백화점그룹 전문경영인 체제 다진다, 7년 만에 부회장 부활...",
+    "description": "특히 그룹의 지배구조가 개편되는 과정에서도 줄곧 식품사업을 맡아왔다는 점에서 오너일가의 신임이 두텁다는 평가를 받는다. 현대백화점그룹은 2023년 지주회사 체제를 개편하면서 기존 현대그린푸드를 지주회사인...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=450933",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "부산시, 대형유통업체 지역기여도 평가…신세계백화점·메가마트 최우수",
+    "description": "지역사회 상생협력 평가에서는 신세계백화점과 메가마트가 가장 높은 평가를 받았다. 부산시는 지난달 29일 시청에서 '유통업상생발전협의회'를 개최하고 지역 대형유통업체의 상생협력 실적을 분석한 '2026년...",
+    "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5079123",
+    "related_count": 3
   }
 ]
