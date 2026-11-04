@@ -186,7 +186,7 @@
     "title": "배우 권유리, 롯데홈쇼핑 '드림보이스' 참여…음성도서 낭독·출연료 기...",
     "description": "권유리는 롯데홈쇼핑의 중소기업 상생 프로그램인 '대한민국 브랜드 엑스포' 대표 모델로 활동하며 회사와 인연을 맺었으며, 이번 사업에는 자발적으로 참여했다. 권유리는 지난달 22일 서울 영등포구 양평동 롯데홈쇼핑...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=212424",
-    "related_count": 1
+    "related_count": 2
   },
   {
     "date": "2026-11-02",
@@ -232,5 +232,50 @@
     "description": "지역사회 상생협력 평가에서는 신세계백화점과 메가마트가 가장 높은 평가를 받았다. 부산시는 지난달 29일 시청에서 '유통업상생발전협의회'를 개최하고 지역 대형유통업체의 상생협력 실적을 분석한 '2026년...",
     "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5079123",
     "related_count": 3
+  },
+  {
+    "date": "2026-11-03",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일-국가보훈부, ‘보훈 사회공헌 업무협약’",
+    "description": "곽창헌 GS리테일 지속가능경영부문장은 “10년간 이어온 나라사랑 활동을 국가유공자와 보훈가족에게 실질적 도움이 되는 사회공헌으로 발전시킬 것”이라며 “국가보훈부와의 협력을 통해 ‘보훈 사회공헌’이 ESG...",
+    "link": "https://n.news.naver.com/mnews/article/382/0001302704?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "이마트24",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데온·현대리바트·이마트24, 수익성 반등 이뤄낼까",
+    "description": "◆이마트24, 점포 효율화·상생 전략 병행…수익성 회복 '총력' 국내 주요 편의점 4사 가운데 후발주자인 이마트24는 저수익 점포 정리와 가맹점 수익 개선, 상품 경쟁력 강화를 통한 실적 반등에 주력하고 있다....",
+    "link": "http://www.srtimes.kr/news/articleView.html?idxno=216598",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "한국거래소, 저PBR 기업 151곳 첫 공개…현대제철·이마트 등 포함",
+    "description": "코스피 공개 명단에는 현대제철(0.19배), 한화생명(0.27배), 롯데쇼핑(0.17배), 롯데케미칼(0.18배), 이마트(0.... 기업별 저평가 원인을 분석하고 자본효율성 제고와 주주환원 확대, 지배구조 개선 등을 위한 구체적인...",
+    "link": "https://www.ppss.kr/news/articleView.html?idxno=318492",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[떠나는 자, 남는 자, 오르는 자 : 미리 보는 유통가 인사] ⑪BGF그룹",
+    "description": "연말 인사 시즌을 앞두고 롯데·CJ·신세계·현대백화점 등 주요 유통그룹 최고경영자(CEO)들의 거취에... 동시에 최근 그룹 지배구조가 유통·엔지니어링 플라스틱·반도체 소재의 3개 사업축으로 재편되면서, 홍정국...",
+    "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1730228",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-03",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "“부산서 장사하면 부산에도 힘 보태야죠”…신세계백화점·메가마트 ‘...",
+    "description": "◇신세계 5년·메가마트 3년 연속 우수…지역과 함께 성장하는 기업 이런 가운데 신세계백화점과 메가마트는 지역경제와의 동반성장을 위한 꾸준한 노력으로 종합평가 최우수 업체에 선정됐다. 신세계백화점은...",
+    "link": "https://n.news.naver.com/mnews/article/021/0002829786?sid=102",
+    "related_count": 2
   }
 ]
