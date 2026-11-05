@@ -141,7 +141,7 @@
     "title": "편의점 브랜드평판 11월 빅데이터…1위 CU·2위 GS25·3위 세븐일레븐",
     "description": "커뮤니티지수, 사회공헌지수로 세분화해 산출했다. 2026년 11월 편의점 브랜드평판 순위는 CU, GS25, 세븐일레븐, 이마트24, 미니스톱, 스토리웨이, 씨스페이스, 포시즌마트, 365플러스, 블루25, 로그인...",
     "link": "https://www.cbci.co.kr/news/articleView.html?idxno=622123",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-03",
@@ -186,7 +186,7 @@
     "title": "배우 권유리, 롯데홈쇼핑 '드림보이스' 참여…음성도서 낭독·출연료 기...",
     "description": "권유리는 롯데홈쇼핑의 중소기업 상생 프로그램인 '대한민국 브랜드 엑스포' 대표 모델로 활동하며 회사와 인연을 맺었으며, 이번 사업에는 자발적으로 참여했다. 권유리는 지난달 22일 서울 영등포구 양평동 롯데홈쇼핑...",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=212424",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-02",
@@ -276,6 +276,78 @@
     "title": "“부산서 장사하면 부산에도 힘 보태야죠”…신세계백화점·메가마트 ‘...",
     "description": "◇신세계 5년·메가마트 3년 연속 우수…지역과 함께 성장하는 기업 이런 가운데 신세계백화점과 메가마트는 지역경제와의 동반성장을 위한 꾸준한 노력으로 종합평가 최우수 업체에 선정됐다. 신세계백화점은...",
     "link": "https://n.news.naver.com/mnews/article/021/0002829786?sid=102",
-    "related_count": 2
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-04",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "GS리테일, 3분기 영업이익 1321억원…전년비 18.9%↑",
+    "description": "증가  GS리테일은 올해 3분기 영업이익 1,321억원으로 지난해 같은 기간보다 18.9% 증가했다고 4일 공시했다. 같은 기간 매출액 3조3,143억원으로 3.4% 증가하며 외형·수익이 동반성장했다. 주력사업인 편의점 사업...",
+    "link": "http://www.srtimes.kr/news/articleView.html?idxno=216707",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-04",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "[유통가 오늘] BGF리테일ㆍ배달의민족ㆍhyㆍ락앤락",
+    "description": "위해 기부금 3000만원 전달 배달의민족(배민)의 물류서비스를 전담하는 우아한청년들은 3일 서울 한국노총회관에서 열린 한국플랫폼프리랜서노동공제회 설립 5주년 기념식 및 후원의 날 행사에서 공제회에 기부금...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1022315",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-05",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트 등 151개 기업 '저PBR 꼬리표'붙여 공개 망신주기",
+    "description": "이마트의 주가가 2021년 16만 원대에서 최근 6만 8천 원대(약 51달러)로 폭락하며 시가총액이 2조 원(약 15억... 전반의 지배구조 개선과 주가 재평가(Re-rating)를 촉진하는 결정적 분수령이 될 것으로 전망된다. *PBR이란...",
+    "link": "https://www.ilemonde.com/news/articleView.html?idxno=30931",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "폐현수막 300kg의 변신…롯데홈쇼핑, 친환경 작은도서관 열었다",
+    "description": "한편, '작은도서관'은 2013년부터 롯데홈쇼핑과 구세군 한국군국이 함께 추진해 온 사회공헌 사업으로, 전국의 지역아동센터, 도서관, 특수학교, 아동복지시설 등에 친환경 독서·학습 공간을 조성해왔다. ﻿누적 기부금은...",
+    "link": "https://n.news.naver.com/mnews/article/119/0003151603?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑, 강북구에 작은도서관 102호 개관…세대 잇는 열린 문화공간...",
+    "description": "롯데홈쇼핑은 ‘오늘 실천하면 달라지는 내일’을 ESG 슬로건으로 전국 지역아동센터, 도서관, 특수학교, 아동복지시설 등에 친환경 독서·학습 공간을 조성하여 미래 세대의 교육환경 개선에 힘써왔다. ‘세상에서 가장...",
+    "link": "https://www.g-enews.com/view.php?ud=202611051032287842a96f092d0c_1",
+    "related_count": 6
+  },
+  {
+    "date": "2026-11-02",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데홈쇼핑, 11월 홈쇼핑 브랜드평판 빅데이터 1위…공영홈쇼핑·현대홈...",
+    "description": "롯데홈쇼핑이 최근 한 달기간을 대상으로 실시된 홈쇼핑 브랜드평판 빅데이터 분석에서 1위를... 구 소장은 “향후 소통·확산 지표 회복을 이끄는 고객 참여형 방송 콘텐츠와 상생·공헌 활동 강화가 홈쇼핑...",
+    "link": "https://www.thebigdata.co.kr/view.php?ud=202611020812148930d0a8833aad_23",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-04",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑, 중간지주 구조 해소…현대百 지주체제 재편 속도↑",
+    "description": "현재 현대백화점그룹은 '현대지에프홀딩스→현대홈쇼핑→현대퓨처넷→현대바이오랜드'로 이어지는 지배구조를 갖추고 있다. 현대지에프홀딩스의 자회사인 현대홈쇼핑이 현대퓨처넷 지분 78.5%를 보유하고 있으며...",
+    "link": "https://n.news.naver.com/mnews/article/123/0002393339?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-05",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "대구 달서구, 롯데백화점 상인점서 달토기빵 팝업스토어",
+    "description": "달서구는 6일부터 12일까지 7일간 롯데백화점 상인점 지하 1층 이벤트홀에서 '달토기빵 팝업스토어'를... 확대와 백화점 유통망을 활용한 상생 협력을 이어갈 계획이다.김용판 달서구청장은 \"백화점이라는 새로운 공간에서...",
+    "link": "https://www.kbsm.net/news/view.php?idx=540533",
+    "related_count": 1
   }
 ]
