@@ -880,7 +880,7 @@
     "title": "정춘호 GS리테일 편의점BU장, 한국유통대상 동탑산업훈장 수상",
     "description": "정춘호 GS리테일 편의점BU장(편의점산업협회장)이 지난 26일 대한상공회의소에서 열린 제30회... GS25는 저소득층을 위한 내일스토어, 장애인을 위한 늘봄스토어, 노인을 위한 시니어스토어 등 사회공헌형 편의점을...",
     "link": "http://www.efnews.co.kr/news/articleView.html?idxno=126208",
-    "related_count": 5
+    "related_count": 6
   },
   {
     "date": "2025-12-28",
@@ -889,6 +889,105 @@
     "title": "세븐일레븐, 제30회 한국유통대상 상생·협력 부문 장관 표창 수상",
     "description": "지원 △협력사 ESG 지원 등 다양한 프로그램을 통해 파트너사의 본원적 경쟁력 제고에 앞장서고 있다. 박상준 세븐일레븐 상생협력팀장은 \"해를 거듭할수록 기업 경영에 있어 공존·공영의 가치가 더욱 중요해지고 있다\"며...",
     "link": "https://www.news1.kr/industry/distribution/6021503",
-    "related_count": 14
+    "related_count": 20
+  },
+  {
+    "date": "2025-12-28",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 가맹점·파트너사 동반성장 노력 '호평'",
+    "description": "지원, ▲협력사 ESG 지원 등 다양한 프로그램을 통해 파트너사의 본원적 경쟁력 제고에 앞장서고 있다. 박상준 세븐일레븐 상생협력팀장은 \"해를 거듭할수록 기업 경영에 있어 공존·공영의 가치가 더욱 중요해지고 있다...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=64820",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-28",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "김대원 롯데백화점 광주점장, 국무총리 표창",
+    "description": "롯데백화점 광주점은 최근 ‘제30회 한국유통대상’ 시상식에서 김대원 점장이 국무총리 표창을 수상했다고 28일 밝혔다. 올해로 30회를 맞은 한국유통대상은 유통 산업의 혁신과 성장을 이끌어 온 기업과 종사자의 공로를...",
+    "link": "http://www.jndn.com/article.php?aid=1766894966424285100",
+    "related_count": 3
+  },
+  {
+    "date": "2025-12-29",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 몽골에서 '10억그루' 나무심기 동참",
+    "description": "이마트가 한국ESG기준원(KCGS)이 발표한 2025년 ESG 등급 종합평가에서 A+ 등급을 획득했다. 환경(E)·책임(S) 부문에서 A+, 투명경영(G) 부문에서 A를 받으며, ESG 경영 전반에 걸쳐 체계적인 실행력과 가시적인 개선 노력을...",
+    "link": "https://www.mk.co.kr/article/11916724",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 베트남서 ESG 경영 인정받았다…'톱10' 진입",
+    "description": "롯데마트는 앞으로도 ESG 경영을 핵심 전략으로 삼아 친환경 소비 문화 확산과 지속가능한 유통 모델 구축에 나설 계획이다. 사업 성장과 사회적 책임을 동시에 추구하며 베트남 지역사회와 동반 성장을 이어간다는...",
+    "link": "https://www.theguru.co.kr/news/article.html?no=96168",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 이주노동자에 전기히터·이불 등 전달",
+    "description": "전달된 기프트박스는 롯데마트의 탄소중립 실천 캠페인 '리얼스 푸르깅 넷제로 크루'를 통해 조성한 기부금으로 마련했다. 푸르깅은 자연의 색인 '푸르다'와 조깅하며 쓰레기를 줍는 '플로깅'의 합성어다. 롯데마트는...",
+    "link": "https://www.mk.co.kr/article/11916728",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 '희망수라간' 11년의 온기... 반찬 6만8000개로 이웃 보듬었...",
+    "description": "롯데홈쇼핑 임직원이 음식 조리부터 포장, 전달까지 봉사 활동에 함께 참여하는 모습/롯데홈쇼핑... 특성을 세심하게 살핀 맞춤형 지원을 통해 지역사회 이웃들이 체감할 수 있는 상생 활동을 이어갈 것\"이라고 말했다.",
+    "link": "http://www.metroseoul.co.kr/article/20251229500323",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, AI솔루션으로 안전한 등하굣길 조성",
+    "description": "이 같은 노력을 인정받아 최근 한국ESG기준원(KCGS)이 실시한 '2025년 ESG 평가'에서 현대백화점과 현대바이오랜드가 A+ 등급을 획득했으며, 현대홈쇼핑과 현대그린푸드는 A등급을 받았다. 현대바이오랜드가 A+ 등급을 받은...",
+    "link": "https://www.mk.co.kr/article/11916725",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 파트너사에 1천억 규모 우대금리 펀드",
+    "description": "아울러 중소 파트너사의 판로 개척을 위한 전용 편집 매장인 '드림플라자'를 비롯해 '식품 안전 컨설팅' 'ESG 지원 컨설팅' 등 파트너사의 역량 강화를 위한 지원 프로그램도 다양하게 운영하고 있다. 이에 롯데백화점은...",
+    "link": "https://www.mk.co.kr/article/11916726",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-29",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, 유통업계 최초로 최우수 ESG기업 선정",
+    "description": "신세계백화점은 통합된 ESG 체계를 구축하고 친환경·사회공헌·중소 협력사 지원 등 다양한 활동을 전개해 지속 성장 가능한 ESG 경영 실천 모델을 보여준 점이 높은 평가를 받았다. 신세계백화점의 '최우수 기업상...",
+    "link": "https://www.mk.co.kr/article/11916727",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-30",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[브리프]롯데백화점 신세계 이마트 롯데마트 신세계면세점 이랜드 아성...",
+    "description": "G마켓은 2024년부터 홀로서기를 준비하는 자립준비청년을 지원하는 ESG 프로젝트를 지속 운영하고 있다.... ■CU, 2026년 '붉은 말의 해' 맞아 당근 간편식 시리즈 출시 CU, 병오년 맞이 당근 간편식 출시 관련 이미지 ㅣ BGF...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=346413",
+    "related_count": 1
+  },
+  {
+    "date": "2025-12-31",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 지역사회 나눔 활동 지속 전개",
+    "description": "롯데홈쇼핑의 사회공헌 활동은 단기적인 성과보다 오래도록 곁에 남는 가치를 선택했다. 매주 이어지는 반찬 나눔, 10년 넘게 지속된 음성도서 제작, 12년간 꾸준히 운영한 작은도서관이 증명한다. 도움이 필요한 영역에...",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=300426",
+    "related_count": 1
   }
 ]
