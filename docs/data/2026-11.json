@@ -429,7 +429,7 @@
     "title": "\"13년 쌓인 온기\"… 롯데홈쇼핑, 강북구에 '작은도서관 102호' 개관",
     "description": "13년 이어온 사회공헌… 누적 30억 원·480만 명 품은 교육 거점 작은도서관은 2013년부터 롯데홈쇼핑이 구세군 한국군국과 함께 전개해 온 대표 ESG 사회공헌 사업이다. '오늘 실천하면 달라지는 내일'이라는 슬로건 아래...",
     "link": "http://www.economytalk.kr/news/articleView.html?idxno=425118",
-    "related_count": 7
+    "related_count": 4
   },
   {
     "date": "2026-11-06",
@@ -456,6 +456,78 @@
     "title": "'10주년' GS리테일의 미디어나눔버스…방방곡곡 2.3만여명 방송 체험",
     "description": "배재성 GS리테일 사업지원본부장은 \"지난 10년간 지역과 세대를 아우르며 미디어 교육 기회를 넓히고 ESG(환경·사회·지배구조) 경영을 실천했다는 점에서 의미가 크다\"고 자평했다.",
     "link": "https://www.econovill.com/news/articleView.html?idxno=756396",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 장기 운영 경영주 300명 돌파 상생경영 이어가·'미디어나눔버...",
+    "description": "GS리테일이 운영하는 편의점 GS25는 올해 장기 운영 경영주가 300명을 넘어서며 경영주와 상생 경영을... 제공하는 사회공헌 사업이다. TV홈쇼핑 채널 GS샵을 운영하는 방송 산업 일원으로서 미래 세대의 미디어 역량을...",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=321272",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일 ‘미디어 나눔버스’ 10년… 2만3000명 AI VR 등 체험 기회",
+    "description": "2점을 기록했다. 배재성 GS리테일 사업지원본부장은 “지난 10년간 지역과 세대를 아우르며 미디어 교육 기회를 넓히고 ESG(환경·사회·지배구조) 경영을 실천해 왔다는 점에서 의미가 크다”고 말했다.",
+    "link": "https://n.news.naver.com/mnews/article/022/0004173532?sid=101",
+    "related_count": 6
+  },
+  {
+    "date": "2026-11-08",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "\"미디어 교육 싣고 전국 곳곳으로\"…GS리테일, '찾아가는 미디어나눔버...",
+    "description": "GS리테일이 지원하는 '찾아가는 미디어나눔버스'가 운영 10년째를 맞았다. 8일 업계에 따르면 찾아가는... 미디어 교육 기회를 넓히고, 환경·사회·지배구조(ESG) 경영을 실천해 왔다는 점에서 의미가 크다\"고 말했다.",
+    "link": "https://n.news.naver.com/mnews/article/014/0005600936?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[더벨][저PBR 기업 전략 점검] BGF, 편의점 현금으로 소재 투자…재평가...",
+    "description": "KNW 지분 인수는 지배구조를 단순화하기 위한 조치다. 기존에는 BGF→BGF에코머티리얼즈→KNW→BGF에코스페셜티로 이어지는 4단계 구조였다. 무수불산 공장을 운영하는 BGF에코스페셜티가 증손회사에 해당해...",
+    "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611051007220800103892",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "BGF리테일, 편의점 소비 접점 넓힌다...소액 기부로 아동 지원 확대",
+    "description": "| 이코노미사이언스 이윤수 기자 | 편의점 결제 과정에 소액 기부를 결합한 BGF리테일의 고객 참여형 사회공헌 활동이 11개월 만에 5만 명 이상의 참여를 끌어냈다. 일상적인 상품 구매 접점을 활용해 별도의 기부 활동...",
+    "link": "https://www.e-science.co.kr/news/articleView.html?idxno=139204",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트 성서점·대구시사회복지협의회, 달성군에 생필품 100세트 기탁",
+    "description": "'희망배달마차'는 이마트 임직원들이 자발적으로 모은 기금을 바탕으로 복지 사각지대에 놓인 취약계층을 발굴해 지원하는 사회공헌 사업입니다. 이날 기탁된 물품은 햇반과 물티슈 등 실생활에 꼭 필요한 6종의...",
+    "link": "https://news.bbsi.co.kr/news/articleView.html?idxno=4117386",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-09",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "팝업·상생장터·유통 자문…롯데백화점 광주점 “소상공인 판로 연다”",
+    "description": "협약식에는 김대원 롯데백화점 광주점장과 신현구 광주경제진흥상생일자리재단 대표이사가 참석했다. 양 기관은 재단이 발굴한 광주 지역 우수 소상공인을 대상으로 롯데백화점 광주점 내 팝업 행사와 입점 기회를...",
+    "link": "https://n.news.naver.com/mnews/article/011/0004680053?sid=102",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-08",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데백화점 광주점-광주경제진흥상생일자리재단 협약",
+    "description": "김대원 롯데백화점 광주점장은 \"지역 우수 소상공인을 위해 롯데백화점 광주점이 입점 기회 제공 등 상생 활동에 적극 나섰다\"며 \"앞으로도 지역사회에 이바지할 것\"이라고 밝혔다.",
+    "link": "https://n.news.naver.com/mnews/article/277/0005839633?sid=102",
     "related_count": 1
   }
 ]
