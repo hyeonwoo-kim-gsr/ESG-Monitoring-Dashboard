@@ -744,7 +744,7 @@
     "title": "[포토] 롯데백화점 대전점, 사랑의 김장 나눔 봉사활동 실시",
     "description": "이날 정승욱 롯데백화점 대전점장을 비롯한 임직원 20여 명은 김장 담그기 봉사에 참여하고 도움이 필요한 이웃을 위한 후원금도 전달했다. 정승욱 점장은 \"앞으로도 지속적인 사회공헌 활동을 통해 지역사회와 더불어...",
     "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=920256",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-11",
@@ -781,5 +781,104 @@
     "description": "신세계백화점은 한국ESG기준원(KCGS)의 ‘2026년 ESG 평가’에서 지난해에 이어 2년 연속 종합 A+ 등급을 받았다고 12일 밝혔다. 올해 백화점 업계에서 종합 A+ 등급을 획득한 곳은 신세계백화점이 유일하다. 신세계백화점은...",
     "link": "https://n.news.naver.com/mnews/article/011/0004681379?sid=101",
     "related_count": 3
+  },
+  {
+    "date": "2026-11-11",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 2026년 동반성장지수 '최우수' 등급 획득",
+    "description": "곽창헌 GS리테일 지속가능경영부문장은 \"가맹 경영주와 협력사의 성장이 곧 GS리테일의 지속 가능한 경쟁력이라는 인식 아래 사업별 특성에 맞는 실질적인 상생 활동을 꾸준히 확대해 왔다\"며 \"앞으로도 가맹 경영주와...",
+    "link": "https://www.businessplus.kr/news/articleView.html?idxno=119701",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-13",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, ESG 세부 점수 모두 상승…통합 A+ 유지",
+    "description": "환경·사회 A+, 지배구조 A…2년 연속 통합 등급 BGF리테일(282330)이 한국ESG기준원(KCGS)의 2026년 ESG 평가에서 통합 A+ 등급을 받았다. 2025년 처음 통합 A+를 받은 데 이어 2년 연속이다. BGF리테일이 지난 11일...",
+    "link": "https://www.vegannews.co.kr/news/article.html?no=404246",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[한국ESG기준원] BGF리테일·신세계百·하림·카카오게임즈·한국공항·...",
+    "description": "'지구와 사회의 좋은 친구, BGF!'라는 비전을 바탕으로 ESG 핵심전략을 지속 추진해온 결과, 세부 평가 점수도 전년대비 환경 부문 3.32%p, 사회 부문 18.39%p, 지배구조 부문 1.97%p 상승하며 전 영역에서 개선되는 성과를...",
+    "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=46249",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "ESG 평가 A+ 지킨 삼양·신세계·BGF...코웨이·현대그린푸드 새 진입, C...",
+    "description": "■ A+ 지킨 삼양·신세계·BGF...환경·상생 활동 지속 한국ESG기준원의 2026년 ESG 평가에서 삼양식품과 신세계, BGF리테일은 통합 A+ 등급을 유지했다. KCGS의 ESG 통합등급 가운데 A+는 사실상 최상위 등급으로 세 기업은 2년...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=139802",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-11",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데百·세븐일레븐·농심, 협력사와 함께 성장…동반성장지수 '최우수...",
+    "description": "위한 'ESG 경영 및 식품안전 컨설팅' 등 기업 운영 전반에 필요한 지원 활동을 강화하고 있다. 제8기 동반성장위원회가 구성되며 대기업 대표 위원으로 정현석 롯데백화점 대표가 위촉됐다. 코리아세븐도 '2026...",
+    "link": "https://www.newspost.kr/news/articleView.html?idxno=227287",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-12",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트, 김장재료 할인 행사…신세계백화점, ESG 평가 2년 연속 A+",
+    "description": "이마트, 김장재료 할인 행사…배추 3포기 3485원 이마트는 12일부터 18일까지 전국 매장에서 배추와 무... 신세계백화점, ESG 종합평가 2년 연속 A+…백화점 업계 유일 신세계백화점은 한국ESG기준원(KCGS)의 '2026년 ESG...",
+    "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2373194",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-12",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트춘천점, 2026년 희망나눔 김장김치 전달식 개최",
+    "description": "이마트춘천점은 12일 '2026년 희망나눔 김장김치' 전달식을 열고, 지역 홀몸어르신과 취약계층을 대상으로 한 김장김치 316박스를 강원도사회공헌정보센터에 전달했다. 이번 김장김치 나눔은 겨울철 식생활에 어려움을...",
+    "link": "https://n.news.naver.com/mnews/article/654/0000210985?sid=004",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-12",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점그룹, 상장사 11곳 ESG 평가 A등급 이상…비결은?",
+    "description": "현대백화점그룹의 11개 상장 계열사가 올해 ESG 평가에서 모두 통합 A등급 이상을 획득했다. 유통·식품·패션... 이마트는 2025년 지속가능경영보고서에서 공급망 등 가치사슬의 간접배출인 스코프3 산정을 정교화하는 데...",
+    "link": "http://www.choicenews.co.kr/news/articleView.html?idxno=173140",
+    "related_count": 5
+  },
+  {
+    "date": "2026-11-13",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑 방미통위서 분할 변경승인 받아, 현대백화점그룹 지배구조...",
+    "description": "이에 따라 현대백화점그룹이 추진하고 있는 지배구조 개편도 예정된 절차를 이어갈 수 있게 됐다. 현대홈쇼핑이 방송미디어통신위원회로부터 법인 분할에 따른 변경승인을 받았다. 사진은 서울시 강동구에 있는...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=451926",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-12",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[쇼핑 돋보기] 현대백화점그룹·신세계, ESG 경영 성과…롯데백화점은 ...",
+    "description": "롯데백화점은 ESG 평가와 별개로 브랜드 정체성 재정비에 나섰다. 창립 47주년을 맞아 15년 만에 쇼핑백을 변경하는 등 디자인 자산을 전면 개편한다. 1979년 창립 이후 여섯 번째로 진행되는 변화다. 새로운 디자인은...",
+    "link": "https://www.moneystorm.kr/news/articleView.html?idxno=8387",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-12",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대그린푸드, ESG 평가 첫 '통합 A+'…현대백화점그룹 11개 상장사 모두...",
+    "description": "현대백화점그룹은 친환경 브랜드 '리그린(Re.Green)'과 사회공헌 브랜드 '위드림(We.Dream)'을 기반으로 계열사별 사업 특성에 맞춘 ESG 활동을 이어가고 있다. [소비자가만드는신문=]",
+    "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=768137",
+    "related_count": 1
   }
 ]
