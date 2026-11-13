@@ -303,7 +303,7 @@
     "title": "롯데홈쇼핑, 시각장애 아동 초청 '드림보이스' 오디오북 전달식 진행",
     "description": "롯데홈쇼핑은 2021년 ESG경영을 선포한 이후 '오늘 실천하면 달라지는 내일'이라는 슬로건 아래 지속가능경영을 이어오고 있다. 지역사회 나눔, 파트너사 상생 등을 통해 사회적 책임을 실천하며 ESG경영을 강화하고 있다....",
     "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=195270",
-    "related_count": 29
+    "related_count": 30
   },
   {
     "date": "2026-03-11",
@@ -330,7 +330,7 @@
     "title": "롯데홈쇼핑, 이사회 재편 시사… 태광그룹과 불편한 동거 '손절' 전략?",
     "description": "롯데홈쇼핑과 태광그룹 간 지배구조 관련 불만이 극에 달한 분위기이다. 공정위 신고까지 불사한 상황에서 이들의 아찔하고 불편한 동거가 긍정적으로 마무리 될 수 있을지 예측할 수 없는 기류다. 태광그룹은...",
     "link": "http://www.sisacast.kr/news/articleView.html?idxno=93232",
-    "related_count": 2
+    "related_count": 13
   },
   {
     "date": "2026-03-11",
@@ -348,7 +348,7 @@
     "title": "“명백한 대주주 횡포”…롯데홈쇼핑 이사회 재편 가능성에 ‘2대 주주...",
     "description": "태광그룹 관계자는 “롯데홈쇼핑의 1·2대 주주간 협약은 견제와 균형을 통해 회사를 올바른 방향으로 키워 나가자는 약속”이라며 “롯데가 부당지원 성격의 내부거래를 확대하기 위해 상호협약을 무력화하는 것은...",
     "link": "https://biz.heraldcorp.com/article/10691647?ref=naver",
-    "related_count": 1
+    "related_count": 5
   },
   {
     "date": "2026-03-11",
@@ -366,7 +366,7 @@
     "title": "신세계백화점, CDP 탄소경영 특별상...첫 평가서 '리더십' 등급",
     "description": "ESG(환경·사회·지배구조 개선) 평가 기관으로 알려져 있다. 장지인 CDP한국위원회 위원장(왼쪽부터)과 안상우 신세계 재무담당, 호세 오르도네스 APAC 총괄 대표가 시상식에서 기념 촬영을 하고 있다. [사진=신세계백화점...",
     "link": "http://www.updownnews.co.kr/news/articleView.html?idxno=316504",
-    "related_count": 12
+    "related_count": 13
   },
   {
     "date": "2026-03-12",
@@ -384,6 +384,375 @@
     "title": "[남해 24시] 이마트, 남해 마늘 활용 프리미엄 간편식 7종 출시",
     "description": "이는 1월8일 남해군과 이마트가 남해 마늘 소비 확대와 지역경제 활성화를 위해 업무협약(MOU)을 체결한 데 따른 결실이다. 이번 신제품은 '마늘듬뿍 한마리 닭볶음탕', '스윗 무화과 갈릭피자', '통마늘 양대창', '마늘...",
     "link": "https://www.sisajournal.com/news/articleView.html?idxno=365531",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 돼지고기 비싼 이유 찾았다…공정위, 도드람 등 돈육 담합 제재",
+    "description": "공정위는 이마트에 돼지고기를 납품하는 과정에서 사전에 입찰가격 또는 견적가격을 합의한 9개 돼지고기 가공·판매사업자에 대하여 시정명령과 함께 과징금 총 31억6,500만 원을 부과하고 6개 법인을 검찰에...",
+    "link": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005786391",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 삼겹살 확인했더니...딱 걸린 업체들 '장난질' [지금이뉴스]",
+    "description": "이마트에 돼지고기를 납품하는 과정에서 입찰 담합을 벌인 업체들을 제재했습니다. 공정위는 12일 공정거래법을 위반한 돼지고기 가공·판매 사업자 9곳에 시정명령과 함께 총 31억 6,500만원의 과징금을 부과하고, 이...",
+    "link": "https://www.ytn.co.kr/_ln/0134_202603121356234810",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "\"어쩐지 비싸더라니\"...이마트 돼지고기 납품 담합 적발",
+    "description": "공정거래위원회가 이마트에 돼지고기를 납품하는 과정에서 입찰 담합을 벌인 업체들을 제재했다. 공정위는 12일 공정거래법을 위반한 돼지고기 가공·판매 사업자 9곳에 시정명령과 함께 총 31억 6,500만원의 과징금...",
+    "link": "https://www.ytn.co.kr/_ln/0102_202603121355324689",
+    "related_count": 3
+  },
+  {
+    "date": "2026-03-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 납품 돈육 업체 담합 적발 공정위, 9개 업체에 31.6억 과징금",
+    "description": "공정위는 이마트에 돈육을 납품하면서 입찰가 혹은 견적가를 사전에 합의해 독점규제 및 공정거래에 관한 법률(공정거래법)을 위반한 돼지고기 가공·판매업체 9개사에 시정명령을 내리고 합계 31억6500만원의 과징금...",
+    "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=679378",
+    "related_count": 7
+  },
+  {
+    "date": "2026-03-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "삼겹살 가격 뒤 숨겨진 ‘짬짜미’..이마트 납품 담합 업체 무더기 적발",
+    "description": "공정거래위원회는 대형마트인 이마트에 돼지고기를 납품하며 사전에 입찰가격과 견적가격을 합의한 9개 돼지고기 가공·판매사업자에 대해 시정명령과 함께 과징금...",
+    "link": "http://www.breaknews.com/1191230",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "태광산업 \"롯데홈쇼핑 대표 사퇴해야\"…롯데 \"비정상주장\" 일축",
+    "description": "태광산업이 지배구조와 수수료 배분 구조를 바꾸려는 시도로 해석된다. 우리홈쇼핑 인수 당시 형성된 지분구조는 최대주주인 롯데쇼핑이 53%를 보유하고 있고 태광산업이 45%로 2대주주로 있다. 태광산업은 2007년...",
+    "link": "https://www.ngonews.kr/news/articleView.html?idxno=226104",
+    "related_count": 7
+  },
+  {
+    "date": "2026-03-12",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[불안한 롯데홈쇼핑①] \"대표 해임까지 간다\"…2대 주주 태광산업 전면...",
+    "description": "이번 갈등은 단순한 주총 이슈를 넘어 롯데홈쇼핑 지배구조와 사업 전략 전반을 점검하는 계기가 될 가능성이 있다. 핀포인트뉴스는 '불안한 롯데홈쇼핑' 시리즈를 통해 주주 갈등의 배경과 내부거래 구조, 그리고...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=436310",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "태광산업, \"위법 내부거래 책임\" 내세워 롯데홈쇼핑 대표 재선임 제동",
+    "description": "2대 주주 태광산업과 최대주주 롯데그룹 간 갈등이 법적 공방으로 비화할 조짐을 보이면서, 13일 열리는 롯데홈쇼핑 주주총회에서 김재겸 대표의 거취와 향후 지배구조 구도가 어떤 방향으로 흘러갈지 주목된다.",
+    "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=55957",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데 vs 태광, 롯데홈쇼핑 주총 앞두고 갈등…김재겸 대표 재선임 충돌",
+    "description": "업계에서는 이번 주총 이후에도 롯데홈쇼핑 지배구조를 둘러싼 양측 갈등이 장기화될 가능성이 높다는 관측이 나온다. 롯데홈쇼핑 측은 이사회 구성은 주주총회에서 결정될 사안이며 태광의 주장은 사실과 다르다는...",
+    "link": "https://www.seoultimes.news/news/article.html?no=2000093420",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-12",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "태광 \"롯데홈쇼핑 대표 상법 위반\" 주총 앞두고 전운...지배구조 향방은",
+    "description": "업계에서는 태광그룹이 롯데홈쇼핑의 내부거래를 문제 삼아 법적 대응까지 예고하고 있어 주총 이후에도 지배구조를 둘러싼 갈등이 지속될 것이라는 관측을 내놓는다. 한편 롯데홈쇼핑은 이번 태광그룹의 입장과...",
+    "link": "https://www.ajunews.com/view/20260312155147700",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-13",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "사자마자 소각…'3500억 투입' 차원 다른 현대백화점 밸류업",
+    "description": "지배구조 개편 작업도 결정해 현대지에프홀딩스가 중간 지주회사인 현대홈쇼핑을 완전 자회사로 편입하는... 이마트는 지난해 28만주에 이어 올해 28만주를 추가 소각해 총 406억원 규모를 소각할 계획이다. 전문가들은...",
+    "link": "https://www.sidae.com/article/2026031314552644582",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 국내 재배 열대·아열대 과일 판매",
+    "description": "양혜원 롯데마트·슈퍼 과일팀 MD는 \"국산 열대·아열대 과일은 수입산 보완재를 넘어 새로운 프리미엄... 신선함을 제공하고 미래 먹거리에 투자하는 농가에는 안정적 판로를 제공하며 상생 가치를 실현할 것\"이라고 말했다.",
+    "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=824334",
+    "related_count": 15
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[유통 뉴스픽] G마켓·쿠팡·트레이더스·롯데마트·신세계면세점",
+    "description": "양혜원 롯데마트·슈퍼 과일팀 MD(상품기획자)는 “고품질의 국산 과일을 통해 고객에게는 최상의 신선함을 제공하고, 미래 먹거리에 투자하는 농가에는 안정적인 판로를 제공하며 상생의 가치를 실현할 것”이라고...",
+    "link": "https://www.ajunews.com/view/20260315140828964",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트, 협력사 계약서·대금 늑장 지급…과징금 5억6900만원",
+    "description": "[사진=롯데쇼핑 제공] 대형 유통업체의 '갑질'이 또다시 도마 위에 올랐다. 공정거래위원회가 롯데쇼핑이 롯데마트 사업을 운영하며 납품업체를 상대로 불공정 거래를 지속한 사실을 적발, 과징금과 시정 명령 등 강도...",
+    "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=297485",
+    "related_count": 5
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데쇼핑, 롯데마트 납품업체 갑질 적발…공정위 과징금 5.6억원",
+    "description": "계약서 지연 발급·대금 지급 지연 등 대규모유통업법 위반 납품업체 요청 반품 과정서 절차 위반도 확인 공정위 “거래질서 훼손 행위…시정명령·경고 병행” [서울타임즈뉴스 = 서연옥 기자] 롯데쇼핑이 롯데마트...",
+    "link": "https://www.seoultimes.news/news/article.html?no=2000093533",
+    "related_count": 3
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "유통업법 위반한 롯데마트, 과징금 5.7억원 ‘철퇴’",
+    "description": "롯데쇼핑(023530)이 롯데마트를 운영하면서 납품 업체들에 갑질을 일삼은 것으로 드러나 경쟁 당국의 제재를 받게 됐다. 공정거래위원회는 롯데쇼핑의 대규모 유통업법 위반행위에 대해 시정명령과 함께 5억 6900만 원의...",
+    "link": "https://www.sedaily.com/article/20019448?ref=naver",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-15",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "지연 이자 안주고 부당 반품까지…공정위, 롯데마트에 '갑질' 과징금 5....",
+    "description": "공정거래위원회가 롯데마트(롯데쇼핑 마트부문)에 시정명령과 함께 과징금 5억6900만원을 부과하기로 결정했다. 직매입 상품을 납품업체들에 부당 반품하고, 상품 판매대금을 뒤늦게 지급하면서도 지연이자를 지급하지...",
+    "link": "https://www.hankyung.com/article/202603151638i",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-16",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 납품 돼지고기 가격 담합 육가공업체 9곳 적발",
+    "description": "공정거래위원회는 이마트에 돼지고기를 납품하며 입찰 가격 등을 사전에 합의한 9개 육가공업체에 시정명령과 함께 과징금 총 31억 6,500만 원을 부과했다. 담합에 가담한 대성실업(주), 대전충남양돈축산업협동조합...",
+    "link": "https://www.farminsight.net/news/articleView.html?idxno=16115",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-16",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "공정위, 롯데쇼핑에 시정명령·과징금 부과…롯데마트 납품거래 위법 적...",
+    "description": "롯데쇼핑이 롯데마트 사업을 운영하면서 납품업체와의 거래에서 여러 차례 법을 어긴 사실이... 공정위는 15일 롯데쇼핑이 대규모유통업에서의 거래 공정화에 관한 법률을 위반했다고 보고 과징금 5억6900만원을...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=297505",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑·HS효성첨단소재·코웨이, 장애인 지원 사업 지속 전개",
+    "description": "롯데홈쇼핑은 2021년 ESG경영을 선포한 이후 '오늘 실천하면 달라지는 내일'이라는 슬로건 아래 지속가능경영을 이어오고 있다. 지역사회 나눔, 파트너사 상생 등을 통해 사회적 책임을 실천하며 ESG경영을 강화하고 있다....",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=307267",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 45% 보유 ‘태광그룹’… 권리행사 나서며 ‘20년 갈등’ 재...",
+    "description": "공정위 신고까지 간 내부거래 공방…장기화 조짐 주총서 이사회 ‘6대3 재편’…지배구조 갈등 격화 롯데홈쇼핑을 둘러싼 롯데쇼핑과 태광산업 간 갈등이 다시 수면 위로 떠올랐다. ▲ 롯데홈쇼핑·태광산업 CI 16일...",
+    "link": "http://sateconomy.co.kr/news/view/1065598946044741",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "20년 균형 깬 롯데홈쇼핑, '6대3' 이사회로 경영권 굳혔다",
+    "description": "롯데홈쇼핑 측은 \"670억 원 규모가 과도하다는 지적에 따라 약 385억 원 수준으로 조정해 재논의를 시도했지만 태광 측이 다른 이유를 들어 반대했다\"고 밝혔다. 업계에서는 이 사건을 지배구조 갈등이 본격적으로 수면...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=115210",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-16",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[불안한 롯데홈쇼핑②] 주총서 판 뒤집었다…롯데 vs 태광 갈등 격화",
+    "description": "태광산업 역시 상당한 지분을 보유한 주요 주주인 만큼 갈등이 쉽게 해소되기는 어렵다는 전망이 나온다. 주주 갈등이 장기화될 경우 롯데홈쇼핑 지배구조뿐 아니라 사업 전략에도 영향을 미칠 수 있다는 분석이 나온다.",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=436934",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-16",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 \"탄소중립 실천 우수 학교에 공기정화식물 전달\"",
+    "description": "현대백화점은 정부의 탄소중립 생활 실천 챌린지 프로그램인 '기후행동 1.5℃ 스쿨챌린지'에 참여해 초등학교 부문 대상을 수상한 대구광역시 칠성초등학교를 비롯해 실천 실적이 우수한 전국 13개 학교에 공기정화식물...",
+    "link": "https://sports.hankooki.com/news/articleView.html?idxno=6928504",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-17",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[함께가자 우리ESG] BGF리테일 이동형 편의점, 식품 사막서 생필품 창구...",
+    "description": "BGF리테일은 한국노인인력개발원, 한국부동산원과 함께 운영 중인 '시니어 이동형 편의점'이 식품 사막 지역... BGF리테일은 전국 노인 일자리 수행 기관들과 협력해 조성된 시니어 편의점인 'CU이음가게'를 거점으로...",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=126991",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-17",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[건설사 점검] [신세계건설] 이마트 '아픈 손가락'…완전子 첫해 '최대 ...",
+    "description": "순손실 2966억 창사 이래 최대 규모…지배구조 개편 이후 경영 시너지 답보 신세계건설이 이마트 완전... 순손실 기준 신세계건설 규모가 압도적으로 컸고, 그 다음으로 SSG닷컴(쓱닷컴)이 997억원, 이마트24가 562억원...",
+    "link": "https://www.topdaily.kr/articles/109234",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-17",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "[더벨]수익성 압박 롯데마트, TF 체제 가동…체질개선 돌입",
+    "description": "MD업무혁신TF를 이끄는 진주태 상무보는 롯데마트 준법지원부문장 출신으로 ESG 경영 관련 업무를 맡아왔다.... 실제로 지난해 롯데쇼핑 할인점 부문(롯데마트·슈퍼 등) 매출은 5조4713억원으로 전년 대비 1.9% 감소했고...",
+    "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603131437048480105715",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-17",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "[N2심층분석②] 롯데백화점 전주점, ‘지역기여’ 마지막 축도 흔들렸다...",
+    "description": "뉴스투데이가 확보한 전주시 상생협약 이행 분석자료를 보면 롯데백화점 전주점은 도내인력 고용비율과... 같은 표에서 농협농산물유통센터는 76.9%, 이마트 전주점은 69.2%, 홈플러스 효자점은 60.0%, 롯데슈퍼 인후점은 58....",
+    "link": "https://www.news2day.co.kr/article/20260317500014",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-17",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "이너시아 더프리즘 생리대 CJ온스타일 2차 방송 준비 물량 모두 판매",
+    "description": "펨테크 브랜드 이너시아가 CJ온스타일 홈쇼핑 방송에서 더프리즘 생리대 준비 물량을 전량 판매했다고... 이번에 선보인 더프리즘 생리대는 미세플라스틱 흡수체 대신 식물성 셀룰로오스 기반 흡수체를 적용한 제품이다....",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202603171007341534204ead0791_12",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-18",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "성수 핫플에 랜디 뜬다! SSG, 이마트24와 '체험형 팝업' 오픈, \"30% 할인에...",
+    "description": "자연스럽게 사회공헌 활동에 동참하게 된다. SSG는 이번 성수동 팝업을 시작으로 신세계그룹의 강력한 인프라를 활용한 '온오프라인 통합 팬 서비스'에 박차를 가한다. 이마트, 스타벅스, SSG닷컴, 신세계푸드 등...",
+    "link": "http://www.spochoo.com/news/articleView.html?idxno=121722",
+    "related_count": 7
+  },
+  {
+    "date": "2026-03-18",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "이마트24 트렌드랩 성수점과 SSG 랜더스가 제안하는 이색 야구 문화 체험",
+    "description": "이마트24는 이번 행사로 발생하는 수익금 일부를 지역사회에 기부해 상생의 의미를 더할 계획이다. 스포츠와 유통이 결합한 이번 시도는 단순한 매장을 넘어 지역의 문화 거점으로 자리 잡기 위한 전략의 일환으로...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=71740",
+    "related_count": 15
+  },
+  {
+    "date": "2026-03-18",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "으쓱이들아, 개막 준비하러 가자! SSG, 이마트24 트렌드랩 성수점서 체험...",
+    "description": "SSG가 18일부터 내달 16일까지 한 달간 이마트24 트렌드랩 성수에서 이마트24와 함께 체험형 브랜드... 자립준비청년들에게 기부할 예정이다. SSG는 “이번 성수동 팝업존을 시작으로 온·오프라인의 경계를 허무는...",
+    "link": "https://www.sportsseoul.com/news/read/1594890?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-18",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 시각장애 아동 학습 지원 위해 '드림보이스' 기금 전달",
+    "description": "롯데홈쇼핑이 시각장애 아동의 독서권 보장과 교육 불평등 해소를 위한 장기 사회공헌 프로젝트를 이어가며 ESG 경영의 실천적 모델을 제시하고 있다. 롯데홈쇼핑은 지난 10일 서울 양평동 본사에서 시각장애 아동을...",
+    "link": "https://www.polinews.co.kr/news/articleView.html?idxno=725772",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-18",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[불안한 롯데홈쇼핑④] 주총 이후 '메시지 통제' 강화…롯데홈쇼핑, 리...",
+    "description": "내부적으로 누적된 지배구조 문제와 전략적 대응 한계 등 본질적인 요인에 대한 설명은 상대적으로... 결과와 구조를 보고 판단하게 된다\"고 말했다. 결국 롯데홈쇼핑의 현재 대응은 단기적으로 갈등 확산을 억제하는...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=437535",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 곳곳에 물든 '사회공헌'… 올해는 '일자리 창출' 앞장섰다",
+    "description": "GS리테일이 사회안전망 조성, 청년 일자리 창출 등 사회공헌 활동에 앞장섰다. 이와 함께 GS25 또한 취약계층... 기업의 ESG 경영에 최선을 다할 것\"이라고 전해왔다. 실제 GS25는 2017년부터 ▲저소득층을 위한 내일스토어...",
+    "link": "http://www.economytalk.kr/news/articleView.html?idxno=419234",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-19",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 1·2대 주주 '롯데-태광' 충돌...20년 분쟁 다시 수면 위",
+    "description": "이사회 재편, 롯데 단독 의결 가능 구조 롯데홈쇼핑은 지난 13일 열린 정기 주주총회에서 이사 구성을 기존... 또한 지배구조와 내부거래 문제가 동시에 얽혀 있어, 향후 소송으로 이어질 경우 갈등은 쉽게 정리되지 않을...",
+    "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=135213",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-19",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "HSAD, 현대홈쇼핑과 남방큰돌고래 보호 캠페인",
+    "description": "HSAD가 아이디어를 기부하고, 현대홈쇼핑이 캠페인 취지에 공감해 적극 참여하며 완성된 프로젝트다. 남방큰돌고래는 제주 연안에 서식하는 대표적인 해양 포유류이지만, 현재 약 120여 마리만이 남아 있는...",
+    "link": "https://www.munhwa.com/article/11575866?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, ESG 활동 확대... 방관 달력 판매 수익 사회 환원",
+    "description": "박경랑 GS리테일 ESG파트장은 \"소방관 희망나눔달력은 나눔의 가치를 실천하는 사회공헌 활동\"이라며 \"앞으로도 도움이 필요한 분야에서 누구나 참여할 수 있는 ESG 활동을 확대하겠다\"고 말했다.",
+    "link": "http://www.whitepaper.co.kr/news/articleView.html?idxno=259831",
+    "related_count": 7
+  },
+  {
+    "date": "2026-03-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, '소방관 희망나눔달력' 기부금 전달",
+    "description": "박경랑 GS리테일 ESG파트장은 \"소방관 희망나눔달력 사업은 나눔의 가치를 실천하는 의미 있는 사회공헌 활동\"이라며 \"앞으로도 도움이 필요한 일에 앞장서고 일상 속에서 누구나 쉽게 참여할 수 있는 ESG 활동을...",
+    "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=826080",
+    "related_count": 8
+  },
+  {
+    "date": "2026-03-21",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[ESG경영 사례분석] 신세계백화점, 박주형의 친환경 리더십이 통합 A+ 견...",
+    "description": "■ 종합평가 = “환경이 끌고, 4C 전략이 구조화” 신세계백화점의 ESG 경영은 환경 부문 개선을 계기로 한 단계 도약한 모습이다. 사회 부문은 안정적으로 뒷받침하고 있으며, 4C 전략을 기반으로 ESG 실행 체계도...",
+    "link": "https://www.news2day.co.kr/article/20260319500133",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-22",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "울산 남구 팔등로 기부거리 상인회·이마트24 어려운 이웃에 세탁세제 ...",
+    "description": "울산 남구 팔등로 기부거리 상인회(회장 이정우)가 지난 20일 이마트24와 함께 지역 내 어려운 이웃을 위해 세탁세제 336개, 170만원 상당을 신정3동 행정복지센터에 전달했다. 이번 기부는 지난해에 이어 두 번째로 마련된...",
+    "link": "https://www.ulsanpress.net/news/articleView.html?idxno=571460",
     "related_count": 1
   }
 ]
