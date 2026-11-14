@@ -735,7 +735,7 @@
     "title": "GS리테일, '소방관 희망나눔달력' 기부금 전달",
     "description": "박경랑 GS리테일 ESG파트장은 \"소방관 희망나눔달력 사업은 나눔의 가치를 실천하는 의미 있는 사회공헌 활동\"이라며 \"앞으로도 도움이 필요한 일에 앞장서고 일상 속에서 누구나 쉽게 참여할 수 있는 ESG 활동을...",
     "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=826080",
-    "related_count": 8
+    "related_count": 12
   },
   {
     "date": "2026-03-21",
@@ -753,6 +753,420 @@
     "title": "울산 남구 팔등로 기부거리 상인회·이마트24 어려운 이웃에 세탁세제 ...",
     "description": "울산 남구 팔등로 기부거리 상인회(회장 이정우)가 지난 20일 이마트24와 함께 지역 내 어려운 이웃을 위해 세탁세제 336개, 170만원 상당을 신정3동 행정복지센터에 전달했다. 이번 기부는 지난해에 이어 두 번째로 마련된...",
     "link": "https://www.ulsanpress.net/news/articleView.html?idxno=571460",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 고객 중심 경영과 디지털 혁신으로 시장 공략",
+    "description": "GS리테일은 또 상법 개정 취지에 부응해 지배구조 개선을 도모했다. 소수 주주의 권익 보호를 위한 '집중투표제 배제 조항'을 정관에서 삭제하고, 전자주주총회 도입을 검토하는 등 접근성을 높였다. 또한 감사위원의...",
+    "link": "https://www.tokenpost.kr/news/economy/341175",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "허서홍 “AI·데이터 투자 확대”...GS리테일, ‘집중투표제 배제’ 조항...",
+    "description": "GS리테일은 이번 주총에서 상법 개정 취지에 맞춘 지배구조 개선안을 정관에 반영했다고 설명했다. 특히 소수 주주의 권익 보호를 위해 ‘집중투표제 배제 조항’을 삭제하고, 전자주주총회 도입 근거를 마련해 주주...",
+    "link": "https://www.sedaily.com/article/20021437?ref=naver",
+    "related_count": 3
+  },
+  {
+    "date": "2026-03-19",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 지자체와 긴밀한 협력...‘로코노미’로 지역 상생 앞장[CSR, 기...",
+    "description": "이런 이유로 이들 기업의 사회적 책임(CSR) 활동은 단순한 ESG 경영 전략을 넘어 소비자의 마음을 자연스럽게... 이마트가 지역 특산물을 활용한 제품을 통해 지방자치단체(지자체)와의 긴밀한 협업을 통한 지역 브랜드...",
+    "link": "https://www.etoday.co.kr/news/view/2566823",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-19",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "국제환경단체 \"육류는 메탄 배출 주원인\", 이마트·롯데에 배출량 공개...",
+    "description": "다만 마이티어스는 롯데쇼핑과 이마트는 탄소중립 달성 시한을 2050년으로 설정해 감축목표 분야에서 만점을 받지는 못했다고 설명했다. 또 두 업체 모두 지속가능성 보고서에서 스코프 3(공급망 내 배출)는 공개했지만...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=433363",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-20",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 화상환자 치료 지원 6500만원 기부…소방관 달력 ESG 지속",
+    "description": "GS리테일은 이외에도 헌혈증 기부, 소아암 및 희귀질환 환아 지원, 연탄 봉사, 아동복지시설 지원 등 다양한 사회공헌 활동을 병행하고 있다. 단발성 기부를 넘어 참여형 ESG 활동을 확대하는 흐름이다. 업계에서는...",
+    "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065592955659576",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-20",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "\"BGF리테일 지배주주 홍석조 보수 과도…대표 민승배 재선임 반대\"",
+    "description": "하지만 의결권 자문사 좋은기업지배구조연구소는 19일 'BGF리테일 정기주주총회 의안 분석' 보고서를 내고 '지배주주 임원에 대한 과도한 보수 지급'을 이유로 민승배 사내이사 재선임에 반대 의견을 냈다. 연구소는...",
+    "link": "http://www.lawleader.co.kr/news/articleView.html?idxno=18761",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-20",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데·이마트, 메탄 감축목표 '낙제점'...\"육류 위주 공급망이 문제\"",
+    "description": "롯데쇼핑과 이마트가 육류·유제품·쌀 공급망에서 발생하는 메탄 감축목표가 '낙제점'이라는... 2050년 탄소중립 목표 설정 △자체 브랜드 식물성 대체 단백질 제품 부재 등이 주요 문제로 지적됐다. 대체 단백질 시장이...",
+    "link": "https://www.newstree.kr/newsView/ntr202603200007",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "[불안한 롯데홈쇼핑⑥] 거짓·과장 광고의 대가...회복하지 못한 신뢰",
+    "description": "과거 롯데홈쇼핑은 제품 샘플을 실제 판매 상품과 동일한 것처럼 소개하거나, 가격 및 구성 조건을 사실과 다르게 전달해 과징금 및 시정명령을 받은 바 있다. 문제는 이 같은 위반이 단발성이 아니라 누적됐다는 점이다....",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=438392",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-21",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[기획] '이마트·롯데마트·쿠팡'…유통 공룡들의 3사 3색 태양광 활용 ...",
+    "description": "결과적으로 탄소 중립이라는 ESG 경영 성과를 달성함과 동시에 기존 유통업 외에 에너지 발전 사업자로서의... 경쟁사인 BGF리테일(CU) 같은 경우, 물류센터 옥상을 활용해 태양광 발전소를 운영하며 전기를 판매해 실제...",
+    "link": "https://www.sentv.co.kr/article/view/sentv202603190150",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-23",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "[N2심층분석④] 롯데백화점 전주점 지역환원 0.002%에 그쳐",
+    "description": "이마트 소계는 0.485%, 홈플러스 소계는 0.580%, 에브리데이는 2.538%였다. 반면 롯데백화점 전주점은 0.002%에... 롯데그룹은 공생과 지역경제 활성화를 강조하는 데 그치지 않고 그룹 차원의 사회공헌과 지역경제 기여 활동도...",
+    "link": "https://www.news2day.co.kr/article/20260322500037",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-23",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "\"1분에 2만개 팔린다\"...협력사 돕는 롯데홈쇼핑 '300초 숏핑'",
+    "description": "롯데홈쇼핑은 23일 300초 숏핑이 론칭 1년 만에 누적 주문 건수 20만건을 달성했다고 밝혔다. 롯데홈쇼핑이... 돕는 효과가 입증돼 앞으로도 협력사와 함께 성장하는 상생 모델로 발전시켜 나갈 예정\"이라고 말했다.",
+    "link": "https://www.mt.co.kr/living/2026/03/24/2026032309470286744",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-24",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 뉴스픽] 롯데마트·현대백화점·쿠팡CLS·한국콜마",
+    "description": "롯데마트는 오는 26일부터 다음 달 8일까지 전 점포와 롯데슈퍼, 맥스(MAXX), 제타(ZETTA) 등 전 채널이... CLS가 올해 첫 사회공헌 장소로 아동복지시설을 택한 것은 기존 지원 시설인 ‘우리집’ 관계자의 감사 편지가...",
+    "link": "https://www.ajunews.com/view/20260324151425529",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "태광·롯데홈쇼핑 '내부거래 공방' 격화…\"이사회 이후 정면 충돌\"",
+    "description": "내부거래 승인과 감사위원회 구성 등을 둘러싸고 양측이 정면으로 충돌하면서 단순한 의견 차이를 넘어 경영권과 지배구조 문제로 확산되는 양상이다. 태광산업은 24일 롯데홈쇼핑이 계열사에 대한 부당 지원을 지속하고...",
+    "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=356829",
+    "related_count": 11
+  },
+  {
+    "date": "2026-03-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데-태광, 롯데홈쇼핑 갈등 재점화…'계열사 일감 몰아주기' VS '그룹 시...",
+    "description": "이사회열어 대표이사 재선임-외부 감사위원 3인 선임안 의결 태광 20여년간 홈쇼핑이 롯데계열사 지원하며... 업계 관계자는 \"이번 이사회를 통해 롯데 측의 영향력이 한층 강화됐다\"며 \"향후 지배구조와 내부거래를...",
+    "link": "http://www.metroseoul.co.kr/article/20260324500358",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 \"계열사 밀어주기 '비정상적 주장'\"..태광과 극한 갈등",
+    "description": "업계에서는 이번 사안을 두고 지배구조와 계열사 거래를 둘러싼 양측 간 긴장 관계가 이어질 가능성에 주목하고 있다. 24일 롯데홈쇼핑은 서울 양평동 본사에서 이사회를 열고 김재겸 대표이사의 재선임과 외부 감사위원...",
+    "link": "http://www.fnnews.com/news/202603241523059576",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "태광산업 \"일감 몰아주기\"vs 롯데홈쇼핑 \"근거없다\"…경영권 분쟁 격화",
+    "description": "태광산업과 롯데홈쇼핑 간 갈등이 내부거래와 지배구조를 둘러싼 공방으로 격화되고 있다. 양측은 계열사 지원 여부와 이사회 운영의 적정성을 두고 정면 충돌하는 양상이다. 태광산업은 김재겸 롯데홈쇼핑 대표이사...",
+    "link": "https://view.asiae.co.kr/article/2026032415223806229",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-25",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "예선 탈락한 채소, 소 앞에선 VIP…이마트 ‘발상의 전환’ [르포]",
+    "description": "이창열 이마트 ESG 담당은 “농식품 부산물 축산 사료 자원화 사업은 환경 부담을 줄이면서, 동시에 사료 부담률이 높은 사료·축산업계에 도움이 된다”며 “지속 가능한 생산과 소비의 좋은 사례가 될 것”이라고...",
+    "link": "https://biz.heraldcorp.com/article/10702113?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-25",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[Who Is ?] 한광영 현대홈쇼핑 대표이사",
+    "description": "\" (2024/03/07, 하이(H!) 파트너스 데이 행사에서) \"불확실한 시장환경 속에서 현대홈쇼핑은 이해관계자의 관점에서 우리의 장단점을 제로베이스에서 재검토하고 회사의 역량을 집중하여 더욱 강화된 ESG 경영을...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=433933",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-25",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "전통시장도 온라인으로…현대홈쇼핑, '온누리샵' 론칭",
+    "description": "현대홈쇼핑 온누리샵 론칭 이미지 [이미지=현대홈쇼핑 제공] 라이센스뉴스 = 황수정 기자 | 유통업계가 전통시장과의 상생을 위해 온라인 플랫폼을 적극 활용하고 있다. 디지털 상품권과 전용관을 결합한 새로운 소비...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=126063",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-25",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "울산 울주군-롯데백화점 '지역상생 동행'…중소기업·소상공인 경영 부...",
+    "description": "울산 울주군이 롯데백화점과 '지역상생 동행협약'을 맺고 지역경제 활성화를 위한 협력에 나섰다. 울주군은... 취약계층을 위한 사회공헌사업은 자금 지원에 머물지 않고 일자리와 상권, 생활 영역까지 이어지는 구조로...",
+    "link": "https://www.ulsanpress.net/news/articleView.html?idxno=571824",
+    "related_count": 5
+  },
+  {
+    "date": "2026-03-25",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "유통 대기업과 지자체의 동행… 울주군-롯데백화점, 지역상권에 온기",
+    "description": "울산 울주군이 롯데백화점과 손잡고 지역경제 활성화를 위한 상생 협력에 나섰다. 울주군은 25일 군청... 사회공헌사업 역시 단순 지원을 넘어 일자리와 상권, 생활 전반으로 확장되는 구조로 운영될 예정이다. 서범수...",
+    "link": "https://view.asiae.co.kr/article/2026032516175714446",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-25",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "시민의 손길로 빚는 도심숲… 현대백화점, ‘그린프렌즈 가든’ 조성 발...",
+    "description": "양명성 현대백화점 영업전략담당 상무는 지역사회에 생태적 경험을 공유하는 거점으로서의 역할을 다하고, 일상 속에서 환경 보호를 실천할 수 있는 플랫폼 활동을 책임 있게 추진하겠다고 전했다.",
+    "link": "https://www.donga.com/news/Economy/article/all/20260325/133605196/1",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-26",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 어스아워 캠페인 동참…전국 GS25 매장 간판 소등",
+    "description": "박경랑 GS리테일 ESG파트 파트장은 “전국 GS25 매장 등을 통한 어스아워 동참이 기후 변화에 대한 경각심을 알리고 지구 환경 보호를 위한 작은 실천을 독려하는 계기가 됐으면 한다”고 말했다.",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202603262311429521204ead0791_12",
+    "related_count": 24
+  },
+  {
+    "date": "2026-03-26",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 ‘하도급 2심’ 행정소송 패소가 변수",
+    "description": "그러나 지난해 8월 별도로 진행된 244억원 과징금 취소 소송에서는 같은 행위가 위법하다고 판단돼 GS리테일이 패소했다. 이에 따라 2심 형사재판에서는 어떤 결과가 나올지 주목된다. GS리테일측 변호인은...",
+    "link": "https://www.naeil.com/news/read/582856?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "CGCG, \"보수는 지배주주 몫, 책임은 전문경영인?\"...BGF리테일 민승배 재...",
+    "description": "국내 의결권 자문기관 좋은기업지배구조연구소(CGCG)가 BGF리테일 정기주주총회 안건에 대해 또다시 강도 높은 '반대' 의견을 내놓았다. \"보수는 과도하고, 견제는 없다\"는 것. 특히 그 중심에 현 대표이사인 민승배...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=116433",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "차우철 롯데마트 대표 선언문까지...'납품업체 갑질로 수억대 과징금' ...",
+    "description": "실제로 이마트, 코스트코, 홈플러스 등 경쟁 업체들의 공식 홈페이지에는 통상적인 'CEO 인사말'이나 'ESG경영' '공정거래자율준수' 등에 관한 통상적인 내용만 나온다. 어디에서도 '대표이사 선언문' 같은 건 찾을 수...",
+    "link": "https://www.sportschosun.com/life/2026-03-26/202603250100170910011837",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "'슈퍼 주총 D-day' 국민연금, \"이대로는 안 돼\"...하이트진로·이마트·빙...",
+    "description": "특히 정관 변경, 자기주식 활용, 이사 보수 등 기업 지배구조와 직결된 사안에서 일관되게 '주주가치 훼손... 이마트 역시 일부 핵심 안건에서 국민연금의 견제를 받았다. 국민연금은 사외이사 임기 조정과 관련된 정관...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=116419",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 對 태광산업⋯'불법 내부거래 의혹' 갈등 폭발",
+    "description": "이번 갈등은 롯데홈쇼핑 지배구조를 둘러싼 양측의 오랜 갈등과 맞닿아 있다. 롯데쇼핑이 최대주주로 경영권을 쥐고 있는 가운데, 태광그룹 역시 약 45% 지분을 보유한 2대 주주로서 이사회 구성과 주요 의사결정에...",
+    "link": "http://www.inews24.com/view/1953776",
+    "related_count": 3
+  },
+  {
+    "date": "2026-03-26",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 잠실·명동점 합산 ‘연매출 5조’…글로벌·ESG로 성장 가속...",
+    "description": "롯데백화점은 ESG 경영도 강화하고 있다. 유통업계 최초로 재생에너지구매계약(PPA)을 도입해 파주 프리미엄아울렛에 시범 적용했으며, 이를 통해 재생에너지 사용 비율을 13%까지 끌어올렸다. 향후 2030년까지 총 266MW...",
+    "link": "https://www.etoday.co.kr/news/view/2568885",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 “옴니채널 전면 구축…핵심 점포 경쟁력 강화”",
+    "description": "현대백화점은 최근 3년 연속 ESG 평가 A+ 등급을 받은 점을 강조하며, 지속가능 경영을 이어가겠다고 밝혔다. 이번 주주총회에서는 자기주식 소각 승인과 정관 변경 등 주주환원 및 지배구조 관련 안건도 포함됐으며, 모든...",
+    "link": "https://www.betanews.net/article/view/beta202603260105",
+    "related_count": 6
+  },
+  {
+    "date": "2026-03-26",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, “프리미엄·옴니채널로 지속 성장”…주총서 중장기 출점...",
+    "description": "현대백화점은 한국ESG기준원 평가에서 유통업계 유일하게 3년 연속 통합 A+ 등급을 획득하며 지속가능경영 역량을 입증했다. 정 대표는 “앞으로도 고객과 주주, 지역사회와 함께 상생하며 지속 가능한 성장을...",
+    "link": "https://www.viva100.com/article/20260326500715",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-26",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[르포] 신세계백화점에서 GD 호두과자 인기 터졌다…2시간 만에 완판",
+    "description": "이번 팝업은 신세계백화점 강남점에서 진행된 부창제과와 저스피스재단의 ‘LOVE & PEACE’ 프로젝트다. 단순한 디저트 판매를 넘어, 구매 금액 일부가 기부로 이어지는 구조라는 점에서 현장을 찾은 고객들의 관심도 한층...",
+    "link": "https://www.sedaily.com/article/20024572?ref=naver",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-27",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[Who Is ?] 민승배 BGF리테일 대표이사",
+    "description": "△유니세프와 친환경 게르 지원 협약 체결 BGF리테일이 글로벌 ESG경영에 힘을 싣고 있다. BGF리테일은 2024년 5월 '몽골 친환경·고효율 게르 사업 지원'을 위한 업무협약을 체결하고 향후 3년간 총 50만 달러(약...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=434209",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-27",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑 중소기업 판로 지원 프로그램 상생 하우스 운영",
+    "description": "롯데홈쇼핑 관계자는 \"상생 하우스를 통해 판로 확보에 어려움을 겪는 중소기업에 실질적인 진출 기회를 제공하고 있다\"며 \"맞춤형 편성 및 체계적 지원을 통해 협력사와 동반 성장하는 구조를 강화하겠다\"라고 말했다.",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202603271630412945204ead0791_12",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-27",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "지배구조 갈등에 불붙은 '내부거래 논란'…롯데홈쇼핑 VS 태광, 전면전 ...",
+    "description": "롯데홈쇼핑을 둘러싼 롯데와 태광 간 갈등이 내부거래 논란을 계기로 정면 충돌 양상으로 번지고 있다. 오랜 기간 누적된 지배구조 갈등이 수면 위로 떠오르며 양측이 법적 대응까지 예고하는 '전면전' 국면에 들어섰다는...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=338583",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-29",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "\"간결하고 강렬하다\"… 롯데홈쇼핑 '300초 숏핑', 상생 마중물 톡톡",
+    "description": "사진=롯데홈쇼핑 매일일보 = 민경식 기자  |  롯데홈쇼핑이 지난 2024년 업계 최초로 선보인 TV숏폼 '300초 숏핑'이 판매 성과를 내는 동시에 새로운 상생 모델을 제시하고 있다. 29일 롯데홈쇼핑에 따르면, '300초 숏핑'은...",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=1358475",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "부품사가 웃어야 완성차도 웃는다... 대동금속·BGF에코 주가 불기둥",
+    "description": "고기능성 소재 기업인 BGF에코머티리얼즈 역시 29.88% 상승한 5,020원에 장을 마감하며 상한가 대열에 합류했다. 친환경 및 경량화 관련주들의 약진도 눈에 띄었다. 변속기 부품사 디와이씨와 공작기계 전문 화천기계가 상승...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=441280",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "고체 전해질부터 비료까지... BGF에코머티리얼즈 주가 파죽지세",
+    "description": "글로벌 경기 회복세와 더불어 친환경 에너지 소재 및 차세대 배터리용 정밀 화학 제품에 대한 수요가... 나노 소재 및 엔지니어링 플라스틱 분야의 강자 BGF에코머티리얼즈 역시 29.88% 상승한 5020원에 장을 마감하며...",
+    "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=441278",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "자동차부품 관련주, '어깨춤 으쓱' 대동금속·BGF에코머티리얼즈·남선...",
+    "description": "30일 한국거래소에 따르면 대동금속, BGF에코머티리얼즈, 모베이스전자, 에코플라스틱, 남선알미늄은... 회사는 흡차음 성능을 높이고 친환경 소재를 적용한 제품 개발에 주력하고 있으며, 자율주행차 시대를 대비해...",
+    "link": "http://www.finomy.com/news/articleView.html?idxno=252335",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "시민단체 “태광그룹, 롯데홈쇼핑 분쟁은 태로남불”",
+    "description": "주주총회에서 지배구조 개혁과 주주권익 확대, 경영 투명성을 촉구했다. 태광산업의 2대 주주인 행동주의... 성명서에서 시민사회는 근래 재계 논란으로 떠오른 태광그룹과 롯데홈쇼핑간 분쟁에 대해서도 태광 측의...",
+    "link": "https://www.segye.com/newsView/20260330519800?OutUrl=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[ESG] 현대홈쇼핑, 장애가정 학생에 장학금 1억5000만원 전달",
+    "description": "현대홈쇼핑은 서울 강동구 천호동 본사에서 ‘하이(H!) 두드림투게더’ 전달식을 열고 한국장애인재활협회에 장학금 1억5000만원을 기탁했다고 30일 밝혔다. 올해부터는 지원 대상을 기존 중·고등학생에서 대학생과...",
+    "link": "https://www.mydaily.co.kr/page/view/2026033016254152798",
+    "related_count": 7
+  },
+  {
+    "date": "2026-03-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[ESG ZIP] BBQ·연세유업·현대홈쇼핑·동아오츠카·대상",
+    "description": "◇ 현대홈쇼핑, 장애인 가정 장학금 1억5000만원 전달 현대홈쇼핑은 30일 서울 강동구 천호동 본사에서 장애인 가정 장학사업 '하이(H!) 두드림투게더' 지원금 1억5000만원을 한국장애인재활협회에 전달했다....",
+    "link": "https://www.thereport.co.kr/news/articleView.html?idxno=85972",
+    "related_count": 1
+  },
+  {
+    "date": "2026-03-30",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "한국장애인재활협회·현대홈쇼핑 ‘하이두드림투게더’ 기금 전달",
+    "description": "기금전달식에서 현대홈쇼핑은 재활협회에 장학기금 1억5000만원을 전달했으며, 현대홈쇼핑의 고객도 자신이 적립해온 H포인트(멤버십 포인트)를 장애가정 청소년에게 기부하는 행사도 함께 진행할 예정이다. 이일영...",
+    "link": "https://www.kmib.co.kr/article/view.asp?arcid=0029604480&code=61171811&cp=nv",
+    "related_count": 2
+  },
+  {
+    "date": "2026-03-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, '상생씨앗' 프로젝트 본격화…청년 농가·친환경 농산물 지원...",
+    "description": "특히 이번 프로젝트는 기업과 공공기관, 비영리단체가 협력해 지속 가능한 농업 확산과 청년 농업인 지원에 나선 ESG(환경·사회·지배구조) 협력 모델이라는 점에서 의미를 가진다. 김범창 롯데마트·슈퍼 HR혁신부문장은...",
+    "link": "http://www.fnnews.com/news/202603311436465272",
+    "related_count": 12
+  },
+  {
+    "date": "2026-03-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 청년 농가 성장 돕는 ‘상생씨앗’ 캠페인 시행",
+    "description": "지난 30일 서울시 송파구에 위치한 롯데월드타워 113층 EBC에서 '상생씨앗' 업무협약식 체결을 기념해 이미경(왼쪽부터) 환경재단 대표, 김혜영 롯데마트·슈퍼 ESG조직문화팀장, 윤동진 농림수산식품교육문화정보원장이...",
+    "link": "https://www.cnbnews.com/news/article.html?no=786770",
+    "related_count": 12
+  },
+  {
+    "date": "2026-03-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "농촌의 미래에 심는 희망…롯데마트 '상생씨앗'이 일구는 ESG 가치",
+    "description": "김범창 롯데마트·슈퍼 HR혁신부문장은 상생씨앗 프로젝트는 청년 농부의 지속가능한 성장을 지원하고 지역 농업과 유통이 함께 발전하는 선순환 구조를 구축하는 데 의미가 있다며 앞으로도 다양한 ESG 활동을 통해...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=72996",
     "related_count": 1
   }
 ]
