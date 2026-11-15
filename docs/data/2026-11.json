@@ -798,7 +798,7 @@
     "title": "BGF리테일, ESG 세부 점수 모두 상승…통합 A+ 유지",
     "description": "환경·사회 A+, 지배구조 A…2년 연속 통합 등급 BGF리테일(282330)이 한국ESG기준원(KCGS)의 2026년 ESG 평가에서 통합 A+ 등급을 받았다. 2025년 처음 통합 A+를 받은 데 이어 2년 연속이다. BGF리테일이 지난 11일...",
     "link": "https://www.vegannews.co.kr/news/article.html?no=404246",
-    "related_count": 4
+    "related_count": 1
   },
   {
     "date": "2026-11-12",
@@ -888,7 +888,7 @@
     "title": "[인사] BGF그룹",
     "description": "장성관 ◇ BGF리테일 신규 직책 선임 ▲ 5권역장 수석 노수덕 ▲ 상생협력실장 수석 한윤범 ◇ 계열사 대표 선임(내정) ▲ BGF휴먼넷 대표이사 이사 심재준 ◇ 계열사 이사 선임 ▲ BGF휴먼넷 이사 김민석 ▲ BGF로지스...",
     "link": "https://www.inthenews.co.kr/news/article.html?no=94515",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-13",
@@ -933,7 +933,7 @@
     "title": "[더벨]유니클로, 롯데백화점 강남점 두배로 확장…월계점 신규 출점",
     "description": "유니클로가 롯데백화점 강남점 매장을 15년 만에 두 배 이상으로 확장하고 스타필드 마켓 월계점에 새... 체험 부스 운영과 행사 안내를 도왔다. 유니클로는 개점 이후에도 지역 기관과 사회공헌 활동을 이어갈 계획이다.",
     "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611131620479720104518",
-    "related_count": 5
+    "related_count": 3
   },
   {
     "date": "2026-11-13",
@@ -942,6 +942,69 @@
     "title": "현대백화점그룹, 익산시 '발달장애인 특화사업장'에 1억 후원·11개 상장...",
     "description": "아울러 현대백화점그룹은 한국ESG기준원(KCGS)이 실시한 2026년 ESG 평가에서 11개 상장 계열사가 '통합 A등급' 이상을 획득했다. 통합 A등급 이상을 받은 계열사는 지주회사인 현대지에프홀딩스를 비롯해 현대백화점...",
     "link": "http://www.wsobi.com/news/articleView.html?idxno=321759",
-    "related_count": 9
+    "related_count": 8
+  },
+  {
+    "date": "2026-11-12",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[오늘의브랜드] GS리테일 ‘우리동네GS’, MAU 503만 명 돌파…20대 이용...",
+    "description": "-편집자 말 ◇ GS리테일 ‘우리동네GS’, MAU 503만 명 돌파…20대 이용 비중 가장 높아 GS리테일의 모바일 앱... 상생펀드·ESG 펀드, 협력회사 인센티브 지급, 삼성미래기술육성사업 등 다양한 상생 프로그램도 운영하고...",
+    "link": "https://www.ibabynews.com/news/articleView.html?idxno=156837",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-14",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "민승배 BGF리테일 대표 사장 승진…고객 중심 전략 강화",
+    "description": "5권역장에는 노수덕 수석을, 상생협력실장에는 한윤범 수석을 각각 발탁했다. 계열사 인사에서는 심재준 BGF휴먼넷 이사가 신임 대표이사로 내정됐다. 김민석 이사(BGF휴먼넷)와 유호석 이사(BGF로지스)는 나란히 신규...",
+    "link": "https://www.1conomynews.co.kr/news/articleView.html?idxno=51288",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-15",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, 3천명 함께 달린 '통큰런' 성료",
+    "description": "나눔 러닝 페스티벌 '통큰런'을 열고 참가비 6천만원 전액을 기부했다고 15일 밝혔다. 사진은 5km 코스 참가자들이 '통큰런' 행사에 참여하고 있는 모습. 2026.11.15 [롯데마트·슈퍼 제공. 재판매 및 DB 금지]",
+    "link": "https://n.news.naver.com/mnews/article/001/0016442318?sid=102",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-15",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트·슈퍼, '통큰런' 참가비 6000만원 전액 기부…3000명 참여",
+    "description": "롯데마트·슈퍼는 지난 14일 서울 마포구 상암 월드컵공원 평화광장에서 나눔 러닝 페스티벌 '통큰런'을... 올해 6월에는 베트남 하노이에서 현지 아동 지원과 환경정화 등 ESG 활동도 진행했다. 박닌성 초등학교에...",
+    "link": "https://n.news.naver.com/mnews/article/030/0003485614?sid=101",
+    "related_count": 6
+  },
+  {
+    "date": "2026-11-15",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑, 쇼호스트·카메라 없는 '100% AI 방송' 업계 첫 도입",
+    "description": "GS샵과 롯데홈쇼핑은 AI 콘텐츠 제작 가이드라인을 운영하고 있으며, NS홈쇼핑도 AI 쇼호스트를 활용한 상품... 임현태 현대홈쇼핑 채널전략디비전 부문장은 “중소 협력사와 상생하며 고객에게 차별화된 쇼핑 경험을...",
+    "link": "https://www.ajunews.com/view/20261115105830691",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-13",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "방미통위, 현대홈쇼핑 법인분할 조건부 승인…재무건전성·협력사 보호...",
+    "description": "분리하는 지배구조 개편을 추진하고 있다. 오는 12월 현대홈쇼핑의 투자사업부문을 별도 법인으로 분리한 뒤 지주사에 합병하는 방식이다. 재편이 마무리되면 기존 현대홈쇼핑 산하에 있던 한섬과 현대퓨처넷 등을...",
+    "link": "https://n.news.naver.com/mnews/article/092/0002445186?sid=105",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-14",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[동반성장·ESG] HL만도, 동반성장지수 2년 연속 최우수…현대백화점그...",
+    "description": "현대백화점그룹, 상장 계열사 11곳 ESG 통합 A등급 이상 현대백화점그룹은 한국ESG기준원(KCGS)의 '2026년 ESG 평가'에서 11개 상장 계열사가 통합 A등급 이상을 받았다고 14일 밝혔다. 현대그린푸드는 환경 부문 등급이 A...",
+    "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2374283",
+    "related_count": 1
   }
 ]
