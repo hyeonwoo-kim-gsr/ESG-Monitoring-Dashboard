@@ -933,7 +933,7 @@
     "title": "[더벨]유니클로, 롯데백화점 강남점 두배로 확장…월계점 신규 출점",
     "description": "유니클로가 롯데백화점 강남점 매장을 15년 만에 두 배 이상으로 확장하고 스타필드 마켓 월계점에 새... 체험 부스 운영과 행사 안내를 도왔다. 유니클로는 개점 이후에도 지역 기관과 사회공헌 활동을 이어갈 계획이다.",
     "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611131620479720104518",
-    "related_count": 3
+    "related_count": 2
   },
   {
     "date": "2026-11-13",
@@ -942,7 +942,7 @@
     "title": "현대백화점그룹, 익산시 '발달장애인 특화사업장'에 1억 후원·11개 상장...",
     "description": "아울러 현대백화점그룹은 한국ESG기준원(KCGS)이 실시한 2026년 ESG 평가에서 11개 상장 계열사가 '통합 A등급' 이상을 획득했다. 통합 A등급 이상을 받은 계열사는 지주회사인 현대지에프홀딩스를 비롯해 현대백화점...",
     "link": "http://www.wsobi.com/news/articleView.html?idxno=321759",
-    "related_count": 8
+    "related_count": 6
   },
   {
     "date": "2026-11-12",
@@ -1005,6 +1005,87 @@
     "title": "[동반성장·ESG] HL만도, 동반성장지수 2년 연속 최우수…현대백화점그...",
     "description": "현대백화점그룹, 상장 계열사 11곳 ESG 통합 A등급 이상 현대백화점그룹은 한국ESG기준원(KCGS)의 '2026년 ESG 평가'에서 11개 상장 계열사가 통합 A등급 이상을 받았다고 14일 밝혔다. 현대그린푸드는 환경 부문 등급이 A...",
     "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2374283",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-16",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 춘천점 김장김치 기부",
+    "description": "이마트 춘천점(지점장 박영진)은 12일 강남동 행정복지센터에 '희망나눔 김장김치' 316박스(400만원 상당)를 기부했다.",
+    "link": "https://n.news.naver.com/mnews/article/654/0000211408?sid=102",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-15",
+    "company": "롯데슈퍼",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트·슈퍼, '통큰런' 마라톤 3000명 달려…참가비 6000만원 전액기...",
+    "description": "롯데마트·슈퍼가 14일 서울 마포구 상암 월드컵공원 평화광장에서 나눔 러닝 페스티벌 '통큰런'을 열고... 한편 기업과 소비자가 함께 참여하는 기부형 러닝이 최근 ESG 경영의 새로운 방식으로 주목받고 있다....",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=903147",
+    "related_count": 7
+  },
+  {
+    "date": "2026-11-16",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트·슈퍼 '통큰런' 참가비, 장애아동 재활 지원으로… 보바스어린...",
+    "description": "롯데마트·슈퍼가 처음 개최한 시민 참여형 러닝 행사에서 모은 참가비가 재활치료 중인 아이들에게... 센터는 롯데그룹 여러 계열사의 사회공헌 활동이 모이는 곳이기도 하다. '보바스 부부'의 정신을 계승한...",
+    "link": "https://www.tournews21.com/news/articleView.html?idxno=148498",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-16",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "희망친구 기아대책, 롯데마트·슈퍼와 기부하는 ‘통큰런’",
+    "description": "이와 함께 행사장에 마련된 나눔 부스에서는 기아대책과 롯데마트·슈퍼가 함께 추진해 온 사회공헌 사업을 소개하고, 시민들이 나눔의 의미를 직접 경험할 수 있는 다양한 체험 프로그램을 운영했다. 일반 참가자 2천...",
+    "link": "https://www.christiantoday.co.kr/news/378645",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-16",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑, 방송 전체 AI로 구현한 'AI-REAL' 도입",
+    "description": "임현태 현대홈쇼핑 채널전략디비전 부문장은 중소 협력사와의 상생과 새로운 쇼핑 경험 제공을 위해 시스템을 개발했다며, 앞으로도 AI 기술을 실무에 접목해 인공지능 전환(AX)을 추진하겠다고 밝혔다.",
+    "link": "http://www.ktnews.com/news/articleView.html?idxno=150213",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-16",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점·현대홈쇼핑, 상품 소개에 AI 적용한다",
+    "description": "임현태 현대홈쇼핑 채널전략디비전 부문장은 중소 협력사와의 상생과 고객 쇼핑 경험 차별화를 위해 AI 방송 생성 시스템을 개발했다고 설명했다. 임 부문장은 \"앞으로도 AI 기술을 실무에 적극 접목해 AX(AI...",
+    "link": "http://www.dailypop.kr/news/articleView.html?idxno=104602",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-16",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 동반성장지수 2년 연속 '최우수' 등급 획득",
+    "description": "롯데백화점이 동반성장위원회 주관 '2026년도 동반성장지수 평가'(2025년 실적 기준)의 백화점·면세점 업종... 또한 마진 인하 혜택을 주는 '상생 마진 제도'와 ESG 경영·식품안전 컨설팅을 지원하고, '롯데 브랜드...",
+    "link": "https://www.job-post.co.kr/news/articleView.html?idxno=238485",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-15",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "쇼핑 추천도 방송도 AI가 한다…현대백화점그룹의 유통 실험",
+    "description": "아시아투데이 이창연 기자 = 현대백화점그룹이 인공지능(AI)을 유통 사업에 잇달아 도입하고 있다.... 임현태 현대홈쇼핑 채널전략디비전 부문장은 \"중소 협력사와 상생하며 고객에게 차별화된 쇼핑 경험을 제공하기...",
+    "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261115010005535",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-13",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계백화점, 한국ESG기준원 평가 2년 연속 종합 'A+'… 백화점 업계 유...",
+    "description": "신세계백화점이 한국ESG기준원(KCGS)이 발표한 ‘2026년 ESG 평가’에서 2년 연속 종합 A+ 등급을 획득했다고 13일 밝혔다.신세계는 지난해 한국ESG기준원이 선정한 'ESG 최우수기업'에 처음 이름을 올리며 A+ 등급을 받았다....",
+    "link": "https://weeklytrade.co.kr/news/view.html?section=1&category=160&item=&no=102201",
     "related_count": 1
   }
 ]
