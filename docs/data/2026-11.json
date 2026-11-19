@@ -1149,7 +1149,7 @@
     "title": "차우철 롯데마트·슈퍼 대표, '통큰런' 통해 참가비 전액 기부…\"통큰 상...",
     "description": "\"통큰 상생과 나눔 가치를 확장하고, 취약계층과 환아들을 지속적으로 돕기 위해 사회공헌 활동을 꾸준히 전개해 나가겠다.\"(차우철 롯데마트·슈퍼 대표) 롯데마트·슈퍼는 첫 기부 러닝 '통큰런'을 개최하고, 참가비...",
     "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=45342",
-    "related_count": 2
+    "related_count": 1
   },
   {
     "date": "2026-11-17",
@@ -1320,6 +1320,96 @@
     "title": "롯데백화점, 감정노동 직원 30명에 심리상담·휴식 지원",
     "description": "이번 행사는 롯데백화점의 사회공헌 캠페인 '리조이스' 10주년을 맞아 마련됐다. 백화점과 아울렛 고객상담실, 우수고객 라운지 등에서 근무하는 임직원 30명이 참여한다. 수도권 직원이 21명, 지방 직원이 9명이다....",
     "link": "https://sateconomy.co.kr/news/view/1065598491827243",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 서스틴베스트 '필수소비재 유통·소매' 최상위 기업 선정",
+    "description": "BGF리테일은 ESG 종합평가에서 A등급을 받았고, 서스틴베스트가 뽑은 '2026년 하반기 ESG Best Companies 100'에도 이름을 올렸다. 회사는 △친환경 밸류 체인 구축 △건강하고 행복한 삶 지원 △동반성장 생태계 조성...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=362756",
+    "related_count": 5
+  },
+  {
+    "date": "2026-11-18",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "[SV 리포트] 폐기물 줄여 ESG A+ 받은 BGF리테일…CU 점포는 허술한 관리...",
+    "description": "▲BGF리테일 폐기물 관리 성과/자료=BGF리테일 지속가능경영보고서 BGF리테일은 물류센터 재고상품 폐기량을 줄이기 위해 상품 회수와 기부 방식을 개선하고 있다. 기존에 물류센터를 거쳐 기부하던 일부 상품을...",
+    "link": "https://www.socialvalue.kr/news/view/1065579876615005",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-18",
+    "company": "BGF",
+    "sentiment": "UNCERTAIN",
+    "title": "BGF리테일, ESG 경쟁력 입증···유통 부문 최상위",
+    "description": "현대경제신문 길나영 기자 | 편의점 CU를 운영하는 BGF리테일이 국내 주요 ESG(환경·사회·지배구조)... 사회 부문에서는 공급망 관리와 사회공헌 활동 등에서 동종 업종 대비 우수한 평가를 받았다. 장애인과...",
+    "link": "http://www.finomy.com/news/articleView.html?idxno=267139",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐, 병무청과 사회복무요원 복지 협력 … 내년 상반기 할인 서...",
+    "description": "최재두 세븐일레븐 커뮤니케이션팀 ESG담당은 \"병역의무를 수행하는 사회복무요원들이 일상에서 실질적인 혜택을 누릴 수 있도록 이번 협력을 추진했다\"며, \"생활 밀착형 플랫폼으로서 병역 이행에 대한 존중과 예우를...",
+    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=92298",
+    "related_count": 11
+  },
+  {
+    "date": "2026-11-19",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "쿠팡·롯데마트, 친환경 포장재 소비 촉진 나선다",
+    "description": "ESG조직문화팀 담당자는 \"고객들이 이번 프로모션을 통해 우수 포장재 상품을 자연스럽게 접하고, 친환경 소비에 관심을 갖는 계기가 되길 기대한다\"고 말했다. 한편 한국포장재재활용사업공제조합은 쿠팡, 이마트...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2122198",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-19",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, '포장을 보다' 프로모션…\"친환경 상품 구매하고 엘포인트 받...",
+    "description": "박태순 롯데마트 ESG조직문화팀 담당자는 \"고객들이 이번 프로모션을 통해 우수 포장재 상품을 자연스럽게 접하고, 친환경 소비에 관심을 갖는 계기가 되길 기대한다\"며 \"앞으로도 상품의 품질과 가격뿐 아니라...",
+    "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=326613",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "CJ온스타일",
+    "sentiment": "UNCERTAIN",
+    "title": "CJ제일제당·CJ온스타일 'K-씨푸드 쿠킹 클래스' 성료·브레빌 반자동 커...",
+    "description": "한편 CJ온스타일은 호주 주방가전 브랜드 브레빌의 반자동 커피머신을 선보인다. CJ제일제당은... 퀴진케이는 한식의 발전과 세계화를 목표로 2023년 5월 출범한 CJ제일제당의 사회공헌 프로젝트다. 유망 한식 셰프를...",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=322098",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-17",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데백화점, 감정노동 직원 위한 마음돌봄 프로그램 운영",
+    "description": "이번 프로그램을 바탕으로 2027년에는 고객 대상 마음돌봄 프로그램도 확대할 방침이다. 한편, 롯데백화점은 지난 11일 발표된 '2026년도 동반성장지수 평가'에서 백화점·면세점 업종 부문 2년 연속 최우수 등급을 받았다.",
+    "link": "http://www.finomy.com/news/articleView.html?idxno=267005",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-18",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[ESG리포트+] 현대백화점이 딸기 농장 지원하는 이유",
+    "description": "현대백화점그룹이 주목한 것도 이 부분입니다. 농장을 마련하는 데 필요한 자금을 지원하는 것은 물론, 향후 백화점 식품관과 온라인몰을 통해 생산품의 판로까지 연결하겠다는 구상인데요. 백화점이 가진 판매망을...",
+    "link": "https://theviewers.co.kr/View.aspx?No=4318785",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "대전신세계백화점 임직원 봉사단, 지역 아동에 직접 만든 수제 쿠키 전...",
+    "description": "대전신세계백화점 임직원 봉사단은 지역 취약계층 아동을 위한 쿠키 만들기 봉사활동을 진행했다고 19일 밝혔다. 이번 활동에는 베이킹 강사로 지역 베이커리 ‘몽심’이 참여해 지역사회와 함께하는 상생 나눔을 펼쳤다....",
+    "link": "https://n.news.naver.com/mnews/article/015/0005355712?sid=102",
     "related_count": 1
   }
 ]
