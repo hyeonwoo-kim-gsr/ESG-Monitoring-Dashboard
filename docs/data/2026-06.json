@@ -1158,7 +1158,7 @@
     "title": "신세계사이먼 아울렛, 상반기 '슈퍼세일'→롯데마트, 6월 '통큰데이'",
     "description": "사진=롯데마트 롯데마트는 오는 3~7일 6월 '통큰데이'를 진행한다. 인기 먹거리를 비롯해 여름 물가 안정에... (400g/팩/국산)'와 '성주 상생참외(1.8kg/봉/국산)'는 각 9990원에 판매한다. 축산 코너에서는 삼겹살부터...",
     "link": "https://www.slist.kr/news/articleView.html?idxno=742729",
-    "related_count": 1
+    "related_count": 3
   },
   {
     "date": "2026-06-26",
@@ -1617,6 +1617,96 @@
     "title": "현대백화점, 전국 사업장 'ISO 45001' 인증…안전보건 경영 '글로벌 표준...",
     "description": "아울러 폭염, 집중호우 등 최근 변화하는 기후 환경에 대비해 철저한 안전 관리 계획을 수립하고 실질적으로 운영하고 있는 점도 인증 획득의 주요 요인으로 꼽혔다. 현대백화점은 이번 인증을 기점으로 유통업 특성을...",
     "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=80867",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "‘이마트 2대 주주’ 국민연금, 스타벅스 논란에 지분 평가액 432억원 감...",
+    "description": "이마트의 스타벅스코리아 지배구조 리스크도 함께 거론된다. 이마트는 2021년 스타벅스코리아 지분을 추가 취득하는 과정에서 미국 스타벅스 본사에 콜옵션을 부여했다. 라이선스 계약이 만료되거나 이마트 측...",
+    "link": "https://mdtoday.co.kr/news/view/1065601414155549",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 녹색소비주간 동참…저탄소 인증 상품 할인에코머니 적립",
+    "description": "적립된 에코머니는 카드사 포인트나 현금으로 전환하거나 롯데마트 상품권으로 교환할 수 있다. 기후환경에너지부에 따르면 녹색제품은 환경표지 인증 제품, 저탄소 인증 제품, 우수재활용(GR) 인증 제품 등을...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=439117",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 초보기업 유럽 진출 돕는다",
+    "description": "K뷰티와 K푸드, K라이프스타일에 대한 글로벌 관심이 높아지는 가운데 롯데홈쇼핑이 국내 중소기업의 해외 진출을 지원하는 상생 플랫폼 ‘롯데 브랜드 엑스포’를 통해 수출 초보기업들의 글로벌 시장 개척을 돕고 있다....",
+    "link": "https://www.naeil.com/news/read/590406?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 11년째 국내 중기 해외수출 '징검다리'",
+    "description": "이에 롯데홈쇼핑은 국내 우수 중소기업의 해외 판로 개척을 지원하는 상생 프로그램 ‘롯데 브랜드 엑스포’를 통해 수출 초보기업들의 글로벌 시장 진출을 돕고 있다. 지난 2016년부터 운영하고 있는 ‘롯데 브랜드...",
+    "link": "https://news.bizwatch.co.kr/article/consumer/2026/06/01/0011",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[포토]롯데백화점 대전점, 호국보훈의 달 맞아 현충원 묘역정비 활동 진...",
+    "description": "▲롯데백화점 대전점 제공 롯데백화점 대전점은 6월 호국보훈의 달을 맞아 1일 국립대전현충원을 찾아 사회공헌 활동을 진행했다. 이날 행사에는 민혜진 부점장을 비롯해 샤롯데 봉사단 10여명이 참여한 가운데 국가를...",
+    "link": "https://www.ggilbo.com/news/articleView.html?idxno=1161498",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "롯데백화점 센텀시티점 천장 붕괴…여름철 앞두고 유통시설 ‘안전관리...",
+    "description": "최근 롯데백화점 센텀시티점 식품관에서 천장 마감재가 붕괴하는 사고가 발생하면서 대형 유통시설의 안전관리 중요성이 다시 부각되고 있다. 1일 유통업계에 따르면 폭염과 집중호우, 태풍 등 이상기후가 잦아지고...",
+    "link": "https://www.mydaily.co.kr/page/view/2026060116213226706",
+    "related_count": 6
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "“천장 무너졌는데 ‘왜 문 닫았는지’ 몰랐다”… 롯데백화점 센텀시...",
+    "description": "롯데백화점 측은 냉각수 배관 누수로 인해 천장 일부가 붕괴된 것으로 추정하고 긴급 안전조치에 나섰으며, 사고 발생 약 1시간 만에 영업을 조기 종료했다. ▲ 31일 오후 부산 해운대구 롯데백화점 센텀점 식품관 천장...",
+    "link": "https://wemakenews.co.kr/news/view.php?no=25376",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-01",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "롯데백화점 센텀시티점서 천장 무너져 150명 대피...영업 조기 종료",
+    "description": "롯데백화점 관계자는 \"냉각수 파이프가 빠지면서 사고가 난 것으로 추정된다\"며 \"현재 철저한 안전 점검과 함께 정확한 사고 경위를 파악하고 있다\"고 밝혔다. 더퍼블릭",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=306103",
+    "related_count": 3
+  },
+  {
+    "date": "2026-06-01",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "대구국세청, 신세계백화점과 손잡고 지역 전통주 알린다",
+    "description": "행사는 지역 상생과 경제 활성화를 목표로 신세계백화점이 식품관 내 공간을 제공하고, 시음과 판매가 함께 이뤄지는 방식으로 진행된다. 대구지방국세청은 이번 행사를 시작으로 7월까지 총 4차례에 걸쳐 릴레이 형식의...",
+    "link": "https://www.kbmaeil.com/article/20260601500274",
+    "related_count": 5
+  },
+  {
+    "date": "2026-06-02",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "지역과 상생 나선 편의점…GS25 '부추김밥'·세븐일레븐 '엉겅퀴 라면'",
+    "description": "2일 관련 업계에 따르면 GS리테일이 운영하는 편의점 GS25는 김밥 큐레이터 정다현 작가와 협업해 '제철 맞은... 기반의 ESG 활동 강화에 나선다. 이번 신제품 출시를 위해 GS25가 매입한 경기도 양주산 '영양부추'는 약 10톤...",
+    "link": "https://news.tf.co.kr/read/economy/2328523.htm",
     "related_count": 1
   }
 ]

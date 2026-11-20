@@ -647,5 +647,294 @@
     "description": "재단법인 아름다운가게가 GS리테일과 함께하는 시민 참여형 ESG 캠페인 ‘친구(친환경으로 지구 구하기)’가 시즌6 캠페인을 진행한다.  지난 18일 시작된 이 캠페인은 시민들이 전국 아름다운가게 매장과 GS25 편의점...",
     "link": "http://okfashion.co.kr/detail.php?number=63612&thread=81r45",
     "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 청년 농부 육성 팔 걷는다…판로개척·교육지원 확대",
+    "description": "김범창 롯데마트·슈퍼 HR혁신부문장은 \"청년 농부들이 안정적으로 성장하기 위해서는 유통 판매 노하우와 마케팅 역량이 필수적\"이라며 \"앞으로도 '상생씨앗' 프로젝트를 통해 청년 농부들이 체감할 수 있는 실질적인...",
+    "link": "https://www.mediapen.com/news/view/1100565",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-22",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "[소비자민원평가대상-홈쇼핑] CJ온스타일, 고객센터 운영 세부화·맞춤...",
+    "description": "GSshop과 현대홈쇼핑, 롯데홈쇼핑 등 대부분 TV 홈쇼핑이 민원 관리가 우수한 상위권에 포진했으나... 아울러 협력사의 소비자중심경영 획득 지원을 통한 동반성장에도 앞장서고 있다. 그간 CJ온스타일의 지원을 받아 CCM...",
+    "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=756199",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 임시 주총, 대표 해임안 부결…태광과 20년 갈등 재점화",
+    "description": "전문가들은 이번 사태가 단순한 해프닝이 아니라 지배구조 문제와 직결된다고 지적한다. 롯데홈쇼핑은 방송통신위원회로부터 과거 내부거래 문제로 제재받은 전력이 있어, 이번 논란이 규제 당국의 추가 조사로 이어질...",
+    "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=517504",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 'H.I.G.H 오픈 이노베이션' 본격 시동",
+    "description": "거두며 상생 거점으로서의 가능성을 입증한 바 있다. 이날 출범식에는 한광영 현대홈쇼핑 대표이사를 비롯해 홍경표 마크앤컴퍼니 대표, 서울경제진흥원 관계자 및 선발 기업 대표들이 대거 참석해 향후 협업...",
+    "link": "https://www.ziksir.com/news/articleView.html?idxno=134748",
+    "related_count": 6
+  },
+  {
+    "date": "2026-05-22",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 스타트업 5개사와 맞손...AI 중심 디지털 전환 가속도",
+    "description": "한광영 현대홈쇼핑 대표이사는 \"급변하는 시장 환경에 대응하기 위해 유망 스타트업과의 협업으로 새로운 성장 동력을 발굴하고 있다\"며 \"앞으로도 스타트업을 발굴하고 육성하는 상생 모델을 지속적으로 선보일 것...",
+    "link": "http://www.popcornnews.net/news/articleView.html?idxno=122147",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-23",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "\"납품업체 협상 여지 없었다\"… 法, 무죄 뒤집고 GS리테일에 15억 벌금 ...",
+    "description": "하도급법상 불공정거래행위 규정이 적용될 수 있다는 점을 충분히 인식하고 있었다\"고 꼬집었다. 정보제공료에 대한 판단 역시 유죄로 뒤집혔다. 재판부는 \"GS리테일이 정보제공료의 대가로 업체들에 넘긴 성별 판매...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=305372",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-26",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일, 항소심서 벌금 15억원…성과장려금 부당 수취 유죄",
+    "description": "이어 재판부는 GS가 편의점업계 시장점유율 1위를 유지하며 시장을 주도해온 업체라고 언급하며, GS리테일 임직원들이 FF 제품 제조 위탁 거래에 하도급법상 불공정거래행위 규정이 적용될 수 있다는 점을 인식하고...",
+    "link": "https://mdtoday.co.kr/news/view/1065589981363481",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-26",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 친환경·저탄소 청년농 역량 강화 교육",
+    "description": "앞서 롯데마트는 3월말 농림수산식품교육문화정보원·환경재단과 농가 상생 프로젝트 ‘상생씨앗’ 추진을... 김범창 롯데마트·슈퍼 HR혁신부문장은 “청년농이 성장하려면 판매 경험과 마케팅 역량이 필요하다\"면서...",
+    "link": "https://www.nongmin.com/article/20260522500381",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-26",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, '베트남 최고 브랜드' 선정…3년 연속",
+    "description": "<본보 2025년 12월 29일 롯데마트, 베트남서 ESG 경영 인정받았다…'톱10' 진입> 롯데마트는 베트남을 동남아 유통 거점으로 삼고 장기적인 확장을 이어간다는 방침이다. 연이은 현지 공신력 있는 수상을 바탕으로 브랜드...",
+    "link": "https://www.theguru.co.kr/news/article.html?no=102206",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-27",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"원칙이 경쟁력이다\"…세븐일레븐, 공정거래 준법경영 고삐 죈다",
+    "description": "[제공 = 코리아세븐] 편의점 세븐일레븐을 운영하는 코리아세븐이 공정거래 자율준수 프로그램(CP) 도입을... 선제적인 교육 지원을 통해 더욱 투명하고 공정한 거래 환경을 조성하고 상생 경영을 실천하겠다\"고 말했다.",
+    "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=517631",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-27",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[ET특징주] 스타벅스 논란 사과했지만… 이마트 주가 4% 하락",
+    "description": "박종렬 흥국증권 연구원은 이날 보고서에서 이마트 목표주가를 16만 7000원에서 12만원으로 30% 가까이 낮춰 제시했다. 다만 매수 의견은 유지했다. 박 연구원은 “이번 사태를 ESG(환경·사회적 책무·기업지배구조)...",
+    "link": "https://www.etnews.com/20260527000250",
+    "related_count": 4
+  },
+  {
+    "date": "2026-05-27",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트 주가 하락에 국민연금 주주권 행사 여부 주목",
+    "description": "참여연대는 지난 24일 성명을 내고 \"이마트의 2대 주주인 국민연금공단이 수탁자 책임 원칙에 따라... 환경·사회·지배구조 등의 요소를 고려해 수탁자 책임 활동을 이행할 수 있다. 실제 국민연금은 과거 오너리스크...",
+    "link": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=86244",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-27",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "정용진 사과에도 이마트 주가 '털썩'…국민연금 책임론까지",
+    "description": "그는 \"이번 사태는 ESG 관점에서 한국 사회의 오너리스크가 다시 부각된 사례라는 점에서 아쉬움이 크다\"며 \"대주주를 포함한 경영진이 사태의 심각성을 인식하고 환골탈태하는 모습을 보여야 한다\"고 지적했다.이마트...",
+    "link": "https://news.mtn.co.kr/news-detail/2026052715480995650",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-27",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "\"스벅 불매는 시작일 뿐\" 증권가의 전망...이마트 목표가 30% 하향 보고서...",
+    "description": "이마트 목표주가를 기존보다 30% 가까이 내린 증권사도 나왔습니다. 박종렬 흥국증권 연구원은 이날 보고서에서 매수 의견을 유지하면서도 목표주가를 16만7천원에서 12만원으로 하향했습니다. 그는 \"이번 사태를 ESG...",
+    "link": "https://www.ytn.co.kr/_ln/0134_202605271149537659",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-27",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[특징주] 정용진 회장 사과에 엇갈린 운명...신세계 긍정 전망, 이마트 ...",
+    "description": "27일 현재 이마트와 신세계 주가가 약세를 보이고 있다. 최근 스타벅스코리아 마케팅내용 때문에... 박종렬 흥국증권 연구원은 \"이번 사태를 ESG 관점에서 보면 한국 사회의 오너리스크가 재부각됐다는 측면에서...",
+    "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=260569",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-27",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[ESG 포커스] 현대백화점, ESG 종합 A+…세부지표 전반서 고른 경쟁력 입...",
+    "description": "| 서울=한스경제 하지현 기자 | 현대백화점이 ESG(환경·사회·지배구조) 평가에서 종합 A+ 등급을 획득하며 물류·무역업종 내 상위권 경쟁력을 입증했다. 환경 효율성 개선과 소비자 신뢰 확보, 주주 소통 강화 등...",
+    "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=840853",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-28",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 자원순환 캠페인 '가플지우' 확대 협약식",
+    "description": "이마트가 4월 한 달 동안 자원순환 확대와 산림 복원을 아우르는 친환경 상생 활동을 잇달아 전개하며 ESG(환경·책임·투명경영) 실천에 박차를 가하고 있다. 이마트는 기업의 사회적 책임을 넘어 협력사·지역사회와...",
+    "link": "https://www.mk.co.kr/article/12060035",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-28",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "청년농부 키우는 롯데GRS·농심·롯데마트 … 기부 넘어 '역량' 강화로 ...",
+    "description": "지원하는 사회공헌 사업이다. 롯데GRS는 2025년부터 농업용품과 모종 지원, 멘토링, 판로 연계 등을 이어오고... 롯데마트는 친환경·저탄소 농업 역량 강화에 초점을 맞췄다. 롯데마트는 5월 21~22일 롯데인재개발원...",
+    "link": "https://biz.newdaily.co.kr/site/data/html/2026/05/28/2026052800047.html",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-28",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 5개 스타트업과 기술협업 '오픈이노베이션'",
+    "description": "이는 유통 대기업의 인프라스트럭처와 스타트업의 유연한 기술력을 결합해 실무 효율을 극대화하는 것은 물론 유망 창업 기업의 스케일업을 돕는 선순환 상생 생태계를 구축한 사례로 주목받고 있다. 현대홈쇼핑이...",
+    "link": "https://www.mk.co.kr/article/12060036",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-28",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 10년간 100억 기부로 사회적 가치 창출",
+    "description": "롯데백화점의 사회공헌 캠페인 '리조이스(RE:JOICE)'가 올해 시행 10주년을 맞아 기념 캠페인을 선보인다.... 있는 ESG 경영의 표준을 제시한다는 평이다. 업계 관계자는 \"소비자와 현장 접점이 가장 넓은 백화점이 사회적...",
+    "link": "https://www.mk.co.kr/article/12060037",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-28",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[포토] 신세계백화점 강남점 “넥스트로컬 팝업서 지역 특산품 판매”",
+    "description": "이는 지난해 5월 신세계백화점과 서울시가 맺은 '지역 상생 청년 창업 지원 및 활성화를 위한 업무협약'에 따른 사업으로, 지난해 팝업에서 경쟁력을 입증한 20여개 브랜드는 신세계백화점에 정식 입점됐다. 넥스트로컬...",
+    "link": "https://www.etoday.co.kr/news/view/2588780",
+    "related_count": 5
+  },
+  {
+    "date": "2026-05-28",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[유통업계] 쿠팡·GS샵·하이트진로, 안전 캠페인·브랜드 확장·국제 수...",
+    "description": "이륜차 안전사고 예방을 위한 현장 프로그램을 운영했다고 28일 밝혔다. 이번 행사는 배달 종사자의 사고... 배달파트너 안전 지원 활동을 이어오고 있다. ▲GS샵 GS샵은 자체 패션 브랜드 '코어 어센틱'을 주얼리...",
+    "link": "http://www.weeklytoday.com/news/articleView.html?idxno=777569",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2026-05-29",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "'이마트 美 자회사' 뉴시즌스마켓, 식료품점 최초 '와인병 재사용' 도입",
+    "description": "스타트업 '레비노'와 맞손…탄소 배출 최대 85% 감축 효과 '재활용' 넘어선 '인프라 중심 순환경제'로 유통가 ESG 진화  이마트 미국 자회사 뉴시즌스마켓(New Seasons Market)이 현지 식료품 체인 가운데 처음으로 와인병...",
+    "link": "https://www.theguru.co.kr/news/article.html?no=102408",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-31",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 종이 영수증 아껴 몽골 사막에 '기후대응 숲' 가꾼다",
+    "description": "박채영 BGF리테일 ESG팀장은 \"지구와 사회의 좋은 친구가 되겠다는 그룹 비전에 발맞춰 국내외를 아우르는 자연환경 보호에 앞장서고 있다\"며 \"앞으로도 지역 사회 및 환경과 상생할 수 있는 혁신적인 ESG 경영 체계를...",
+    "link": "https://www.insightkorea.co.kr/news/articleView.html?idxno=247360",
+    "related_count": 9
+  },
+  {
+    "date": "2026-05-31",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "“영수증 아껴 숲 키운다” BGF리테일, 몽골 사막화 방지 나선다",
+    "description": "국물 제로 캠페인’을 통해 산림 인근 점포에서 액체 흡수제를 무료 배포했다. BGF리테일 관계자는 “국내외 자연보호 활동과 지역 상생 프로그램을 확대하며 ESG 경영 실천을 지속 강화해 나갈 계획”이라고 말했다.",
+    "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=01426806645454496",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "\"친환경 가치소비하고 포인트 챙기세요\"…롯데마트, '녹색소비주간' 프...",
+    "description": "롯데마트는 그동안 모바일 영수증 도입을 통해 연간 1,192만 건의 종이 사용을 감축하고 공병 무인 회수기를 통해 누적 6,000만 개의 공병을 수거하는 등 진정성 있는 ESG 경영을 실천해 왔다. 김범창 롯데마트·슈퍼...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=78350",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "이달 롯데마트서 ‘친환경 상품’ 사면 엘포인트 5% 추가 적립",
+    "description": "‘그린카드’로 친환경 녹색상품을 결제하면 상품별 구매 금액의 5~15%가 ‘에코머니’로 적립된다. ‘에코머니’는 카드사 포인트·현금 전환뿐 아니라 롯데마트 상품권으로 교환도 가능하다. 김범창 롯데마트·슈퍼...",
+    "link": "https://www.khan.co.kr/article/202605312049015",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-31",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 녹색소비주간 맞아 친환경 소비 프로모션 진행",
+    "description": "롯데마트 관계자는 \"친환경 소비와 가치소비에 대한 관심이 높아지고 있다\"며 \"친환경 제품 확대와 탄소 저감 활동 등 ESG 경영 강화를 통해 녹색 소비 문화 확산에 앞장서겠다\"고 말했다.",
+    "link": "https://www.ziksir.com/news/articleView.html?idxno=135383",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-31",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "“K-소비재 통했다”…롯데홈쇼핑, 남유럽서 중소기업 해외 진출 지원",
+    "description": "롯데홈쇼핑은 국내 우수 중소기업의 해외 판로 개척을 지원하는 상생 프로그램 '롯데 브랜드 엑스포'로 수출 초보기업들의 글로벌 시장 진출을 지원하고 있다고 31일 밝혔다. 2016년부터 운영 중인 '롯데 브랜드 엑스포'는...",
+    "link": "https://www.etnews.com/20260531000019",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[포토] 현대백화점 “친환경 활동 참가하고 포인트 두 배 받아가세요”",
+    "description": "고객에게는 현대백화점 자체 리워드 프로그램인 ‘그린프렌즈’ 마일리지가 기존 대비 두 배로 적립되며, 기후에너지환경부가 운영하는 ‘탄소중립포인트’ 인센티브도 함께 받을 수 있다. ‘탄소중립포인트’는 생활...",
+    "link": "https://www.viva100.com/article/20260531500401",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[포토] 현대백화점 “탄소중립 실천하면 마일리지 두 배 적립”",
+    "description": "프레시테이블 다회용기 이용 등 현대백화점의 친환경 활동에 참여한 고객에게 자체 리워드 프로그램인 '그린프렌즈' 마일리지를 두 배 적립해주고, 기후부의 '탄소중립포인트' 인센티브도 동시에 제공하는 것이 특징이다.",
+    "link": "https://www.etoday.co.kr/news/view/2589300",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-31",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 환경의 날 맞아 '탄소중립 특별 친환경 캠페인' 실시",
+    "description": "우선 현대백화점 자체 리워드 프로그램인 '그린프렌즈' 마일리지가 기존 대비 두 배로 적립된다. 또 기후에너지환경부가 운영하는 '탄소중립포인트' 인센티브도 함께 받을 수 있다. '탄소중립포인트'는 생활 속 탄소중립...",
+    "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=359740",
+    "related_count": 2
   }
 ]
