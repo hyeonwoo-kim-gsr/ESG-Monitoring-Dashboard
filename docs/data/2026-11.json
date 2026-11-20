@@ -1221,7 +1221,7 @@
     "title": "[유통가 오늘] GS리테일ㆍ쿠팡이츠ㆍLFㆍ유한킴벌리",
     "description": "GS리테일은 지난 10월 29일 국가보훈부와 '보훈 사회공헌 업무협약'을 체결하고, 11월 들어 국가유공자와 보훈대상자 지원, 임직원 봉사, 미래세대 역사교육 등 다양한 사회공헌 활동을 잇따라 진행했다. 먼저 GS리테일은...",
     "link": "https://www.cnbnews.com/news/articleView.html?idxno=1024208",
-    "related_count": 1
+    "related_count": 2
   },
   {
     "date": "2026-11-18",
@@ -1275,7 +1275,7 @@
     "title": "[ESG ] 카카오페이 최대 20억원 기부 추진·롯데마트 참가비 6000만원 전...",
     "description": "환경·사회·지배구조(ESG) 경영의 사회공헌 활동을 펼치고 있다. 17일 관련 기업에 따르면 카카오페이는 기부 마라톤을 통해 소상공인 지원금을 조성하고 롯데마트·슈퍼는 시민과 임직원이 참여한 달리기 행사...",
     "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2378560",
-    "related_count": 3
+    "related_count": 1
   },
   {
     "date": "2026-11-17",
@@ -1410,6 +1410,60 @@
     "title": "대전신세계백화점 임직원 봉사단, 지역 아동에 직접 만든 수제 쿠키 전...",
     "description": "대전신세계백화점 임직원 봉사단은 지역 취약계층 아동을 위한 쿠키 만들기 봉사활동을 진행했다고 19일 밝혔다. 이번 활동에는 베이킹 강사로 지역 베이커리 ‘몽심’이 참여해 지역사회와 함께하는 상생 나눔을 펼쳤다....",
     "link": "https://n.news.naver.com/mnews/article/015/0005355712?sid=102",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐, 병무청과 손잡고 사회복무요원 할인 추진",
+    "description": "최재두 세븐일레븐 커뮤니케이션팀 ESG담당은 \"사회복무요원들이 일상에서 체감할 수 있는 혜택을 제공하기 위해 이번 협력을 추진했다\"며 \"병역 이행자에 대한 지원 범위를 지속적으로 확대해 나가겠다\"고 말했다....",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=327619",
+    "related_count": 7
+  },
+  {
+    "date": "2026-11-20",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트, 美 프리미엄 그로서리 사업 확대…해외시장 공략 강화",
+    "description": "이마트가 미국 프리미엄 그로서리 시장에서 사업 기반을 다지며 해외사업 성장세를 이어가고 있다. 단순히... 최근 소비자들이 유기농 여부를 넘어 공정무역과 환경·사회·지배구조(ESG), 지역사회와의 연계 등을...",
+    "link": "http://www.press9.kr/news/articleView.html?idxno=86661",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, 친환경 포장 상품 행사 일주일로 확대",
+    "description": "박태순 롯데마트 ESG조직문화팀 담당자는 \"고객들이 우수 포장재 상품을 접하고 친환경 소비에 관심을 갖는 계기가 되길 바란다\"며 \"상품의 품질과 가격뿐 아니라 지속가능성도 고려하는 유통 환경을 조성하겠다\"고...",
+    "link": "https://www.smartbizn.com/news/articleView.html?idxno=160009",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-20",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[민주 유통가] 현대홈쇼핑·유니클로·마운티아",
+    "description": "현대홈쇼핑은 자연과 문화 등 다양한 테마를 결합한 여행상품을 지속적으로 선보이며 고객의 세분화된 취향을 공략할 계획이다. 유니클로는 글로벌 사회공헌 캠페인 더 하트 오브 라이프웨어를 통해 국내 저소득층...",
+    "link": "http://www.iminju.net/news/articleView.html?idxno=172808",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑, 인적분할 주총 통과…현대百그룹 '지배구조' 개편 속도",
+    "description": "이는 현대백화점그룹이 추진해 온 지배구조 개편의 후속 단계다. 현대홈쇼핑은 지난 6월 현대지에프홀딩스와의 포괄적 주식교환을 통해 완전자회사로 편입됐으며, 7월 20일 유가증권시장에서 상장폐지됐다. 이에 따라...",
+    "link": "https://daily.hankooki.com/news/articleView.html?idxno=1427133",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-19",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점그룹, 지배구조 단순화에 주주환원까지…지주사 경쟁력 높인...",
+    "description": "더트래커 박민정 기­자 mjp@thetracker.co.kr 더트래커 = 현대백화점그룹이 현대지에프홀딩스 중심으로 지배구조를 재편하고 있다. 현대홈쇼핑을 비상장 완전자회사로 편입한 데 이어 투자사업부문을 분리해 지주회사와...",
+    "link": "https://thetracker.co.kr/View.aspx?No=4320375",
     "related_count": 1
   }
 ]
