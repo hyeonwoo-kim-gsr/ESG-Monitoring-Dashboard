@@ -42,7 +42,7 @@
     "title": "BGF리테일, 세종 화재 현장에 긴급 구호물품 지원",
     "description": "박채영 BGF리테일 ESG팀장은 “이번 세종 화재로 인해 주민들의 피해가 커지고 있어 행정안전부 등과 24시간 핫라인을 유지하며 만일의 사태에 대비해 상시 구호활동에 만전을 기하고 있다”며 “국민 안전을 지키고...",
     "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03224246645445640",
-    "related_count": 10
+    "related_count": 12
   },
   {
     "date": "2026-05-04",
@@ -69,7 +69,7 @@
     "title": "세븐일레븐, ‘김희은 셰프’와 초록우산에 도시락 나눔",
     "description": "올해로 창립 38주년을 맞이한 세븐일레븐은 다양한 지역사회 ESG 활동을 이어오고 있다. ‘어린이 환경 미술대회’를 비롯해, 쪽방촌 및 보바스병원 물품 후원, 나라사랑 캠페인, 지역 농가 상생 프로그램 등 지역사회의...",
     "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01384166645445640",
-    "related_count": 3
+    "related_count": 12
   },
   {
     "date": "2026-05-04",
@@ -78,7 +78,7 @@
     "title": "“폐비닐 새 비닐로” 해법 찾은 현대백화점",
     "description": "현대백화점은 2021년부터 고객 참여형 친환경 캠페인 ‘365 리사이클’을 통해 의류, 휴대폰, 플라스틱 장난감 등 다양한 물품을 기부받아 재활용하거나 필요한 곳에 전달하고 있다. 지금까지 누적 참여 고객은 43만명이며...",
     "link": "https://www.khan.co.kr/article/202605041459011",
-    "related_count": 7
+    "related_count": 9
   },
   {
     "date": "2026-05-04",
@@ -96,7 +96,7 @@
     "title": "나프타 가격 급등에 비닐 대란...현대백화점 '비닐 투 비닐' 해법 주목",
     "description": "한편 현대백화점은 2021년부터 고객 참여형 자원순환 캠페인 '365 리사이클'을 운영 중이다. 의류, 휴대폰, 플라스틱 장난감 등 사용하지 않는 물품을 기부받아 재활용하거나 필요한 곳에 재배분하는 방식으로, 현재까지...",
     "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=137840",
-    "related_count": 2
+    "related_count": 3
   },
   {
     "date": "2026-05-04",
@@ -123,6 +123,529 @@
     "title": "쿠팡, 취약계층에 패션상품 18만개→세븐일레븐 '사랑의 도시락' 기부",
     "description": "미쉐린 1스타 김희은 셰프를 비롯해 김흥식 세븐일레븐 상품1부문장, 신정원 초록우산 사회공헌협력본부장 등이 참석해 뜻을 모았다.사진=세븐일레븐 편의점 세븐일레븐이 어린이날을 맞아 김희은 셰프와 함께 지역사회...",
     "link": "https://www.slist.kr/news/articleView.html?idxno=736927",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-04",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[오늘의 ESG] 현대백화점·카카오·BBQ·교촌에프앤비",
+    "description": "4일, 가정의 달을 맞아 유통·플랫폼·외식업계가 친환경 자원순환부터 디지털 교육, 취약계층 아동 지원까지 다양한 ESG 활동을 펼치고 있다. 현대백화점은 폐비닐을 재활용해 다시 사용하는 자원순환 모델을 확대하고...",
+    "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=42083",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "CU 물류대란에 성난 점주들 화물연대에 140억 청구서...BGF리테일은 점주...",
+    "description": "BGF리테일 관계자는 \"가맹본부로서 점포 안정을 최우선으로 고려해 실질적인 지원책과 위로금을 마련했다\"며 \"가맹점과 상생 관계를 더욱 강화해 나가겠다\"고 밝혔다. 다만 점주협의회의 내용증명 발송 직후 지원안이...",
+    "link": "http://www.newsworker.co.kr/news/articleView.html?idxno=425273",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, CU 가맹점 지원안 발표…“지원금·위로금 지급”",
+    "description": "간편식사 폐기 전액 보전, 지역·점포별 추가 위로금 인더뉴스 장승윤 기자ㅣ편의점 CU를 운영하는 BGF리테일... 최근 가맹점과의 상생을 강화하기 위한 지원 정책이 확대되는 배경입니다. 경쟁사들도 물류 차질이나...",
+    "link": "https://www.inthenews.co.kr/news/article.html?no=86504",
+    "related_count": 31
+  },
+  {
+    "date": "2026-05-07",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "두쫀쿠·버터떡 먹혔다…BGF리테일, 1분기 영업익 1년 새 69% ‘쑥’",
+    "description": "BGF리테일 관계자는 “가맹본부로서 점포의 안정을 최우선으로 실질적인 보상과 위로금까지 폭넓은 지원안을 마련했다”며 “이번 일을 계기로 본부와 가맹점이 탄탄한 파트너십을 기반으로 동반 성장할 수 있도록...",
+    "link": "https://economist.co.kr/article/view/ecn202605070040",
+    "related_count": 4
+  },
+  {
+    "date": "2026-05-07",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "\"차별화 상품·운영 효율화\"…BGF리테일, 매출·영업이익 동반 성장",
+    "description": "그 결과 1분기 기존점 성장률은 2.7%를 기록했으며, 방문객 수와 객단가가 고르게 상승하며 질적 성장을 입증했다. BGF리테일 관계자는 \"앞으로도 우량 신규점 위주의 순증 체계를 유지하며 이익 레버리지를 극대화할...",
+    "link": "https://www.news1.kr/industry/distribution/6159565",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, CU 점주 보상안 마련…결품·폐기 전액 보전",
+    "description": "앞으로도 탄탄한 파트너십을 기반으로 동반 성장할 수 있도록 적극 노력하겠다\"고 말했다. 한편, 앞서 CU 물류를 둘러싼 BGF로지스와 민주노총 공공운수노조 화물연대 간 갈등은 5차례 교섭 끝에 잠정 합의에 도달했다.",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=1370605",
+    "related_count": 5
+  },
+  {
+    "date": "2026-05-07",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[ESG ZIP]세븐일레븐·bhc·쿠팡",
+    "description": "◇ 세븐일레븐·김희은 셰프, 쪽방촌 찾아 도시락 나눔 행사 편의점 세븐일레븐이 5월 가정의 달을 맞아 7일 간편식 협업 파트너인 김희은 셰프와 함께 서울역·돈의동 쪽방촌을 방문해 도시락과 생수 총 1000개를...",
+    "link": "https://www.thereport.co.kr/news/articleView.html?idxno=87586",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "서울 쪽방촌 어르신들에 1천개 식사·생수 전달…세븐일레븐, 14년째 나...",
+    "description": "편의점 세븐일레븐과 셰프 김희은이 지난 4일 어린이날 기념 봉사에 이어 7일에는 서울역과 돈의동 쪽방촌을 각각 방문했다고 밝혔다. 이날 전달된 도시락은 두 주체가 공동 개발한 ‘김희은산채더덕비빔밥’이다. 봄...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202605071722106275204ead0791_12",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "용인특례시·이마트, 취약계층 어르신 176가구에 어버이날 선물 지원",
+    "description": "용인특례시와 지역 내 이마트 7개 지점이 '희망나눔 프로젝트' 일환으로 지역 내 취약계층에 선물세트를... 지방자치단체와 유통기업 간 협력 형태의 지역사회 공헌 활동은 고령층 돌봄과 취약계층 지원 수요가...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=437691",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트·신세계푸드 포괄적 주식교환 논란...\"주주충실의무 무력화 우려...",
+    "description": "사진=연합뉴스  이마트와 신세계푸드 간 포괄적 주식교환 거래가 상법 개정으로 도입된 '이사의... 가격의 불공정성 등을 집중적으로 비판했다. \"코스피 상승의 핵심 동력이었던 '이사의 주주충실의무' 무력화 우려...",
+    "link": "https://www.esgeconomy.com/news/articleView.html?idxno=15449",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-07",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "울산중기청-롯데백화점 동행축제 성료…현대백화점서 이어져",
+    "description": "울산지방중소벤처기업청(청장 노형석·울산중기청)은 롯데백화점 울산점과 협업해 어린이날 개최한... 다양한 프로그램을 진행한다. 행사 후에는 장보기와 기부 등을 통해 마련한 물품들을 복지시설에 기부할 예정이다.",
+    "link": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1056129",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-08",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[데스크 칼럼] '위로금'으로 덮은 BGF의 비겁한 민낯…'을들의 전쟁' 뒤...",
+    "description": "◆ 돈으로 살 수 없는 프랜차이즈의 신뢰 BGF는 100억 원대 위로금을 '상생'과 '파트너십'이라는 단어로 치장했다. 하지만 그 포장지를 벗겨내면, 위기 앞에 가장 먼저 가맹점주를 방패막이로 삼고, 돈으로 책임을 무마하며...",
+    "link": "https://www.nbntv.co.kr/news/articleView.html?idxno=4021475",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-08",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[어버이날] 세븐일레븐·김희은 셰프, 어버이날 맞아 쪽방촌 도시락 나...",
+    "description": "세븐일레븐의 쪽방촌 나눔 활동은 지난 2013년부터 이어져 온 대표 사회공헌 활동이다. 회사 측은 매년 도움이 필요한 시기에 취약계층 이웃들에게 실질적인 지원을 이어오고 있다고 설명했다. 이날 서울역 쪽방촌에서...",
+    "link": "https://www.ibabynews.com/news/articleView.html?idxno=151152",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-08",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "이마트의 자회사 '헐값 합병' 논란 가열 : 신세계푸드 소액주주들이 턱...",
+    "description": "신세계푸드와 이마트의 포괄적 주식교환을 둘러싼 소액주주 반발이 이어지는 가운데, 행동주의 펀드... 이런 논쟁 자체가 안고 있는 배경에는 기업 가치 부진이 장기간 이어진 뒤 기업이 사업 재편이나 지배구조 개편 등...",
+    "link": "https://www.huffingtonpost.kr/article/257081",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-09",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 나눔] 세븐일레븐 도시락 나눔부터 동아제약 바자회",
+    "description": "세븐일레븐의 쪽방촌 나눔 봉사는 2013년 시작돼 올해로 14년째 이어지고 있다. 매년 필요한 시기에 어려운 이웃에게 실질적인 도움을 주는 대표 사회공헌 활동으로 자리 잡았다. 사진=본우리반상 본우리반상이 가정의...",
+    "link": "https://www.slist.kr/news/articleView.html?idxno=737876",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, ESG 지수 4년 연속 편입",
+    "description": "BGF리테일이 S&P 글로벌이 평가하는 ‘2026 다우존스 베스트인클래스(DJBIC) Korea’ 지수에 4년 연속 이름을 올렸다고 12일 밝혔다. 편의점 CU 운영사인 BGF리테일은 2022년 업계 최초로 해당 지수에 편입된 이후...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202605121956282281204ead0791_12",
+    "related_count": 18
+  },
+  {
+    "date": "2026-05-12",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "\"환경 상생으로 ESG 초격차\"... BGF리테일, '마진' 대신 '가치'",
+    "description": "BGF리테일은 글로벌 대표 ESG 평가 지표인 '2026 다우존스 베스트인클래스(이하 DJBIC)' Korea 지수에 4년 연속 편입됐다고 12일 밝혔다. DJBIC 코리아 지수 편입은 국내 상위 200대 기업 가운데 지속가능성 점수가 상위 30...",
+    "link": "http://www.economytalk.kr/news/articleView.html?idxno=421289",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-12",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[ESG] 세븐일레븐, 전국 사업장 'ISO 45001' 획득...안전경영 강화 속도",
+    "description": "본사를 포함한 전국 사업장을 대상으로 인증을 확보하며 ESG 경영과 현장 안전관리 경쟁력 강화에 나선 모습이다. 12일 편의점 세븐일레븐을 운영하는 코리아세븐은 국제 안전보건경영시스템 인증인 ISO 45001을...",
+    "link": "https://www.joongangenews.com/news/articleView.html?idxno=518488",
+    "related_count": 15
+  },
+  {
+    "date": "2026-05-12",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 국제 안전보건 표준 인증 획득…선제적 경영 시스템 확립",
+    "description": "이러한 체계는 향후 ESG 경영 대외 평가와 글로벌 시장에서의 PB상품 수출 경쟁력 확보에 긍정적 영향을 미칠 것으로 보인다. 한진석 세븐일레븐 안전관리팀장은 ISO 45001 인증은 임직원과 현장 근무자의 안전을...",
+    "link": "https://www.thefairnews.co.kr/news/articleView.html?idxno=76656",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-12",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 글로벌 안전 경영 체계 구축",
+    "description": "12일 코리아세븐에 따르면 세븐일레븐 본사를 포함한 전국 사업장을 대상으로 한국국제규격인증원 심사를 통해 ‘ISO 45001’이 인증됐다. ISO 45001은 세계표준화기구가 제정한 안전보건 분야 국제 인증이다. 산업재해...",
+    "link": "https://www.busan.com/view/busan/view.php?code=2026051210393920216",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-12",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 멸종위기종 보호 선도…‘붉은점모시나비’ 복원 활동...",
+    "description": "한편, 현대백화점그룹은 다환경 활동과 사회공헌사업을 진행하고 있다. 지난 4월에는 경기도 용인시 처인구 이동읍 묵리에서 ‘탄소중립의 숲’ 조성 기념행사를 진행했으며, 지난해에는 광주광역시와 협약을 맺고, 도심...",
+    "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065613725698401",
+    "related_count": 5
+  },
+  {
+    "date": "2026-05-13",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 학교 앞 점포 대상 국가 인증 위생 평가 도입",
+    "description": "양측은 지난 12일 서울 강동구 소재 본사에서 업무협약을 체결했다. 식품안심업소 제도는 점포 내 즉석조리 식품의 위생 관리를 심사해 85점 이상 획득 시 공식 인증을 부여하는 방식으로 운영된다. 세븐일레븐은 현재 전국...",
+    "link": "http://www.lawissue.co.kr/view.php?ud=202605131950309707204ead0791_12",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-13",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"건강한 먹거리 환경 조성\"…세븐일레븐·한국식품안전관리인증원, 식품...",
+    "description": "지난 12일 서울 강동구 세븐일레븐 본사에서 열린 협약식에는 김대일 세븐일레븐 대표이사와 한상배 한국식품안전관리인증원장을 비롯해 조수경 세븐일레븐 상품본부장, 김흥식 세븐일레븐 상품1부문장, 라정한...",
+    "link": "https://www.sportschosun.com/life/2026-05-13/202605130100076280005001",
+    "related_count": 16
+  },
+  {
+    "date": "2026-05-13",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[산업브리핑]이마트, 14년 만에 1분기 최대 영업이익...코웨이·시몬스 ...",
+    "description": "▲이마트  이마트는 올해 1분기 연결기준 영업이익이 1783억원으로 전년 동기 대비 11.9%(190억원) 증가한... ▲시몬스 시몬스는 농번기 인력 부족 문제 해소를 위해 임직원 봉사활동에 나서며 ESG 활동을 강화했다....",
+    "link": "http://www.weeklytoday.com/news/articleView.html?idxno=775398",
+    "related_count": 3
+  },
+  {
+    "date": "2026-05-14",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"학교 앞 먹거리 안전 강화\"… 세븐일레븐, 식품안심업소 확대 앞장",
+    "description": "이날 협약식에는 김대일 세븐일레븐 대표이사와 한상배 한국식품안전관리인증원장을 비롯해 조수경 세븐일레븐 상품본부장, 김흥식 세븐일레븐 상품1부문장, 라정한 한국식품안전관리인증원 전략기획본부장 등 양측...",
+    "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=516966",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-14",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "\"김재겸 해임안 부결\"…태광산업, 롯데홈쇼핑 상대 법적 대응 본격화",
+    "description": "인수 이후 이어져 온 양측의 경영권 갈등 연장선으로 보고 있다. 특히 태광산업이 법적 대응을 공식화하면서 향후 법원 판단 여부에 따라 롯데홈쇼핑 경영 안정성과 지배구조 이슈가 다시 부각될 가능성이 제기된다.",
+    "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=358943",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-14",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 주총서 김재겸 대표 해임안 부결...기존 경영체제 유지",
+    "description": "다만 내부거래와 지배구조 문제를 둘러싼 주주 간 갈등은 지속될 가능성이 크다는 관측이다. 롯데홈쇼핑은 \"회사는 주주의 권리 행사를 존중한다\"며 \"주주 또한 책임 있는 자세로 결과를 수용하고 회사 발전을 위해 함께...",
+    "link": "https://www.newspim.com/news/view/20260514001214",
+    "related_count": 5
+  },
+  {
+    "date": "2026-05-14",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "서울청년이 재해석한 지역 특산물, 전국 신세계백화점서 맛본다",
+    "description": "이를 위해 서울시는 15일 신세계백화점 대구점을 시작으로 23일 서울 강남점까지 릴레이 개최한다. 이번 행사는 작년 5월 서울시와 신세계가 맺은 '지역상생 청년 창업 지원 및 활성화를 위한 업무협약'에 따른 것으로...",
+    "link": "https://www.m-i.kr/news/articleView.html?idxno=1373069",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-14",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "서울시-신세계백화점, 청년 창업가 로컬 제품 팝업스토어 개최",
+    "description": "서울시와 신세계백화점은 15일부터 서울 청년의 창업활동을 돕고 지역 특산물을 활용한 로컬제품의... 있다\"며, \"앞으로도 지역 상생과 청년 창업이 함께 확산될 수 있도록 실질적인 판로 지원을 지속해 나가겠다\"고 말했다.",
+    "link": "https://www.newspim.com/news/view/20260514000006",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-15",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[카드] 교원ㆍ현대백화점ㆍ청호나이스ㆍ시몬스ㆍ농심",
+    "description": "현대백화점그룹은 붉은점모시나비 서식지 복원과 개체 증식을 지원하기 위해 기부금 5000만원도 초록우산어린이재단에 전달했다. ◇ 청호나이스, 반포한강공원서 ESG 플로깅 활동 진행 청호나이스는 지난 14일 서울...",
+    "link": "http://www.smarttimes.co.kr/news/articleView.html?idxno=45593",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-17",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 해양 생물다양성 보호 ‘바다숨 프로젝트’ 전개",
+    "description": "'바다숨 프로젝트'는 GS리테일이 2025년부터 해양 환경 보호를 위해 시작한 ESG 캠페인이다. 15일에는 GS리테일 임직원과 오션(OSEAN)이 기사문 해변에서 쓰레기를 수거했고 이어 16일에는 팀부스터(TEAM BOOSTER)...",
+    "link": "http://www.metroseoul.co.kr/article/20260517500195",
+    "related_count": 7
+  },
+  {
+    "date": "2026-05-17",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 양양 해양 정화 활동…임직원·NGO 참여해 생태계 복원 ESG 강...",
+    "description": "GS리테일은 이번 활동을 연중 운영 중인 ESG 환경 보호 프로그램의 일환으로 추진하고 있으며, 지역 단위로 활동 범위를 점진적으로 확대해 나간다는 방침이다. 올해는 해양 생태계 복원 효과를 높이기 위해 해양 식물인...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=202219",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-17",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "\"올해는 양양이다\" GS리테일, NGO와 해양 생태계 보호 활동",
+    "description": "'바다숨 프로젝트'는 GS리테일이 지난해부터 해양 환경 보호를 위해 시작한 ESG 캠페인이다. 해양 쓰레기 수거뿐만 아니라 수중 생태계 정화와 모니터링을 통해 해양 생물 서식 환경 보호·생물다양성 보존을 목표로...",
+    "link": "https://www.newsis.com/view/NISX20260517_0003632623",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-17",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "\"마트 안에서도 고유가 지원금 결제 가능\"…이마트, 소상공인 매장 990곳...",
+    "description": "이마트가 전국 이마트·트레이더스·에브리데이 점포에 입점한 임대매장 중 990여곳에서 '고유가 피해지원금... 유통업계에서는 이마트의 이번 조치를 대형마트와 입점 소상공인이 상생하는 '윈윈(Win-Win) 전략'의 모범...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=304618",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-17",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 고유가 피해지원금 사용처 안내 강화한다",
+    "description": "이마트는 전국 이마트와 트레이더스, 에브리데이 점포 내 임대매장 990여 곳에서 고유가 피해지원금을 사용할... 연계해 정책 지원금 사용처를 안내하고, 생활 서비스 업종의 방문 수요를 높이는 상생형 운영이 확대되고 있다.",
+    "link": "https://www.news1.kr/industry/distribution/6168458",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-18",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "고유가 지원금 2차 지급 개시…이마트24 '캐시백'·이마트 '상생 지원' ...",
+    "description": "이마트24, 200여종 최대 40% 환급으로 물가 부담 완화 이마트 내 소상공인 임대점포 990곳서 지원금 사용 가능 고유가 피해지원금 2차 지급이 18일부터 본격적으로 시작됨에 따라, 이마트와 이마트24가 소비자 장바구니...",
+    "link": "https://news.tf.co.kr/read/economy/2323477.htm",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-18",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "“고유가 지원금 효과 이어간다”…이마트24, PB ‘옐로우’·간편식 40...",
+    "description": "이마트24는 아동복지전문기관 초록우산을 통해 해당 상품 2,000개를 취약계층과 양육시설 등에 기부할 예정이다. 최근 생리대 시장은 가격 경쟁력과 품질을 동시에 중시하는 방향으로 재편되고 있다. 이에 따라...",
+    "link": "https://www.viva100.com/article/20260518500198",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-18",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "충주종합사회복지관·이마트 충주점, '희망 바자회' 성료",
+    "description": "이번 바자회는 이마트 충주점 후원과 지역 자원봉사자들의 헌신적인 참여로 마련됐으며, 의류와 생활용품, 잡화류, 유아용품 등 다양한 물품을 저렴한 가격에 판매해 지역 주민들로부터 큰 호응을 얻었다. 복지관은...",
+    "link": "http://www.cctimes.kr/news/articleView.html?idxno=907331",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-19",
+    "company": "세븐일레븐",
+    "sentiment": "NEGATIVE",
+    "title": "세븐일레븐, 샤이니헌터스 해킹 공격에 프랜차이즈 자료 유출 확인",
+    "description": "해당 자료에는 개인정보와 내부 기업 정보가 포함돼 있다는 것이 공격자 측 주장이다. 세븐일레븐은 지난 4월 8일 프랜차이즈 관련 문서를 저장하는 일부 시스템에 승인받지 않은 제3자가 접근한 사실을 확인했다고...",
+    "link": "https://www.dailysecu.com/news/articleView.html?idxno=206791",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-19",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "[이슈] 스벅 '탱크데이' 논란 후폭풍…신세계·이마트 주가 약세",
+    "description": "스타벅스코리아의 '탱크데이' 마케팅 논란이 확산되면서 이마트와 신세계 주가가 19일 장중 약세를... 시장에서는 이번 논란이 단기적인 브랜드 이미지 훼손을 넘어 소비자 신뢰와 그룹 전반의 ESG 평가에도 부담으로...",
+    "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=801375",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[CNB픽-유통가 오늘] 현대그린푸드ㆍ롯데호텔앤리조트ㆍ애경산업ㆍGS샵",
+    "description": "<편집자주> 현대그린푸드, 성남시 독거노인 대상 '시니어 웰니스 프로그램' 제공 현대백화점그룹 계열... 제공하는 사회공헌 프로그램이다. 성남시니어산업혁신센터에서 진행된 이날 행사에서 현대그린푸드와 두...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1002141",
+    "related_count": 1,
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2026-05-19",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "오리진케어 당쉼, 신세계백화점·SSG 전점포 입점…백화점 유통 확대 본...",
+    "description": "특히 (사)한국당뇨협회와 공식 업무협약(MOU)을 체결하며 혈당 관리 시장 내 브랜드 신뢰도를 강화하기도 했다. 업계에서는 이번 신세계백화점 전 지점 입점을 계기로 당쉼이 '백화점 관리 음료' 등 프리미엄 웰니스 음료...",
+    "link": "http://www.hortitimes.com/news/articleView.html?idxno=34044",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-20",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "정용진 사과·대표 경질도 안 통했다…스타벅스 논란에 이마트 2거래일...",
+    "description": "이번 사태가 단순 마케팅 실패를 넘어 환경·사회·지배구조(ESG) 리스크와 오너 리스크, 브랜드 신뢰 훼손... 또 다른 투자자는 \"이마트24와 스타벅스부터 불매해야 한다\", \"신세계 계열사를 확인해 소비를 끊겠다\"고...",
+    "link": "http://www.newstomato.com/ReadNews.aspx?no=1301556&inflow=N",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-20",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[현장] \"좋은 취지인데 처음 봐\" 이마트 단골도 모르는 플라스틱 수거함",
+    "description": "이마트 관계자에 따르면 가플지우 수거함은 이마트 본사 ESG경영추진팀이 관리하며, 수거는 파트너사인 테라사이클이 담당한다. 기본적으로 월 1회에서 최대 4회까지 수도권과 충청권 등을 순회하며 수거하는데, 방문...",
+    "link": "https://www.bizhankook.com/bk/article/32306",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-20",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 마산점, 시민들과 모은 성금 기탁",
+    "description": "﻿ 경남사회복지공동모금회는 20일, 이마트 마산점이 매장 내 대형 모금함을 통해 모인 성금 161만 1250원을 기부했다고 밝혔다. 이번 성금은 이마트 마산점에 설치된 대형 모금함을 통해 시민들이 자발적으로 참여해...",
+    "link": "http://www.gnmaeil.com/news/articleView.html?idxno=587022",
+    "related_count": 4
+  },
+  {
+    "date": "2026-05-21",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일 ‘하청 갑질’ 2심 벌금 15억원",
+    "description": "하청업체로부터 성과장려금과 정보제공료 등 명목으로 수백억원대 부당이득을 챙긴 혐의로 기소된 GS리테일이 항소심에서 유죄를 선고받았다. 21일 법조계에 따르면 서울중앙지방법원 형사항소8-3부(최진숙 부장판사)...",
+    "link": "https://www.naeil.com/news/read/589418?ref=naver",
+    "related_count": 5
+  },
+  {
+    "date": "2026-05-21",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "무죄 선고 2년 만에 뒤집힌 판결…갑질 족쇄 찬 GS리테일",
+    "description": "공정위 조사 피하려 정보제공료 꼼수…법원 \"필요한 정보라 보기 어려워\" 납품업체들로부터 성과장려금 등을 부당하게 챙긴 혐의로 기소된 GS리테일이 항소심에서 벌금 15억원을 선고받았다. 1심의 무죄 판결을 뒤집은...",
+    "link": "https://www.sisajournal.com/news/articleView.html?idxno=373711",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-21",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "납품업체에 성과장려금·판촉비 챙긴 GS리테일…2심서 벌금형",
+    "description": "재판부는 “GS는 편의점업계에서 시장점유율 1위를 유지하며 편의점 시장을 주도하는 업체”라며 “GS리테일 임직원들이 FF 제품(편의점 신선식품) 제조 위탁 거래에 대해 하도급법상 불공정거래행위 규정이 적용될 수...",
+    "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03030726645451216",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-21",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "'350억 부당이득' GS리테일 '무죄→벌금형'…\"정당 사유 없이 수취\"",
+    "description": "재판부는 \"GS리테일은 편의점 업계에서 시장 점유율 1위를 유지하며 시장을 주도하는 업체로, 그 임직원들이 하도급법상 불공정 거래 행위 규정이 적용될 수 있다는 점을 인식하고 있었다고 봐야 한다\"고 밝혔다. 다만...",
+    "link": "https://www.news1.kr/society/court-prosecution/6173223",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일 임직원, 다문화가정 아동 위해 목소리 기부",
+    "description": "박경랑 GS리테일 ESG파트장은 \"목소리 기부, 무지개상자 등의 봉사, 나눔 활동을 추진하며 기업이 기여할 수 있는 사회공헌 영역을 확대하는데 최선을 다하고 있다\"며, \"꾸준한 사회적 책임을 다하고 지역사회에 선한...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=199890",
+    "related_count": 24
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[CNB픽-유통가 오늘] GS리테일ㆍ코웨이ㆍ롯데마트",
+    "description": "목소리 기부 봉사는 GS리테일 임직원, 임직원 가족의 목소리가 담긴 동화책을 오디오북으로 제작해 다문화가정 아동에 전달하는 사회공헌활동이다. GS리테일은 지난 2024년부터 '목소리 기부' 봉사활동 '다독임'을 매년...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1002523",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "S-OIL·GS리테일, 아동 대상 교육·문화 사회공헌 마케팅 확대",
+    "description": "S-OIL과 GS리테일이 아동 대상 교육 및 문화 지원 사회공헌 활동을 전개하고 있다. 양사는 취약계층을 위한 과학 체험 프로그램과 다문화가정을 겨냥한 오디오북 제작 등 참여형 활동을 통해 지역사회 지원을 이어가는...",
+    "link": "https://www.onews.tv/news/articleView.html?idxno=280592",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 소외계층 아동 정서 케어 앞장선다",
+    "description": "이외에도 GS리테일은 장기 사회공헌 프로그램인 '무지개상자'를 통해 문화예술 소외 아동들에게 음악적 재능을 발굴할 기회를 제공하고 있다. 소외계층 아동의 언어 능력 향상과 정서 발달을 돕기 위해 문화 콘텐츠를...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=202523",
+    "related_count": 2
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "'하청 갑질 유죄' 족쇄 찬 GS리테일…동반성장 '최우수' 등급 추락 위기",
+    "description": "이번 유죄 판결의 여파는 사법 리스크를 넘어 GS리테일의 대외 신인도와 상생 경영 지표로 고스란히 이어질 전망이다. 유통업계는 당장 올해 말 및 내년도 발표를 앞둔 '2026년 동반성장지수 평가'에서 GS리테일의 등급...",
+    "link": "https://www.ppss.kr/news/articleView.html?idxno=296876",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일 플랫폼BU 이동호 매니저의 봉사 이야기…기쁨과 행복을 전하는...",
+    "description": "서울 광진구 자양동에서 열린 '새빛 사랑나눔 바자회'에 GS리테일 플랫폼BU 편의점 사업부의 이동호 매니저가 22일 연차 휴가를 내고 사단법인 해피엘이 주최한 바자회 행사에 자원봉사자로 나섰다. 이날 이동호 매니저는...",
+    "link": "https://www.upkoreanews.kr/news/articleView.html?idxno=98602",
+    "related_count": 1
+  },
+  {
+    "date": "2026-05-22",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "[ESG 한발 더] 롯데마트, 청년 농부 교육 진행...롯데면세점, K-공공캐릭...",
+    "description": "확대까지 ESG 기반 상생 활동 범위를 넓히고 있다. 단순 기부나 일회성 캠페인을 넘어 교육, 판로, 오프라인... 김범창 롯데마트·슈퍼 HR혁신부문장은 “청년 농부들이 안정적으로 성장하기 위해서는 유통 판매 노하우와...",
+    "link": "https://www.news2day.co.kr/article/20260522500250",
+    "related_count": 14
+  },
+  {
+    "date": "2026-05-22",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 청년 농부 친환경 농업 역량 강화",
+    "description": "김범창 롯데마트·슈퍼 HR혁신부문장은 \"청년 농부들이 안정적으로 성장하기 위해서는 유통 판매 노하우와... 한편 '상생씨앗' 프로젝트는 롯데마트가 진행해온 ESG 상생 활동을 농촌 분야로 확장한 캠페인이다. 농업 환경...",
+    "link": "http://www.sisafocus.co.kr/news/articleView.html?idxno=360395",
+    "related_count": 15
+  },
+  {
+    "date": "2026-05-23",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "아름다운가게, GS리테일과 친구 캠페인 시즌 6 진행",
+    "description": "재단법인 아름다운가게가 GS리테일과 함께하는 시민 참여형 ESG 캠페인 ‘친구(친환경으로 지구 구하기)’가 시즌6 캠페인을 진행한다.  지난 18일 시작된 이 캠페인은 시민들이 전국 아름다운가게 매장과 GS25 편의점...",
+    "link": "http://okfashion.co.kr/detail.php?number=63612&thread=81r45",
     "related_count": 1
   }
 ]
