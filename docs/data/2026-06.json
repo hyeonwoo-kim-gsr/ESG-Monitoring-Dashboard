@@ -1149,7 +1149,7 @@
     "title": "롯데마트, 고당도·상생 과일 매출 동반 상승",
     "description": "동시에 크기가 작거나 약간 흠집이 나 다른 상품 대비 저렴하게 판매하는 롯데마트의 '상생 과일' 매출 역시 20% 커졌다. 소비 시장 전반에 확산한 'K자형 양극화' 현상이 과일 소비에도 나타나고 있는 것으로 풀이된다....",
     "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=459221",
-    "related_count": 1
+    "related_count": 3
   },
   {
     "date": "2026-06-02",
@@ -1221,7 +1221,7 @@
     "title": "현대홈쇼핑-락앤락, 자원순환 캠페인으로 ESG 강화",
     "description": "현대홈쇼핑은 폐가전 수거 캠페인을 진행하고 락앤락은 '러브 포 플래닛' 자원순환 캠페인을 전개하며 ESG 활동을 강화하고 있다. 현대백화점그룹의 현대홈쇼핑은 오는 30일까지 공식 온라인몰 현대H몰에서...",
     "link": "http://www.wsobi.com/news/articleView.html?idxno=313449",
-    "related_count": 4
+    "related_count": 12
   },
   {
     "date": "2026-06-09",
@@ -1230,7 +1230,7 @@
     "title": "\"무상 수거에 적립금도 드려요\"…현대홈쇼핑, '폐가전 자원순환 캠페인...",
     "description": "현대홈쇼핑 관계자는 \"고객들이 자원 재활용의 필요성에 공감하고 친환경 활동에 자연스럽게 동참할 수 있도록 이번 캠페인을 기획했다\"며 \"앞으로도 환경과 사회에 기여할 수 있는 ESG 모델을 지속 개발하겠다\"고...",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=307078",
-    "related_count": 3
+    "related_count": 4
   },
   {
     "date": "2026-06-09",
@@ -1248,7 +1248,7 @@
     "title": "현대홈쇼핑, 폐가전 무상수거 캠페인 진행",
     "description": "수거가 완료된 고객에게는 현대H몰 적립금 3000원을 지급한다. 적립금은 1인 1회에 한해 제공된다. 현대홈쇼핑 관계자는 “환경과 사회에 기여할 수 있는 다양한 ESG 활동을 지속적으로 추진해 나갈 것”이라고 말했다.",
     "link": "https://n.news.naver.com/mnews/article/030/0003435958?sid=101",
-    "related_count": 7
+    "related_count": 10
   },
   {
     "date": "2026-06-22",
@@ -1455,7 +1455,7 @@
     "title": "신세계백화점 타임스퀘어점, 환경의 날 맞아 장난감 기부 캠페인 진행",
     "description": "신세계백화점이 내일부터 오는 28일까지 타임스퀘어점에서 사용하지 않는 플라스틱 장난감을 기부받는 자원순환 캠페인을 진행합니다. 이번 캠페인은 어린이들이 나눔과 자원순환의 가치를 배울 수 있도록 기획됐으며...",
     "link": "https://news.bbsi.co.kr/news/articleView.html?idxno=4087418",
-    "related_count": 1
+    "related_count": 4
   },
   {
     "date": "2026-06-04",
@@ -1698,7 +1698,7 @@
     "title": "대구국세청, 신세계백화점과 손잡고 지역 전통주 알린다",
     "description": "행사는 지역 상생과 경제 활성화를 목표로 신세계백화점이 식품관 내 공간을 제공하고, 시음과 판매가 함께 이뤄지는 방식으로 진행된다. 대구지방국세청은 이번 행사를 시작으로 7월까지 총 4차례에 걸쳐 릴레이 형식의...",
     "link": "https://www.kbmaeil.com/article/20260601500274",
-    "related_count": 5
+    "related_count": 6
   },
   {
     "date": "2026-06-02",
@@ -1707,6 +1707,429 @@
     "title": "지역과 상생 나선 편의점…GS25 '부추김밥'·세븐일레븐 '엉겅퀴 라면'",
     "description": "2일 관련 업계에 따르면 GS리테일이 운영하는 편의점 GS25는 김밥 큐레이터 정다현 작가와 협업해 '제철 맞은... 기반의 ESG 활동 강화에 나선다. 이번 신제품 출시를 위해 GS25가 매입한 경기도 양주산 '영양부추'는 약 10톤...",
     "link": "https://news.tf.co.kr/read/economy/2328523.htm",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-02",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "노동부, 쿠팡·이마트 등 긴급 소집…폭염 산재 집중 점검",
+    "description": "유통업계에서는 이마트, 롯데마트, 홈플러스, 코스트코 등 4대 대형마트의 안전 책임자들이 자리를 지켰다.... 정부 집계에 따르면 최근 5년간 폭염으로 인한 온열질환 산업재해자는 총 228명에 달한다. 특히 2024년 70명...",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2112617",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-03",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"가맹점·가맹본부 간 상생 문화 조성\"…세븐일레븐, 경영주 소통 프로...",
+    "description": "세븐일레븐은 이번 세븐 RE:START' 상생 활동이 브랜드 경쟁력 턴어라운드를 목전에 두고 있는 현 시점에서 가맹점과의 결속력과 유대감을 높이는 중요한 계기가 될 것으로 기대하고 있다. 가맹점과의 현장 교류 시간을...",
+    "link": "https://www.sportschosun.com/life/2026-06-03/202606030100019730001045",
+    "related_count": 9
+  },
+  {
+    "date": "2026-06-03",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 가맹점주 소통 확대…수익성 개선 박차",
+    "description": "박상준 세븐일레븐 상생협력팀장은 “다양한 상생 프로그램을 유지 발전시켜 운영 편의와 만족도를 높이는 동시에 현장에 도움이 되는 새로운 제도를 지속 개발해 나갈 것”이라고 말했다.",
+    "link": "https://biz.chosun.com/distribution/channel/2026/06/03/WZXQUD6SMNE73BS7FDMD6JKRIE/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "related_count": 7
+  },
+  {
+    "date": "2026-06-03",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "\"적자 넘어 흑자간다\" 세븐일레븐, '세븐 리스타트' 진행",
+    "description": "박상준 세븐일레븐 상생협력팀장은 \"현재의 다양한 상생 프로그램을 유지 발전시키는 동시에 현장에 도움이 되는 새로운 제도도 지속 개발해 나갈 것\"이라고 말했다. / 월요신문=",
+    "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=313034",
+    "related_count": 3
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 기후위기 대응에 기여···\"친환경 쇼핑백 도입으로 나무...",
+    "description": "있는 ESG 경영에 앞장서 나가겠다\"고 강조했다. 한편 현대백화점은 폐비닐 자원순환 프로세스인 '비닐 투 비닐(Vinyl to Vinyl)'도 2024년 6월부터 업계 최초로 운영하고 있다. 점포에서 발생한 비닐을 열분해, 새...",
+    "link": "https://www.ngonews.kr/news/articleView.html?idxno=230599",
+    "related_count": 18
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "쇼핑백 하나에 담은 자원순환…현대백화점, 4년간 나무 5만3000그루 지켰...",
+    "description": "현대백화점이 자체 구축한 순환 시스템을 기반으로 제작한 친환경 쇼핑백이 도입 4년 만에 나무 5만3000그루를 보호하는 효과를 거두며 유통업계 ESG 경영의 대표 사례로 주목받고 있다. 현대백화점은 독립 자원순환...",
+    "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=81710",
+    "related_count": 4
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "“나무 5만 3000그루 살린 현대백화점의 친환경 쇼핑백”",
+    "description": "현대백화점 관계자는 “쇼핑백을 통해 자원순환의 중요성을 고객에게 꾸준히 알려왔다”며 “앞으로도 고객들이 일상에서 체감할 수 있는 ESG 활동을 확대해 나갈 계획”이라고 말했다. 현대백화점의 친환경...",
+    "link": "https://www.khan.co.kr/article/202606031528001",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 자원순환 시스템 '프로젝트 100' 결실…4년간 제작 친환경 쇼...",
+    "description": "현대백화점 관계자는 \"앞으로도 단순 친환경 이미지 구축에 그치지 않고 고객들과 생활 속에서 함께 나눌 수 있는 진정성 있는 ESG 경영에 앞장서 나가겠다\"고 전했다.",
+    "link": "https://www.sportschosun.com/life/2026-06-03/202606030100017920000939",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 쇼핑백의 변신…목재 8000t 아꼈다",
+    "description": "현대백화점 관계자는 \"앞으로도 친환경 이미지 구축에 그치지 않고 고객들과 생활 속에서 함께 나눌 수 있는 진정성 있는 ESG(환경·사회·지배구조) 경영에 앞장서겠다\"고 말했다. 한편, 현대백화점은 환경의 날(6월...",
+    "link": "https://www.ajunews.com/view/20260603131229311",
+    "related_count": 4
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "'4년간 3200만장' 친환경 쇼핑백으로 숲 지킨 현대백화점",
+    "description": "있는 ESG(환경·사회·지배구조) 경영에 앞장서 나가겠다\"고 말했다. 한편 현대백화점은 지난해 6월부터 폐비닐 자원순환 프로세스인 '비닐 투 비닐(Vinyl to Vinyl)'도 운영하고 있다. 백화점과 아울렛에서 발생한 비닐을...",
+    "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5026777",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-03",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점, 친환경 쇼핑백 3200만장 제작…\"5만3000그루 보호\"",
+    "description": "쇼핑백에는 폐지 함유율 100% 재생지가 사용되고 코팅 등 추가 가공을 하지 않아 재활용도 가능하다. 현대백화점의 친환경 쇼핑백은 해외 디자인 어워드에서도 성과를 냈다. 2022년 '레드닷 디자인 어워드'와 2023년 'iF...",
+    "link": "https://www.mt.co.kr/living/2026/06/03/2026060309344236338",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-04",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[민주 유통가] GS리테일·우아한형제들·쿠팡로지스틱스서비스",
+    "description": "GS리테일 관계자는 \"전국 점포망을 기반으로 취약계층 지원과 국산 농산물 소비 확대에 기여하고 ESG 사업에 지속 동참하겠다\"고 말했다. 우아한형제들은 국가보훈부와 함께 2026 호국보훈의 달 캠페인을 진행한다. 이번...",
+    "link": "http://www.iminju.net/news/articleView.html?idxno=164775",
+    "related_count": 2
+  },
+  {
+    "date": "2026-06-04",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, '농식품 바우처' 핵심 채널로…결제액 14배 증가",
+    "description": "정주호 GS리테일 제휴마케팅 담당자는 \"GS25와 GS더프레시의 전국 점포망을 기반으로 농식품 바우처 이용 고객의 접근성과 편의성을 높이는 데 주력해 왔다\"며 \"사회 취약계층과 지역 농가를 돕는 여러 ESG 사업에...",
+    "link": "https://www.mt.co.kr/living/2026/06/04/2026060410173988072",
+    "related_count": 8
+  },
+  {
+    "date": "2026-06-04",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "AI·로봇이 바꾸는 유통 물류… 현대홈쇼핑, 자동화 설비로 출고 효율 2...",
+    "description": "있는 산업재해 위험을 줄이고 보다 안전한 근무 환경 조성에도 기여할 것으로 기대된다. 현대홈쇼핑에 따르면 이번 자동화 설비 도입으로 화성 물류센터의 시간당 처리 능력은 최대 4000건 수준까지 확대된다. 또한 전체...",
+    "link": "https://www.e-science.co.kr/news/articleView.html?idxno=130242",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-04",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 의왕서 '2026 업사이클 팝업스토어' 개최…ESG 기업 한자리...",
+    "description": "| 내외경제TV=김민호 기자 | 롯데백화점이 4일부터 7일까지 롯데프리미엄아울렛 의왕점 잔디광장에서 '2026 업사이클 팝업스토어'를 개최한다. 경기도, 경기환경에너지진흥원과 공동 주최하는 이번 행사는 '버려진 것들의...",
+    "link": "https://www.nbntv.co.kr/news/articleView.html?idxno=4022082",
+    "related_count": 5
+  },
+  {
+    "date": "2026-06-04",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점, 서울국제환경영화제 후원…ESG 행보 확대",
+    "description": "후원하며 ESG 경영 실천과 친환경 문화 확산에 나선다. 롯데백화점은 ‘2026 제23회 서울국제환경영화제(SIEFF)’의 공식 후원사로 참여한다고 4일 밝혔다. 서울국제환경영화제는 환경재단이 2003년 국내 최초로 선보인...",
+    "link": "https://www.seoultimes.news/news/article.html?no=2000096294",
+    "related_count": 17
+  },
+  {
+    "date": "2026-06-04",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "[오늘의 ESG] 보령·신세계백화점·에스알·남양유업",
+    "description": "이날 캠페인은 동탄역 직원으로 구성된 '동여울 봉사단'을 비롯해 롯데백화점 동탄역, 동탄2지구대 등 지역 유관기관이 함께해 지역사회에 ESG 경영 가치를 실현하기 위해 열렸다. 캠페인 참여자들은 동탄역을 기점으로...",
+    "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=42686",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-04",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[롯데백화점] 롯데몰 동부산점, 아동권리보호 캠페인",
+    "description": "롯데백화점은 전국 점포를 중심으로 아동·청소년과 취약계층을 위한 사회공헌 활동을 꾸준히 펼치고 있다. 특히 부산 지역에서는 해안가 환경정화와 취약계층 아동 지원, 지역 복지기관 연계 봉사활동 등을 지속하며...",
+    "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2180994",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-04",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "\"지구 살리는 백화점\"...현대백화점, 유통가 ESG 주도하며 '초록빛 행보...",
+    "description": "현대백화점 비닐 투 비닐 현장/사진=현대백화점 제공 현대백화점이 독립적인 자원순환 시스템을 정착시키며 유통업계 ESG 경영의 청사진을 제시하고 있어 눈길을 끕니다. 4일 관련업계에 따르면 현대백화점은 일상 속...",
+    "link": "https://www.techm.kr/news/articleView.html?idxno=152346",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "세븐일레븐",
+    "sentiment": "NEGATIVE",
+    "title": "日 세븐일레븐, 플라스틱컵 재활용비 과다 징수…가맹점에 수백억 원 환...",
+    "description": "일본 편의점 업계 1위인 세븐일레븐이 아이스커피용 플라스틱컵 재활용 비용을 가맹점들로부터 과다 징수한 사실이 드러났다. 3일 교도통신에 따르면 세븐일레븐은 '세븐카페' 아이스커피 컵의 재활용 비용을 전국 약...",
+    "link": "http://www.kdfnews.com/news/articleView.html?idxno=183887",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 임직원 '리턴 자원순환 캠페인'...기증 물품 바자회 통해 판...",
+    "description": "롯데홈쇼핑은 오는 19일까지 ESG 경영 실천과 나눔 문화 확산을 위해 임직원이 함께하는 '리턴(RE:TURN) 자원순환 캠페인'을 서울 영등포구 양평동 본사에서 진행한다고 5일 밝혔다. 행사는 임직원들이 사용하지 않는 의류...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=439297",
+    "related_count": 31
+  },
+  {
+    "date": "2026-06-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "동아제약·롯데홈쇼핑, 바자회로 나눔 실천…수익금 전액 지역사회 환원",
+    "description": "롯데홈쇼핑은 이 캠페인을 일회성 행사가 아닌 정기 프로그램으로 운영하며 ESG 경영 슬로건 '오늘 실천하면 달라지는 내일'을 임직원 일상 속에서 실천해 나갈 방침이다. 동아제약은 15년째 관련 활동을 이어오고...",
+    "link": "https://www.onews.tv/news/articleView.html?idxno=281097",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[CNB픽-유통가 오늘] 롯데홈쇼핑ㆍ신세계프라퍼티ㆍ락앤락ㆍhy",
+    "description": "<편집자주> 롯데홈쇼핑, 임직원과 함께하는 '리턴 자원순환 캠페인' 전개 롯데홈쇼핑은 오는 19일까지 ESG 경영 실천과 나눔 문화 확산을 위해 임직원이 함께하는 '리턴(RE:TURN) 자원순환 캠페인'을 진행한다고 5일 밝혔다....",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1003718",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 사내 정기 프로그램 안착 시도…유통가 친환경 모델 확대",
+    "description": "5일 업계에 따르면 롯데홈쇼핑은 오는 19일까지 임직원 대상의 '리턴 자원순환 캠페인'을 전개한다. 이번... 홈쇼핑 업계 관계자는 \"소비 트렌드 변화에 민감한 홈쇼핑 기업들이 단순한 비용 지출형 사회공헌에서 탈피해...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=203034",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "현대홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "정교선의 현대홈쇼핑, 호남 비하 논란에 무너진 ESG 신뢰…\"실수 아닌 조...",
+    "description": "ESG 경영 외치면서 지역 감수성 논란…신뢰성 타격 더 큰 문제는 현대홈쇼핑이 그동안 ESG 경영을 강조해 왔다는 점이다. 최근 기업 경영에서 ESG는 단순 사회공헌 활동이 아니라 기업가치를 평가하는 핵심 지표로 활용되고...",
+    "link": "https://www.upkoreanews.kr/news/articleView.html?idxno=98763",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "'서울국제환경영화제' 5일 개막…공식 후원 롯데백화점, 특별 상영 섹션...",
+    "description": "전반에서 ESG 활동 저변을 넓혀 사회적 가치 창출에 기여하겠다\"이라고 밝혔다. 한편 롯데백화점은 6월 4~7일 롯데프리미엄아울렛 의왕점 잔디광장에서 '버려진 것들의 다시 플레이되는 삶, 업플레이(UP PLAY)'를...",
+    "link": "https://www.sportschosun.com/life/2026-06-05/202606050100031720001836",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 \"환경의 날 맞아 특별 친환경 캠페인 진행\"",
+    "description": "등 현대백화점의 친환경 활동에 참여한 고객에게 자체 리워드 프로그램인 '그린프렌즈' 마일리지를 두 배 적립해주고, 기후부의 '탄소중립포인트' 인센티브도 동시에 제공하는 것이 특징이다. 한편, 탄소중립포인트 제도는...",
+    "link": "https://sports.hankooki.com/news/articleView.html?idxno=6934093",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-06",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "BGF네트웍스·티빙·듀오···이어지는 개인정보 유출 사고",
+    "description": "CU 편의점의 택배 서비스를 수행하는 BGF네트웍스가 고객 개인정보를 도난당하는 사고에 처했다. 티빙... 개인정보위는 과징금 등 제재의 실효성 강화를 위한 개인정보 보호법 시행령 개정안을 마련해 내달 13일까지...",
+    "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=421566",
+    "related_count": 15
+  },
+  {
+    "date": "2026-06-06",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "CU 편의점 택배 BGF네트웍스, 해커에 '고객 이름·주소·CI' 무더기 유출",
+    "description": "현행 개인정보보호법상 직전 3개년 평균 매출의 최대 3%까지 과징금을 부과할 수 있어 최대 9000억원대 과징금 부과 가능성이 제기된다. BGF네트웍스 역시 개인정보보호위원회와 KISA에 유출 사실을 신고하면서 조사결과에...",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=843071",
+    "related_count": 8
+  },
+  {
+    "date": "2026-06-06",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "CU 고객정보도 다 털렸다… BGF네트웍스, \"머리 숙여 사과\"",
+    "description": "BGF리테일 제공 CU 편의점택배 서비스 'CU POST'를 운영하는 BGF네트웍스가 해커 공격으로 고객 개인정보가 유출된 사실을 확인하고 사과했다. 정확한 피해 규모는 아직 확인 중이다. BGF네트웍스는 지난 4일 오후 3시30분께...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=342008",
+    "related_count": 5
+  },
+  {
+    "date": "2026-06-06",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[이슈in] \"CU POST 발송 회원 개인정보 유출 확인\"… BGF네트웍스 해킹, ...",
+    "description": "피해 규모 공개 시점에 따라 개인정보보호법상 행정 제재 여부도 쟁점으로 부상할 전망이다. CU택배,개인정보유출,BGF네트웍스,CUPOST,해킹사고,CI유출,크리덴셜스터핑,스미싱주의,보이스피싱,사이버보안",
+    "link": "https://www.newscj.com/news/articleView.html?idxno=3407169",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-06",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "BGF네트웍스 해킹 사태로 휴대폰번호 등 고객정보 대량 유출",
+    "description": "BGF네트웍스에서 해킹으로 인해 고객 개인정보가 유출되는 사고가 발생했다. 6일 BGF네트웍스에 따르면 지난 4일 신원 미상의 공격자에게 내부 시스템을 해킹당해 개인정보가 유출됐다. 해커는 웹 취약점을 이용해 정보에...",
+    "link": "https://www.newsway.co.kr/news/view?ud=2026060601333777660",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-08",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[속보] 경찰 “CU편의점 택배 개인정보 유출사건 내사중” BGF 사과 다음...",
+    "description": "경찰은 개인정보 유출 경위와 피해 규모를 확인하는 한편 관련자 특정과 추적에 필요한 절차도 신속히 진행할 계획이라고 연합뉴스는 전했다. CU편의점 택배 운영사인 BGF네트웍스는 지난 5일 사과문을 내 4일 해커...",
+    "link": "https://www.dt.co.kr/article/12066481?ref=naver",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-08",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "주소·연락처까지 유출 정황... BGF네트웍스 사과에도 커지는 우려",
+    "description": "사진=CU 편의점 택배 홈페이지 캡쳐 CU 편의점 택배 서비스 'CU POST' 운영사인 BGF네트웍스에서 개인정보 유출 사고가 발생하면서 이용자들의 우려가 커지고 있다. 이름과 휴대전화번호, 주소 등 주요 개인정보가 유출된...",
+    "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=200789",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-08",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "정용진 회장 이마트·프라퍼티 대표이사 맡는다…13년만에 등기이사도 ...",
+    "description": "정용진 신세계그룹 회장 |신세계 정용진 신세계그룹 회장이 이마트와 신세계 프라퍼티의 대표이사직에... 점에서 ESG관점상 긍정적으로 평가된다. 지배주주·경영진의 책임 소재도 더 분명해지며,  이사회 중심의 ESG 경영과...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=354495",
+    "related_count": 9
+  },
+  {
+    "date": "2026-06-08",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "정용진, 13년 만에 이마트 대표 복귀…\"이사회·주주 평가 받겠다\"",
+    "description": "정용진 신세계그룹 회장이 13년 만에 이마트 등기이사로 복귀하고, 이마트와 신세계프라퍼티 대표이사에... '탱크데이' 사태로 훼손된 브랜드 신뢰를 회복하기 위해 지배구조·내부통제 전반을 손보겠다는 뜻으로...",
+    "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=60186",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-09",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "소비기한 줄이고 위생 점검 확대…GS리테일, 식품 안전 총력",
+    "description": "기온이 오르는 6월부터는 식품 안전사고 예방이 유통업계 핵심 과제로 꼽힙니다. 식품의약품안전처도 매년... 조한승 GS리테일 품질관리팀장은 \"식품 안전관리의 중요성이 커지는 하절기에 맞춰 GS25와 GS더프레시를...",
+    "link": "https://www.inthenews.co.kr/news/article.html?no=87818",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점그룹, 순직 공군 유가족에 10억 기부...장학·생활지원 나서",
+    "description": "현대홈쇼핑은 장애 가정 청소년 지원 사업 '두드림투게더'를 10년 이상 운영하며사회적 배려가 필요한 계층을 대상으로 지속적으로 사회공헌 활동을 이어가고 있다.",
+    "link": "https://www.job-post.co.kr/news/articleView.html?idxno=217766",
+    "related_count": 43
+  },
+  {
+    "date": "2026-06-09",
+    "company": "현대홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[CNB픽-유통가 오늘] 쿠팡ㆍ코웨이ㆍ현대홈쇼핑ㆍ이랜드파크",
+    "description": "미세플라스틱 검증 범위를 확대했다. 현대홈쇼핑, 현대H몰서 '폐가전 자원순환 캠페인' 진행 현대홈쇼핑은 오는 30일까지 공식 온라인몰 현대H몰에서 폐가전제품을 무상으로 회수해 재활용하는 '전자폐기물 자원순환...",
+    "link": "https://www.cnbnews.com/news/articleView.html?idxno=1004021",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[가치ON] 동아쏘시오홀딩스 일호재단ㆍ현대백화점그룹",
+    "description": "◇ 동아쏘시오홀딩스 일호재단, 한국심장재단에 3억원 기부 동아쏘시오홀딩스는 일호재단이 지난 8일 한국심장재단에 소아 심장병 환우 치료비 지원을 위한 기부금 3억원을 전달했다고 9일 밝혔다. ◇ 현대백화점그룹...",
+    "link": "http://www.smarttimes.co.kr/news/articleView.html?idxno=46261",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "“순직 공군 장병 자녀 돕는다”…현대백화점그룹, 장학기금 10억원 기...",
+    "description": "현대백화점그룹이 임무 수행 중 순직한 공군 장병 유가족 지원을 위해 매년 1억원씩 10년간 총 10억원을 기부하기로 했다. 현대백화점그룹은 지난 8일 충남 계룡시 공군본부 무궁화회관에서 공군과 함께...",
+    "link": "https://www.mk.co.kr/article/12069147",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-09",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[유통업계] 현대백화점그룹·쿠팡, 장학사업·소상공인 지원 확대",
+    "description": "현대백화점그룹은 앞서 2023년부터 순직 육군 장병 자녀를 지원하는 '위국헌신 전우사랑 기금'에도 매년 2억원을 후원하고 있다. 제복 공무원 유가족 지원 사업도 지속하고 있다. 그룹은 2008년부터 지난해까지 순직...",
+    "link": "http://www.weeklytoday.com/news/articleView.html?idxno=778937",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-10",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "BGF리테일, 보안예산 3배 늘렸지만 자회사 해킹…GS와 격차 여전",
+    "description": "BGF리테일이 정보보호 예산을 공시상 3배 이상 늘렸지만 자회사 BGF네트웍스에서 개인정보 유출 사고가... 정보보호 공시에 따르면 GS리테일의 2024년 정보보호 투자액은 78억2924만원으로 BGF리테일(28억1280만원)의 약 2....",
+    "link": "https://www.ngetnews.com/news/articleView.html?idxno=550675",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-10",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "BGF리테일, CU 김밥 오포장 논란에 \"확인 중\"…식품안전 관리체계 도마...",
+    "description": "BGF리테일이 운영하는 편의점 CU에서 판매된 김밥 제품의 오포장 논란이 제기된 가운데, 사고 원인과 영향 범위에 대한 구체적인 설명이 공개되지 않으면서 식품안전 관리체계에 대한 관심이 커지고 있다. 특히 이번 사안은...",
+    "link": "https://www.upkoreanews.kr/news/articleView.html?idxno=98811",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-10",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "롯데백화점 전주점 “주거환경 개선 봉사활동”",
+    "description": "이번 행사는 ESG경영실천과 지역사회 환경 개선을 위한 활동으로, 롯데백화점 전주점에서는 각팀 직원 20여명이 참석해 직접 페인트 칠을 하고 , 낡은 전등을 교체하는 등 몸소 환경개선을 실천했다. 더불어 전주점에...",
+    "link": "https://sjbnews.com/news/news.php?number=880356",
+    "related_count": 8
+  },
+  {
+    "date": "2026-06-10",
+    "company": "롯데백화점",
+    "sentiment": "NEGATIVE",
+    "title": "롯데백화점 '천장 붕괴'에 신세계와 대응 달라, 현장 출신 정현석 '시설...",
+    "description": "롯데쇼핑 전체 영업이익에서 백화점 부문이 차지하는 비중 73%에 이르는 만큼 주요 점포의 안전사고는 실적 관리와 브랜드 신뢰 측면에서 모두 부담이 될 수 있다. 이번 센텀시티점 사고 대응도 이런 기조의 연장선에서 볼...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=439663",
+    "related_count": 1
+  },
+  {
+    "date": "2026-06-11",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "BGF네트웍스, CU편의점택배 해킹 피해…경찰 유출 경로 내사 착수",
+    "description": "물류·유통 플랫폼 겨냥한 고도화 공격…'CI 유출'에 따른 2차 피해 우려 이번 BGF네트웍스의 개인정보 유출 사고는 이전에 발생한 티빙, 쿠팡 등 대형 플랫폼 기업들의 사이버 보안 침해 사태의 연장선에 있다는 점에서...",
+    "link": "https://www.newsinside.kr/news/articleView.html?idxno=4751322",
     "related_count": 1
   }
 ]
