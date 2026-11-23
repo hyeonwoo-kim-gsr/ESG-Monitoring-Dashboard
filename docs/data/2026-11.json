@@ -1419,7 +1419,7 @@
     "title": "세븐일레븐, 병무청과 손잡고 사회복무요원 할인 추진",
     "description": "최재두 세븐일레븐 커뮤니케이션팀 ESG담당은 \"사회복무요원들이 일상에서 체감할 수 있는 혜택을 제공하기 위해 이번 협력을 추진했다\"며 \"병역 이행자에 대한 지원 범위를 지속적으로 확대해 나가겠다\"고 말했다....",
     "link": "https://www.thepublic.kr/news/articleView.html?idxno=327619",
-    "related_count": 6
+    "related_count": 1
   },
   {
     "date": "2026-11-20",
@@ -1491,7 +1491,7 @@
     "title": "현대백화점그룹 \"한부모가족에게 온정 전한다\"",
     "description": "또한 현대백화점그룹의 리빙·인테리어 계열사인 현대리바트와 현대L&C, 지누스 등은 주방가구, 인테리어 자재, 침구류 등을 기부해 생활 공간 리모델링을 지원할 예정이다. 한편 현대백화점그룹 계열사인 현대홈쇼핑은...",
     "link": "https://www.ngonews.kr/news/articleView.html?idxno=243757",
-    "related_count": 6
+    "related_count": 3
   },
   {
     "date": "2026-11-20",
@@ -1545,6 +1545,87 @@
     "title": "[포토] 박주형 신세계백화점 사장, 김장 봉사로 '온기 나눔'",
     "description": "행사는 박주형 사장을 비롯한 임직원들이 모여 직접 김장 김치를 담그고 초록우산어린이재단에 기부하는 것으로 진행됐다. 신세계백화점은 본사와 강남점을 시작으로 12월 중순까지 전국 12개 점포 임직원들이...",
     "link": "https://www.econovill.com/news/articleView.html?idxno=758077",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "해수부-GS리테일, '소비 부진' 바다장어 판로 지원 나선다",
+    "description": "해양수산부(장관 황종우)는 (사)전국근해바다장어통발생산자협회, GS리테일과 함께 '우리 바다장어 연말... 'Co:어촌'은 기업 유통망을 어촌과 결합해 상생 가치를 창출하는 민관 협업 체계를 의미한다.",
+    "link": "https://n.news.naver.com/mnews/article/421/0009304423?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 베트남서 중소협력사 판로 개척 ‘제14회 해외시장개척단’ ...",
+    "description": "대표적인 동반성장 프로그램으로, 바이어 매칭부터 시장 정보 제공, 상품 현지화까지 전 과정을 지원하고 있다. 허남준 GS리테일 홈쇼핑BU 사업지원부문장은 “이번 해외시장개척단을 통해 K-뷰티와 K-푸드 등 한국...",
+    "link": "https://n.news.naver.com/mnews/article/144/0001151237?sid=101",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-23",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "GS리테일, 베트남서 196만불 수출상담… \"K뷰티·K푸드 경쟁력 확인\"",
+    "description": "GS샵 해외시장개척단은 2015년부터 운영 중인 GS리테일의 대표 동반성장 프로그램이다. 현지 바이어와의 수출상담 주선은 물론, 해외시장 정보 제공, 상품 현지화 컨설팅, 유통채널 입점 지원 등 중소 협력사의 해외...",
+    "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=68199",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-22",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "\"국내 홈쇼핑 넘어 베트남\" GS리테일, 중소기업 수출상담 성과",
+    "description": "GS샵 해외시장개척단은 2015년 시작된 중소 협력사 동반성장 프로그램이다. 현지 바이어와의 수출상담을 비롯해 시장 정보 제공, 상품 현지화, 유통채널 진출 등을 지원하고 있다. 허남준 GS리테일 홈쇼핑BU...",
+    "link": "https://n.news.naver.com/mnews/article/018/0006413768?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-20",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "[똑똑한쇼핑] 이마트, 롯데온, 쿠팡 알럭스, 마리오아울렛, 신세계사이...",
+    "description": "이정주 롯데온 상생협력팀장은 “소상공인 브랜드가 지속적으로 성장하려면 브랜드 경쟁력을 높이는... ◇ 세븐일레븐 '시경 pick 놀면리얼바지락짬뽕라면' 출시 세븐일레븐이 가수 성시경과 협업한 프리미엄 컵라면...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261120027002337",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "롯데마트",
+    "sentiment": "UNCERTAIN",
+    "title": "새벽 경매 광어가 아침엔 롯데마트로…굿모닝씨푸드의 ‘당일 승부’ [...",
+    "description": "그는 “대기업과 협력업체의 상생이 중요한데 롯데마트처럼 기회를 주는 유통사가 큰 힘이 된다”며 “담당자와 함께 새로운 품목과 기획상품을 고민하는 것 자체가 파트너사로서 행복한 일”이라고 말했다. 이어...",
+    "link": "https://www.etoday.co.kr/news/view/2651295",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑 인적분할 주총 통과…그룹 지배구조 개편 속도",
+    "description": "현대백화점그룹이 현대홈쇼핑의 인적분할을 확정하면서 지배구조 단순화 작업에 속도를 내고 있다. 홈쇼핑... 이를 보장하는 확약서를 제출해야 하며 협력사 상생펀드의 집행률과 지원기업 수도 기존 수준 이상으로...",
+    "link": "https://www.newsway.co.kr/news/view?ud=2026112308502121729",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-23",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[더벨][thebell League Table | 2026 이사회 평가] 현대백화점, 7개 계열사...",
+    "description": "현대지에프홀딩스와 현대그린푸드가 155점, 현대홈쇼핑이 154점으로 뒤를 이었다. 현대퓨처넷과... 지배구조 핵심지표 준수율은 현대퓨처넷이 4점, 나머지 6개사가 5점으로 높은 평가를 받았다. 홈페이지에 개별 이사...",
+    "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611131338406480104845",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-22",
+    "company": "신세계백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "신세계백화점, 연말맞이 '사랑의 김장나눔' 봉사활동 실시",
+    "description": "초록우산 어린이재단과 함께 전점 지역 종합 사회복지관 및 아동시설에 기부할 예정이다. 신세계백화점은 지속적으로 사회공헌 활동을 이어오고 있다. 사회취약계층과 지역 상생을 위한 활동을 적극적으로 펼칠 계획이다.",
+    "link": "https://n.news.naver.com/mnews/article/030/0003488258?sid=105",
     "related_count": 1
   }
 ]
