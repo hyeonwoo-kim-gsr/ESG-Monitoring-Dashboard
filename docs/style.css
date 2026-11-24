@@ -61,7 +61,9 @@ body {
 }
 .sidebar-title { font-size: 17px; font-weight: 700; margin: 0; }
 
-.sidebar-nav { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.sidebar-nav { display: flex; flex-direction: column; gap: 2px; }
+.sidebar-group-title { padding: 22px 24px 10px; }
+.sidebar-group-title .sidebar-title { border-top: 1px solid var(--border); padding-top: 22px; }
 .nav-item {
   display: flex;
   align-items: center;
@@ -84,7 +86,7 @@ body {
 .nav-item.is-active svg { color: var(--accent); }
 .nav-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
-.sidebar-footer { padding: 14px 24px 0; border-top: 1px solid var(--border); margin-top: 12px; }
+.sidebar-footer { padding: 14px 24px 0; border-top: 1px solid var(--border); margin-top: auto; }
 .sidebar-meta { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin: 0; }
 
 .fallback-banner {
@@ -260,6 +262,71 @@ body {
   border-radius: 8px;
 }
 
+/* ---------- ESG 법률 모니터링 ---------- */
+.legal-filter .field input[type="month"] { min-width: 150px; }
+.legal-filter .period-sep { align-self: flex-end; padding-bottom: 9px; color: var(--text-muted); }
+.legal-filter .field-grow input { font-family: var(--font-sans); }
+
+.thread-month { margin-bottom: 8px; }
+.thread-month-label {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 700;
+  color: var(--text-secondary); margin: 6px 0 10px 28px; letter-spacing: .03em;
+}
+.thread { list-style: none; margin: 0; padding: 0 0 0 28px; border-left: 2px solid var(--border-strong); margin-left: 6px; }
+.thread-item { position: relative; margin: 0 0 16px; }
+.thread-item::before {
+  content: ""; position: absolute; left: -35px; top: 4px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--surface); border: 3px solid var(--accent);
+}
+.thread-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.thread-date { font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary); font-weight: 500; }
+
+.chip {
+  font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 999px;
+  background: var(--bg); color: var(--text-secondary); border: 1px solid var(--border);
+}
+.chip.stage-chip { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.chip.cat-ENV_REG { background: var(--success-soft); color: var(--success); border-color: transparent; }
+.chip.cat-DISC_MANDATE { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.chip.cat-SOC_CONTRIB { background: var(--notice-soft); color: var(--notice); border-color: transparent; }
+
+.legal-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+.legal-title { font-size: 15px; font-weight: 700; line-height: 1.45; }
+.legal-meta { font-size: 12px; color: var(--text-secondary); margin: 5px 0 12px; }
+.legal-meta b { font-weight: 500; color: var(--text-primary); }
+
+.stage-track { list-style: none; display: flex; margin: 0 0 14px; padding: 0; }
+.stage-track li { flex: 1; position: relative; text-align: center; font-size: 11px; color: var(--text-muted); padding-top: 20px; }
+.stage-track li::before {
+  content: ""; position: absolute; top: 4px; left: 50%; width: 10px; height: 10px; margin-left: -5px;
+  border-radius: 50%; background: var(--border-strong); z-index: 1;
+}
+.stage-track li::after { content: ""; position: absolute; top: 8px; left: -50%; width: 100%; height: 2px; background: var(--border-strong); }
+.stage-track li:first-child::after { display: none; }
+.stage-track li.reached { color: var(--text-secondary); }
+.stage-track li.reached::before, .stage-track li.reached::after { background: var(--accent); }
+.stage-track li.current::before { box-shadow: 0 0 0 4px var(--accent-soft); }
+.stage-track li b { display: block; font-weight: 700; font-size: 12px; color: inherit; }
+.stage-track li.current b { color: var(--accent); }
+.stage-track li span { display: block; font-family: var(--font-mono); font-size: 11px; }
+.stage-track li em { display: block; font-style: normal; font-size: 11px; font-weight: 500; }
+.stage-track li em.ok { color: var(--success); }
+.stage-track li em.ng { color: var(--danger); }
+
+.legal-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; margin: 12px 0 4px; }
+.legal-facts dt { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+.legal-facts dd { margin: 0; font-size: 13px; font-weight: 500; }
+
+.legal-text { margin-top: 12px; }
+.legal-text-label { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: .03em; }
+.legal-text p { margin: 4px 0 0; font-size: 13px; line-height: 1.65; color: var(--text-secondary); white-space: pre-line; }
+.legal-foot { margin-top: 12px; }
+.legal-link {
+  display: inline-block; font-size: 12px; font-weight: 500; color: var(--accent); text-decoration: none;
+  padding: 5px 12px; border: 1px solid var(--accent); border-radius: 6px;
+}
+.legal-link:hover { background: var(--accent); color: #fff; }
+
 .footer { margin-top: 12px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text-muted); }
 
 /* ---------- 반응형 ---------- */
@@ -274,8 +341,9 @@ body {
     padding: 10px 12px;
     overflow-x: auto;
   }
-  .sidebar-header, .sidebar-footer { display: none; }
+  .sidebar-header, .sidebar-footer, .sidebar-group-title { display: none; }
   .sidebar-nav { flex-direction: row; gap: 2px; }
+  .stage-track li span { font-size: 10px; }
   .nav-item { border-left: none; border-bottom: 3px solid transparent; white-space: nowrap; padding: 8px 14px; }
   .nav-item.is-active { border-left: none; border-bottom-color: var(--accent); }
   .main { padding: 20px 16px 50px; max-width: 100%; }
