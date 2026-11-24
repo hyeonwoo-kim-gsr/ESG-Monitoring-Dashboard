@@ -12,7 +12,10 @@
   var state = {
     manifest: null,
     monthCache: {},
-    usingFallback: false
+    usingFallback: false,
+    searchMode: "basic",      // basic | detail
+    lastMonthly: null,        // { rows, label }  엑셀 추출용
+    lastSearch: null          // { rows, label }
   };
 
   function $(id) { return document.getElementById(id); }
@@ -33,8 +36,7 @@
   function fmtYMD(d) { return d.getUTCFullYear() + "-" + pad2(d.getUTCMonth() + 1) + "-" + pad2(d.getUTCDate()); }
   function fmtMD(d) { return pad2(d.getUTCMonth() + 1) + "/" + pad2(d.getUTCDate()); }
 
-  /* 주어진 월(YYYY-MM)이 걸쳐 있는 월~일 기준 주차 목록을 계산.
-     첫 주/마지막 주는 인접 월로 며칠 넘어갈 수 있음 (실제 달력 기준이라 자연스러운 동작). */
+  /* 주어진 월(YYYY-MM)이 걸쳐 있는 월~일 기준 주차 목록을 계산. */
   function getMonthWeeks(monthKey) {
     var p = monthKey.split("-").map(Number);
     var year = p[0], month = p[1];
@@ -129,11 +131,14 @@
       });
   }
 
-  function loadAllMonths() {
-    var months = (state.manifest && state.manifest.months) || [];
-    return Promise.all(months.map(loadMonth)).then(function (arrays) {
+  function loadMonths(keys) {
+    return Promise.all(keys.map(loadMonth)).then(function (arrays) {
       return [].concat.apply([], arrays);
     });
+  }
+
+  function loadAllMonths() {
+    return loadMonths((state.manifest && state.manifest.months) || []);
   }
 
   function latestMonthKey() {
@@ -144,8 +149,8 @@
 
   // ---------------- 렌더링 도우미 ----------------
 
-  function sentimentLabel(s) { return s === "POSITIVE" ? "긍정" : "부정"; }
-  function sentimentClass(s) { return s === "POSITIVE" ? "positive" : "negative"; }
+  function sentimentLabel(s) { return s === "POSITIVE" ? "긍정" : (s === "NEGATIVE" ? "부정" : "보류"); }
+  function sentimentClass(s) { return s === "POSITIVE" ? "positive" : (s === "NEGATIVE" ? "negative" : "uncertain"); }
 
   function articleCardHtml(article) {
     var cls = sentimentClass(article.sentiment);
@@ -206,6 +211,67 @@
     return html;
   }
 
+  // ---------------- 엑셀 추출 ----------------
+
+  var EXCEL_HEADERS = ["기업명", "날짜", "긍정/부정 여부", "기사 제목", "기사 요약내용", "기사 URL"];
+
+  function safeFileName(s) {
+    return String(s || "").replace(/[\\/:*?"<>|\s]+/g, "_");
+  }
+
+  function todayCompact() {
+    var d = new Date();
+    return d.getFullYear() + pad2(d.getMonth() + 1) + pad2(d.getDate());
+  }
+
+  function isHttpUrl(u) { return /^https?:\/\//i.test(u || ""); }
+
+  /* rows(기사 배열) -> 엑셀 행 배열. 요약은 화면과 달리 잘라내지 않고 전체를 담는다. */
+  function buildExcelRows(rows) {
+    var sorted = rows.slice().sort(function (a, b) {
+      if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+      return String(a.company).localeCompare(String(b.company));
+    });
+    return sorted.map(function (a) {
+      return [a.company || "", a.date || "", sentimentLabel(a.sentiment), a.title || "", a.description || "", a.link || ""];
+    });
+  }
+
+  function buildWorkbook(rows) {
+    var XLSX = window.XLSX;
+    var aoa = [EXCEL_HEADERS].concat(buildExcelRows(rows));
+    var ws = XLSX.utils.aoa_to_sheet(aoa);
+
+    // URL 열(F)을 클릭 가능한 하이퍼링크로 설정
+    for (var r = 1; r < aoa.length; r++) {
+      var url = aoa[r][5];
+      if (!isHttpUrl(url)) continue;
+      var addr = XLSX.utils.encode_cell({ r: r, c: 5 });
+      if (ws[addr]) ws[addr].l = { Target: url, Tooltip: "기사 원문 열기" };
+    }
+
+    ws["!cols"] = [{ wch: 14 }, { wch: 12 }, { wch: 14 }, { wch: 55 }, { wch: 80 }, { wch: 50 }];
+    ws["!autofilter"] = { ref: "A1:F" + aoa.length };
+
+    var wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "ESG 기사");
+    return wb;
+  }
+
+  function exportToExcel(rows, fileBase) {
+    if (!rows || rows.length === 0) {
+      alert("추출할 기사가 없습니다. 먼저 조회/검색을 실행해 주세요.");
+      return false;
+    }
+    if (!window.XLSX) {
+      alert("엑셀 라이브러리를 불러오지 못했습니다. 인터넷 연결(또는 사내망의 cdnjs 접근 차단 여부)을 확인한 뒤 새로고침해 주세요.");
+      return false;
+    }
+    var wb = buildWorkbook(rows);
+    window.XLSX.writeFile(wb, safeFileName(fileBase) + ".xlsx");
+    return true;
+  }
+
   // ---------------- 1. 일자별 리포트 ----------------
 
   function renderDaily(dateStr) {
@@ -245,7 +311,10 @@
 
   function renderMonthly(company, monthKey) {
     loadMonth(monthKey).then(function (articles) {
-      var filtered = articles.filter(function (a) { return a.company === company; });
+      var filtered = articles.filter(function (a) {
+        return a.company === company && (a.sentiment === "POSITIVE" || a.sentiment === "NEGATIVE");
+      });
+      state.lastMonthly = { rows: filtered, label: "ESG_기업별월별_" + company + "_" + monthKey };
       $("monthlyResult").innerHTML = renderSentimentSections(filtered, { groupByCompany: false });
     });
   }
@@ -291,7 +360,7 @@
     }).join("");
     sel.dataset.weeksJson = JSON.stringify(weeks);
 
-    var defaultIdx = weeks.length - 1; // 기본값: 해당 월의 마지막 주차
+    var defaultIdx = weeks.length - 1;
     if (preferredDate) {
       for (var i = 0; i < weeks.length; i++) {
         if (preferredDate >= weeks[i].start && preferredDate <= weeks[i].end) { defaultIdx = i; break; }
@@ -312,30 +381,156 @@
     renderWeekly(w.start, w.end);
   }
 
-  // ---------------- 4. 키워드 검색 ----------------
+  // ---------------- 4. 키워드 검색 (기본 / 상세) ----------------
+
+  function includesKw(a, kw) {
+    return (a.title && a.title.toLowerCase().indexOf(kw) !== -1) ||
+           (a.description && a.description.toLowerCase().indexOf(kw) !== -1);
+  }
+
+  /* 상세검색 조건에 맞는 기사만 남긴다.
+     c = { company, kw1, kw2, op(AND|OR|NOT), start, end, sentiment } */
+  function matchesDetail(a, c) {
+    if (c.company && a.company !== c.company) return false;
+    if (c.sentiment && a.sentiment !== c.sentiment) return false;
+    if (c.start && a.date < c.start) return false;
+    if (c.end && a.date > c.end) return false;
+
+    var k1 = (c.kw1 || "").trim().toLowerCase();
+    var k2 = (c.kw2 || "").trim().toLowerCase();
+    var m1 = k1 ? includesKw(a, k1) : null;
+    var m2 = k2 ? includesKw(a, k2) : null;
+
+    if (m1 !== null && m2 !== null) {
+      if (c.op === "OR") return m1 || m2;
+      if (c.op === "NOT") return m1 && !m2;
+      return m1 && m2;
+    }
+    if (m1 !== null) return m1;
+    if (m2 !== null) return c.op === "NOT" ? !m2 : m2;
+    return true;
+  }
+
+  function matchesBasic(a, kw) {
+    return (a.title && a.title.toLowerCase().indexOf(kw) !== -1) ||
+           (a.description && a.description.toLowerCase().indexOf(kw) !== -1) ||
+           (a.company && a.company.toLowerCase().indexOf(kw) !== -1);
+  }
+
+  function showSearchResults(matched, label, summary) {
+    var el = $("searchResult");
+    matched.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    state.lastSearch = { rows: matched, label: label };
+    if (matched.length === 0) {
+      el.innerHTML = emptyState(summary + " 검색 결과가 없습니다.");
+      return;
+    }
+    // 개수 제한 없음: 검색된 기사를 모두 표시
+    el.innerHTML = '<p class="hint" style="margin-top:0;">총 ' + matched.length + "건 검색됨</p>" + matched.map(articleCardHtml).join("");
+  }
 
   function renderSearch(keyword) {
     var el = $("searchResult");
     if (!keyword || !keyword.trim()) {
       el.innerHTML = "";
+      state.lastSearch = null;
       return;
     }
     el.innerHTML = emptyState("검색 중…");
     loadAllMonths().then(function (all) {
       var kw = keyword.trim().toLowerCase();
-      var matched = all.filter(function (a) {
-        return (a.title && a.title.toLowerCase().indexOf(kw) !== -1) ||
-               (a.description && a.description.toLowerCase().indexOf(kw) !== -1) ||
-               (a.company && a.company.toLowerCase().indexOf(kw) !== -1);
-      });
-      matched.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
-      matched = matched.slice(0, 60);
+      var matched = all.filter(function (a) { return matchesBasic(a, kw); });
+      showSearchResults(matched, "ESG_키워드검색_" + keyword.trim() + "_" + todayCompact(), '"' + keyword + '"에 대한');
+    });
+  }
 
-      if (matched.length === 0) {
-        el.innerHTML = emptyState('"' + keyword + '"에 대한 검색 결과가 없습니다.');
-        return;
-      }
-      el.innerHTML = '<p class="hint" style="margin-top:0;">총 ' + matched.length + "건 검색됨</p>" + matched.map(articleCardHtml).join("");
+  function readDetailConditions() {
+    return {
+      company: $("detailCompany").value,
+      kw1: $("detailKw1").value,
+      op: $("detailOp").value,
+      kw2: $("detailKw2").value,
+      sentiment: $("detailSentiment").value,
+      start: $("detailStart").value,
+      end: $("detailEnd").value
+    };
+  }
+
+  function renderDetailSearch() {
+    var c = readDetailConditions();
+    var el = $("searchResult");
+
+    if (c.start && c.end && c.start > c.end) {
+      el.innerHTML = emptyState("기간의 시작일이 종료일보다 늦습니다. 기간을 다시 선택해 주세요.");
+      state.lastSearch = null;
+      return;
+    }
+    if (!c.company && !c.kw1.trim() && !c.kw2.trim() && !c.sentiment && !c.start && !c.end) {
+      el.innerHTML = emptyState("조건을 하나 이상 입력해 주세요.");
+      state.lastSearch = null;
+      return;
+    }
+
+    el.innerHTML = emptyState("검색 중…");
+    var manifestMonths = ((state.manifest && state.manifest.months) || []).slice().sort();
+    var keys = manifestMonths.filter(function (m) {
+      if (c.start && m < c.start.slice(0, 7)) return false;
+      if (c.end && m > c.end.slice(0, 7)) return false;
+      return true;
+    });
+
+    loadMonths(keys).then(function (all) {
+      var matched = all.filter(function (a) { return matchesDetail(a, c); });
+      var parts = [c.company, c.kw1.trim(), c.kw2.trim()].filter(Boolean);
+      var label = "ESG_상세검색_" + (parts.join("_") || "전체") + "_" + todayCompact();
+      showSearchResults(matched, label, "입력하신 조건에 대한");
+    });
+  }
+
+  function setSearchMode(mode) {
+    state.searchMode = mode;
+    $("searchBasicBox").hidden = mode !== "basic";
+    $("searchDetailBox").hidden = mode !== "detail";
+    $("modeBasic").classList.toggle("is-active", mode === "basic");
+    $("modeDetail").classList.toggle("is-active", mode === "detail");
+    $("searchResult").innerHTML = "";
+    state.lastSearch = null;
+  }
+
+  function populateDetailCompanies() {
+    $("detailCompany").innerHTML = '<option value="">전체 기업</option>' + COMPANIES.map(function (c) {
+      return '<option value="' + escapeHtml(c) + '">' + escapeHtml(c) + "</option>";
+    }).join("");
+  }
+
+  function resetDetail() {
+    ["detailKw1", "detailKw2", "detailStart", "detailEnd"].forEach(function (id) { $(id).value = ""; });
+    $("detailCompany").value = "";
+    $("detailOp").value = "AND";
+    $("detailSentiment").value = "";
+    $("searchResult").innerHTML = "";
+    state.lastSearch = null;
+  }
+
+  function setupSearch() {
+    populateDetailCompanies();
+    $("modeBasic").addEventListener("click", function () { setSearchMode("basic"); });
+    $("modeDetail").addEventListener("click", function () { setSearchMode("detail"); });
+
+    $("searchRun").addEventListener("click", function () { renderSearch($("searchInput").value); });
+    $("searchInput").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") renderSearch(this.value);
+    });
+
+    $("detailRun").addEventListener("click", renderDetailSearch);
+    $("detailReset").addEventListener("click", resetDetail);
+    ["detailKw1", "detailKw2"].forEach(function (id) {
+      $(id).addEventListener("keydown", function (e) { if (e.key === "Enter") renderDetailSearch(); });
+    });
+
+    $("searchExport").addEventListener("click", function () {
+      if (!state.lastSearch) { alert("먼저 검색을 실행해 주세요."); return; }
+      exportToExcel(state.lastSearch.rows, state.lastSearch.label);
     });
   }
 
@@ -357,7 +552,7 @@
   // ---------------- 초기화 ----------------
 
   function init() {
-    loadManifest().then(function () {
+    return loadManifest().then(function () {
       $("fallbackBanner").hidden = !state.usingFallback;
 
       if (state.manifest.last_updated) {
@@ -368,19 +563,24 @@
       }
 
       setupNav();
+      setupSearch();
       populateMonthlySelectors();
       populateWeeklyMonths();
+
+      $("monthlyExport").addEventListener("click", function () {
+        if (!state.lastMonthly) { alert("먼저 기업과 월을 선택해 주세요."); return; }
+        exportToExcel(state.lastMonthly.rows, state.lastMonthly.label);
+      });
 
       var latest = latestMonthKey();
       if (!latest) {
         ["dailyResult", "weeklyResult", "monthlyResult"].forEach(function (id) {
           $(id).innerHTML = emptyState("아직 수집된 데이터가 없습니다. 수집 스크립트가 처음 실행되면 표시됩니다.");
         });
-        $("searchRun").addEventListener("click", function () { renderSearch($("searchInput").value); });
         return;
       }
 
-      loadMonth(latest).then(function (articles) {
+      return loadMonth(latest).then(function (articles) {
         var dates = articles.map(function (a) { return a.date; }).sort();
         var latestDate = dates.length ? dates[dates.length - 1] : shiftDate(latest + "-01", 0);
 
@@ -415,13 +615,11 @@
           renderMonthly($("monthlyCompany").value, this.value);
         });
       });
-
-      $("searchRun").addEventListener("click", function () { renderSearch($("searchInput").value); });
-      $("searchInput").addEventListener("keydown", function (e) {
-        if (e.key === "Enter") renderSearch(this.value);
-      });
     });
   }
+
+  // 테스트용 노출 (화면 동작에는 영향 없음)
+  window.__esgDash = { matchesDetail: matchesDetail, buildExcelRows: buildExcelRows, buildWorkbook: buildWorkbook, state: state, init: init };
 
   document.addEventListener("DOMContentLoaded", init);
 })();
