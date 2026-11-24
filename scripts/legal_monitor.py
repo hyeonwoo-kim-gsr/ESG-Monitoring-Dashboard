@@ -85,7 +85,7 @@ def strip_tags(s):
     s = re.sub(r"(?i)<br\s*/?>|</p>|</div>|</li>|</tr>", "\n", s)
     s = re.sub(r"(?s)<[^>]+>", " ", s)
     s = htmllib.unescape(s)
-    s = re.sub(r"[ \t 　]+", " ", s)
+    s = re.sub(r"[ \t 　]+", " ", s)
     s = re.sub(r"\n\s*\n+", "\n", s)
     return s.strip()
 
@@ -501,13 +501,21 @@ class Store:
 
 
 # ============================================================================ 처리 파이프라인
+DEADLINE = None          # 실행 시간 상한(epoch초). 넘으면 새 작업을 시작하지 않고 저장 후 종료
+MAX_DETAIL_FAILS = 8     # 본문 확보가 연속 이 횟수 실패하면 해당 출처 본문 수집을 중단(차단/구조 변경 의심)
+
+
+def expired():
+    return DEADLINE is not None and time.time() > DEADLINE
+
+
 class Budget:
     def __init__(self, n):
         self.left = n
         self.used = 0
 
     def take(self):
-        if self.left <= 0:
+        if self.left <= 0 or expired():
             return False
         self.left -= 1
         self.used += 1
@@ -546,17 +554,25 @@ def run_pipeline(kind, cands, store, call, budget, detail_fn, make_rec, done_set
                 stat["triage_no"] += 1
         save_cb()
     # 2단계: 본문 기준 확정
+    fails = 0
     for batch in chunks(maybe, CLASSIFY_BATCH):
-        if budget.left <= 0:
+        if budget.left <= 0 or expired() or fails >= MAX_DETAIL_FAILS:
             stat["pending"] += len(batch)
             continue
         items, keep = [], []
         for (i, r, n) in batch:
+            if expired() or fails >= MAX_DETAIL_FAILS:
+                stat["pending"] += 1
+                continue
             det = detail_fn(r)
             text = det.get("text") if isinstance(det, dict) else det
             if not text:
                 stat["no_text"] += 1   # 본문 확보 실패 -> 판단 보류(다음 실행에서 재시도)
+                fails += 1
+                if fails == MAX_DETAIL_FAILS:
+                    print("  [중단] %s 본문 수집이 연속 %d회 실패 -> 이번 실행에서는 본문 단계를 건너뜁니다 (--diagnose 로 확인)" % (kind, fails))
                 continue
+            fails = 0
             items.append({"kind": kind, "name": n, "meta": meta_fn(r), "text": text, "text_label": text_label})
             keep.append((i, r, n, det))
         if not items:
@@ -712,8 +728,12 @@ def main():
     ap.add_argument("--max-calls", type=int, default=int(os.environ.get("LEGAL_MAX_CALLS", "150")))
     ap.add_argument("--limit", type=int, default=0, help="출처별 신규 판별 최대 건수(0=전부, 테스트용)")
     ap.add_argument("--detail-refresh", type=int, default=60, help="실행당 공포 확인용 의안 상세 재조회 최대 수")
+    ap.add_argument("--max-minutes", type=int, default=int(os.environ.get("LEGAL_MAX_MINUTES", "80")),
+                    help="실행 시간 상한(분). 넘으면 새 작업을 멈추고 저장 후 종료(다음 실행에서 이어감)")
     ap.add_argument("--diagnose", action="store_true")
     args = ap.parse_args()
+    global DEADLINE
+    DEADLINE = time.time() + args.max_minutes * 60
     if not args.since:
         args.since = (today_kst() - dt.timedelta(days=args.days)).isoformat()
 
@@ -737,8 +757,8 @@ def main():
         else:
             try:
                 stats["bills"], bill_rows = process_bills(args, store, call, budget, assembly_key, save_cb)
-            except SourceError as e:
-                failures.append(str(e))
+            except Exception as e:  # noqa: BLE001  (SourceError 포함: 실패해도 지금까지 분량은 저장)
+                failures.append("의안: %s" % str(e)[:200])
     if args.only in ("all", "laws"):
         if not oc:
             failures.append("LAW_OC 미설정")
@@ -747,13 +767,15 @@ def main():
                 stats["laws"], law_rows = process_laws(args, store, call, budget, oc, save_cb)
                 for rec in store.bills:
                     fill_promulgation_from_laws(rec, law_rows)
-            except SourceError as e:
-                failures.append(str(e))
+            except Exception as e:  # noqa: BLE001
+                failures.append("법령: %s" % str(e)[:200])
 
     store.save({"since": args.since, "last_stats": stats, "last_failures": failures})
     print("\n==== 완료 ====")
     for k, v in stats.items():
         print("%s: %s" % (k, v))
+    if expired():
+        print("[알림] 실행 시간 상한(%d분)에 도달해 중간 저장 후 종료했습니다. 다시 실행하면 이어서 진행됩니다." % args.max_minutes)
     print("Gemini 호출 %d회 (상한 %d) | 누적 의안 %d건, 법령 %d건" % (budget.used, args.max_calls, len(store.bills), len(store.laws)))
     pend = sum(s.get("pending", 0) + s.get("no_text", 0) for s in stats.values())
     if pend:
