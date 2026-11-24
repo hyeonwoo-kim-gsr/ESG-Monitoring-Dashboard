@@ -48,6 +48,8 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # 저장소 변수 GEMINI_MODEL 이 있으면 그 값, 없으면 gemini-4-hydrogen
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
           DASHBOARD_DATA_DIR: docs/data
           # 자동 스케줄 실행은 항상 recent로 고정. 수동(workflow_dispatch) 실행일 때만 선택값 적용.
           SCREENING_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.screening_mode || 'recent' }}
@@ -55,9 +57,11 @@ jobs:
         run: python scripts/esg_collector.py
 
       - name: docs/data 변경분 커밋 & 푸시
+        if: always()   # 메일 발송 실패 등으로 수집 스크립트가 실패해도 이미 저장된 데이터는 커밋
         run: |
           git config user.name "esg-dashboard-bot"
           git config user.email "esg-dashboard-bot@users.noreply.github.com"
           git add docs/data
           git diff --cached --quiet && echo "변경 사항 없음" || git commit -m "chore: 대시보드 데이터 갱신 ($(date -u +%Y-%m-%d))"
+          git pull --rebase
           git push
