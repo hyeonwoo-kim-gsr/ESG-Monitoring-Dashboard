@@ -1617,7 +1617,7 @@
     "title": "[더벨][thebell League Table | 2026 이사회 평가] 현대백화점, 7개 계열사...",
     "description": "현대지에프홀딩스와 현대그린푸드가 155점, 현대홈쇼핑이 154점으로 뒤를 이었다. 현대퓨처넷과... 지배구조 핵심지표 준수율은 현대퓨처넷이 4점, 나머지 6개사가 5점으로 높은 평가를 받았다. 홈페이지에 개별 이사...",
     "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611131338406480104845",
-    "related_count": 1
+    "related_count": 2
   },
   {
     "date": "2026-11-22",
@@ -1626,6 +1626,69 @@
     "title": "신세계백화점, 연말맞이 '사랑의 김장나눔' 봉사활동 실시",
     "description": "초록우산 어린이재단과 함께 전점 지역 종합 사회복지관 및 아동시설에 기부할 예정이다. 신세계백화점은 지속적으로 사회공헌 활동을 이어오고 있다. 사회취약계층과 지역 상생을 위한 활동을 적극적으로 펼칠 계획이다.",
     "link": "https://n.news.naver.com/mnews/article/030/0003488258?sid=105",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-24",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "[유통家 단신] 대상·GS리테일·CJ대한통운·CJ제일제당 등",
+    "description": "GS샵, 직원 178명 참여해 AI 혁신 과제 94개 구현 GS리테일이 운영하는 GS샵이 사내 AI 혁신 프로그램 'AX:CEL AI... 이번 지원은 2014년부터 13년째 이어지는 사회공헌 활동으로, 지금까지 누적 1만3000여개의 물품을...",
+    "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=242127",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-24",
+    "company": "GS리테일",
+    "sentiment": "UNCERTAIN",
+    "title": "GS리테일, 베트남서 중소협력사 196만불 수출상담 성과",
+    "description": "GS샵 해외시장개척단은 2015년부터 국내 중소 협력사의 해외 판로 개척을 지원해 온 동반성장 프로그램이다. 이날 GS리테일은 2만2천원에 거래를 마친 상태다. 이는 전일보다 50원(0.23%)증가한 것으로 한때...",
+    "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=362980",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-24",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "김용판 달서구청장, 대구시사회복지협의회·이마트서 생필품 100상자 기...",
+    "description": "사진제공=달서구청 이마트의 대표 사회공헌 프로그램인 희망배달마차 '포근한 온(溫)자리 지원사업'의 일환으로, 달서구 지역 내 취약계층을 위한 생필품 지원이 이뤄졌다. 임직원들의 자발적 기부와 회사의 후원으로...",
+    "link": "https://www.gukjenews.com/news/articleView.html?idxno=3761245",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "[민주 유통가] 롯데백화점·NS홈쇼핑·코웨이",
+    "description": "NS홈쇼핑은 자체 식품문화축제 NS푸드페스타에도 서초한우리오케스트라를 초청해 장애예술인과 대중이 만나는 기회를 확대했다. 앞으로도 문화예술을 통한 장애인식 개선과 사회적 공감대 형성을 위한 사회공헌 활동을...",
+    "link": "http://www.iminju.net/news/articleView.html?idxno=172902",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-23",
+    "company": "롯데홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "[인터뷰] 롯데홈쇼핑 홍성보 쇼호스트, 10년째 목소리로 전해온 꿈",
+    "description": "문화경제 CNB저널 | CNB저널 | 씨앤비저널 ESG 경영이 기업의 선택이 아니라 필수가 된 시대지만 장애인이... 그 첫번째 기업은 10년 동안 시각장애 아동을 위한 음성도서를 만들어온 '롯데홈쇼핑'이다. <편집자주> '드림보이스...",
+    "link": "https://www.cnbizm.com/news/articleView.html?idxno=322348",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-24",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "손미나의 올라미나, 스페인 147년 양봉 가문 '알레마니' 꿀 현대홈쇼핑...",
+    "description": "지역사회와의 상생도 실천하고 있다. 또한 2014년부터 2022년까지 그레이트 테이스트 어워즈에서 37개 제품으로 총 51개의 별을 획득하며 해당 기간 스페인 기업 중 최다 수상 기록을 세웠다. 이번 현대홈쇼핑 방송을...",
+    "link": "https://www.gosiweek.com/article/1065590301280284",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-23",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "[백화점업계 10월 동향] 현대백화점, 친환경 캠페인 진행·지역사회와 상...",
+    "description": "현대백화점은 지난달 친환경 캠페인을 진행하고 지역 사회와 상생 협력을 강화하며 ESG 경영을 실천했다. 현대백화점은 고객이 기부한 에코백을 식품관에서 장바구니로 재사용하는 '리백' 캠페인을 진행했다. 또한...",
+    "link": "http://www.wsobi.com/news/articleView.html?idxno=322353",
     "related_count": 1
   }
 ]
