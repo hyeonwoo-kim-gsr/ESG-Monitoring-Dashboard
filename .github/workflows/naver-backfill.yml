@@ -53,6 +53,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_USER: dummy@example.com
           GMAIL_APP_PASSWORD: dummy
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
           GEMINI_MIN_INTERVAL: "6"
           BACKFILL_START: ${{ github.event.inputs.start || '2024-01-01' }}
           DAILY_CAP: ${{ github.event.inputs.daily_cap || '300' }}
