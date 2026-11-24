@@ -3,11 +3,11 @@
 """
 legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령정보센터)
 
-* 의안  : 열린국회정보 Open API(의안정보)로 목록 수집 + 의안정보시스템(likms) 상세페이지에서
-          '제안이유 및 주요내용'·정부이송/공포 일자 확보
+* 의안  : 열린국회정보 Open API(TVBPMBILL11 목록, BILLINFODETAIL 일정) + 의안정보시스템(likms)의
+          '제안이유 및 주요내용'(세션+CSRF 방식으로 billInfo 탭 조회)
 * 법령  : 국가법령정보센터 Open API(lawSearch / lawService)로 공포일 기준 목록·제개정이유 수집
 * 분류  : Gemini 2단계
-            1) 이름만 보고 후보 선별(관대한 기준, 호출 1회에 50건)
+            1) 이름만 보고 후보 선별(관대한 기준, 호출 1회에 100건)
             2) 본문(제안이유/제개정이유)을 보고 ENV_REG / DISC_MANDATE / SOC_CONTRIB / IRRELEVANT 확정
                + 제·개정 배경, 주요 내용 요약 생성. 근거 인용문이 원문에서 확인되지 않으면 IRRELEVANT.
 * 저장  : docs/legal/bills.json, laws.json, meta.json, state.json  (원문 전체는 저장하지 않고 요약만 저장)
@@ -52,7 +52,7 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 CATEGORIES = ("ENV_REG", "DISC_MANDATE", "SOC_CONTRIB")
 CATEGORY_LABEL = {"ENV_REG": "환경규제", "DISC_MANDATE": "의무공시", "SOC_CONTRIB": "사회공헌"}
 
-TRIAGE_BATCH = 50
+TRIAGE_BATCH = 100   # 이름 선별은 1회 호출에 100건 (22대 법률안이 많아 호출 수 절감)
 CLASSIFY_BATCH = 4
 TEXT_LIMIT = 3000
 
@@ -85,7 +85,7 @@ def strip_tags(s):
     s = re.sub(r"(?i)<br\s*/?>|</p>|</div>|</li>|</tr>", "\n", s)
     s = re.sub(r"(?s)<[^>]+>", " ", s)
     s = htmllib.unescape(s)
-    s = re.sub(r"[ \t 　]+", " ", s)
+    s = re.sub(r"[ \t\u00a0\u3000]+", " ", s)
     s = re.sub(r"\n\s*\n+", "\n", s)
     return s.strip()
 
@@ -183,50 +183,84 @@ def bill_target_law(name):
     return n
 
 
-def fetch_bill_detail(row):
-    """의안정보시스템 상세페이지 -> {'text': 제안이유 및 주요내용, 'transfer': 'YYYY-MM-DD', 'promulgation': .., 'promulgation_no': ..}
-    실패 시 None."""
-    link = g(row, "DETAIL_LINK")
-    if not link:
-        bid = g(row, "BILL_ID")
-        if not bid:
-            return None
-        link = "https://likms.assembly.go.kr/bill/billDetail.do?billId=" + bid
-    try:
-        r = http_get(link, timeout=30, tries=2)
-        html = clf.decode_html(r.content[:3_000_000], r.headers.get("Content-Type", ""))
-    except Exception as e:  # noqa: BLE001
-        print("    [의안 상세 실패] %s" % str(e)[:80])
+LIKMS = "https://likms.assembly.go.kr"
+BILL_DETAIL_API = "BILLINFODETAIL"   # 의안 상세정보(본회의·정부이송·공포 일자) - 열린국회정보
+_LIKMS_UA = {"User-Agent": UA["User-Agent"], "Accept-Language": "ko-KR,ko;q=0.9"}
+
+
+def fetch_bill_dates(bill_id):
+    """열린국회정보 BILLINFODETAIL -> {'transfer','promulgation','promulgation_no','plenary_date','plenary_result'}. 실패 시 None."""
+    key = os.environ.get("ASSEMBLY_API_KEY", "")
+    if not (key and bill_id):
         return None
-    return parse_bill_detail_html(html)
+    try:
+        r = http_get(ASSEMBLY_BASE + BILL_DETAIL_API,
+                     params={"KEY": key, "Type": "json", "pIndex": 1, "pSize": 1, "BILL_ID": bill_id},
+                     timeout=30, tries=2)
+        rows, _t, code, _m = _assembly_rows(r.json(), BILL_DETAIL_API)
+    except Exception as e:  # noqa: BLE001
+        print("    [의안 일정 조회 실패] %s" % str(e)[:80])
+        return None
+    if not rows:
+        return None
+    x = rows[0]
+    return {"transfer": ymd(g(x, "GVRN_TRSF_DT")), "promulgation": ymd(g(x, "PROM_DT")),
+            "promulgation_no": str(g(x, "PROM_NO")), "plenary_date": ymd(g(x, "RGS_RSLN_DT")),
+            "plenary_result": g(x, "RGS_CONF_RSLT")}
 
 
-def parse_bill_detail_html(html):
-    summary = ""
-    m = re.search(r'(?is)<div[^>]+id=["\']summaryContentDiv["\'][^>]*>(.*?)</div>\s*(?=<(?:div|h\d|table|/div|section)|$)', html)
-    if m:
-        summary = strip_tags(m.group(1))
-    rest = html
-    if not summary:
-        m = re.search(r"제안이유\s*및\s*주요내용", html)
-        if m:
-            seg = html[m.end(): m.end() + 20000]
-            cut = re.search(r"(의안접수정보|심사진행|관련 ?문서|회의록|첨부)", seg)
-            summary = strip_tags(seg[: cut.start()] if cut else seg)
-    else:
-        rest = html.replace(m.group(0), " ")
-    flat = strip_tags(rest)
-    flat = re.sub(r"\n+", " ", flat)
+def parse_bill_summary_html(html):
+    """likms billInfo 탭 조각 -> '제안이유 및 주요내용' 텍스트 (<pre id="prntSummary">)."""
+    m = re.search(r'(?is)<pre[^>]+id=["\']prntSummary["\'][^>]*>(.*?)</pre>', html)
+    if not m:
+        return ""
+    t = htmllib.unescape(re.sub(r"(?s)<[^>]+>", " ", m.group(1)))
+    t = re.sub(r"^\s*제안이유\s*및\s*주요내용\s*", "", t)
+    return re.sub(r"\s+", " ", t).strip()[:TEXT_LIMIT * 2]
 
-    def date_after(label):
-        mm = re.search(label + r"[^0-9]{0,30}(\d{4}[-.]\d{2}[-.]\d{2})", flat)
-        return ymd(mm.group(1)) if mm else ""
 
-    no = re.search(r"공포번호[^0-9]{0,10}(\d{3,6})", flat)
-    return {"text": summary.strip()[:TEXT_LIMIT * 2],
-            "transfer": date_after("정부이송"),
-            "promulgation": date_after("공포(?:일|일자)?"),
-            "promulgation_no": no.group(1) if no else ""}
+def fetch_bill_summary(bill_id):
+    """의안정보시스템(likms)의 제안이유 및 주요내용.
+    상세페이지는 세션+CSRF 토큰이 필요한 AJAX 구조라 (1) 페이지로 토큰/숨은 입력값 확보 -> (2) billInfo 탭을 POST 로 받는다.
+    실패 시 ''."""
+    try:
+        s = requests.Session()
+        s.headers.update(_LIKMS_UA)
+        page = s.get("%s/bill/bi/billDetailPage.do" % LIKMS, params={"billId": bill_id, "currMenuNo": "2600044"}, timeout=30)
+        h = page.text
+        tok = re.search(r'name="_csrf" content="([^"]+)"', h)
+        if not tok:
+            print("    [의안 본문 실패] CSRF 토큰을 찾지 못함 (HTTP %s)" % page.status_code)
+            return ""
+        form = dict(re.findall(r'<input type="hidden" id="(\w+)" name="\w+" value="([^"]*)"', h))
+        form.setdefault("billId", bill_id)
+        r = s.post(LIKMS + "/bill/bi/bill/detail/billInfo.do", data=form, timeout=30,
+                   headers={"X-CSRF-TOKEN": tok.group(1), "Referer": page.url, "Origin": LIKMS, "Accept": "*/*"})
+        if r.status_code != 200:
+            print("    [의안 본문 실패] billInfo HTTP %s" % r.status_code)
+            return ""
+        return parse_bill_summary_html(r.text)
+    except Exception as e:  # noqa: BLE001
+        print("    [의안 본문 실패] %s" % str(e)[:80])
+        return ""
+
+
+def fetch_bill_detail(row, text=True, dates=True):
+    """-> {'text': 제안이유 및 주요내용, 'transfer','promulgation','promulgation_no'}. 둘 다 못 얻으면 None.
+    text=False 면 likms 를 호출하지 않는다(일정만 최신화)."""
+    bid = str(g(row, "BILL_ID"))
+    if not bid:
+        return None
+    det = {"text": "", "transfer": "", "promulgation": "", "promulgation_no": ""}
+    if dates:
+        d = fetch_bill_dates(bid)
+        if d:
+            det.update({k: d[k] for k in ("transfer", "promulgation", "promulgation_no")})
+    if text:
+        det["text"] = fetch_bill_summary(bid)
+    if not (det["text"] or det["transfer"] or det["promulgation"]):
+        return None
+    return det
 
 
 # ============================================================================ 법령: 국가법령정보센터
@@ -403,13 +437,14 @@ def derive_bill_stage(rec):
 def apply_bill_row(rec, row):
     rec["bill_no"] = str(g(row, "BILL_NO"))
     rec["name"] = g(row, "BILL_NAME")
-    rec["committee"] = g(row, "COMMITTEE", default=rec.get("committee", ""))
+    # 열린국회정보 TVBPMBILL11 실제 필드: CURR_COMMITTEE(소관위), PROC_DT/PROC_RESULT_CD(본회의 의결일/결과), LINK_URL
+    rec["committee"] = g(row, "CURR_COMMITTEE", "COMMITTEE", default=rec.get("committee", ""))
     rec["proposer"] = g(row, "PROPOSER", default=rec.get("proposer", ""))
     rec["age"] = str(g(row, "AGE"))
     rec["receipt_date"] = ymd(g(row, "PROPOSE_DT"))
     rec["plenary_date"] = ymd(g(row, "PROC_DT")) or rec.get("plenary_date", "")
-    rec["plenary_result"] = g(row, "PROC_RESULT", default=rec.get("plenary_result", ""))
-    rec["link"] = g(row, "DETAIL_LINK") or ("https://likms.assembly.go.kr/bill/billDetail.do?billId=" + str(g(row, "BILL_ID")))
+    rec["plenary_result"] = g(row, "PROC_RESULT_CD", "PROC_RESULT", default=rec.get("plenary_result", ""))
+    rec["link"] = g(row, "LINK_URL", "DETAIL_LINK") or (LIKMS + "/bill/bi/billDetailPage.do?billId=" + str(g(row, "BILL_ID")))
     rec["stage"] = derive_bill_stage(rec)
 
 
@@ -429,7 +464,7 @@ PASSED = ("원안가결", "수정가결")
 
 
 def fill_promulgation_from_laws(rec, law_rows):
-    """상세페이지에서 공포일을 못 얻은 가결 의안은 법령 목록(공포일자)으로 보완: 같은 법률명 + 의결일 이후 최초 공포."""
+    """상세 조회에서 공포일을 못 얻은 가결 의안은 법령 목록(공포일자)으로 보완: 같은 법률명 + 의결일 이후 최초 공포."""
     if rec.get("promulgation_date") or rec.get("plenary_result") not in PASSED or not rec.get("plenary_date"):
         return
     target = bill_target_law(rec.get("name", ""))
@@ -600,7 +635,7 @@ def run_pipeline(kind, cands, store, call, budget, detail_fn, make_rec, done_set
 
 
 def bill_meta(row):
-    return "소관위 %s | 접수 %s" % (g(row, "COMMITTEE"), ymd(g(row, "PROPOSE_DT")))
+    return "소관위 %s | 접수 %s" % (g(row, "CURR_COMMITTEE", "COMMITTEE", default="(미정)"), ymd(g(row, "PROPOSE_DT")))
 
 
 def law_meta(row):
@@ -625,10 +660,10 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
             continue
         before = (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result"))
         apply_bill_row(rec, row)
-        # 가결됐는데 아직 공포 전이면 상세페이지에서 정부이송/공포 확인
+        # 가결됐는데 아직 공포 전이면 정부이송/공포 일정 확인
         if rec.get("plenary_result") in PASSED and not rec.get("promulgation_date") and detail_budget > 0:
             detail_budget -= 1
-            apply_bill_detail(rec, fetch_bill_detail(row))
+            apply_bill_detail(rec, fetch_bill_detail(row, text=False))   # 일정만 (likms 호출 없음)
         if before != (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result")):
             refreshed += 1
     print("[의안] 기존 선별 의안 %d건 중 상태 변경 %d건" % (len(store.bill_idx), refreshed))
@@ -648,7 +683,11 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
         apply_bill_detail(rec, det if isinstance(det, dict) else None)
         return rec
 
-    stat = run_pipeline("의안", cands, store, call, budget, fetch_bill_detail, make_rec, store.bills_done,
+    def bill_detail(row):
+        # 본문(제안이유)은 likms, 정부이송/공포 일정은 가결된 의안만 BILLINFODETAIL 로 조회
+        return fetch_bill_detail(row, text=True, dates=g(row, "PROC_RESULT_CD") in PASSED)
+
+    stat = run_pipeline("의안", cands, store, call, budget, bill_detail, make_rec, store.bills_done,
                         store.bills_maybe, store.bills, store.bill_idx, "제안이유 및 주요내용", bill_meta, save_cb)
     return stat, rows
 
@@ -689,11 +728,11 @@ def diagnose(args, assembly_key, oc):
             if rows:
                 print("  필드:", ", ".join(sorted(rows[0].keys())))
                 row = rows[0]
-                print("  예시:", {k: row.get(k) for k in ("BILL_NO", "BILL_NAME", "COMMITTEE", "PROPOSE_DT", "PROC_DT", "PROC_RESULT", "DETAIL_LINK")})
+                print("  예시:", {k: row.get(k) for k in ("BILL_NO", "BILL_NAME", "CURR_COMMITTEE", "PROPOSE_DT", "PROC_DT", "PROC_RESULT_CD", "LINK_URL")})
                 det = fetch_bill_detail(row)
-                print("  상세페이지 파싱:", None if det is None else {k: (v[:80] if isinstance(v, str) else v) for k, v in det.items()})
-                if det is not None and not det["text"]:
-                    print("  [주의] 제안이유/주요내용 추출 실패 -> parse_bill_detail_html 의 패턴 조정 필요")
+                print("  상세 조회(제안이유+일정):", None if det is None else {k: (v[:80] if isinstance(v, str) else v) for k, v in det.items()})
+                if det is None or not det["text"]:
+                    print("  [주의] 의안 제안이유 추출 실패 -> likms 접속/CSRF 방식 확인 필요")
             else:
                 print("  [주의] 행이 없습니다. 서비스명/키를 확인하세요 (ASSEMBLY_BILL_SERVICE).")
         except Exception as e:  # noqa: BLE001
@@ -727,7 +766,7 @@ def main():
     ap.add_argument("--only", choices=["all", "bills", "laws"], default="all")
     ap.add_argument("--max-calls", type=int, default=int(os.environ.get("LEGAL_MAX_CALLS", "150")))
     ap.add_argument("--limit", type=int, default=0, help="출처별 신규 판별 최대 건수(0=전부, 테스트용)")
-    ap.add_argument("--detail-refresh", type=int, default=60, help="실행당 공포 확인용 의안 상세 재조회 최대 수")
+    ap.add_argument("--detail-refresh", type=int, default=60, help="실행당 공포 확인용 의안 일정 재조회 최대 수")
     ap.add_argument("--max-minutes", type=int, default=int(os.environ.get("LEGAL_MAX_MINUTES", "80")),
                     help="실행 시간 상한(분). 넘으면 새 작업을 멈추고 저장 후 종료(다음 실행에서 이어감)")
     ap.add_argument("--diagnose", action="store_true")
