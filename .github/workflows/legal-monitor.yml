@@ -1,0 +1,79 @@
+name: ESG 법률 모니터링 (의안·법령 수집)
+
+on:
+  schedule:
+    # 매일 KST 07:00 (= UTC 22:00, 전날). 평소 리포트(KST 08:00) 직전에 최신 의안/법령을 반영
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "수집 대상 (all / bills / laws)"
+        required: false
+        default: "all"
+      days:
+        description: "최근 N일(기본 730일=2개년)까지 적재"
+        required: false
+        default: "730"
+      max_calls:
+        description: "이번 실행의 Gemini 호출 상한(회). 초기 적재는 여러 번 나눠 실행해도 이어집니다"
+        required: false
+        default: "150"
+      diagnose:
+        description: "진단만 실행 (API 연결·필드·본문 추출 점검, Gemini 호출 없음)"
+        type: boolean
+        required: false
+        default: false
+
+# 데이터 파일을 쓰는 워크플로끼리 동시에 돌지 않도록 (다른 워크플로와 같은 그룹)
+concurrency:
+  group: esg-data-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  legal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run legal monitor
+        env:
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
+          LAW_OC: ${{ secrets.LAW_OC }}
+          LAW_REFERER: ${{ vars.LAW_REFERER }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
+          GEMINI_MIN_INTERVAL: "6"
+          LEGAL_ONLY: ${{ github.event.inputs.only || 'all' }}
+          LEGAL_DAYS: ${{ github.event.inputs.days || '730' }}
+          LEGAL_MAX_CALLS: ${{ github.event.inputs.max_calls || '150' }}
+          DIAGNOSE: ${{ github.event.inputs.diagnose || 'false' }}
+        run: |
+          EXTRA=""
+          if [ "$DIAGNOSE" = "true" ]; then EXTRA="--diagnose"; fi
+          python scripts/legal_monitor.py --only "$LEGAL_ONLY" --days "$LEGAL_DAYS" --max-calls "$LEGAL_MAX_CALLS" $EXTRA
+
+      # 한쪽 출처가 실패(키/IP 검증 오류 등)해도 수집된 분량은 저장
+      - name: Commit & push (요약 데이터만)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/legal
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "ESG 법률 모니터링 갱신 (자동, $(date -u +%Y-%m-%d))"
+            git pull --rebase
+            git push
+          fi
