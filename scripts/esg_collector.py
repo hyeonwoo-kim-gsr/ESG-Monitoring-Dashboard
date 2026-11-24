@@ -3,6 +3,7 @@ import re
 import json
 import time
 import smtplib
+import esg_classifier as clf
 import requests
 from datetime import datetime, timedelta
 from difflib import SequenceMatcher
@@ -504,63 +505,17 @@ def _build_analysis_prompt(title, content):
 
 
 def analyze_article(title, description, article_url):
-    """관련성 + 감성을 한 번의 Gemini 호출로 판별.
-    반환: 'POSITIVE' / 'NEGATIVE' / 'UNCERTAIN' / None(제외)
-      - None      : 대상 아님 또는 중립 기사
-      - POSITIVE  : 대상이고, 회사에 유리한 소식
-      - NEGATIVE  : 대상이고, 회사에 불리한 소식
-      - UNCERTAIN : Gemini 호출 자체가 실패해 판별 불가 (수동 검토 대상, 대시보드에는 표시됨)
-    """
-    body_text = fetch_article_body(article_url)
-
-    if body_text and is_paywalled(body_text):
+    sentiment, info = clf.classify_single(title, description, article_url, call_fn=_call_gemini)
+    if info.get("paywalled"):
         print("    [유료 기사] 제외 -> " + title[:40])
         return None
-
-    content = body_text if body_text else description
-    if not body_text:
-        print("    [본문 없음] description으로 대체 판단 -> " + title[:40])
-
-    prompt = _build_analysis_prompt(title, content)
-    raw = _call_gemini(prompt)
-
-    if raw is None:
-        # 재시도까지 모두 실패했을 때만 이 분기에 도달.
-        # 여기서 그냥 None(제외)로 처리하면 rate limit 발생 순간부터 리포트가 텅 비어버림.
-        # → UNCERTAIN으로 저장해 대시보드에서 수동 검토할 수 있게 함.
-        print("    [Gemini 판별 실패] UNCERTAIN 으로 저장 -> " + title[:40])
-        return "UNCERTAIN"
-
-    data = _extract_json_block(raw)
-    if not isinstance(data, dict):
-        print("    [Gemini JSON 파싱 실패] UNCERTAIN 으로 저장 -> " + title[:40])
-        return "UNCERTAIN"
-
-    if not data.get("include"):
-        reason = str(data.get("reason", ""))[:80]
-        print("    [관련성 없음] " + reason + " -> " + title[:40])
+    if sentiment is None:
+        print("    [관련성 없음/중립] " + info.get("reason", "") + " -> " + title[:40])
         return None
-
-    label = str(data.get("label", "")).upper()
-    reason = str(data.get("reason", ""))[:100]
-    direction = str(data.get("direction", ""))[:40]
-    phrases = data.get("key_phrases") or []
-    phrase_str = " / ".join(str(p) for p in phrases[:3])
-    dir_suffix = " | 방향: " + direction if direction and direction != "해당 없음" else ""
-
-    if label == "POSITIVE":
-        print("    [Gemini] 긍정 -> " + title[:40] + " | 근거: " + reason + dir_suffix)
-        return "POSITIVE"
-    if label == "NEGATIVE":
-        print("    [Gemini] 부정 -> " + title[:40] + " | 근거: " + reason + dir_suffix + " | 표현: " + phrase_str)
-        return "NEGATIVE"
-    if label == "NEUTRAL":
-        print("    [Gemini] 중립 제외 -> " + title[:40] + " | 근거: " + reason)
-        return None
-
-    # 라벨 불명 (include=true인데 label이 이상한 경우)
-    print("    [Gemini] 라벨 불명(" + label + ") UNCERTAIN -> " + title[:40])
-    return "UNCERTAIN"
+    if info.get("note"):
+        print("    [보류] " + info["note"] + " -> " + title[:40])
+    print("    [분류] %s (%s) %s" % (sentiment, info.get("event_type", ""), title[:40]))
+    return sentiment
 
 
 def search_news(company, keyword, display=5):
