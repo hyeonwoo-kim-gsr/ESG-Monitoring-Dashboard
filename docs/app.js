@@ -534,6 +534,239 @@
     });
   }
 
+  // ---------------- 5. ESG 법률 모니터링 (의안 정보 / 법령 정보) ----------------
+
+  var LEGAL_DIR = "./legal";
+  var CAT_LABEL = { ENV_REG: "환경규제", DISC_MANDATE: "의무공시", SOC_CONTRIB: "사회공헌" };
+  var STAGES = ["접수", "본회의 심의", "정부이송", "공포"];
+  var legal = { bills: null, laws: null, meta: null, failed: {}, view: { bills: [], laws: [] } };
+
+  function loadLegalFile(name) {
+    return fetch(LEGAL_DIR + "/" + name + ".json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("http " + res.status);
+        return res.json();
+      });
+  }
+
+  function loadLegal(kind) {
+    if (legal[kind]) return Promise.resolve(legal[kind]);
+    var metaP = legal.meta ? Promise.resolve(legal.meta) : loadLegalFile("meta").catch(function () { return null; });
+    return Promise.all([loadLegalFile(kind), metaP]).then(function (r) {
+      legal[kind] = Array.isArray(r[0]) ? r[0] : [];
+      legal.meta = r[1];
+      return legal[kind];
+    }).catch(function (err) {
+      console.warn("[대시보드] 법률 데이터 로드 실패:", kind, err);
+      legal[kind] = [];
+      legal.failed[kind] = true;
+      return legal[kind];
+    });
+  }
+
+  function dotDate(s) { return s ? String(s).replace(/-/g, ".") : "-"; }
+
+  function monthStart(v) { return v ? v + "-01" : ""; }
+  function monthEnd(v) { return v ? v + "-31" : ""; }
+
+  /* 필터: 기간(YYYY-MM) / 유형 / 키워드(공백으로 나눈 단어를 모두 포함) */
+  function legalMatches(rec, f, dateField, textFields) {
+    var d = rec[dateField] || "";
+    if (f.from && d < monthStart(f.from)) return false;
+    if (f.to && d > monthEnd(f.to)) return false;
+    if (f.cat && rec.category !== f.cat) return false;
+    var terms = (f.kw || "").trim().toLowerCase().split(/\s+/).filter(Boolean);
+    if (terms.length) {
+      var hay = textFields.map(function (k) { return rec[k] || ""; }).join(" ").toLowerCase();
+      for (var i = 0; i < terms.length; i++) { if (hay.indexOf(terms[i]) === -1) return false; }
+    }
+    return true;
+  }
+
+  var LEGAL_CFG = {
+    bills: { dateField: "receipt_date", textFields: ["name", "committee", "proposer", "background", "summary", "stage", "plenary_result"] },
+    laws:  { dateField: "promulgation_date", textFields: ["name", "kind", "ministry", "summary", "background", "revision_type"] }
+  };
+
+  function readLegalFilter(kind) {
+    return { from: $(kind + "From").value, to: $(kind + "To").value, cat: $(kind + "Cat").value, kw: $(kind + "Kw").value };
+  }
+
+  function chipHtml(text, cls) { return '<span class="chip ' + (cls || "") + '">' + escapeHtml(text) + "</span>"; }
+
+  function safeHref(u) { return isHttpUrl(u) ? escapeHtml(u) : ""; }
+
+  function linkButton(url, label) {
+    var h = safeHref(url);
+    return h ? '<a class="legal-link" href="' + h + '" target="_blank" rel="noopener">' + escapeHtml(label) + " ↗</a>" : "";
+  }
+
+  function sectionText(label, text) {
+    if (!text) return "";
+    return '<div class="legal-text"><span class="legal-text-label">' + escapeHtml(label) + "</span><p>" + escapeHtml(text) + "</p></div>";
+  }
+
+  function stageTrackerHtml(b) {
+    var cur = Math.max(0, STAGES.indexOf(b.stage));
+    var dates = [b.receipt_date, b.plenary_date, b.transfer_date, b.promulgation_date];
+    return '<ol class="stage-track">' + STAGES.map(function (name, i) {
+      var reached = i <= cur;
+      var sub = "";
+      if (i === 1 && b.plenary_result) sub = '<em class="' + (/가결/.test(b.plenary_result) ? "ok" : "ng") + '">' + escapeHtml(b.plenary_result) + "</em>";
+      return '<li class="' + (reached ? "reached" : "") + (i === cur ? " current" : "") + '">' +
+        '<b>' + escapeHtml(name) + "</b><span>" + escapeHtml(dates[i] ? dotDate(dates[i]) : (reached ? "일자 미확인" : "-")) + "</span>" + sub + "</li>";
+    }).join("") + "</ol>";
+  }
+
+  function billItemHtml(b) {
+    return '<li class="thread-item">' +
+      '<div class="thread-head"><span class="thread-date">' + escapeHtml(dotDate(b.receipt_date)) + " 접수</span>" +
+        chipHtml(CAT_LABEL[b.category] || b.category, "cat-" + b.category) + chipHtml(b.stage, "stage-chip") + "</div>" +
+      '<div class="legal-card">' +
+        '<div class="legal-title">' + escapeHtml(b.name) + "</div>" +
+        '<div class="legal-meta">소관위원회 <b>' + escapeHtml(b.committee || "-") + "</b>" +
+          (b.bill_no ? " · 의안번호 " + escapeHtml(b.bill_no) : "") + (b.proposer ? " · " + escapeHtml(b.proposer) : "") + "</div>" +
+        stageTrackerHtml(b) +
+        sectionText("제·개정 배경", b.background) + sectionText("주요 내용", b.summary) +
+        '<div class="legal-foot">' + linkButton(b.link, "의안 본문 보기") + "</div>" +
+      "</div></li>";
+  }
+
+  function lawItemHtml(l) {
+    return '<li class="thread-item">' +
+      '<div class="thread-head"><span class="thread-date">' + escapeHtml(dotDate(l.promulgation_date)) + " 공포</span>" +
+        chipHtml(CAT_LABEL[l.category] || l.category, "cat-" + l.category) + chipHtml(l.kind || "법령", "stage-chip") +
+        (l.revision_type ? chipHtml(l.revision_type, "") : "") + "</div>" +
+      '<div class="legal-card">' +
+        '<div class="legal-title">' + escapeHtml(l.name) + "</div>" +
+        '<dl class="legal-facts">' +
+          "<div><dt>공포일자</dt><dd>" + escapeHtml(dotDate(l.promulgation_date)) + "</dd></div>" +
+          "<div><dt>시행일자</dt><dd>" + escapeHtml(dotDate(l.effective_date)) + "</dd></div>" +
+          "<div><dt>법령종류</dt><dd>" + escapeHtml(l.kind || "-") + "</dd></div>" +
+          "<div><dt>소관부처</dt><dd>" + escapeHtml(l.ministry || "-") + "</dd></div>" +
+        "</dl>" +
+        sectionText("주요 내용", l.summary) +
+        '<div class="legal-foot">' + linkButton(l.link, "법령 본문 보기") + "</div>" +
+      "</div></li>";
+  }
+
+  /* 최신 -> 과거 순서로 월별 구분선을 넣어 스레드를 구성 */
+  function threadHtml(rows, dateField, itemFn) {
+    var html = "", lastMonth = "";
+    rows.forEach(function (r) {
+      var m = (r[dateField] || "").slice(0, 7);
+      if (m !== lastMonth) {
+        if (lastMonth) html += "</ol></div>";
+        html += '<div class="thread-month"><div class="thread-month-label">' +
+          (m ? m.slice(0, 4) + "년 " + m.slice(5, 7) + "월" : "일자 미상") + '</div><ol class="thread">';
+        lastMonth = m;
+      }
+      html += itemFn(r);
+    });
+    return html + (lastMonth !== "" || rows.length ? "</ol></div>" : "");
+  }
+
+  function renderLegal(kind) {
+    var cfg = LEGAL_CFG[kind];
+    var el = $(kind + "Result");
+    el.innerHTML = emptyState("불러오는 중…");
+    loadLegal(kind).then(function (all) {
+      var f = readLegalFilter(kind);
+      if (f.from && f.to && f.from > f.to) {
+        el.innerHTML = emptyState("기간의 시작월이 종료월보다 늦습니다. 기간을 다시 선택해 주세요.");
+        legal.view[kind] = [];
+        $(kind + "Count").textContent = "";
+        return;
+      }
+      var rows = all.filter(function (r) { return legalMatches(r, f, cfg.dateField, cfg.textFields); });
+      rows.sort(function (a, b) {
+        var x = a[cfg.dateField] || "", y = b[cfg.dateField] || "";
+        if (x !== y) return x < y ? 1 : -1;
+        return String(b.id).localeCompare(String(a.id));
+      });
+      legal.view[kind] = rows;
+
+      var upd = legal.meta && legal.meta.last_updated ? " · 마지막 수집 " + legal.meta.last_updated.slice(0, 16).replace("T", " ") : "";
+      $(kind + "Count").textContent = "총 " + rows.length + "건 (전체 " + all.length + "건)" + upd;
+      if (legal.failed[kind]) {
+        el.innerHTML = emptyState("아직 수집된 데이터가 없습니다. ESG 법률 모니터링 워크플로가 처음 실행되면 표시됩니다.");
+      } else if (rows.length === 0) {
+        el.innerHTML = emptyState("선택한 조건에 해당하는 " + (kind === "bills" ? "의안" : "법령") + "이 없습니다.");
+      } else {
+        el.innerHTML = threadHtml(rows, cfg.dateField, kind === "bills" ? billItemHtml : lawItemHtml);
+      }
+    });
+  }
+
+  var BILL_HEADERS = ["의안명", "소관위원회", "유형", "현재 심사단계", "접수일", "본회의 심의일", "본회의 심의결과",
+                      "정부이송일", "공포일", "제·개정 배경", "주요 내용", "의안 본문 링크"];
+  var LAW_HEADERS = ["법령명", "법령종류", "소관부처", "유형", "제·개정 구분", "공포일자", "시행일자", "주요 내용", "법령 본문 링크"];
+
+  function legalExcelRows(kind, rows) {
+    if (kind === "bills") {
+      return rows.map(function (b) {
+        return [b.name || "", b.committee || "", CAT_LABEL[b.category] || "", b.stage || "", b.receipt_date || "",
+                b.plenary_date || "", b.plenary_result || "", b.transfer_date || "", b.promulgation_date || "",
+                b.background || "", b.summary || "", b.link || ""];
+      });
+    }
+    return rows.map(function (l) {
+      return [l.name || "", l.kind || "", l.ministry || "", CAT_LABEL[l.category] || "", l.revision_type || "",
+              l.promulgation_date || "", l.effective_date || "", l.summary || "", l.link || ""];
+    });
+  }
+
+  /* 마지막 열(링크)을 하이퍼링크로 만든 시트 */
+  function buildLegalWorkbook(kind, rows) {
+    var XLSX = window.XLSX;
+    var headers = kind === "bills" ? BILL_HEADERS : LAW_HEADERS;
+    var aoa = [headers].concat(legalExcelRows(kind, rows));
+    var ws = XLSX.utils.aoa_to_sheet(aoa);
+    var linkCol = headers.length - 1;
+    for (var r = 1; r < aoa.length; r++) {
+      var url = aoa[r][linkCol];
+      if (!isHttpUrl(url)) continue;
+      var addr = XLSX.utils.encode_cell({ r: r, c: linkCol });
+      if (ws[addr]) ws[addr].l = { Target: url, Tooltip: kind === "bills" ? "의안 본문 열기" : "법령 본문 열기" };
+    }
+    ws["!cols"] = kind === "bills"
+      ? [{ wch: 45 }, { wch: 20 }, { wch: 10 }, { wch: 12 }, { wch: 12 }, { wch: 14 }, { wch: 14 }, { wch: 12 }, { wch: 12 }, { wch: 50 }, { wch: 70 }, { wch: 50 }]
+      : [{ wch: 40 }, { wch: 10 }, { wch: 16 }, { wch: 10 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 70 }, { wch: 50 }];
+    ws["!autofilter"] = { ref: XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: aoa.length - 1, c: linkCol } }) };
+    var wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, kind === "bills" ? "의안 정보" : "법령 정보");
+    return wb;
+  }
+
+  function exportLegal(kind) {
+    var rows = legal.view[kind] || [];
+    if (rows.length === 0) { alert("추출할 " + (kind === "bills" ? "의안" : "법령") + "이 없습니다. 조건을 확인해 주세요."); return false; }
+    if (!window.XLSX) { alert("엑셀 라이브러리를 불러오지 못했습니다. 인터넷 연결(또는 사내망의 cdnjs 접근 차단 여부)을 확인한 뒤 새로고침해 주세요."); return false; }
+    var f = readLegalFilter(kind);
+    var parts = [kind === "bills" ? "ESG_의안정보" : "ESG_법령정보"];
+    if (f.from || f.to) parts.push((f.from || "처음") + "~" + (f.to || "현재"));
+    if (f.cat) parts.push(CAT_LABEL[f.cat]);
+    if (f.kw.trim()) parts.push(f.kw.trim());
+    parts.push(todayCompact());
+    window.XLSX.writeFile(buildLegalWorkbook(kind, rows), safeFileName(parts.join("_")) + ".xlsx");
+    return true;
+  }
+
+  function setupLegal() {
+    ["bills", "laws"].forEach(function (kind) {
+      ["From", "To", "Cat"].forEach(function (s) { $(kind + s).addEventListener("change", function () { renderLegal(kind); }); });
+      $(kind + "Kw").addEventListener("input", function () {
+        clearTimeout(setupLegal["t_" + kind]);
+        setupLegal["t_" + kind] = setTimeout(function () { renderLegal(kind); }, 250);
+      });
+      $(kind + "Reset").addEventListener("click", function () {
+        $(kind + "From").value = ""; $(kind + "To").value = ""; $(kind + "Cat").value = ""; $(kind + "Kw").value = "";
+        renderLegal(kind);
+      });
+      $(kind + "Export").addEventListener("click", function () { exportLegal(kind); });
+    });
+  }
+
   // ---------------- 사이드바 탭 전환 ----------------
 
   function setupNav() {
@@ -545,6 +778,7 @@
         Array.prototype.slice.call(document.querySelectorAll(".panel")).forEach(function (p) { p.classList.remove("is-active"); });
         $("panel-" + btn.dataset.tab).classList.add("is-active");
         $("panelTitle").textContent = btn.dataset.title;
+        if (btn.dataset.tab === "bills" || btn.dataset.tab === "laws") renderLegal(btn.dataset.tab);
       });
     });
   }
@@ -564,6 +798,7 @@
 
       setupNav();
       setupSearch();
+      setupLegal();
       populateMonthlySelectors();
       populateWeeklyMonths();
 
@@ -619,7 +854,7 @@
   }
 
   // 테스트용 노출 (화면 동작에는 영향 없음)
-  window.__esgDash = { matchesDetail: matchesDetail, buildExcelRows: buildExcelRows, buildWorkbook: buildWorkbook, state: state, init: init };
+  window.__esgDash = { matchesDetail: matchesDetail, buildExcelRows: buildExcelRows, buildWorkbook: buildWorkbook, legal: legal, legalMatches: legalMatches, buildLegalWorkbook: buildLegalWorkbook, renderLegal: renderLegal, state: state, init: init };
 
   document.addEventListener("DOMContentLoaded", init);
 })();
