@@ -42,6 +42,7 @@ os.environ.setdefault("GEMINI_MIN_INTERVAL", "6")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import esg_collector as ec  # noqa: E402
+import esg_classifier as clf  # noqa: E402
 
 # ---- 메일 발송 완전 차단 (백필은 수신자에게 리포팅하지 않음) ----
 # 1) 수신자 목록 비움  2) SMTP 연결 자체를 예외 처리  3) 워크플로에도 Gmail 실계정 미전달
@@ -323,72 +324,13 @@ def save_state(out_dir, state):
 
 
 # ---------------------------------------------------------------- Gemini 배치 판별
-def build_batch_prompt(batch):
-    lines = [
-        "당신은 유통업계 ESG 뉴스 클리핑 담당자입니다.",
-        "아래 %d개 기사 각각에 대해 독립적으로 두 가지를 판별하세요." % len(batch),
-        "  (1) include: '경쟁 유통사 ESG 동향 모니터링 대시보드'에 실을 만한 기사인가?",
-        "      해당 회사의 환경·사회·지배구조(ESG) 활동이나 이슈가 기사의 핵심 주제일 때만 true.",
-        "      단순 신제품/행사/할인/실적/주가/인사/광고성 기사는 false.",
-        "  (2) label: 실을 만하다면 해당 회사에 유리한 소식이면 POSITIVE, 불리한 소식이면 NEGATIVE,",
-        "      어느 쪽도 아니면 NEUTRAL. 실을 만하지 않으면 N/A.",
-        "      표면적인 단어가 아니라 '누가 누구에게 무엇을 했는가'로 판단하세요.",
-        "      (예: 소비자가 사죄금을 기부한 미담은 '사죄'라는 단어가 있어도 POSITIVE)",
-        "",
-        "===== 출력 형식 =====",
-        "다음 형식의 JSON 배열만 반환하세요. 다른 텍스트는 절대 포함하지 마세요. 모든 id를 빠짐없이 포함하세요.",
-        '[{"id": 1, "include": true|false, "label": "POSITIVE"|"NEGATIVE"|"NEUTRAL"|"N/A", "reason": "한 문장"}]',
-        "",
-    ]
-    for i, c in enumerate(batch, 1):
-        lines.append("[기사 %d]" % i)
-        src = c.get("source_company")
-        lines.append("회사: " + c["company"] + (" (기사 표기: %s)" % src if src and src != c["company"] else ""))
-        lines.append("제목: " + c["title"])
-        lines.append("내용: " + c["content"])
-        lines.append("")
-    return "\n".join(lines)
-
-
-def parse_batch_response(raw):
-    if not raw:
-        return None
-    try:
-        data = json.loads(raw)
-    except Exception:
-        m = re.search(r"\[[\s\S]*\]", raw)
-        if not m:
-            return None
-        try:
-            data = json.loads(m.group(0))
-        except Exception:
-            return None
-    if isinstance(data, dict):
-        for v in data.values():
-            if isinstance(v, list):
-                data = v
-                break
-    if not isinstance(data, list):
-        return None
-    out = {}
-    for row in data:
-        if isinstance(row, dict):
-            try:
-                out[int(row.get("id"))] = row
-            except Exception:
-                continue
-    return out
-
-
+# 프롬프트/응답 확정 로직은 esg_classifier.py 에 공용으로 있다 (일일 리포트와 동일 기준).
 def prepare_content(c):
-    body = ec.fetch_article_body(c["link"])
-    if body and ec.is_paywalled(body):
+    page = clf.fetch_article(c["link"])
+    if page and clf.is_paywalled(page.get("text", "")):
         c["paywalled"] = True
         return c
-    text = "요약: " + c["description"]
-    if body:
-        text += " / 본문: " + body[:800]
-    c["content"] = text[:1200]
+    c["content"] = clf.build_content(c["description"], page)
     return c
 
 
@@ -473,28 +415,25 @@ def main():
                 usable.append(c)
         if not usable:
             return True
-        raw = ec._call_gemini(build_batch_prompt(usable), timeout=120)
+        results = clf.classify_items(usable, ec._call_gemini, timeout=120)
         calls += 1
-        res = parse_batch_response(raw)
-        if res is None:
+        if results is None:
             fails_in_row += 1
             for c in usable:
                 attempts[h(c["link"])] = attempts.get(h(c["link"]), 0) + 1
             print("  [배치 실패] 연속 %d회" % fails_in_row)
             return fails_in_row < 2  # 연속 2회 실패 = 일일 쿼터 소진 등으로 보고 중단
         fails_in_row = 0
-        for i, c in enumerate(usable, 1):
+        for c, outcome in zip(usable, results):
             key = h(c["link"])
-            row = res.get(i)
-            if row is None:
+            if outcome is None:  # 응답에서 누락 -> 다음 실행에서 재시도
                 attempts[key] = attempts.get(key, 0) + 1
                 continue
-            label = str(row.get("label", "")).upper()
-            if not row.get("include") or label in ("NEUTRAL", "N/A", ""):
+            sentiment, info = outcome
+            if sentiment is None:
                 judged[key] = "r"
                 rejected += 1
                 continue
-            sentiment = label if label in ("POSITIVE", "NEGATIVE") else "UNCERTAIN"
             art, same = store.find_dup(c["company"], c["title"], c["date"])
             judged[key] = "a"
             if art is not None:
@@ -507,6 +446,7 @@ def main():
                 "date": c["date"], "company": c["company"], "sentiment": sentiment,
                 "title": c["title"], "description": c["description"],
                 "link": c["link"], "related_count": 1,
+                "event_type": info.get("event_type", ""),
             }
             src = c.get("source_company")
             if src and src != c["company"]:
