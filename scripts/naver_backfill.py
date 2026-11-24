@@ -13,10 +13,12 @@ naver_backfill.py — 네이버 뉴스 검색 API 기반 과거 기사 백필 (�
 
 실행 예
   # (A) 진단: Gemini 호출 없음. 네이버가 어디까지 닿는지, 몇 번 호출이 필요한지 추정
-  python scripts/naver_backfill.py --start 2024-01-01 --diagnose
+  python scripts/naver_backfill.py --start 2014-01-01 --end 2024-01-31 --diagnose
 
-  # (B) 본 실행: 하루 Gemini 호출 300회까지만
-  python scripts/naver_backfill.py --start 2024-01-01 --daily-cap 300 --batch-size 8
+  # (B) 본 실행: 2024-01-31 부터 과거(2014-01-01) 방향으로, 하루 Gemini 호출 300회까지만
+  python scripts/naver_backfill.py --start 2014-01-01 --end 2024-01-31 --daily-cap 300 --batch-size 8
+
+  # (C) 예전 방식(과거 -> 최신)으로 돌리려면 --direction forward
 """
 import os
 import sys
@@ -345,6 +347,9 @@ def main():
                     help="Gemini 1회 호출당 기사 수 (기본 8)")
     ap.add_argument("--max-minutes", type=float, default=float(os.environ.get("MAX_MINUTES", "300")),
                     help="이 시간(분)을 넘기면 안전하게 저장 후 종료")
+    ap.add_argument("--direction", choices=["backward", "forward"],
+                    default=os.environ.get("BACKFILL_DIRECTION", "backward"),
+                    help="처리 순서. backward=종료일(최신)에서 시작일(과거) 방향 (기본), forward=시작일에서 종료일 방향")
     ap.add_argument("--no-extra-keywords", action="store_true", help="확장 키워드 없이 기본 8개 키워드만 사용")
     ap.add_argument("--diagnose", action="store_true", help="Gemini 호출 없이 도달 범위/필요 호출 수만 추정")
     ap.add_argument("--output-dir", default=ec.DASHBOARD_DATA_DIR)
@@ -373,8 +378,13 @@ def main():
             if c["link"] not in store.links
             and h(c["link"]) not in judged
             and attempts.get(h(c["link"]), 0) < MAX_ATTEMPTS]
-    todo.sort(key=lambda c: c["date"])
+    # backward: 종료일에 가까운 최신 기사부터 처리 -> 호출 상한에 걸려도 '최신 쪽'이 먼저 채워지고
+    # 다음 실행에서 더 과거로 이어진다. (상태 파일 덕분에 방향을 바꿔도 처리분은 중복되지 않음)
+    todo.sort(key=lambda c: c["date"], reverse=(args.direction == "backward"))
+    print("[순서] %s" % ("최신 -> 과거 (backward)" if args.direction == "backward" else "과거 -> 최신 (forward)"))
     print("[대기] 아직 처리하지 않은 기사 %d건" % len(todo))
+    if todo:
+        print("[대기 범위] %s ~ %s" % (min(c["date"] for c in todo), max(c["date"] for c in todo)))
 
     est_calls = math.ceil(len(todo) / max(1, args.batch_size))
     est_days = math.ceil(est_calls / max(1, args.daily_cap)) if est_calls else 0
@@ -391,6 +401,11 @@ def main():
             print("%-10s %-12s %8d %8d %s" % (
                 comp, str(s["oldest"]) if s["oldest"] else "-", s["in_range"], s["queries"], s["capped"]))
         print("\n'가장 오래된 기사'가 시작일보다 늦고 capped 가 크면, 그 회사는 네이버만으로 시작일까지 닿지 못합니다.")
+        unreachable = [c for c in ec.COMPETITORS
+                       if stats.get(c) and stats[c]["oldest"] and stats[c]["oldest"] > end_date]
+        if unreachable:
+            print("[경고] 아래 회사는 네이버가 돌려주는 가장 오래된 기사(최대 1,000건)가 종료일(%s)보다 최근이라 "
+                  "지정 기간의 기사를 전혀 수집할 수 없습니다: %s" % (end_date, ", ".join(unreachable)))
         return
 
     if not todo:
