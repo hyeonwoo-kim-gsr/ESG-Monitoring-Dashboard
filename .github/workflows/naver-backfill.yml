@@ -9,7 +9,15 @@ on:
       start:
         description: "백필 시작일 (YYYY-MM-DD)"
         required: false
-        default: "2024-01-01"
+        default: "2014-01-01"
+      end:
+        description: "백필 종료일 (YYYY-MM-DD). 이 날짜부터 과거 방향으로 처리"
+        required: false
+        default: "2024-01-31"
+      direction:
+        description: "처리 순서 (backward=최신→과거, forward=과거→최신)"
+        required: false
+        default: "backward"
       daily_cap:
         description: "이번 실행의 Gemini 호출 상한(회)"
         required: false
@@ -55,14 +63,16 @@ jobs:
           GMAIL_APP_PASSWORD: dummy
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
           GEMINI_MIN_INTERVAL: "6"
-          BACKFILL_START: ${{ github.event.inputs.start || '2024-01-01' }}
+          BACKFILL_START: ${{ github.event.inputs.start || '2014-01-01' }}
+          BACKFILL_END: ${{ github.event.inputs.end || '2024-01-31' }}
+          BACKFILL_DIRECTION: ${{ github.event.inputs.direction || 'backward' }}
           DAILY_CAP: ${{ github.event.inputs.daily_cap || '300' }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '8' }}
           DIAGNOSE: ${{ github.event.inputs.diagnose || 'false' }}
         run: |
           EXTRA=""
           if [ "$DIAGNOSE" = "true" ]; then EXTRA="--diagnose"; fi
-          python scripts/naver_backfill.py --start "$BACKFILL_START" $EXTRA
+          python scripts/naver_backfill.py --start "$BACKFILL_START" --end "$BACKFILL_END" --direction "$BACKFILL_DIRECTION" $EXTRA
 
       - name: Commit & push (요약 데이터만)
         run: |
