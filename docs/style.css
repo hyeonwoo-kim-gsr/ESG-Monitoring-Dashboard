@@ -22,6 +22,9 @@
 
 * { box-sizing: border-box; }
 
+/* hidden 속성이 display 지정에 덮이지 않도록 */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -121,7 +124,7 @@ body {
 .field input:focus-visible, .field select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 .field-buttons { display: flex; gap: 8px; }
-.btn-ghost, .btn-primary {
+.btn-ghost, .btn-primary, .btn-excel {
   font-family: var(--font-sans);
   font-weight: 500;
   font-size: 13px;
@@ -133,9 +136,39 @@ body {
 .btn-ghost:hover { background: var(--bg); color: var(--text-primary); }
 .btn-primary { background: var(--accent); border: 1px solid var(--accent); color: #fff; }
 .btn-primary:hover { background: #2459BD; }
-.btn-ghost:focus-visible, .btn-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn-excel { background: var(--success-soft); border: 1px solid var(--success); color: var(--success); white-space: nowrap; }
+.btn-excel:hover { background: var(--success); color: #fff; }
+.toolbar-card > .btn-excel { margin-left: auto; }
+.btn-ghost:focus-visible, .btn-primary:focus-visible, .btn-excel:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .hint { font-size: 12px; color: var(--text-muted); margin: -8px 0 18px; }
+
+/* ---------- 키워드 검색: 모드 탭 / 상세 검색 ---------- */
+.mode-tabs { display: flex; gap: 4px; margin-bottom: 12px; }
+.mode-tab {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.mode-tab.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.mode-tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.detail-grid .field select, .detail-grid .field input { min-width: 140px; }
+
+.search-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: -8px 0 18px;
+}
 
 .panel { display: none; }
 .panel.is-active { display: block; }
@@ -173,6 +206,7 @@ body {
 }
 .article-card.positive { border-left-color: var(--success); }
 .article-card.negative { border-left-color: var(--danger); }
+.article-card.uncertain { border-left-color: var(--text-muted); }
 .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
 .card-date { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; padding-top: 2px; }
 .card-title { font-weight: 500; font-size: 14px; color: var(--text-primary); text-decoration: none; flex: 1; }
