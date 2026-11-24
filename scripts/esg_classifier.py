@@ -14,7 +14,9 @@ esg_classifier.py - ESG 기사 감성 분류 공용 모듈 (일일 리포트 / �
    -> '기사 속 회사 자신의 ESG 평판' 관점으로 못박고, 모델에게 먼저 '사건 유형'(닫힌 목록)을 고르게 함.
    -> POSITIVE/NEGATIVE 는 코드가 사건 유형에서 결정(모델의 label 은 교차검증용).
 4) NEGATIVE 안전장치: NEGATIVE 는 기사 원문에서 그대로 인용한 '부정 근거(negative_evidence)'가
-   실제 기사 텍스트에 존재할 때만 확정. 근거가 없거나 사건 유형과 모순되면 UNCERTAIN 으로 보류.
+   실제 기사 텍스트에 존재할 때만 확정.
+5) 판정 정책(소비자 관점): 부정 요소가 없으면 POSITIVE / 부정만 있으면 NEGATIVE /
+   의미 있는 긍정+부정이 섞인 경우, 또는 부정으로 봤지만 근거를 원문에서 확인 못한 경우만 UNCERTAIN(보류).
 """
 import os
 import re
@@ -243,6 +245,8 @@ _FEWSHOT = [
     ("[르포] 더마뷰티 키우는 현대백화점, 매장 가보니", "NOT_ESG", "N/A", "상품·매장 트렌드이며 ESG 주제 아님"),
     ("공정위, OO마트 납품업체에 판촉비 떠넘기기…과징금 부과", "LEGAL_SANCTION", "NEGATIVE", "과징금 부과(원문에 명시)"),
     ("OO편의점 점주 사망사고…근로복지공단 산재 인정", "SAFETY_ACCIDENT", "NEGATIVE", "산재 인정 사고"),
+    ("OO마트, 공정위 과징금 부과…같은 날 협력사 상생기금 100억 출연 발표", "LEGAL_SANCTION", "MIXED", "과징금(부정)과 상생기금(긍정)이 함께 있음 -> 보류"),
+    ("OO백화점, 지속가능경영보고서 발간…탄소배출 로드맵 공개", "GOVERNANCE_IMPROVE", "POSITIVE", "부정 요소 없음 -> 긍정"),
 ]
 
 
@@ -276,6 +280,14 @@ def build_prompt(items):
         "5. 제목·본문이 모두 ESG(환경·사회·지배구조)와 무관하면 include=false, event_type=NOT_ESG.",
         "   ESG 와 관련 있으나 좋고 나쁨을 가릴 근거가 없으면 NEUTRAL_FACT.",
         "6. 본문이 깨져 있거나 비어 있으면 제목과 요약만으로 판단하되, 근거가 부족하면 NEUTRAL_FACT 로 두세요(추측 금지).",
+        "7. 최종 label 은 '일반 소비자가 이 기사를 읽었을 때' 기준으로 정합니다.",
+        "   - 소비자가 보기에 부정적인 요소(위반·제재·사고·유출·분쟁·논란·피해)가 기사에 없으면 POSITIVE 입니다.",
+        "     (ESG 활동·수상·지원·캠페인뿐 아니라, 부정 요소가 전혀 없는 ESG 관련 기사는 모두 POSITIVE)",
+        "   - 부정적 요소만 있으면 NEGATIVE.",
+        "   - 같은 기사 안에 의미 있는 긍정 사건과 의미 있는 부정 사건이 '모두' 있을 때에만 MIXED(보류)로 두세요.",
+        "     (예: 과징금 부과 + 같은 기사에서 대규모 상생기금 발표). 사과·재발방지 다짐·수습 노력은 긍정 사건이 아니므로",
+        "     부정 사건 기사는 그대로 NEGATIVE 입니다. 애매하다는 이유만으로 MIXED 를 쓰지 마세요.",
+        "   - has_positive: 기사에 의미 있는 긍정 사건이 있으면 true / has_negative: 부정 사건이 있으면 true.",
         "",
         "===== 사건 유형 목록 =====",
         _taxonomy_text(),
@@ -292,7 +304,8 @@ def build_prompt(items):
         '  "what_happened": "실제 일어난 일 한 문장(평가 없이)",',
         '  "event_type": "<사건 유형 코드>",',
         '  "negative_evidence": "기사 원문 그대로 인용한 부정 근거 또는 null",',
-        '  "label": "POSITIVE"|"NEGATIVE"|"NEUTRAL"|"N/A",',
+        '  "has_positive": true|false, "has_negative": true|false,',
+        '  "label": "POSITIVE"|"NEGATIVE"|"MIXED"|"NEUTRAL"|"N/A",',
         '  "reason": "한 문장"}]',
         "",
     ]
@@ -361,28 +374,34 @@ def finalize(row, title, content):
     info = {"event_type": et, "reason": str(row.get("reason", ""))[:120]}
     if not row.get("include", False) or et in NEUTRAL_TYPES:
         return None, info
-    if et in POSITIVE_TYPES:
-        if label == "NEGATIVE":
-            info["note"] = "유형(긍정)과 label(NEGATIVE) 모순 -> 보류"
-            return "UNCERTAIN", info
-        return "POSITIVE", info
+    if label in ("NEUTRAL", "N/A") and et not in POSITIVE_TYPES and et not in NEGATIVE_TYPES:
+        return None, info
+
+    # 정책: 소비자 입장에서 부정 요소가 (원문에서 확인되는 만큼) 없으면 POSITIVE,
+    #       의미 있는 긍정+부정이 함께 있을 때만 UNCERTAIN(보류), 부정만 있으면 NEGATIVE.
     neg_ok = evidence_in_text(row.get("negative_evidence"), (title or "") + " " + (content or ""))
-    if et in NEGATIVE_TYPES or (not et and label == "NEGATIVE"):
-        if label == "POSITIVE":
-            info["note"] = "유형(부정)과 label(POSITIVE) 모순 -> 보류"
-            return "UNCERTAIN", info
-        if not neg_ok:
-            info["note"] = "부정 근거 인용을 기사 원문에서 확인 못함 -> 보류"
+    claims_neg = (et in NEGATIVE_TYPES) or label == "NEGATIVE"
+    # 모델이 부정 요소가 있다고 주장하지 않았는데 인용문만 붙어 있는 경우는 근거로 보지 않음
+    neg_ok = neg_ok and (claims_neg or label == "MIXED" or bool(row.get("has_negative")))
+    # 긍정 유형인데 label 만 NEGATIVE 인 모순: 원문에서 부정 근거가 확인될 때만 부정으로 취급
+    if et in POSITIVE_TYPES:
+        claims_neg = False
+    has_pos = bool(row.get("has_positive")) or label == "MIXED" or et in POSITIVE_TYPES or label == "POSITIVE"
+    # 부정 유형/NEGATIVE 라벨의 기사에서 긍정 신호는 has_positive·MIXED·POSITIVE 라벨일 때만 인정
+    if et in NEGATIVE_TYPES and label != "POSITIVE" and label != "MIXED":
+        has_pos = bool(row.get("has_positive"))
+
+    if neg_ok:
+        if has_pos:
+            info["note"] = "긍정·부정 요소 혼재 -> 보류"
             return "UNCERTAIN", info
         return "NEGATIVE", info
-    # 알 수 없는 유형: label 로 폴백하되 NEGATIVE 는 근거 필요
-    if label == "POSITIVE":
-        return "POSITIVE", info
-    if label == "NEGATIVE":
-        return ("NEGATIVE", info) if neg_ok else ("UNCERTAIN", info)
-    if label in ("NEUTRAL", "N/A"):
-        return None, info
-    return "UNCERTAIN", info
+    # 부정 근거를 원문에서 확인하지 못함
+    if claims_neg:
+        info["note"] = "부정으로 판단했으나 근거 인용을 원문에서 확인 못함 -> 보류"
+        return "UNCERTAIN", info
+    # 부정 요소 없음 -> 긍정 (긍정 유형이 아니어도 ESG 관련이며 부정 요소가 없으면 긍정)
+    return "POSITIVE", info
 
 
 def classify_items(items, call_fn, timeout=120):
