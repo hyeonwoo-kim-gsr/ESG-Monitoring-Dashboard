@@ -307,14 +307,14 @@
     });
   }
 
-  // ---------------- 3. 기업별 월별 모음 ----------------
+  // ---------------- 3. 기업별 월간 보도 모음 ----------------
 
   function renderMonthly(company, monthKey) {
     loadMonth(monthKey).then(function (articles) {
       var filtered = articles.filter(function (a) {
         return a.company === company && (a.sentiment === "POSITIVE" || a.sentiment === "NEGATIVE");
       });
-      state.lastMonthly = { rows: filtered, label: "ESG_기업별월별_" + company + "_" + monthKey };
+      state.lastMonthly = { rows: filtered, label: "ESG_기업별월간보도_" + company + "_" + monthKey };
       $("monthlyResult").innerHTML = renderSentimentSections(filtered, { groupByCompany: false });
     });
   }
