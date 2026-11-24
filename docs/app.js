@@ -672,6 +672,8 @@
     el.innerHTML = emptyState("불러오는 중…");
     loadLegal(kind).then(function (all) {
       var f = readLegalFilter(kind);
+      legal.applied = legal.applied || {};
+      legal.applied[kind] = f;
       if (f.from && f.to && f.from > f.to) {
         el.innerHTML = emptyState("기간의 시작월이 종료월보다 늦습니다. 기간을 다시 선택해 주세요.");
         legal.view[kind] = [];
@@ -742,7 +744,7 @@
     var rows = legal.view[kind] || [];
     if (rows.length === 0) { alert("추출할 " + (kind === "bills" ? "의안" : "법령") + "이 없습니다. 조건을 확인해 주세요."); return false; }
     if (!window.XLSX) { alert("엑셀 라이브러리를 불러오지 못했습니다. 인터넷 연결(또는 사내망의 cdnjs 접근 차단 여부)을 확인한 뒤 새로고침해 주세요."); return false; }
-    var f = readLegalFilter(kind);
+    var f = (legal.applied && legal.applied[kind]) || readLegalFilter(kind);
     var parts = [kind === "bills" ? "ESG_의안정보" : "ESG_법령정보"];
     if (f.from || f.to) parts.push((f.from || "처음") + "~" + (f.to || "현재"));
     if (f.cat) parts.push(CAT_LABEL[f.cat]);
@@ -754,10 +756,10 @@
 
   function setupLegal() {
     ["bills", "laws"].forEach(function (kind) {
-      ["From", "To", "Cat"].forEach(function (s) { $(kind + s).addEventListener("change", function () { renderLegal(kind); }); });
-      $(kind + "Kw").addEventListener("input", function () {
-        clearTimeout(setupLegal["t_" + kind]);
-        setupLegal["t_" + kind] = setTimeout(function () { renderLegal(kind); }, 250);
+      // 조건을 고른 뒤 '조회' 버튼(또는 키워드 입력창에서 Enter)을 눌러야 결과에 반영됩니다.
+      $(kind + "Search").addEventListener("click", function () { renderLegal(kind); });
+      $(kind + "Kw").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") { e.preventDefault(); renderLegal(kind); }
       });
       $(kind + "Reset").addEventListener("click", function () {
         $(kind + "From").value = ""; $(kind + "To").value = ""; $(kind + "Cat").value = ""; $(kind + "Kw").value = "";
