@@ -45,6 +45,13 @@ body {
   padding: 28px 0 20px;
 }
 .sidebar-header { padding: 0 24px 22px; }
+.sidebar-logo {
+  display: block;
+  height: 34px;
+  width: auto;
+  margin: 0 0 10px;
+}
+
 .sidebar-eyebrow {
   font-family: var(--font-mono);
   font-size: 11px;
