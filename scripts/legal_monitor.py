@@ -3,11 +3,11 @@
 """
 legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령정보센터)
 
-* 의안  : 열린국회정보 Open API(TVBPMBILL11 목록, BILLINFODETAIL 일정) + 의안정보시스템(likms)의
-          '제안이유 및 주요내용'(세션+CSRF 방식으로 billInfo 탭 조회)
+* 의안  : 열린국회정보 Open API(의안정보)로 목록 수집 + 의안정보시스템(likms) 상세페이지에서
+          '제안이유 및 주요내용'·정부이송/공포 일자 확보
 * 법령  : 국가법령정보센터 Open API(lawSearch / lawService)로 공포일 기준 목록·제개정이유 수집
 * 분류  : Gemini 2단계
-            1) 이름만 보고 후보 선별(관대한 기준, 호출 1회에 100건)
+            1) 이름만 보고 후보 선별(관대한 기준, 호출 1회에 100건) - 그 앞에 키워드 사전 필터(호출 없음)
             2) 본문(제안이유/제개정이유)을 보고 ENV_REG / DISC_MANDATE / SOC_CONTRIB / IRRELEVANT 확정
                + 제·개정 배경, 주요 내용 요약 생성. 근거 인용문이 원문에서 확인되지 않으면 IRRELEVANT.
 * 저장  : docs/legal/bills.json, laws.json, meta.json, state.json  (원문 전체는 저장하지 않고 요약만 저장)
@@ -23,6 +23,7 @@ legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령
   python scripts/legal_monitor.py --diagnose          # Gemini 호출 없이 API 연결/필드/본문 추출 점검
   python scripts/legal_monitor.py                      # 초기 적재 + 일일 갱신(동일 명령)
   python scripts/legal_monitor.py --only bills --max-calls 40
+  python scripts/legal_monitor.py --no-prefilter       # 키워드 사전 필터 끄기
 이메일은 발송하지 않는다.
 """
 import os
@@ -33,11 +34,7 @@ import html as htmllib
 import time
 import argparse
 import datetime as dt
-try:
-    import truststore
-    truststore.inject_into_ssl()
-except ImportError:
-    pass
+
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -468,7 +465,7 @@ PASSED = ("원안가결", "수정가결")
 
 
 def fill_promulgation_from_laws(rec, law_rows):
-    """상세 조회에서 공포일을 못 얻은 가결 의안은 법령 목록(공포일자)으로 보완: 같은 법률명 + 의결일 이후 최초 공포."""
+    """상세페이지에서 공포일을 못 얻은 가결 의안은 법령 목록(공포일자)으로 보완: 같은 법률명 + 의결일 이후 최초 공포."""
     if rec.get("promulgation_date") or rec.get("plenary_result") not in PASSED or not rec.get("plenary_date"):
         return
     target = bill_target_law(rec.get("name", ""))
@@ -542,14 +539,17 @@ class Store:
 # ============================================================================ 처리 파이프라인
 DEADLINE = None          # 실행 시간 상한(epoch초). 넘으면 새 작업을 시작하지 않고 저장 후 종료
 MAX_DETAIL_FAILS = 8     # 본문 확보가 연속 이 횟수 실패하면 해당 출처 본문 수집을 중단(차단/구조 변경 의심)
-GEMINI_ABORT = False
+
+GEMINI_ABORT = False     # Gemini 호출이 연속 실패하면 True (한도/장애) -> 이번 실행 종료
 MAX_GEMINI_FAILS = 3
+
 
 def expired():
     return GEMINI_ABORT or (DEADLINE is not None and time.time() > DEADLINE)
 
 
 def guard_call(call):
+    """Gemini 호출 래퍼: 연속 MAX_GEMINI_FAILS 회 응답 없음이면 중단 플래그를 켠다."""
     streak = [0]
 
     def wrapped(prompt, timeout=120):
@@ -584,10 +584,50 @@ def chunks(seq, n):
         yield seq[i:i + n]
 
 
+# ---- 호출량 절감: 이름 키워드 사전 필터 (Gemini 호출 없이 명백한 무관 건 제외) ----------
+# 3개 영역(환경규제/의무공시/사회공헌)과 관련될 수 있는 법 이름의 일부. 하나도 안 들어 있으면 제외한다.
+PREFILTER_KEYWORDS = (
+    # 환경규제
+    "환경", "온실가스", "탄소", "기후", "배출권", "녹색", "저탄소", "친환경", "에너지", "재생", "자원순환",
+    "폐기물", "재활용", "포장", "플라스틱", "일회용", "대기", "수질", "토양", "화학물질", "화학제품", "유해",
+    "생물다양성", "생태", "자연자본", "해양", "하천", "수자원", "미세먼지", "오염", "순환경제", "전기·전자", "전기전자",
+    "표시", "광고", "소비자", "공정거래", "하도급", "대규모유통", "유통산업",
+    # 의무공시
+    "자본시장", "금융투자", "외부감사", "상법", "상장", "공시", "지속가능", "책임투자", "금융소비자", "증권",
+    "기업지배", "주주", "회계",
+    # 사회공헌
+    "법인세", "상속세", "증여세", "소득세", "조세특례", "조세", "부가가치세", "기부", "공익", "비영리", "사회적기업", "사회적경제", "사회적가치",
+    "자원봉사", "복권", "사회공헌", "재단", "후원", "사회복지공동모금", "기업의 사회",
+)
+PREFILTER_MINISTRY = ("환경", "기후", "에너지")   # 법령 소관부처명에 포함되면 이름과 무관하게 통과
+
+
+def prefilter_pass(name, row=None, ministry_field=None):
+    if any(k in (name or "") for k in PREFILTER_KEYWORDS):
+        return True
+    if ministry_field and row is not None:
+        m = str(g(row, ministry_field))
+        return any(k in m for k in PREFILTER_MINISTRY)
+    return False
+
+
 def run_pipeline(kind, cands, store, call, budget, detail_fn, make_rec, done_set, maybe_set, rec_list, rec_idx,
-                 text_label, meta_fn, save_cb):
+                 text_label, meta_fn, save_cb, pre_fn=None):
     """cands: [(id, row, name)] (최신순 정렬 완료). 반환: dict(통계)"""
-    stat = {"cands": len(cands), "triage_no": 0, "relevant": 0, "irrelevant": 0, "no_text": 0, "pending": 0}
+    stat = {"cands": len(cands), "prefilter_no": 0, "triage_no": 0, "relevant": 0, "irrelevant": 0, "no_text": 0,
+            "pending": 0}
+    # 0단계: 키워드 사전 필터 (호출 없음). 제외 건은 '처리 완료'로 기록해 다음 실행에서 다시 보지 않는다.
+    if pre_fn is not None:
+        kept = []
+        for c in cands:
+            if c[0] in maybe_set or pre_fn(c):
+                kept.append(c)
+            else:
+                done_set.add(c[0])
+                stat["prefilter_no"] += 1
+        cands = kept
+        print("[%s] 키워드 사전 필터: %d건 제외, %d건 Gemini 판별 대상" % (kind, stat["prefilter_no"], len(cands)))
+        save_cb()
     # 1단계: 이름 기준 선별
     maybe = [c for c in cands if c[0] in maybe_set]          # 지난 실행에서 1차 통과한 항목
     cands = [c for c in cands if c[0] not in maybe_set]
@@ -710,7 +750,8 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
         return fetch_bill_detail(row, text=True, dates=g(row, "PROC_RESULT_CD") in PASSED)
 
     stat = run_pipeline("의안", cands, store, call, budget, bill_detail, make_rec, store.bills_done,
-                        store.bills_maybe, store.bills, store.bill_idx, "제안이유 및 주요내용", bill_meta, save_cb)
+                        store.bills_maybe, store.bills, store.bill_idx, "제안이유 및 주요내용", bill_meta, save_cb,
+                        pre_fn=None if args.no_prefilter else (lambda c: prefilter_pass(c[2])))
     return stat, rows
 
 
@@ -732,7 +773,8 @@ def process_laws(args, store, call, budget, oc, save_cb, bill_rows_for_fill=None
         return make_law_record(row, cls)
 
     stat = run_pipeline("법령", cands, store, call, budget, detail, make_rec, store.laws_done,
-                        store.laws_maybe, store.laws, store.law_idx, "제·개정이유/개정문", law_meta, save_cb)
+                        store.laws_maybe, store.laws, store.law_idx, "제·개정이유/개정문", law_meta, save_cb,
+                        pre_fn=None if args.no_prefilter else (lambda c: prefilter_pass(c[2], c[1], "소관부처명")))
     return stat, rows
 
 
@@ -788,9 +830,10 @@ def main():
     ap.add_argument("--only", choices=["all", "bills", "laws"], default="all")
     ap.add_argument("--max-calls", type=int, default=int(os.environ.get("LEGAL_MAX_CALLS", "150")))
     ap.add_argument("--limit", type=int, default=0, help="출처별 신규 판별 최대 건수(0=전부, 테스트용)")
-    ap.add_argument("--detail-refresh", type=int, default=60, help="실행당 공포 확인용 의안 일정 재조회 최대 수")
+    ap.add_argument("--detail-refresh", type=int, default=60, help="실행당 공포 확인용 의안 상세 재조회 최대 수")
     ap.add_argument("--max-minutes", type=int, default=int(os.environ.get("LEGAL_MAX_MINUTES", "80")),
                     help="실행 시간 상한(분). 넘으면 새 작업을 멈추고 저장 후 종료(다음 실행에서 이어감)")
+    ap.add_argument("--no-prefilter", action="store_true", help="키워드 사전 필터를 끄고 전부 Gemini 로 판별")
     ap.add_argument("--diagnose", action="store_true")
     args = ap.parse_args()
     global DEADLINE
@@ -805,7 +848,7 @@ def main():
         return 0
 
     store = Store(args.data_dir)
-    call = clf.make_gemini_caller()
+    call = guard_call(clf.make_gemini_caller())
     budget = Budget(args.max_calls)
     failures = []
     stats = {}
@@ -835,7 +878,9 @@ def main():
     print("\n==== 완료 ====")
     for k, v in stats.items():
         print("%s: %s" % (k, v))
-    if expired():
+    if GEMINI_ABORT:
+        failures.append("Gemini 호출 연속 실패로 조기 종료(한도 초과/모델명/장애 확인)")
+    elif expired():
         print("[알림] 실행 시간 상한(%d분)에 도달해 중간 저장 후 종료했습니다. 다시 실행하면 이어서 진행됩니다." % args.max_minutes)
     print("Gemini 호출 %d회 (상한 %d) | 누적 의안 %d건, 법령 %d건" % (budget.used, args.max_calls, len(store.bills), len(store.laws)))
     pend = sum(s.get("pending", 0) + s.get("no_text", 0) for s in stats.values())
