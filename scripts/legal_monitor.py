@@ -33,7 +33,11 @@ import html as htmllib
 import time
 import argparse
 import datetime as dt
-
+try:
+    import truststore
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
