@@ -453,11 +453,12 @@ def make_gemini_caller(model=None, min_interval=None, max_retries=3):
             _last[0] = time.time()
             try:
                 r = requests.post(url, json=payload, timeout=timeout)
-                if r.status_code == 429 or 500 <= r.status_code < 600:
+                                if r.status_code == 429 or 500 <= r.status_code < 600:
                     if attempt < max_retries:
                         time.sleep(backoff)
                         backoff *= 3
                         continue
+                    print("    [Gemini 실패] HTTP %d %s" % (r.status_code, r.text[:160].replace("\n", " ")))
                     return None
                 r.raise_for_status()
                 return r.json()["candidates"][0]["content"]["parts"][0]["text"]
