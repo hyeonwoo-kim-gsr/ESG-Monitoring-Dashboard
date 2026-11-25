@@ -208,5 +208,55 @@
     "link": "https://mdtoday.co.kr/news/view/1065590973665298",
     "related_count": 1,
     "event_type": "CONTROVERSY"
+  },
+  {
+    "date": "2023-12-21",
+    "company": "CJ온스타일",
+    "sentiment": "NEGATIVE",
+    "title": "CJ온스타일, \"높은 수수료 이유는 색상별 사이즈별 주문하는 여성 탓\"…...",
+    "description": "한 섬유업계 대표는 \"CJ온스타일의 이 같은 고수수료 정책은 납품업체의 어려움을 가중시키는 한편, 유통업계 내의 불공정한 거래 관행을 고착화시킬 위험이 있다\"고 주장했다. 또한, CJ온스타일의 수수료 정책은...",
+    "link": "https://www.imaeil.com/page/view/2023122114211624392",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-12-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑, 자코드 납품연기 여러번 해줘도 지연시켜",
+    "description": "롯데홈쇼핑은 자코드가 PB제품 납품을 거부하고 다른 밴더사에 PB사용권을 제공하는 등 갑질행위로 수억원의 피해를 입었다고 주장한데 대해 해당업체의 납품지연 때문이었고 여러 번 납기연장을 해줬음에도...",
+    "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=208242",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-12-20",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑 PB제품 납품거부 '갑질' 중소기업 피해호소...롯데 \"허위주장...",
+    "description": "자코드는 \"롯데홈쇼핑의 밴더사에 대한 갑질행위로 중소기업이 3억4000만원의 손해가 났다\"며 \"롯데홈쇼핑이 온라인에 공개한 '공정거래 내부운영 규정'에 동반상생, 공정경영을 외치지만 공허한 메아리일 뿐\"이라고...",
+    "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=208225",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-12-19",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, 전국 릴레이로 연탄 1만여장 전달",
+    "description": "올해 안에 약 1만여장의 연탄을 전달할 예정이다. GS리테일은 “계속 물가가 인상되고 기부가 축소되는 상황에서 난방비 부담이 있는 이웃에게 지속적으로 온기를 전할 것”이라고 말했다.",
+    "link": "https://news.kmib.co.kr/article/view.asp?arcid=0924335466&code=11151100&cp=nv",
+    "related_count": 31,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-18",
+    "company": "현대백화점",
+    "sentiment": "NEGATIVE",
+    "title": "롯데쇼핑·신세계사이먼·현대백화점·한무쇼핑의 갑질, '계약서면 미발...",
+    "description": "롯데백화점, 신세계사이먼, 현대백화점, 한무쇼핑의 대규모 유통업법 상의 거래상 지위 남용행위 사례... 부담시키는 갑질을 일삼았다. 18일 공정거래위원회에 따르면 공정거래위원회 제3소회의는 지난달 22일...",
+    "link": "http://www.press9.kr/news/articleView.html?idxno=57639",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
   }
 ]
