@@ -1,0 +1,25 @@
+{
+  "last_updated": "2026-11-25T11:19:21+09:00",
+  "bills_total": 0,
+  "laws_total": 0,
+  "since": "2024-11-25",
+  "last_stats": {
+    "bills": {
+      "cands": 16866,
+      "triage_no": 86,
+      "relevant": 0,
+      "irrelevant": 0,
+      "no_text": 0,
+      "pending": 16780
+    },
+    "laws": {
+      "cands": 4164,
+      "triage_no": 0,
+      "relevant": 0,
+      "irrelevant": 0,
+      "no_text": 0,
+      "pending": 4164
+    }
+  },
+  "last_failures": []
+}
