@@ -542,10 +542,28 @@ class Store:
 # ============================================================================ 처리 파이프라인
 DEADLINE = None          # 실행 시간 상한(epoch초). 넘으면 새 작업을 시작하지 않고 저장 후 종료
 MAX_DETAIL_FAILS = 8     # 본문 확보가 연속 이 횟수 실패하면 해당 출처 본문 수집을 중단(차단/구조 변경 의심)
-
+GEMINI_ABORT = False
+MAX_GEMINI_FAILS = 3
 
 def expired():
-    return DEADLINE is not None and time.time() > DEADLINE
+    return GEMINI_ABORT or (DEADLINE is not None and time.time() > DEADLINE)
+
+
+def guard_call(call):
+    streak = [0]
+
+    def wrapped(prompt, timeout=120):
+        global GEMINI_ABORT
+        raw = call(prompt, timeout=timeout)
+        if raw:
+            streak[0] = 0
+        else:
+            streak[0] += 1
+            if streak[0] >= MAX_GEMINI_FAILS and not GEMINI_ABORT:
+                GEMINI_ABORT = True
+                print("  [중단] Gemini 호출이 연속 %d회 실패 -> 한도/모델/장애 확인 후 다시 실행하세요 (이번 실행 종료)" % streak[0])
+        return raw
+    return wrapped
 
 
 class Budget:
