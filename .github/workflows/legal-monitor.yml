@@ -54,7 +54,7 @@ jobs:
           ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
           LAW_OC: ${{ secrets.LAW_OC }}
           LAW_REFERER: ${{ vars.LAW_REFERER }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_LEGAL }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
           GEMINI_MIN_INTERVAL: "6"
           LEGAL_ONLY: ${{ github.event.inputs.only || 'all' }}
