@@ -453,7 +453,7 @@ def make_gemini_caller(model=None, min_interval=None, max_retries=3):
             _last[0] = time.time()
             try:
                 r = requests.post(url, json=payload, timeout=timeout)
-                                if r.status_code == 429 or 500 <= r.status_code < 600:
+                if r.status_code == 429 or 500 <= r.status_code < 600:
                     if attempt < max_retries:
                         time.sleep(backoff)
                         backoff *= 3
@@ -467,7 +467,7 @@ def make_gemini_caller(model=None, min_interval=None, max_retries=3):
                     time.sleep(backoff)
                     backoff *= 3
                     continue
-                print("    [Gemini 실패] " + str(e)[:80])
+                print("    [Gemini 실패] " + str(e)[:160])
                 return None
         return None
 
