@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T13:27:00+09:00",
+  "last_updated": "2026-11-25T15:02:26+09:00",
   "bills_total": 0,
   "laws_total": 0,
   "since": "2024-11-25",
@@ -11,6 +11,14 @@
       "irrelevant": 0,
       "no_text": 0,
       "pending": 16780
+    },
+    "laws": {
+      "cands": 4164,
+      "triage_no": 0,
+      "relevant": 0,
+      "irrelevant": 0,
+      "no_text": 0,
+      "pending": 4164
     }
   },
   "last_failures": []
