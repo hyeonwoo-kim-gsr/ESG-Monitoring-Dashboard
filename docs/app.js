@@ -284,7 +284,7 @@
 
   // ---------------- 2. 주간 보도 랭킹 ----------------
 
-  function renderWeekly(startStr, endStr) {
+  function renderWeekly(startStr, endStr, topN) {
     if (!startStr || !endStr) return;
     var months = monthRangeKeys(startStr, endStr);
     Promise.all(months.map(loadMonth)).then(function (arrays) {
@@ -294,7 +294,7 @@
         if (b.related_count !== a.related_count) return b.related_count - a.related_count;
         return a.date < b.date ? 1 : -1;
       });
-      ranked = ranked.slice(0, 15);
+      ranked = ranked.slice(0, topN || 15);
 
       var el = $("weeklyResult");
       if (ranked.length === 0) {
@@ -355,7 +355,7 @@
     if (!monthKey) return [];
     var weeks = getMonthWeeks(monthKey);
     var sel = $("weeklyWeek");
-    sel.innerHTML = weeks.map(function (w, i) {
+    sel.innerHTML = '<option value="all">전체 (월 전체)</option>' + weeks.map(function (w, i) {
       return '<option value="' + i + '">' + w.label + "</option>";
     }).join("");
     sel.dataset.weeksJson = JSON.stringify(weeks);
@@ -375,10 +375,17 @@
     if (!monthKey) return;
     var weeks = [];
     try { weeks = JSON.parse($("weeklyWeek").dataset.weeksJson || "[]"); } catch (e) { weeks = []; }
+    if ($("weeklyWeek").value === "all") {
+      var p = monthKey.split("-").map(Number);
+      var first = new Date(Date.UTC(p[0], p[1] - 1, 1));
+      var last = new Date(Date.UTC(p[0], p[1], 0));
+      renderWeekly(fmtYMD(first), fmtYMD(last), 30);
+      return;
+    }
     var idx = parseInt($("weeklyWeek").value, 10);
     var w = weeks[idx];
     if (!w) return;
-    renderWeekly(w.start, w.end);
+    renderWeekly(w.start, w.end, 15);
   }
 
   // ---------------- 4. 키워드 검색 (기본 / 상세) ----------------
@@ -589,8 +596,13 @@
   };
 
   function readLegalFilter(kind) {
-    return { from: $(kind + "From").value, to: $(kind + "To").value, cat: $(kind + "Cat").value, kw: $(kind + "Kw").value };
+    var act = $(kind + "Active");
+    return { from: $(kind + "From").value, to: $(kind + "To").value, cat: $(kind + "Cat").value, kw: $(kind + "Kw").value,
+             active: !!(act && act.checked) };
   }
+
+  /* 진행 중 의안 = 종료(폐기·부결·철회)와 공포(완료)를 제외한 접수 · 본회의 심의 · 정부이송 단계 */
+  function isActiveBill(b) { return b.stage !== "종료" && b.stage !== "공포"; }
 
   function chipHtml(text, cls) { return '<span class="chip ' + (cls || "") + '">' + escapeHtml(text) + "</span>"; }
 
@@ -607,6 +619,14 @@
   }
 
   function stageTrackerHtml(b) {
+    if (b.stage === "종료") {   // 폐기·부결·철회: 접수 -> 종료 2단계로 표시
+      var why = b.closed_reason || b.plenary_result || "";
+      var cd = b.closed_date || b.plenary_date;
+      return '<ol class="stage-track">' +
+        '<li class="reached"><b>접수</b><span>' + escapeHtml(b.receipt_date ? dotDate(b.receipt_date) : "-") + "</span></li>" +
+        '<li class="reached current"><b>종료</b><span>' + escapeHtml(cd ? dotDate(cd) : "일자 미확인") + "</span>" +
+        (why ? '<em class="ng">' + escapeHtml(why) + "</em>" : "") + "</li></ol>";
+    }
     var cur = Math.max(0, STAGES.indexOf(b.stage));
     var dates = [b.receipt_date, b.plenary_date, b.transfer_date, b.promulgation_date];
     return '<ol class="stage-track">' + STAGES.map(function (name, i) {
@@ -680,7 +700,10 @@
         $(kind + "Count").textContent = "";
         return;
       }
-      var rows = all.filter(function (r) { return legalMatches(r, f, cfg.dateField, cfg.textFields); });
+      var rows = all.filter(function (r) {
+        if (kind === "bills" && f.active && !isActiveBill(r)) return false;
+        return legalMatches(r, f, cfg.dateField, cfg.textFields);
+      });
       rows.sort(function (a, b) {
         var x = a[cfg.dateField] || "", y = b[cfg.dateField] || "";
         if (x !== y) return x < y ? 1 : -1;
@@ -689,7 +712,7 @@
       legal.view[kind] = rows;
 
       var upd = legal.meta && legal.meta.last_updated ? " · 마지막 수집 " + legal.meta.last_updated.slice(0, 16).replace("T", " ") : "";
-      $(kind + "Count").textContent = "총 " + rows.length + "건 (전체 " + all.length + "건)" + upd;
+      $(kind + "Count").textContent = "총 " + rows.length + "건 (전체 " + all.length + "건" + (kind === "bills" && f.active ? ", 진행 중만" : "") + ")" + upd;
       if (legal.failed[kind]) {
         el.innerHTML = emptyState("아직 수집된 데이터가 없습니다. ESG 법률 모니터링 워크플로가 처음 실행되면 표시됩니다.");
       } else if (rows.length === 0) {
@@ -748,6 +771,7 @@
     var parts = [kind === "bills" ? "ESG_의안정보" : "ESG_법령정보"];
     if (f.from || f.to) parts.push((f.from || "처음") + "~" + (f.to || "현재"));
     if (f.cat) parts.push(CAT_LABEL[f.cat]);
+    if (kind === "bills" && f.active) parts.push("진행중");
     if (f.kw.trim()) parts.push(f.kw.trim());
     parts.push(todayCompact());
     window.XLSX.writeFile(buildLegalWorkbook(kind, rows), safeFileName(parts.join("_")) + ".xlsx");
@@ -763,6 +787,7 @@
       });
       $(kind + "Reset").addEventListener("click", function () {
         $(kind + "From").value = ""; $(kind + "To").value = ""; $(kind + "Cat").value = ""; $(kind + "Kw").value = "";
+        if ($(kind + "Active")) $(kind + "Active").checked = true;   // 초기화 시 '진행 중만 보기' 기본값(체크)으로 복원
         renderLegal(kind);
       });
       $(kind + "Export").addEventListener("click", function () { exportLegal(kind); });
