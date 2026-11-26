@@ -258,5 +258,228 @@
     "link": "http://www.press9.kr/news/articleView.html?idxno=57639",
     "related_count": 1,
     "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-12-18",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일, ‘GS나누미 봉사단’ 연탄 봉사 진행",
+    "description": "GS리테일이 전국에 위치한 사업부에서 릴레이식으로 연탄을 어려운 이웃에게 전달하는 봉사 활동을 시작했다고 18일 밝혔다.GS리테일의 봉사단체 GS나누미는 지난 14일 강남구 구룡마을에 연탄 1400장을 전달했다....",
+    "link": "https://vop.co.kr/A00001644150.html",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-17",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF, 취약계층 아동 주말식사 지원",
+    "description": "최민건 BGF리테일 ESG(환경·사회·지배구조) 팀장은 “올해 나눔 페스티벌에 임직원들의 많은 참여가 이어지면서 우리 사회 관심이 필요한 곳에 온기를 전할 수 있어 뜻깊다”며 “BGF그룹은 앞으로도 자발적인 기부...",
+    "link": "http://www.shinailbo.co.kr/news/articleView.html?idxno=1801815",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-17",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "[유통가 레이더] 일회용기 퇴출 나선 현대백화점, \"친환경 실험 성공할...",
+    "description": "현대백화점 측은 다회용기 판매 수익을 미래 세대를 위한 탄소중립 생활 실천 교육 프로그램인 '기후행동... 이마트의 고당도 프리미엄 과일 열풍이 확산되고 있다. 포도, 딸기에 이어 겨울철 제주에서 재배되는 감귤...",
+    "link": "https://www.greened.kr/news/articleView.html?idxno=309693",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-17",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, '2050년 넷제로 달성' 로드맵 공개",
+    "description": "최근 회사는 지속가능한 환경 경영을 위해 2050 탄소중립 전략과 로드맵을 수립하는 동시에 '넷제로 보고서 2023'을 발간했다고 밝혔다. 보고서에 따르면 이마트는 2018년 대비 탄소배출량을 2030년까지 32.8% 감축하는...",
+    "link": "https://www.mk.co.kr/article/10900483",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-17",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, 폐지로 만든 쇼핑백, 종이 600만장 아껴",
+    "description": "신세계백화점은 14일 '2023 지속가능경영유공 정부 포상' 시상식에서 산업통상자원부 장관상을 수상했다. 한국 생산성본부가 주관하는 이 상은 ESG 부문 중 유일하게 정부가 포상한다. 신세계백화점은 △자원순환을 위한...",
+    "link": "https://www.mk.co.kr/article/10900486",
+    "related_count": 1,
+    "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-12-13",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "신세계백화점, 아기와 소중한 첫 만남…'신세계 맘&베이비 박스'",
+    "description": "신세계백화점은 유아 전문 브랜드와 손잡고 출산·육아용품 선물 세트 ‘신세계 맘&베이비 박스’를... ‘압소바×신세계 맘&베이비 박스’는 신생아 필수용품 7개 품목을 담았다. 플라스틱이 아닌 옥수수를 원료로...",
+    "link": "https://www.hankyung.com/article/2023121325091",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-12",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[우리동네 명사들] GS리테일 허연수 부회장 ‘준법 경영 지킴이’",
+    "description": "지배구조(G)에서는 이사회 역할을 강화하고 ESG위원회를 이사회 산하로 편제하는 등 지속가능경영 체계를 확고히 한 점이 좋은 평가를 받았다. 또 GS리테일은 자발적인 법규 준수에 나설 수 있도록 내부 통제·준법...",
+    "link": "http://www.skyedaily.com/news/news_view.html?ID=214980",
+    "related_count": 1,
+    "event_type": "GOVERNANCE_IMPROVE"
+  },
+  {
+    "date": "2023-12-12",
+    "company": "이마트",
+    "sentiment": "NEGATIVE",
+    "title": "상생형 갈등조정제도 내년 1월 1일부터 시행…이마트 동반성장지수 1단...",
+    "description": "고발된 GS리테일에 대해 관련 규정에 근거해 등급 공표를 유예했다.공정위는 법 위반 심의로 공표 유예된... 주요 개선 내용은 산업안전·중대재해 예방 항목을 평가지표에 반영했으며 중소기업의 정보공시를 위한...",
+    "link": "https://www.asiatoday.co.kr/view.php?key=20231212010007382",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-12-11",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵 '소비자 중심 경영' 인증…협력사 컨설팅 제공",
+    "description": "GS리테일이 운영하는 GS샵은 8일 열린 '2023 소비자 중심 경영 우수기업 포상 및 인증서 수여식'에서 CCM... CCM 인증을 받을 수 있도록 적극 지원하고 ESG(환경·사회·지배구조) 경영을 실천할 것\"이라고 말했다.",
+    "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=533987",
+    "related_count": 2,
+    "event_type": "ESG_RATING_AWARD",
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2023-12-10",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 아동안전 공헌 시민영웅 시상",
+    "description": "그리기 봉사활동 등을 통해 자연스레 홍보되고 있다. 지난해는 아이CU를 비롯한 주요 아동친화경영활동 및 성과, 통계 등을 종합적으로 담은 '아동안전백서'도 발간했다. 민승배 BGF리테일 대표이사는 \"위험을 무릅쓰고...",
+    "link": "http://www.greenpostkorea.co.kr/news/articleView.html?idxno=213537",
+    "related_count": 4,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-10",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "현대백화점 면세점, ‘정보보호 대상 우수상’ 수상",
+    "description": "안전한 개인정보 관리를 위해 연 2회 수탁업체 점검과 현장교육 실시하는 등의 노력을 기울이고 있다.또한... 안전한 정보보호 환경 조성을 위한 현대백화점 면세점의 노력이 이번 수상을 통해 인정받을 수 있어 매우...",
+    "link": "http://www.boannews.com/media/view.asp?idx=124625&kind=",
+    "related_count": 1,
+    "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-12-07",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "본업 부실한데 현금 수북? 롯데홈쇼핑 불황에도 계열사 적극 지원 내막",
+    "description": "이 같은 공정거래법으로 롯데홈쇼핑이 우회적으로 롯데그룹과 롯데지주를 지원한 것 아니냐는 것. 황용식 세종대 경영학과 교수는 “지주사는 자회사나 손자회사에 재원조달을 하거나 지배구조를 투명하게 하기...",
+    "link": "https://ilyo.co.kr/?ac=article_view&entry_id=463585",
+    "related_count": 1,
+    "event_type": "GOVERNANCE_SCANDAL"
+  },
+  {
+    "date": "2023-12-07",
+    "company": "신세계백화점",
+    "sentiment": "POSITIVE",
+    "title": "아라리오·신세계백화점 천안아산점, 성탄절 앞두고 '초록 산타' 변신",
+    "description": "아라리오와 신세계백화점 천안아산점 임직원들은 2011년부터 급여의 일부를 기부하는 방법으로 봉사와 사회공헌에 앞장서고 있다. 매년 연말에는 '초록우산 산타원정대'를 감동을 주는 기부를 실천하고 있다. 150여 명이...",
+    "link": "http://www.inews24.com/view/1663235",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-06",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 '넷제로 보고서' 발간",
+    "description": "6일 이마트에 따르면 지속가능한 환경경영을 위한 2050 탄소중립전략과 로드맵을 수립하고, '넷제로 보고서 2023'을 발간했다. 2018년 대비 탄소 배출량을 2030년까지 32.8% 감축하는 중간목표를 세운 데 이어, 오는...",
+    "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=442282",
+    "related_count": 33,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-04",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 기후 위기 대응 동참… 온실가스 배출량 '제로' 만든다",
+    "description": "4일 이마트에 따르면 최근 지속 가능한 환경경영을 위한 2050 탄소중립 전략 및 로드맵을 수립하고, '넷제로 보고서 2023'을 발간했다. 이마트는 2018년 대비 탄소 배출량을 2030년까지 32.8% 감축하는 중간목표를 세웠다....",
+    "link": "http://www.hidomin.com/news/articleView.html?idxno=533570",
+    "related_count": 4,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-04",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 “2030년까지 탄소 배출량 32.7% 감축”",
+    "description": "이마트는 지속가능한 환경경영을 위한 탄소중립전략과 로드맵을 수립하고 ‘넷제로 보고서 2023’을 발간했다고 3일 밝혔다. 이마트는 2030년까지 2018년 대비 탄소 배출량을 32.7% 감축하고, 2050년에는 6대...",
+    "link": "https://news.kmib.co.kr/article/view.asp?arcid=0924333110&code=11151100&cp=nv",
+    "related_count": 3,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-04",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵, 중소협력사 해외판로개척 지원...상담실적 300만弗 넘어",
+    "description": "해외시장 개척단은 GS샵이 2015년부터 국내 중소 협력사가 아시아 시장에서 판로를 확대할 수 있도록 돕기 위해 운영해온 동반 성장 프로그램이다. 2015년 말레이시아·태국을 시작으로 2016년 말레이시아·태국...",
+    "link": "http://www.issuenbiz.com/news/articleView.html?idxno=33953",
+    "related_count": 27,
+    "event_type": "PARTNER_SUPPORT",
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2023-12-03",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "2050년 온실가스 제로 이마트 '탄소중립 경영'",
+    "description": "이마트는 지속 가능한 환경경영을 위한 2050 탄소중립전략과 로드맵을 수립하고, '넷제로 보고서 2023(사진)'을 발간했다고 3일 밝혔다. 이마트는 보고서에 2018년 대비 탄소 배출량을 2030년까지 32.8% 감축하고...",
+    "link": "http://www.fnnews.com/news/202312031846444082",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-12-03",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS샵, '해외시장 개척단' 재개…중소협력사 수출상담만 40억원",
+    "description": "'해외시장 개척단'은 국내 중소 협력사의 아시아 시장 판로 확대를 지원하기 위한 GS샵의 동반성장 프로그램이다. 2015년 말레이시아·태국을 시작으로 2016년 말레이시아·태국, 2017년 인도네시아·태국, 2018년...",
+    "link": "https://www.apnews.kr/news/articleView.html?idxno=3014208",
+    "related_count": 3,
+    "event_type": "PARTNER_SUPPORT",
+    "source_company": "GS샵"
+  },
+  {
+    "date": "2023-12-01",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "유기견 돌봄 활동 나선 BBQ·BGF리테일",
+    "description": "BGF리테일은 이달 사회복지법인 밥상공동체 연탄은행과 함께 에너지 취약 계층에게 연탄 1200장을 전달하는 봉사활동을 펼치고 연탄은행 자원봉사자들에게 핫팩 6000개를 기부하기도 했다. 이은관 BGF리테일 전략MD팀장은...",
+    "link": "https://weekly.cnbnews.com/news/article.html?no=156032",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-12-01",
+    "company": "CJ온스타일",
+    "sentiment": "POSITIVE",
+    "title": "CJ온스타일, 한국소비자원장 표창∙동반위원장상 수상",
+    "description": "CJ온스타일은 또 'CSR 필름 페스티벌 어워드'에 ESG(환경·사회·지배구조) 경영 비전과 협력사와의 동반성장 성과를 담은 영상을 출품해 동반성장위원장상을 수상했다. CJ온스타일 남우종 전략지원담당은 \"당사의 사업...",
+    "link": "https://www.dailysmart.co.kr/news/articleView.html?idxno=80537",
+    "related_count": 5,
+    "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-12-01",
+    "company": "롯데백화점",
+    "sentiment": "POSITIVE",
+    "title": "[1일 부산시] 롯데백화점 광장서 '구세군 자선냄비 시종식' 등",
+    "description": "지난해 구세군 자선냄비 시종식(롯데호텔).사진=부산시 부산시는 1일 오후 2시 롯데백화점 부산 본점 정문 앞... 부품 노후화, 보호계전기 고장 등에 따른 화재 및 안전사고의 우려가 있어 이를 개선하기 위해 시행된다. /",
+    "link": "https://www.asiatime.co.kr/article/20231201500209",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
   }
 ]
