@@ -1698,7 +1698,7 @@
     "title": "GS리테일, 준법경영 국제표준 인증...\"신뢰받는 기업으로 자리매김\"",
     "description": "수 있도록 준법경영 체계를 더욱 강화해 나가겠다\"고 말했다. 한편 GS리테일은 최근 동반성장위원회가 발표한 2026년 동반성장지수 평가에서 3년 연속 최우수 등급을 획득하며 '최우수 명예기업'에 이름을 올리기도 했다.",
     "link": "https://n.news.naver.com/mnews/article/008/0005446092?sid=101",
-    "related_count": 1
+    "related_count": 3
   },
   {
     "date": "2026-11-25",
@@ -1842,7 +1842,7 @@
     "title": "백화점 2026년 11월 브랜드평판...신세계백화점, 현대백화점, 롯데백화점...",
     "description": "3위, 롯데백화점 브랜드는 참여지수 287,232 미디어지수 365,751 소통지수 794,220 커뮤니티지수 214,173 사회공헌지수 81,156이 되면서 브랜드평판지수 1,742,532로 분석됐다. 지난 10월 브랜드평판지수 2,315,765와...",
     "link": "https://www.energy-news.co.kr/news/articleView.html?idxno=230076",
-    "related_count": 4
+    "related_count": 1
   },
   {
     "date": "2026-11-25",
@@ -1879,5 +1879,104 @@
     "description": "정의선 회장의 제안으로 시작된 현대백화점 여자 양궁단은 15년간 국가대표급 선수를 길러내는 동시에... 가능하게 상생할 방향을 함께 모색합니다. <편집자주> | 서울=한스경제 이정민 기자 | 한국 여자 양궁이 오랜 기간...",
     "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=886616",
     "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[똑똑한쇼핑] 컬리, AK플라자 수원점, 쿠팡, 세븐일레븐, CU, GS리테일, 롯...",
+    "description": "지난달에는 소상공인 76개사가 참여하는 상생 기획전도 열었다. 교육에 참여한 스퀘어푸드랩의 핫케이크... ◇ GS리테일, GS25 식물원 김밥 한 달 만에 100만개 판매 GS리테일은 편의점 GS25가 지난달 출시한 '식물원...",
+    "link": "https://www.ekn.kr/web/view.php?key=20261126029584913",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "현대홈쇼핑, 몽골서 K뷰티 판로 확대…182억 수출 상담",
+    "description": "BGF리테일과 GS리테일은 각각 2018년과 2021년 몽골에 진출했다. 올해 10월 말 기준 CU는 672개점, GS25는 284개점을... 유망 브랜드들과 함께 글로벌 판로를 넓혀 동반성장의 선순환 구조를 확대해 나가겠다\"고 말했다.",
+    "link": "http://www.4th.kr/news/articleView.html?idxno=2122687",
+    "related_count": 4
+  },
+  {
+    "date": "2026-11-26",
+    "company": "BGF",
+    "sentiment": "NEGATIVE",
+    "title": "[기업 DNA 대해부] BGF리테일 ②3세 형제 경영과 현장의 그늘···'지배구...",
+    "description": "보다 최근인 2026년 4월 20일 경남 진주 CU 물류센터 앞에서 발생한 화물연대 조합원 서광석 씨 사망 사고는 BGF그룹의 상생 현주소를 비춘 단면이다. 원청 교섭을 요구하던 집회 현장에서 대체 수송 차량과 충돌해...",
+    "link": "https://www.smartbizn.com/news/articleView.html?idxno=160047",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데케미칼·이마트 등 저PBR 뒤엔 '대표 의장'",
+    "description": "이마트는 경영 효율성을 이유로 한채양 대표가 의장을 맡는다고 기업지배구조보고서에 명시했다. 사외이사는 전체 이사의 과반으로 구성돼 있다. 사외이사 중심의 이사회 구성에도 경영진으로부터 독립적인...",
+    "link": "https://www.safetimes.co.kr/news/articleView.html?idxno=247939",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-25",
+    "company": "이마트",
+    "sentiment": "UNCERTAIN",
+    "title": "이마트의 벤치에는 스토리가 있다",
+    "description": "이창열 이마트 ESG담당은 \"고객들이 '가플지우 캠페인'을 통해 실천한 자원순환 활동이 많은 시민이 이용하는 KTX 용산역의 업사이클링 벤치로 재탄생했다는 점에서 더욱 뜻깊다\"며 \"앞으로도 고객과 함께 만드는 다양한...",
+    "link": "https://monthly.chosun.com/news/articleView.html?idxno=72156",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, CSR 필름 페스티벌 동반성장부문 대상",
+    "description": "김혜영 롯데마트·슈퍼 ESG조직문화팀장은 \"이번 수상은 국내 중소기업과 함께 해외 시장에 도전하며 실질적인 성과를 만들어 온 노력을 인정받았다는 점에서 의미가 크다\"며 \"앞으로도 글로벌 유통 인프라를 적극...",
+    "link": "https://www.ngetnews.com/news/articleView.html?idxno=556353",
+    "related_count": 7
+  },
+  {
+    "date": "2026-11-26",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대홈쇼핑 몽골 수출 상담, 현대면세점 디올 팝업, 현대백화점 틸화이...",
+    "description": "한광영 현대홈쇼핑 사장은 \"앞으로도 유망 브랜드들과 함께 글로벌 판로를 넓혀 동반성장의 선순환 구조를 확대해 나가겠다\"고 말했다. 인천공항 디올 팝업스토어에 7m 트리 현대면세점과 디올이 함께 선보인...",
+    "link": "http://www.dailypop.kr/news/articleView.html?idxno=105017",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "부산 원도심 주차 숨통…롯데백화점 광복점·중구, 공영주차장 개소",
+    "description": "롯데백화점 광복점은 25일 중구 중앙동6가 일원에서 열린 ‘중구관광 공영주차장’ 개소식에 참석해 민관 상생 협력의 결실을 공유했다고 26일 밝혔다. 해당 공영주차장은 올해 9월 광복점과 중구청이 체결한 토지...",
+    "link": "https://n.news.naver.com/mnews/article/011/0004686450?sid=102",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-26",
+    "company": "롯데백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데백화점 광복점, 부지 무상 제공···부산 원도심 관광 활성화 앞장",
+    "description": "이번 사업은 민간기업의 유휴 부지 활용과 지방자치단체의 행정 역량을 결합해 지역 현안 해결에 나선 민관 상생협력 사례라는 점에서 의미가 있다는 평가다. 롯데백화점 광복점은 앞으로도 지역사회와의 협력을...",
+    "link": "https://www.smartbizn.com/news/articleView.html?idxno=160693",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점그룹, 순직·공상 경찰관 자녀 후원 공로…보훈부 감사패",
+    "description": "현대백화점그룹이 경찰과 소방, 군인 등 제복 공무원 가족을 대상으로 사회공헌 활동을 확대하고 있다. 현대백화점그룹 지주회사 현대지에프홀딩스는 현대백화점사회복지재단이 26일 서울 삼성동 그랜드 인터컨티넨탈...",
+    "link": "https://daily.hankooki.com/news/articleView.html?idxno=1429393",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-26",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "행안부·현대백화점, 우수 마을기업 팝업스토어 연다",
+    "description": "행안부와 현대백화점은 이번 팝업 스토어가 일회성·단발성 행사에 그치지 않도록 지속 가능한 상생협력 체계를 이어갈 계획이다. 또 행사 기간 소비자 반응과 매출 성과가 우수한 상품을 중심으로 향후 백화점...",
+    "link": "https://n.news.naver.com/mnews/article/001/0016465073?sid=100",
+    "related_count": 3
   }
 ]
