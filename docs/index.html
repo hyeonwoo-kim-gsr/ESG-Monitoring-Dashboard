@@ -92,7 +92,7 @@
           <select id="weeklyWeek"></select>
         </label>
       </div>
-      <p class="hint">같은 주제로 여러 매체가 보도한 기사일수록 상위에 표시됩니다. (관련 보도 건수 기준, 월~일 기준 주차)</p>
+      <p class="hint">같은 주제로 여러 매체가 보도한 기사일수록 상위에 표시됩니다. (관련 보도 건수 기준, 월~일 기준 주차. '전체'를 선택하면 해당 월 전체 기간을 조회합니다)</p>
       <div id="weeklyResult" class="result"></div>
     </section>
 
@@ -126,6 +126,7 @@
             <option value="SOC_CONTRIB">사회공헌</option>
           </select>
         </label>
+        <label class="field field-check" style="flex-direction:row;align-items:center;gap:6px;white-space:nowrap;cursor:pointer;"><input type="checkbox" id="billsActive" checked><span>진행 중 의안만 보기</span></label>
         <label class="field field-grow"><span>키워드 (공백으로 여러 단어 = 모두 포함)</span><input type="text" id="billsKw" placeholder="예: 탄소 공시, 기부금"></label>
         <button class="btn-primary" id="billsSearch" type="button">조회</button>
         <button class="btn-ghost" id="billsReset" type="button">초기화</button>
