@@ -18,6 +18,11 @@ on:
         description: "이번 실행의 Gemini 호출 상한(회). 초기 적재는 여러 번 나눠 실행해도 이어집니다"
         required: false
         default: "150"
+      recheck:
+        description: "이미 적재된 의안/법령을 새 분류 기준으로 재판별 (업종 무관 건 제거, 1회성)"
+        type: boolean
+        required: false
+        default: false
       diagnose:
         description: "진단만 실행 (API 연결·필드·본문 추출 점검, Gemini 호출 없음)"
         type: boolean
@@ -60,10 +65,12 @@ jobs:
           LEGAL_ONLY: ${{ github.event.inputs.only || 'all' }}
           LEGAL_DAYS: ${{ github.event.inputs.days || '730' }}
           LEGAL_MAX_CALLS: ${{ github.event.inputs.max_calls || '150' }}
+          RECHECK: ${{ github.event.inputs.recheck || 'false' }}
           DIAGNOSE: ${{ github.event.inputs.diagnose || 'false' }}
         run: |
           EXTRA=""
-          if [ "$DIAGNOSE" = "true" ]; then EXTRA="--diagnose"; fi
+          if [ "$DIAGNOSE" = "true" ]; then EXTRA="$EXTRA --diagnose"; fi
+          if [ "$RECHECK" = "true" ]; then EXTRA="$EXTRA --recheck"; fi
           python scripts/legal_monitor.py --only "$LEGAL_ONLY" --days "$LEGAL_DAYS" --max-calls "$LEGAL_MAX_CALLS" $EXTRA
 
       # 한쪽 출처가 실패(키/IP 검증 오류 등)해도 수집된 분량은 저장
