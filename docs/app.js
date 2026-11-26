@@ -294,7 +294,7 @@
         if (b.related_count !== a.related_count) return b.related_count - a.related_count;
         return a.date < b.date ? 1 : -1;
       });
-      ranked = ranked.slice(0, topN || 15);
+      if (topN !== 0) ranked = ranked.slice(0, topN || 15);   // topN=0(월 전체)이면 자르지 않음
 
       var el = $("weeklyResult");
       if (ranked.length === 0) {
@@ -379,7 +379,7 @@
       var p = monthKey.split("-").map(Number);
       var first = new Date(Date.UTC(p[0], p[1] - 1, 1));
       var last = new Date(Date.UTC(p[0], p[1], 0));
-      renderWeekly(fmtYMD(first), fmtYMD(last), 30);
+      renderWeekly(fmtYMD(first), fmtYMD(last), 0);   // 0 = 건수 제한 없이 월 전체 조회
       return;
     }
     var idx = parseInt($("weeklyWeek").value, 10);
@@ -595,10 +595,43 @@
     laws:  { dateField: "promulgation_date", textFields: ["name", "kind", "ministry", "summary", "background", "revision_type"] }
   };
 
+  /* 법령의 소관위원회: 수집 데이터에 committee 값이 있으면 그것을, 없으면 소관부처로 상임위를 추정 */
+  var COMMITTEE_MINISTRY = {
+    "법제사법위원회": ["법무부", "법제처", "감사원", "대법원", "헌법재판소", "검찰"],
+    "정무위원회": ["공정거래위원회", "금융위원회", "금융감독원", "국가보훈부", "국민권익위원회", "개인정보보호위원회"],
+    "기획재정위원회": ["기획재정부", "국세청", "관세청", "조달청", "통계청", "국가데이터처", "한국은행"],
+    "교육위원회": ["교육부", "국가교육위원회"],
+    "과학기술정보방송통신위원회": ["과학기술정보통신부", "방송통신위원회", "원자력안전위원회", "우주항공청", "과학기술부"],
+    "행정안전위원회": ["행정안전부", "경찰청", "소방청", "인사혁신처", "중앙선거관리위원회", "재난안전"],
+    "문화체육관광위원회": ["문화체육관광부", "국가유산청", "문화재청"],
+    "농림축산식품해양수산위원회": ["농림축산식품부", "해양수산부", "농촌진흥청", "산림청", "해양경찰청"],
+    "산업통상자원중소벤처기업위원회": ["산업통상자원부", "산업통상부", "중소벤처기업부", "특허청"],
+    "보건복지위원회": ["보건복지부", "식품의약품안전처", "질병관리청"],
+    "환경노동위원회": ["환경부", "기후에너지환경부", "고용노동부", "기상청", "기후위기"],
+    "국토교통위원회": ["국토교통부", "행정중심복합도시건설청", "새만금개발청"],
+    "정보위원회": ["국가정보원"],
+    "여성가족위원회": ["여성가족부", "성평등가족부"]
+  };
+
+  function lawCommittees(rec) {
+    var out = [];
+    var direct = rec.committee || "";
+    Object.keys(COMMITTEE_MINISTRY).forEach(function (c) {
+      if (direct && direct.indexOf(c) !== -1) { out.push(c); return; }
+      var m = rec.ministry || "";
+      if (!m) return;
+      var list = COMMITTEE_MINISTRY[c];
+      for (var i = 0; i < list.length; i++) { if (m.indexOf(list[i]) !== -1) { out.push(c); return; } }
+    });
+    return out;
+  }
+
   function readLegalFilter(kind) {
     var act = $(kind + "Active");
+    var stg = $(kind + "Stage");
+    var com = $(kind + "Committee");
     return { from: $(kind + "From").value, to: $(kind + "To").value, cat: $(kind + "Cat").value, kw: $(kind + "Kw").value,
-             active: !!(act && act.checked) };
+             active: !!(act && act.checked), stage: stg ? stg.value : "", committee: com ? com.value : "" };
   }
 
   /* 진행 중 의안 = 종료(폐기·부결·철회)와 공포(완료)를 제외한 접수 · 본회의 심의 · 정부이송 단계 */
@@ -701,7 +734,13 @@
         return;
       }
       var rows = all.filter(function (r) {
-        if (kind === "bills" && f.active && !isActiveBill(r)) return false;
+        if (kind === "bills") {
+          // 상태를 고르면 그 단계만 표시('진행 중만 보기'보다 우선). 상태가 '전체'일 때만 체크박스를 적용
+          if (f.stage) { if (r.stage !== f.stage) return false; }
+          else if (f.active && !isActiveBill(r)) return false;
+        } else if (kind === "laws" && f.committee) {
+          if (lawCommittees(r).indexOf(f.committee) === -1) return false;
+        }
         return legalMatches(r, f, cfg.dateField, cfg.textFields);
       });
       rows.sort(function (a, b) {
@@ -712,7 +751,7 @@
       legal.view[kind] = rows;
 
       var upd = legal.meta && legal.meta.last_updated ? " · 마지막 수집 " + legal.meta.last_updated.slice(0, 16).replace("T", " ") : "";
-      $(kind + "Count").textContent = "총 " + rows.length + "건 (전체 " + all.length + "건" + (kind === "bills" && f.active ? ", 진행 중만" : "") + ")" + upd;
+      $(kind + "Count").textContent = "총 " + rows.length + "건 (전체 " + all.length + "건" + (kind === "bills" ? (f.stage ? ", 상태 " + f.stage : (f.active ? ", 진행 중만" : "")) : (f.committee ? ", 소관위 " + f.committee : "")) + ")" + upd;
       if (legal.failed[kind]) {
         el.innerHTML = emptyState("아직 수집된 데이터가 없습니다. ESG 법률 모니터링 워크플로가 처음 실행되면 표시됩니다.");
       } else if (rows.length === 0) {
@@ -771,7 +810,9 @@
     var parts = [kind === "bills" ? "ESG_의안정보" : "ESG_법령정보"];
     if (f.from || f.to) parts.push((f.from || "처음") + "~" + (f.to || "현재"));
     if (f.cat) parts.push(CAT_LABEL[f.cat]);
-    if (kind === "bills" && f.active) parts.push("진행중");
+    if (kind === "bills" && f.stage) parts.push(f.stage);
+    else if (kind === "bills" && f.active) parts.push("진행중");
+    if (kind === "laws" && f.committee) parts.push(f.committee);
     if (f.kw.trim()) parts.push(f.kw.trim());
     parts.push(todayCompact());
     window.XLSX.writeFile(buildLegalWorkbook(kind, rows), safeFileName(parts.join("_")) + ".xlsx");
@@ -789,6 +830,8 @@
       });
       $(kind + "Reset").addEventListener("click", function () {
         $(kind + "From").value = ""; $(kind + "To").value = ""; $(kind + "Cat").value = ""; $(kind + "Kw").value = "";
+        if ($(kind + "Stage")) $(kind + "Stage").value = "";
+        if ($(kind + "Committee")) $(kind + "Committee").value = "";
         if ($(kind + "Active")) $(kind + "Active").checked = true;   // 초기화 시 '진행 중만 보기' 기본값(체크)으로 복원
         renderLegal(kind);
       });
