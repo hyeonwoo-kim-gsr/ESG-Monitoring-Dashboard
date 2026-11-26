@@ -55,7 +55,7 @@ jobs:
           LAW_OC: ${{ secrets.LAW_OC }}
           LAW_REFERER: ${{ vars.LAW_REFERER }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_LEGAL }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-4-hydrogen' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.5-flash-lite' }}
           GEMINI_MIN_INTERVAL: "6"
           LEGAL_ONLY: ${{ github.event.inputs.only || 'all' }}
           LEGAL_DAYS: ${{ github.event.inputs.days || '730' }}
