@@ -1,24 +1,26 @@
 {
-  "last_updated": "2026-11-26T09:22:32+09:00",
+  "last_updated": "2026-11-26T09:36:14+09:00",
   "bills_total": 0,
   "laws_total": 0,
-  "since": "2024-11-25",
+  "since": "2024-11-26",
   "last_stats": {
     "bills": {
-      "cands": 16780,
-      "triage_no": 0,
+      "cands": 2432,
+      "prefilter_no": 0,
+      "triage_no": 188,
       "relevant": 0,
       "irrelevant": 0,
       "no_text": 0,
-      "pending": 16780
+      "pending": 2244
     },
     "laws": {
-      "cands": 4164,
+      "cands": 4166,
+      "prefilter_no": 3477,
       "triage_no": 0,
       "relevant": 0,
       "irrelevant": 0,
       "no_text": 0,
-      "pending": 4164
+      "pending": 689
     }
   },
   "last_failures": []
