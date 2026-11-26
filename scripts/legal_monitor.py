@@ -6,10 +6,10 @@ legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령
 * 의안  : 열린국회정보 Open API(의안정보)로 목록 수집 + 의안정보시스템(likms) 상세페이지에서
           '제안이유 및 주요내용'·정부이송/공포 일자 확보
 * 법령  : 국가법령정보센터 Open API(lawSearch / lawService)로 공포일 기준 목록·제개정이유 수집
-* 분류  : Gemini 2단계
-            1) 이름만 보고 후보 선별(관대한 기준, 호출 1회에 100건) - 그 앞에 키워드 사전 필터(호출 없음)
-            2) 본문(제안이유/제개정이유)을 보고 ENV_REG / DISC_MANDATE / SOC_CONTRIB / IRRELEVANT 확정
-               + 제·개정 배경, 주요 내용 요약 생성. 근거 인용문이 원문에서 확인되지 않으면 IRRELEVANT.
+* 분류  : (0) 이름 키워드 사전 필터(제외어 -> 포함어, 호출 없음)
+          (1) Gemini 이름 선별(관대하되 업종 무관 건은 제외, 호출 1회에 100건)
+          (2) Gemini 본문 판별: 회사 업종(도소매 유통) 기준으로 ENV_REG / DISC_MANDATE / SOC_CONTRIB / IRRELEVANT
+              + 제·개정 배경, 주요 내용 요약. 근거 인용문이 원문에서 확인되지 않으면 IRRELEVANT.
 * 저장  : docs/legal/bills.json, laws.json, meta.json, state.json  (원문 전체는 저장하지 않고 요약만 저장)
 * 최근 2개년(기본 730일) 먼저 적재, 이후 매 실행마다 신규/변경분만 Gemini 호출. 호출 상한에 걸려도 다음 실행에서 이어감.
 
@@ -23,6 +23,7 @@ legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령
   python scripts/legal_monitor.py --diagnose          # Gemini 호출 없이 API 연결/필드/본문 추출 점검
   python scripts/legal_monitor.py                      # 초기 적재 + 일일 갱신(동일 명령)
   python scripts/legal_monitor.py --only bills --max-calls 40
+  python scripts/legal_monitor.py --recheck            # 이미 적재된 건을 새 기준으로 재판별(무관 건 제거)
   python scripts/legal_monitor.py --no-prefilter       # 키워드 사전 필터 끄기
 이메일은 발송하지 않는다.
 """
@@ -168,9 +169,6 @@ def fetch_bill_rows(key, ages, since, page_size=1000, service=None, max_pages=60
                 break
             page += 1
     return [r for r in out if ymd(g(r, "PROPOSE_DT")) >= since]
-
-
-BILL_SUFFIX = re.compile(r"\s*(전부개정|일부개정|폐지|제정)?\s*법률안(\(.*?\))?\s*$")
 
 
 def is_law_bill(row):
@@ -325,36 +323,51 @@ def fetch_law_detail(oc, mst):
 
 
 # ============================================================================ Gemini 프롬프트
-GUIDE = """[분류 기준]
-1. ENV_REG (환경규제)
-- 대상: 온실가스 목표관리제, 환경정보공개제도, 환경성적표지, 그린워싱(부당한 환경성 표시·광고) 관련 규제.
-- 판단: 기업의 온실가스 배출량 관리·보고, 환경정보 등록, 친환경 인증 기준, 그린워싱 처벌 및 가이드라인에 직접적인 영향을 미치는 경우 선택. (단순 자연보호, 지자체 환경미화 등은 제외)
+COMPANY = """[회사 프로필]
+- 도소매 유통업: 편의점, SSM(기업형 슈퍼마켓), 홈쇼핑, 오프라인 기반 이커머스. 자체 상품(PB)·식품·생활용품 취급, 전국 점포·물류센터·배송 차량 운영.
+- 상장 기업집단 계열사로 기업의 ESG·지속가능성 공시, 환경·소비자 규제, 세제의 직접 적용 대상.
+- 이 회사의 ESG 담당자가 '우리 사업의 의무·비용·공시·세무 처리가 실제로 바뀌는가'를 기준으로 법령을 모니터링한다."""
 
-2. DISC_MANDATE (의무공시)
-- 대상: 지속가능성 공시(KSSB 제2호 기후 관련 공시 등), 자연자본공시(생물다양성 등) 관련 제도.
-- 판단: 자본시장법, 외부감사법 등에 따른 기업의 ESG·기후·자연자본 정보 공시 의무, 공시 범위(Scope 등), 공시 시기 및 위반 제재와 관련된 경우 선택.
+GUIDE = """[분류 기준] 아래 3개 영역 중 하나에 '이 회사의 사업·의무·비용에 직접 영향'을 줄 때만 선택한다.
 
-3. SOC_CONTRIB (사회공헌)
-- 대상: 기업의 공익법인 기부금 후원 및 공익법인의 목적사업 수행 관련 규제·세제.
-- 판단: 법인세법상 기부금 손금산입, 상증세법상 공익법인의 출연재산 의무사용·공시·사후관리, 기부금품 모집 및 사용에 관한 법률 개정 사항인 경우 선택.
+1. ENV_REG (환경규제) - 선택하는 경우
+- 포장재·일회용품·플라스틱·비닐봉투·일회용컵 등 판매업자·유통업자의 포장·자원순환 의무 (생산자책임재활용 EPR 포함)
+- 기업의 온실가스 배출 관리·보고(목표관리제, 배출권거래제), 탄소중립·에너지 사용(대규모 사업장·점포·물류) 의무
+- 냉매·냉장냉동설비, 음식물류·식품 폐기물, 전기전자제품·배터리 회수 등 유통업 영업 활동과 접점이 있는 환경 규제
+- 환경성적표지, 친환경 인증, 그린워싱(부당한 환경성 표시·광고) 규제
+- 환경정보 공개, 환경 관련 기업 보고 의무
 
-4. IRRELEVANT (해당없음)
-- 대상: 위 1~3번 기준에 명확히 부합하지 않는 모든 법령 및 의안.
-- 판단: 'ESG', '친환경', '사회적 가치' 등의 단어가 포함되어 있더라도, 위 3가지 실무 영역과 직접적인 관련이 없다면 반드시 IRRELEVANT로 분류.
+2. DISC_MANDATE (의무공시) - 선택하는 경우
+- 지속가능성 공시(KSSB 등 기후 관련 공시), 자연자본·생물다양성 공시
+- 자본시장법·외부감사법·상법에 따른 상장사/대기업의 ESG·기후 정보 공시, 이사회·주주 관련 공시 의무, 공시 범위·시기·제재
+
+3. SOC_CONTRIB (사회공헌) - 선택하는 경우
+- 법인세법상 기업 기부금의 손금산입 '일반 규정'(한도·대상 범위·이월공제) 변경
+- 상증세법상 공익법인의 출연재산 사용·공시·사후관리 등 기업 계열 공익재단에 영향을 주는 규정
+- 기부금품 모집 및 사용에 관한 법률 개정 중 기업의 기부·모금 활동에 영향을 주는 사항
+
+4. IRRELEVANT (해당없음) - 아래는 반드시 IRRELEVANT
+- 농업·임업·축산·어업·광업·건설업·제조업 등 '다른 특정 업종'만을 대상으로 하는 지원·규제 (영농, 가업상속공제, 건설폐기물, 농림축산부산물, 토양오염, 잔류성오염물질 등)
+- 특정 기관·시설·단체의 설립 및 운영을 위한 기부 특례, 지자체/개인 대상 기부 제도 (예: 국립 병원·소방·특정 재단 지정기부금 신설, 고향사랑기부제)
+- 개인 소득세·상속·증여, 가업·영농 승계, 중소기업 투자세액공제 등 일반 조세특례로서 위 3개 영역과 직접 관련 없는 것
+- 공공부문(정부·지자체·공공기관) 사업, 연구개발 지원, 인증 제도 신설 등 민간 유통기업의 의무 변화가 없는 것
+- 'ESG', '친환경', '재활용', '기부' 같은 단어가 있어도 위 1~3번 중 하나에 직접 해당하지 않으면 IRRELEVANT
 
 [주의사항]
-- 하나의 의안/법령이 여러 영역에 걸칠 경우, 기업의 법적 의무나 제재가 가장 직접적으로 발생하는 주된 영역 1개만 선택.
-- 추측하지 말고 제공된 텍스트의 명확한 근거만을 바탕으로 판단."""
+- 판단 질문: "이 개정으로 편의점·SSM·홈쇼핑·이커머스를 운영하는 이 회사의 의무, 비용, 공시, 기부 세무 처리가 바뀌는가?" 아니오(또는 불분명)이면 IRRELEVANT.
+- 여러 영역에 걸치면 직접 영향이 가장 큰 영역 1개만 선택.
+- 추측하지 말고 제공된 텍스트의 명확한 근거만 바탕으로 판단. 애매하면 IRRELEVANT."""
 
 
 def build_triage_prompt(items):
-    L = ["당신은 기업 ESG 실무 담당자를 돕는 법령 선별 보조자입니다.",
-         "아래 법령/의안의 '이름과 기본정보'만 보고, 다음 3개 영역과 관련될 가능성이 있는지 1차로 거릅니다.",
-         "- 환경규제(온실가스·환경정보공개·환경성적표지·친환경 인증·그린워싱/부당 표시광고)",
-         "- 의무공시(지속가능성·기후·자연자본 공시, 자본시장법·외부감사법상 공시)",
-         "- 사회공헌(공익법인·기부금 세제, 법인세법 기부금, 상증세법 공익법인, 기부금품법)",
-         "제목만으로 판단이 어렵지만 위 영역을 다룰 수 있는 법(세법, 자본시장법, 환경 관련 법, 표시광고법 등)은 maybe=true 로 합니다.",
-         "명백히 무관(형사·가사·국방·교육과정·지역 지정·일반 행정조직 등)하면 maybe=false 입니다.",
+    L = ["당신은 유통기업 ESG 실무 담당자를 돕는 법령 선별 보조자입니다.", "", COMPANY, "",
+         "아래 법령/의안의 '이름과 기본정보'만 보고, 이 회사에 영향을 줄 수 있는 다음 3개 영역과 관련될 가능성이 있는지 1차로 거릅니다.",
+         "- 환경규제: 포장재·일회용품·자원순환(판매·유통업자 의무), 온실가스·배출권·에너지, 환경성적표지·그린워싱(표시광고)",
+         "- 의무공시: 지속가능성·기후·자연자본 공시, 자본시장법·외부감사법·상법상 공시",
+         "- 사회공헌: 법인세법 기부금, 상증세법 공익법인, 기부금품법",
+         "제목만으로 판단이 어렵더라도 위 영역을 다룰 수 있는 일반 법(법인세법, 상증세법, 자본시장법, 폐기물·자원순환 관련 법, 표시광고법 등)은 maybe=true 입니다.",
+         "다음은 maybe=false 입니다: 농림·축산·어업·광업·건설 등 타 업종 전용 법, 특정 기관/지역/개인 대상 제도(고향사랑기부 등),",
+         "토양·하수·잔류성오염물질 등 공공·산업 오염 관리, 형사·가사·국방·교육·일반 행정조직 등 명백히 무관한 것.",
          "", "[항목]"]
     for i, it in enumerate(items, 1):
         L.append("%d. [%s] %s | %s" % (i, it.get("kind", ""), it.get("name", ""), it.get("meta", "")))
@@ -363,8 +376,8 @@ def build_triage_prompt(items):
 
 
 def build_classify_prompt(items):
-    L = ["당신은 기업 ESG 실무 담당자를 돕는 법령 분류 보조자입니다. 아래 기준에 따라 각 항목을 분류하고 요약하세요.",
-         "", GUIDE, "", "[항목]"]
+    L = ["당신은 유통기업 ESG 실무 담당자를 돕는 법령 분류 보조자입니다. 아래 회사 프로필과 기준에 따라 각 항목을 분류하고 요약하세요.",
+         "", COMPANY, "", GUIDE, "", "[항목]"]
     for i, it in enumerate(items, 1):
         L.append("--- %d ---" % i)
         L.append("구분: %s" % it.get("kind", ""))
@@ -376,7 +389,7 @@ def build_classify_prompt(items):
           "출력: JSON 배열만. 항목당 객체 1개, 필드는 다음과 같습니다.",
           '{"id": 번호, "category": "ENV_REG|DISC_MANDATE|SOC_CONTRIB|IRRELEVANT",',
           ' "evidence": "분류 근거가 되는 문장을 본문에서 글자 그대로 인용(60자 이내). IRRELEVANT면 빈 문자열",',
-          ' "reason": "분류 이유 한 줄",',
+          ' "reason": "분류 이유 한 줄. 이 회사(유통업)에 어떤 의무/비용/세무 영향이 있는지 포함",',
           ' "background": "제·개정 배경 1~2문장. 본문에 있는 내용만, 없으면 빈 문자열",',
           ' "summary": "주요 내용 핵심 2~4개를 \' / \' 로 구분해 간결하게. 본문에 있는 내용만"}',
           "IRRELEVANT 이면 background/summary 는 빈 문자열로 둡니다. 모든 항목을 포함하세요."]
@@ -435,18 +448,28 @@ def derive_bill_stage(rec):
     return "접수"
 
 
+def set_stage(rec):
+    """단계를 다시 계산하고, 바뀌었으면 변경일(stage_changed)을 기록한다."""
+    old = rec.get("stage")
+    new = derive_bill_stage(rec)
+    rec["stage"] = new
+    if old and old != new:
+        rec["stage_changed"] = today_kst().isoformat()
+
+
 def apply_bill_row(rec, row):
     rec["bill_no"] = str(g(row, "BILL_NO"))
     rec["name"] = g(row, "BILL_NAME")
     # 열린국회정보 TVBPMBILL11 실제 필드: CURR_COMMITTEE(소관위), PROC_DT/PROC_RESULT_CD(본회의 의결일/결과), LINK_URL
-    rec["committee"] = g(row, "CURR_COMMITTEE", "COMMITTEE", default=rec.get("committee", ""))
+    # 접수 직후에는 소관위가 비어 있을 수 있음 -> 비어 있으면 기존 값 유지, 위원회 배정 후 다음 실행에서 채워짐
+    rec["committee"] = g(row, "CURR_COMMITTEE", "COMMITTEE", "COMMITTEE_NM", "CMIT_NM", default=rec.get("committee", ""))
     rec["proposer"] = g(row, "PROPOSER", default=rec.get("proposer", ""))
     rec["age"] = str(g(row, "AGE"))
     rec["receipt_date"] = ymd(g(row, "PROPOSE_DT"))
     rec["plenary_date"] = ymd(g(row, "PROC_DT")) or rec.get("plenary_date", "")
     rec["plenary_result"] = g(row, "PROC_RESULT_CD", "PROC_RESULT", default=rec.get("plenary_result", ""))
     rec["link"] = g(row, "LINK_URL", "DETAIL_LINK") or (LIKMS + "/bill/bi/billDetailPage.do?billId=" + str(g(row, "BILL_ID")))
-    rec["stage"] = derive_bill_stage(rec)
+    set_stage(rec)
 
 
 def apply_bill_detail(rec, det):
@@ -458,7 +481,7 @@ def apply_bill_detail(rec, det):
         rec["promulgation_date"] = det["promulgation"]
     if det.get("promulgation_no"):
         rec["promulgation_no"] = det["promulgation_no"]
-    rec["stage"] = derive_bill_stage(rec)
+    set_stage(rec)
 
 
 PASSED = ("원안가결", "수정가결")
@@ -477,7 +500,7 @@ def fill_promulgation_from_laws(rec, law_rows):
     if cands:
         rec["promulgation_date"] = min(cands)
         rec["promulgation_source"] = "법령정보 공포일자 매칭"
-        rec["stage"] = derive_bill_stage(rec)
+        set_stage(rec)
 
 
 def make_law_record(row, cls):
@@ -519,6 +542,21 @@ class Store:
         self.laws_maybe = set(st.get("laws_maybe", []))
         self.bill_idx = {b["id"]: b for b in self.bills}
         self.law_idx = {x["id"]: x for x in self.laws}
+
+    def requeue_all(self, only):
+        """이미 적재된 건을 '본문 판별 대기'로 되돌린다(새 기준 재판별). 이름 선별 단계는 다시 하지 않는다."""
+        if only in ("all", "bills"):
+            ids = [b["id"] for b in self.bills]
+            self.bills, self.bill_idx = [], {}
+            self.bills_done -= set(ids)
+            self.bills_maybe |= set(ids)
+            print("[재판별] 의안 %d건을 새 기준으로 다시 판별합니다." % len(ids))
+        if only in ("all", "laws"):
+            ids = [x["id"] for x in self.laws]
+            self.laws, self.law_idx = [], {}
+            self.laws_done -= set(ids)
+            self.laws_maybe |= set(ids)
+            print("[재판별] 법령 %d건을 새 기준으로 다시 판별합니다." % len(ids))
 
     def save(self, meta_extra=None):
         self.bills.sort(key=lambda b: (b.get("receipt_date", ""), b.get("bill_no", "")), reverse=True)
@@ -584,26 +622,37 @@ def chunks(seq, n):
         yield seq[i:i + n]
 
 
-# ---- 호출량 절감: 이름 키워드 사전 필터 (Gemini 호출 없이 명백한 무관 건 제외) ----------
-# 3개 영역(환경규제/의무공시/사회공헌)과 관련될 수 있는 법 이름의 일부. 하나도 안 들어 있으면 제외한다.
-PREFILTER_KEYWORDS = (
-    # 환경규제
-    "환경", "온실가스", "탄소", "기후", "배출권", "녹색", "저탄소", "친환경", "에너지", "재생", "자원순환",
-    "폐기물", "재활용", "포장", "플라스틱", "일회용", "대기", "수질", "토양", "화학물질", "화학제품", "유해",
-    "생물다양성", "생태", "자연자본", "해양", "하천", "수자원", "미세먼지", "오염", "순환경제", "전기·전자", "전기전자",
-    "표시", "광고", "소비자", "공정거래", "하도급", "대규모유통", "유통산업",
-    # 의무공시
-    "자본시장", "금융투자", "외부감사", "상법", "상장", "공시", "지속가능", "책임투자", "금융소비자", "증권",
-    "기업지배", "주주", "회계",
-    # 사회공헌
-    "법인세", "상속세", "증여세", "소득세", "조세특례", "조세", "부가가치세", "기부", "공익", "비영리", "사회적기업", "사회적경제", "사회적가치",
-    "자원봉사", "복권", "사회공헌", "재단", "후원", "사회복지공동모금", "기업의 사회",
+# ---- 호출량 절감 + 업종 무관 건 제거: 이름 키워드 사전 필터 (Gemini 호출 없음) ----------
+# 1) 제외 키워드가 하나라도 있으면 무조건 제외 (타 업종 전용·공공/산업 오염·특정 제도)
+PREFILTER_EXCLUDE = (
+    "농업", "농림", "농촌", "농어", "농산", "영농", "축산", "가축", "양곡", "비료", "사료", "종자", "식물", "수의", "동물",
+    "어업", "수산", "어촌", "어선", "선박", "해운", "항만", "항공", "철도", "도로", "공항",
+    "산림", "임업", "광업", "광산", "건설", "건축", "주택", "토지", "택지", "도시", "국토", "지하수",
+    "토양", "잔류성", "하수", "상수도", "방사성", "원자력", "핵",
+    "고향사랑", "지방", "지역", "특별법", "특례법", "지원법", "군인", "병역", "경찰", "소방", "교육", "학교", "교원",
+    "의료", "병원", "약사", "감염", "보건", "노인", "장애", "아동", "청소년", "보훈", "국가유공",
+    "형법", "형사", "민사", "가사", "범죄", "수사", "재판", "법원", "헌법재판",
 )
-PREFILTER_MINISTRY = ("환경", "기후", "에너지")   # 법령 소관부처명에 포함되면 이름과 무관하게 통과
+# 2) 포함 키워드가 하나 이상 있어야 통과 (3개 영역과 직접 접점이 있는 법 이름)
+PREFILTER_KEYWORDS = (
+    # 환경규제 (판매·유통업자 의무와 접점)
+    "온실가스", "탄소", "기후", "배출권", "녹색", "저탄소", "친환경", "에너지", "자원순환", "순환경제", "폐기물",
+    "재활용", "포장", "플라스틱", "일회용", "화학물질", "화학제품", "전기·전자", "전기전자", "자동차의 자원순환", "환경",
+    "생물다양성", "자연자본", "표시ㆍ광고", "표시·광고", "표시광고", "소비자", "대규모유통", "유통산업", "전자상거래", "방문판매",
+    "식품", "자원의 절약",
+    # 의무공시
+    "자본시장", "금융투자", "외부감사", "상법", "상장", "공시", "지속가능", "책임투자", "기업지배", "증권",
+    # 사회공헌 (기업 기부·공익법인)
+    "법인세", "상속세", "증여세", "조세특례", "기부금품", "기부금", "공익법인", "사회적기업", "사회적경제", "사회공헌",
+)
+PREFILTER_MINISTRY = ("환경", "기후", "에너지")   # 법령 소관부처명에 포함되면 이름 포함 키워드 없이도 통과(제외 키워드는 우선 적용)
 
 
 def prefilter_pass(name, row=None, ministry_field=None):
-    if any(k in (name or "") for k in PREFILTER_KEYWORDS):
+    n = name or ""
+    if any(k in n for k in PREFILTER_EXCLUDE):
+        return False
+    if any(k in n for k in PREFILTER_KEYWORDS):
         return True
     if ministry_field and row is not None:
         m = str(g(row, ministry_field))
@@ -620,10 +669,11 @@ def run_pipeline(kind, cands, store, call, budget, detail_fn, make_rec, done_set
     if pre_fn is not None:
         kept = []
         for c in cands:
-            if c[0] in maybe_set or pre_fn(c):
+            if pre_fn(c):
                 kept.append(c)
             else:
                 done_set.add(c[0])
+                maybe_set.discard(c[0])
                 stat["prefilter_no"] += 1
         cands = kept
         print("[%s] 키워드 사전 필터: %d건 제외, %d건 Gemini 판별 대상" % (kind, stat["prefilter_no"], len(cands)))
@@ -720,13 +770,13 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
         row = by_id.get(bid)
         if not row:
             continue
-        before = (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result"))
+        before = (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result"), rec.get("committee"))
         apply_bill_row(rec, row)
         # 가결됐는데 아직 공포 전이면 정부이송/공포 일정 확인
         if rec.get("plenary_result") in PASSED and not rec.get("promulgation_date") and detail_budget > 0:
             detail_budget -= 1
             apply_bill_detail(rec, fetch_bill_detail(row, text=False))   # 일정만 (likms 호출 없음)
-        if before != (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result")):
+        if before != (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result"), rec.get("committee")):
             refreshed += 1
     print("[의안] 기존 선별 의안 %d건 중 상태 변경 %d건" % (len(store.bill_idx), refreshed))
 
@@ -834,6 +884,8 @@ def main():
     ap.add_argument("--max-minutes", type=int, default=int(os.environ.get("LEGAL_MAX_MINUTES", "80")),
                     help="실행 시간 상한(분). 넘으면 새 작업을 멈추고 저장 후 종료(다음 실행에서 이어감)")
     ap.add_argument("--no-prefilter", action="store_true", help="키워드 사전 필터를 끄고 전부 Gemini 로 판별")
+    ap.add_argument("--recheck", action="store_true",
+                    help="이미 적재된 건을 새 분류 기준으로 다시 본문 판별(업종 무관 건 제거). 호출은 4건당 1회")
     ap.add_argument("--diagnose", action="store_true")
     args = ap.parse_args()
     global DEADLINE
@@ -848,6 +900,8 @@ def main():
         return 0
 
     store = Store(args.data_dir)
+    if args.recheck:
+        store.requeue_all(args.only)
     call = guard_call(clf.make_gemini_caller())
     budget = Budget(args.max_calls)
     failures = []
