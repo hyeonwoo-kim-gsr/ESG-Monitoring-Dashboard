@@ -126,7 +126,7 @@
             <option value="SOC_CONTRIB">사회공헌</option>
           </select>
         </label>
-                <label class="field"><span>상태</span>
+        <label class="field"><span>상태</span>
           <select id="billsStage">
             <option value="">전체</option>
             <option value="접수">접수</option>
@@ -135,11 +135,12 @@
             <option value="공포">공포</option>
           </select>
         </label>
-        <label class="field field-check" style="flex:0 0 auto;width:auto;min-width:0;flex-direction:row;align-items:center;justify-content:flex-start;gap:4px;white-space:nowrap;cursor:pointer;align-self:flex-end;padding-bottom:10px;"><input type="checkbox" id="billsActive" checked style="margin:0;"><span style="font-size:1.15em;margin:0;">진행 중 의안만 보기</span></label>
-        <label class="field field-grow"><span>키워드 (공백으로 여러 단어 = 모두 포함)</span><input type="text" id="billsKw" placeholder="예: 탄소 공시, 기부금"></label>
-        <button class="btn-primary" id="billsSearch" type="button">조회</button>
-        <button class="btn-ghost" id="billsReset" type="button">초기화</button>
-        <button class="btn-excel" id="billsExport" type="button">엑셀로 추출하기</button>
+        <label class="field field-check" style="flex:0 0 auto;width:auto;min-width:0;flex-direction:row;align-items:center;justify-content:flex-start;gap:4px;white-space:nowrap;cursor:pointer;align-self:flex-end;padding-bottom:10px;"><input type="checkbox" id="billsActive" checked autocomplete="off" style="margin:0;"><span style="font-size:1.15em;margin:0;">진행 중 의안만 보기</span></label>
+        <span class="filter-break" style="flex-basis:100%;height:0;margin:-8px 0 0;padding:0;"></span>
+        <label class="field" style="flex:0 0 450px;max-width:100%;"><span>키워드 (공백으로 여러 단어 = 모두 포함)</span><input type="text" id="billsKw" placeholder="예: 탄소 공시, 기부금" style="width:100%;"></label>
+        <button class="btn-primary" id="billsSearch" type="button" style="align-self:flex-end;">조회</button>
+        <button class="btn-ghost" id="billsReset" type="button" style="align-self:flex-end;">초기화</button>
+        <button class="btn-excel" id="billsExport" type="button" style="align-self:flex-end;margin-left:0;">엑셀로 추출하기</button>
       </div>
       <p class="hint" id="billsCount"></p>
       <div id="billsResult" class="result"></div>
