@@ -779,6 +779,8 @@
   }
 
   function setupLegal() {
+    // 브라우저의 입력값 복원(새로고침·뒤로가기)과 무관하게 '진행 중 의안만 보기'는 항상 체크 상태로 시작
+    if ($("billsActive")) $("billsActive").checked = true;
     ["bills", "laws"].forEach(function (kind) {
       // 조건을 고른 뒤 '조회' 버튼(또는 키워드 입력창에서 Enter)을 눌러야 결과에 반영됩니다.
       $(kind + "Search").addEventListener("click", function () { renderLegal(kind); });
