@@ -10,6 +10,8 @@ legal_monitor.py - ESG 법률 모니터링 (의안정보시스템 + 국가법령
           (1) Gemini 이름 선별(관대하되 업종 무관 건은 제외, 호출 1회에 100건)
           (2) Gemini 본문 판별: 회사 업종(도소매 유통) 기준으로 ENV_REG / DISC_MANDATE / SOC_CONTRIB / IRRELEVANT
               + 제·개정 배경, 주요 내용 요약. 근거 인용문이 원문에서 확인되지 않으면 IRRELEVANT.
+* 상태  : 적재된 의안은 삭제하지 않고 단계를 갱신한다.
+          접수 -> 본회의 심의 -> 정부이송 -> 공포, 또는 폐기·부결·철회 시 '종료'(사유·일자 저장)
 * 저장  : docs/legal/bills.json, laws.json, meta.json, state.json  (원문 전체는 저장하지 않고 요약만 저장)
 * 최근 2개년(기본 730일) 먼저 적재, 이후 매 실행마다 신규/변경분만 Gemini 호출. 호출 상한에 걸려도 다음 실행에서 이어감.
 
@@ -35,6 +37,7 @@ import html as htmllib
 import time
 import argparse
 import datetime as dt
+from collections import Counter
 
 import requests
 
@@ -437,24 +440,41 @@ def classify(items, call):
 
 
 # ============================================================================ 레코드 생성
+PASSED = ("원안가결", "수정가결")
+CLOSED_KEYS = ("부결", "폐기", "철회")   # 대안반영폐기·임기만료폐기·철회 등 종료 결과
+
+
+def is_closed_result(r):
+    r = r or ""
+    return bool(r) and r not in PASSED and any(k in r for k in CLOSED_KEYS)
+
+
 def derive_bill_stage(rec):
-    """접수 -> 본회의 심의 -> 정부이송 -> 공포 중 도달한 가장 마지막 단계."""
+    """접수 -> 본회의 심의 -> 정부이송 -> 공포, 또는 종료(폐기·부결·철회)."""
     if rec.get("promulgation_date"):
         return "공포"
     if rec.get("transfer_date"):
         return "정부이송"
+    if is_closed_result(rec.get("plenary_result")):
+        return "종료"
     if rec.get("plenary_date") or rec.get("plenary_result"):
         return "본회의 심의"
     return "접수"
 
 
 def set_stage(rec):
-    """단계를 다시 계산하고, 바뀌었으면 변경일(stage_changed)을 기록한다."""
+    """단계를 다시 계산하고, 바뀌었으면 변경일(stage_changed)을 기록한다. 종료(폐기·부결)면 사유·일자도 저장."""
     old = rec.get("stage")
     new = derive_bill_stage(rec)
     rec["stage"] = new
     if old and old != new:
         rec["stage_changed"] = today_kst().isoformat()
+    if new == "종료":
+        rec["closed_reason"] = rec.get("plenary_result", "")
+        rec["closed_date"] = rec.get("plenary_date", "")
+    else:
+        rec.pop("closed_reason", None)
+        rec.pop("closed_date", None)
 
 
 def apply_bill_row(rec, row):
@@ -482,9 +502,6 @@ def apply_bill_detail(rec, det):
     if det.get("promulgation_no"):
         rec["promulgation_no"] = det["promulgation_no"]
     set_stage(rec)
-
-
-PASSED = ("원안가결", "수정가결")
 
 
 def fill_promulgation_from_laws(rec, law_rows):
@@ -761,8 +778,10 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
     rows = fetch_bill_rows(assembly_key, ages, since)
     rows = [r for r in rows if is_law_bill(r) and g(r, "BILL_ID")]
     print("[의안] 수집 %d건(법률안, 접수 %s 이후)" % (len(rows), since))
+    res_cnt = Counter(g(r, "PROC_RESULT_CD") or "(미의결)" for r in rows)
+    print("[의안] 의결 결과 분포: " + ", ".join("%s %d" % kv for kv in res_cnt.most_common(12)))
 
-    # 이미 선별된 의안: 단계 최신화 (Gemini 호출 없음)
+    # 이미 선별된 의안: 단계 최신화 (Gemini 호출 없음). 폐기·부결이어도 삭제하지 않고 '종료'로 표시
     by_id = {str(g(r, "BILL_ID")): r for r in rows}
     refreshed = 0
     detail_budget = args.detail_refresh
@@ -778,7 +797,8 @@ def process_bills(args, store, call, budget, assembly_key, save_cb):
             apply_bill_detail(rec, fetch_bill_detail(row, text=False))   # 일정만 (likms 호출 없음)
         if before != (rec.get("stage"), rec.get("plenary_date"), rec.get("plenary_result"), rec.get("committee")):
             refreshed += 1
-    print("[의안] 기존 선별 의안 %d건 중 상태 변경 %d건" % (len(store.bill_idx), refreshed))
+    closed_n = sum(1 for b in store.bills if b.get("stage") == "종료")
+    print("[의안] 기존 선별 의안 %d건 중 상태 변경 %d건 (종료 %d건)" % (len(store.bill_idx), refreshed, closed_n))
 
     cands = [(bid, r, g(r, "BILL_NAME")) for bid, r in by_id.items()
              if bid not in store.bills_done and bid not in store.bill_idx]
