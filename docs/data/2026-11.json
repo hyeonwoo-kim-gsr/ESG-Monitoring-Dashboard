@@ -1707,7 +1707,7 @@
     "title": "GS리테일, 'ISO 37301 인증 재획득'...준법경영 강화로 신뢰 높였다",
     "description": "ISO 37301 인증 재획득과 함께 GS리테일은 준법·공정거래 관리체계를 더욱 고도화해 기업 리스크 관리능력을 꾸준히 키워가고 있다. 최근에는 ESG(환경, 사회, 지배구조) 경영의 가치가 높아지는 흐름에 따라...",
     "link": "http://www.bizwnews.com/news/articleView.html?idxno=153061",
-    "related_count": 5
+    "related_count": 4
   },
   {
     "date": "2026-11-25",
@@ -1978,5 +1978,95 @@
     "description": "행안부와 현대백화점은 이번 팝업 스토어가 일회성·단발성 행사에 그치지 않도록 지속 가능한 상생협력 체계를 이어갈 계획이다. 또 행사 기간 소비자 반응과 매출 성과가 우수한 상품을 중심으로 향후 백화점...",
     "link": "https://n.news.naver.com/mnews/article/001/0016465073?sid=100",
     "related_count": 3
+  },
+  {
+    "date": "2026-11-27",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일·희망친구 기아대책, 20년 나눔의 결실… '아동·청소년 285명 ...",
+    "description": "\"아이들의 꿈이 경제적 형편에 좌우되지 않도록\" GS리테일 박경랑 ESG파트장은 \"20년 동안 장학사업을 지속할 수 있어 뜻깊다\"며 \"아이들이 경제적 어려움 때문에 배움의 희망을 놓지 않도록 앞으로도 성장을 응원하는...",
+    "link": "https://www.ngonews.kr/news/articleView.html?idxno=244364",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-25",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "GS리테일 준법경영 국제표준 인증 갱신, \"신뢰받는 기업 자리매김 노력...",
+    "description": "곽창헌 GS리테일 지속가능경영부문 상무(왼쪽)과 이용기 한국준법진흥원 원장이 24일 서울 강남구 GS타워에서 열린 규범준수경영시스템 인증 갱신 수여식에서 기념사진을 찍고 있다. GS리테일이 준법경영 관련...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=452924",
+    "related_count": 2
+  },
+  {
+    "date": "2026-11-27",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "삼양식품·세븐일레븐·NS홈쇼핑, 상생협력 공로 중기부 장관 표창",
+    "description": "27일 업계에 따르면 삼양식품과 세븐일레븐, NS홈쇼핑은 전날 서울 강서구 코엑스 마곡에서 열린 '2026년... 이와 함께 중소 납품업체 대금 100% 현금 지급과 동반성장펀드 운용, 해외 동반 진출 및 협력사 ESG 경영 지원 등...",
+    "link": "https://n.news.naver.com/mnews/article/031/0001079069?sid=101",
+    "related_count": 5
+  },
+  {
+    "date": "2026-11-27",
+    "company": "세븐일레븐",
+    "sentiment": "UNCERTAIN",
+    "title": "세븐일레븐 중기부 장관 표창 수상, 소상공인 사업영역 보호 공로 인정",
+    "description": "편의점 세븐일레븐이 소상공인 사업영역 보호 공로로 장관 표창을 받았다. 세븐일레븐 운영사 코리아세븐은... 환경·사회·지배구조(ESG) 지원 등이 진행됐다. 2013년 산업통상자원부가 주도해 출범한 동반성장 운동인...",
+    "link": "https://www.businesspost.co.kr/BP?command=article_view&num=453101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-27",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, '글로벌 브릿지'로 중소기업 해외진출 실적…CSR 필름 페스티...",
+    "description": "지난 25일 서울시 강남구 웨스틴 서울 파르나스에서 열린 '2026 CSR 필름 페스티벌 어워드'에서 동반성장위원회위원장상을 수상한 김혜영 롯데마트·슈퍼 ESG조직문화팀장(오른쪽)의 모습. 사진=롯데마트 롯데마트는 지난...",
+    "link": "http://www.bizwnews.com/news/articleView.html?idxno=153255",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-26",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, 'CSR 필름 페스티벌' 동반성장부문 대상…중소 수출 견인차 역...",
+    "description": "김혜영 롯데마트·슈퍼 ESG조직문화팀장은 \"이번 수상은 국내 중소기업과 함께 해외 시장에 도전하며 실질적인 성과를 만들어 온 노력을 인정받았다는 점에서 의미가 크다\"고 전했다. 한편 롯데마트는 최근 3년간 국내...",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=904634",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-26",
+    "company": "롯데슈퍼",
+    "sentiment": "UNCERTAIN",
+    "title": "롯데마트, K-중소기업 해외 판로 개척 앞장…동반성장 대상 수상",
+    "description": "당시 참여한 중소기업 20개사는 총 101건의 수출 상담을 진행했다.롯데마트는 앞으로도 해외 사업을 통해 확보한 유통망과 현지 네트워크를 중소기업의 판로 확대에 활용할 방침이다.김혜영 롯데마트·슈퍼 ESG조직문화팀...",
+    "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261126010010546",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "현대홈쇼핑",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점그룹, 15년 지속한 이어온 순직·공상 경찰 자녀 장학사업 공...",
+    "description": "한편 현대백화점그룹은 2006년 현대백화점사회복지재단을 설립하고 아동·청소년을 중심으로 사회공헌사업을 운영하고 있다. 현대백화점과 현대홈쇼핑, 현대그린푸드, 한섬, 현대리바트 등 주요 계열사가 재단을...",
+    "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=769192",
+    "related_count": 3
+  },
+  {
+    "date": "2026-11-27",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "치즈랩, 현대백화점 판교점 팝업 행사 광고 영상 만든다",
+    "description": "영상 콘텐츠 제작 기술 스타트업 치즈랩(대표 최상열)은 경기콘텐츠진흥원 '2026 상생 오픈이노베이션' 과제를 통해 현대백화점과 점포 팝업 행사 마케팅 콘텐츠 제작 협업을 진행하고 있다고 27일 밝혔다. 치즈랩은...",
+    "link": "https://n.news.naver.com/mnews/article/277/0005848651?sid=101",
+    "related_count": 1
+  },
+  {
+    "date": "2026-11-26",
+    "company": "현대백화점",
+    "sentiment": "UNCERTAIN",
+    "title": "현대백화점그룹, 경찰 자녀 2677명 학자금 지원 공로로 보훈부 감사패 ...",
+    "description": "라이센스뉴스 = 황수정 기자 | 기업들의 사회공헌 활동이 기부와 장학금 지원 등 다양한 형태로 이뤄지고 있다. 일부 기업은 특정 분야를 정해 장기간 지원 사업을 운영하고 있는 가운데 현대백화점그룹도 순직·공상...",
+    "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=212109",
+    "related_count": 1
   }
 ]
