@@ -48,5 +48,375 @@
     "link": "http://news.tf.co.kr/read/economy/2052270.htm",
     "related_count": 37,
     "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-10-29",
+    "company": "현대백화점",
+    "sentiment": "POSITIVE",
+    "title": "\"체계적·전략적 ESG 경영 추진할 것\" 현대백화점그룹, 10개 상장사 ESG ...",
+    "description": "현대백화점의 경우 기후변화 시나리오별로 대응 전략과 탄소중립 관련 목표 설정 등을 담은 'TCFD(기후변화 관련 재무정보 공개 협의체) 보고서'를 유통업계 최초로 공개해 높은 평가를 받았다. 현대홈쇼핑은 기업의...",
+    "link": "http://www.fintechpost.co.kr/news/articleView.html?idxno=172657",
+    "related_count": 1,
+    "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-10-29",
+    "company": "GS리테일",
+    "sentiment": "POSITIVE",
+    "title": "[희망을 현실로 이루는 기업들] (5) GS리테일",
+    "description": "GS25’, ‘신선하고 안전한 먹거리가 가득한 슈퍼마켓 GS THE FRESH’, ‘대한민국 No.1 홈쇼핑 채널 GS SHOP’... 진정한 사회공헌의 가치를 실현하고 있다. GS리테일은 임직원이 참여하는 만큼 회사가 동일한 금액을 기부하는...",
+    "link": "http://www.g-enews.com/ko-kr/news/article/news_all/202310270835074336a96f092d0c_1/article.html",
+    "related_count": 1,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-10-27",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "HD현대·GS리테일·SKT·DL이앤씨·경남은행, ESG등급 조정…SGC이테크건...",
+    "description": "한국ESG기준원  HD현대, GS리테일, SK텔레콤 등 통신3사, DL이앤씨, SGC에너지와 SGC이테크건설, 경남은행... OCI그룹 계열의 SGC에너지와 SGC이테크건설은 계열사 부당지원과 특수관계인 사익편취에 대한 과징금...",
+    "link": "http://www.press9.kr/news/articleView.html?idxno=57098",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-10-26",
+    "company": "세븐일레븐",
+    "sentiment": "NEGATIVE",
+    "title": "세븐일레븐 결품 논란…일부 가맹점주 '볼멘소리'",
+    "description": "등 불공정 행위가 심화되고 어려운 경제속에서 어떻게든 매출을 올리려면 경쟁사에서 물건을 잠깐 빌려다 파는 것도 현재 일부 가맹점주들이 처한 현실이기도 하다\"고 설명했습니다. 이와 관련해 세븐일레븐 측은 \"물류...",
+    "link": "http://www.newstomato.com/ReadNews.aspx?no=1205777&inflow=N",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-10-26",
+    "company": "CJ온스타일",
+    "sentiment": "NEGATIVE",
+    "title": "‘오늘만 이 가격’ CJ온스타일 등 홈쇼핑 채널들, 소비자 기만 행위 지...",
+    "description": "이 중 소비자를 현혹시키는 행위가 가장 많았던 채널 1·2위는 롯데홈쇼핑과 CJ홈쇼핑인 것으로 나타났다.... 하영제 의원은 “소비자를 기만하는 홈쇼핑 허위·과장 광고가 근절되지 못하는 까닭은 과징금도 부여하지...",
+    "link": "https://www.dailyt.co.kr/newsView/dlt202310260003",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-25",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 국내 중소기업 ESG 역량 강화 지원에 나서",
+    "description": "더불어 확인서를 받은 기업 중 우수기업을 선정해 지속가능경영보고서 발간도 지원할 예정이다. 이마트는 자체적으로도 ESG 경영에 힘써 올해 지속가능경영보고서를 발간하고 '2050 넷제로(Net Zero) 탄소중립'을 목표로...",
+    "link": "http://www.aflnews.co.kr/news/articleView.html?idxno=257631",
+    "related_count": 2,
+    "event_type": "PARTNER_SUPPORT"
+  },
+  {
+    "date": "2023-10-25",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "김재겸 롯데홈쇼핑 대표, 친환경으로 ESG 가치를 더하다",
+    "description": "김재겸 롯데홈쇼핑 대표가 친환경에 중점을 둔 ESG(환경·사회·지배구조) 경영 활동을 확대하고 있다. <롯데... 롯데마트 양평점에서 이틀간 실시한 행사에는 영등포구 관내 소외계층 100가구, 롯데홈쇼핑 '샤롯데봉사단...",
+    "link": "http://www.insightkorea.co.kr/news/articleView.html?idxno=121251",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-25",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트, 문화센터 겨울학기 회원 모집…\"겨울을 따뜻하게, 다채로운 ...",
+    "description": "먼저, 최근 ESG(환경·사회·지배구조)에 대한 사회적 관심이 증가함에 따라 폐자원 순환 문화 확산을 위한 업사이클링 강좌를 직전학기 대비 4배 이상 확대했다. 롯데마트 '리얼스(RE:EARTH)' 친환경 캠페인의 일환으로...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=309438",
+    "related_count": 8,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-25",
+    "company": "롯데마트",
+    "sentiment": "POSITIVE",
+    "title": "롯데마트 문화센터와 함께 만드는 '초록빛 겨울'...\"실천하는 친환경\"",
+    "description": "롯데마트가 ESG(환경·사회·지배구조)에 대한 중요성이 높아지는 트렌드를 반영해 어린이와 성인을 위한 업사이클링 강좌를 확대, 오는 26일부터 전국 문화센터 59개점에서 '겨울학기 문화센터 회원 모집'을 시작한다. 25일...",
+    "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=212196",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-24",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "롯데홈쇼핑, 성북 장위초에 '숨;편한 포레스트' 9호 조성",
+    "description": "전날 진행된 완공식에는 이동규 롯데홈쇼핑 커뮤니케이션부문장을 비롯해 구해운 ESG(환경·사회·지배구조) 팀장·이미경 환경재단 대표·김경애 장위초등학교 교장과 학생대표 6명 등이 참석했다. 롯데홈쇼핑은...",
+    "link": "http://www.newsis.com/view/?id=NISX20231024_0002493834&cID=13001&pID=13000",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-23",
+    "company": "이마트24",
+    "sentiment": "POSITIVE",
+    "title": "㈜그린패키지솔루션, 이마트24 도시락에 식물성 용기 본격 납품",
+    "description": "식물성 신소재 패키지 기업 '㈜그린패키지솔루션(대표이사 안성훈)'은 편의점 브랜드 이마트24의 편의점... 용기는 대나무와 사탕수수를 주원료로 한 식물성 용기로 지속가능한 산림경영과 산림보호를 위해 FSC인증을 받은...",
+    "link": "https://www.mhns.co.kr/news/articleView.html?idxno=564382",
+    "related_count": 5,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-19",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, 임직원 30명 청계천 녹지 환경 가꾸는 정화활동 진행",
+    "description": "(환경·사회·지배구조) 활동이다. 이번 봉사에서 세븐일레븐 임직원은 청계천의 활짝 핀 꽃 길을 만드는 '청계광장 화단 가꾸기'와 모전교부터 관수교를 잇는 청계천 일대의 잡초를 제거하고 쓰레기를 줍는 '청계천 환경...",
+    "link": "http://www.econonews.co.kr/news/articleView.html?idxno=308451",
+    "related_count": 9,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-19",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "상품 지속가능성 이니셔티브, 계속되는 이마트의 중소기업 ESG 지원",
+    "description": "특히 이마트는 동반위와 함께 2022년 '협력사 ESG 지원사업'에 참여한 우수 중소기업인 한울생약(대표이사 한영돈, 한종우)을 대상으로 지속가능경영보고서 발간을 지원했으며, 해당 보고서는 오는 11월에 발간...",
+    "link": "http://www.kbiznews.co.kr/news/articleView.html?idxno=95590",
+    "related_count": 4,
+    "event_type": "PARTNER_SUPPORT"
+  },
+  {
+    "date": "2023-10-19",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트, 모바일 배송기사 무더기 계약해지…서산점 '갑질' 논란",
+    "description": "롯데마트 서산점의 모바일 배송 담당 기사들이 롯데마트 직원의 갑질에 못 이겨 단체로 계약을 해지했다고 주장해 논란이 일고 있다. 최근 한 온라인 커뮤니티에는 '롯데마트 배송기사들의 억울함을 들어주세요'라는...",
+    "link": "http://www.100ssd.co.kr/news/articleView.html?idxno=103398",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-10-19",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "소비자 기만에 해커스, 롯데홈쇼핑·CJ온스타일 망신살 [기업 백브리핑...",
+    "description": "직원 동원한 댓글 부대인 셈인데, 공정거래위원회 소비자 기만이라며 7억 8000만 원 과징금 부과했습니다. 롯데홈쇼핑, CJ온스타일 홈쇼핑 채널도 소비자 기만으로 뭇매를 맞았습니다. 처음이자 마지막, 마지막...",
+    "link": "https://biz.sbs.co.kr/article_hub/20000140067?division=NAVER",
+    "related_count": 1,
+    "event_type": "CONTROVERSY"
+  },
+  {
+    "date": "2023-10-18",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "[ESG 경영 특집] 세븐일레븐, 청계천을 아름답게",
+    "description": "이번 봉사에는 세븐일레븐 임직원 30여명이 참여 했으며, 청계천의 활짝 핀 꽃 길을 만드는 '청계광장 화단 가꾸기'와 모전교부터 관수교를 잇는 청계천 일대의 잡초를 제거하고 쓰레기를 줍는 '청계천 환경 정화 활동...",
+    "link": "http://www.economytalk.kr/news/articleView.html?idxno=243827",
+    "related_count": 1,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-18",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "[유통UP] 쿠팡∙이마트∙NS홈쇼핑∙티몬",
+    "description": "이마트는 동반성장위원회와 함께 중소기업 ESG(환경·사회적 책무·지배구조 개선) 역량 강화에 나선다.... 17일부터 24일까지 신규 디지털 특가 행사인 'T플라자'를 열고, 스마트폰과 스마트워치 등을 특가 판매한다. 해당...",
+    "link": "http://www.updownnews.co.kr/news/articleView.html?idxno=306060",
+    "related_count": 1,
+    "event_type": "PARTNER_SUPPORT"
+  },
+  {
+    "date": "2023-10-18",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트∙동반위, '협력사 ESG 지원사업 협약' 체결",
+    "description": "이마트는 올해도 지속가능경영보고서를 발간하는 등 ESG 경영에 박차를 가하고 있다. '2050 넷제로(Net Zero) 탄소중립'을 목표로 에너지 효율 제고와 자원순화 시스템 확대에 힘을 쏟고 있기도 하다. 또 이마트는 ESG...",
+    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=43602",
+    "related_count": 49,
+    "event_type": "PARTNER_SUPPORT"
+  },
+  {
+    "date": "2023-10-18",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트, 동반성장위와 '중소기업 ESG' 역량 강화 맞손",
+    "description": "이마트는 올해도 지속가능경영보고서를 발간하는 등 ESG 경영에 박차를 가하고 있다. '2050 넷제로(Net Zero) 탄소중립'을 목표로 에너지 효율 제고와 자원순화 시스템 확대에 힘을 쏟고 있기도 하다. 이마트는 ESG...",
+    "link": "http://www.sisacast.kr/news/articleView.html?idxno=46290",
+    "related_count": 3,
+    "event_type": "PARTNER_SUPPORT"
+  },
+  {
+    "date": "2023-10-18",
+    "company": "롯데홈쇼핑",
+    "sentiment": "POSITIVE",
+    "title": "LG유플러스, 인천광역시·롯데홈쇼핑과 NFT 생태계 확장 협력 체계 구축",
+    "description": "(환경·사회·지배구조) 활동이라는 공익적 취지를 담고 있다. 롯데홈쇼핑은 지난해 8월 총 6단계 등급으로 이루어진 벨리곰 NFT를 공개했다. ‘벨리곰’ 캐릭터의 팬덤, 롯데그룹 계열사와 연계된 차별화된 혜택...",
+    "link": "https://biz.chosun.com/it-science/ict/2023/10/18/LCH4YS7TBBDU7ICKELOAWEHPE4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "related_count": 3,
+    "event_type": "ENVIRONMENT_ACTION"
+  },
+  {
+    "date": "2023-10-15",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 4년 만에 아동 안전 벽화 봉사활동 재개",
+    "description": "코로나19로 중단된 지 4년 만에 재개된 이번 봉사활동에는 BGF리테일 임직원과 CU 가맹점주 등이 참여했다. 봉사 참여자들은 평일초등학교를 둘러싼 약 45m 구간의 외벽에 길을 잃거나 기타 위급상황 시 CU로 오면...",
+    "link": "https://www.kgnews.co.kr/news/article.html?no=766184",
+    "related_count": 12,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-10-14",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "[경인매일TV] 롯데마트, 모바일 담당직원 갑질 논란",
+    "description": "이들은 롯데마트 담당 직원의 갑질에 못 이겨 해지했다고 주장하고 있습니다. 반면 롯데마트는 배송기사들이 문제가 많았으며 업무를 제대로 이행하지 못해 자발적으로 해지한 것이라고 반박했습니다. 이 사건에 대한...",
+    "link": "https://www.kmaeil.com/news/articleView.html?idxno=420410",
+    "related_count": 2,
+    "event_type": "LABOR_DISPUTE"
+  },
+  {
+    "date": "2023-10-13",
+    "company": "롯데마트",
+    "sentiment": "NEGATIVE",
+    "title": "롯데마트, 배송기사 부당해고 의혹에 \"문제 많았다...자발적 해지\"",
+    "description": "게시글에 따르면 롯데마트 서산점은 사업부 책임자 갑질로 약 18개월간  배송기사 12명이 교체됐다. 작성자는 \"(피해를 당한) 기사들이 배수의 진을 치고 계약해지확인서를 작성하고 (사업부 책임자) 다른 곳으로...",
+    "link": "https://www.ngetnews.com/news/articleView.html?idxno=425085",
+    "related_count": 1,
+    "event_type": "LABOR_DISPUTE"
+  },
+  {
+    "date": "2023-10-12",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "GS리테일, 350억대 갑질 혐의 부인…허연수 부회장 부담↑",
+    "description": "GS리테일의 갑질 사건이 사실로 밝혀지면 허 부회장이 심혈을 기울이고 있는 ESG 경영 평가에도 악영향이 예상된다. 이미 GS리테일의 ESG 등급은 해당 사건으로 인해 한 단계 하락한 바 있다. 한국 ESG기준원은 2023년...",
+    "link": "http://www.1conomynews.co.kr/news/articleView.html?idxno=25325",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-10-12",
+    "company": "GS리테일",
+    "sentiment": "NEGATIVE",
+    "title": "'납품업체에 350억대 갑질' GS리테일, 첫 재판서 혐의 부인",
+    "description": "납품업체들로부터 성과장려금과 판촉비 명목 등으로 350억원 상당의 부당이득을 챙긴 혐의로 재판에 넘겨진 편의점 운영업체 GS리테일 측이 첫 재판에서 혐의를 부인했다. 서울중앙지법 형사5단독 박병곤 판사는 12일...",
+    "link": "http://www.newspim.com/news/view/20231012000781",
+    "related_count": 1,
+    "event_type": "UNFAIR_TRADE"
+  },
+  {
+    "date": "2023-10-12",
+    "company": "세븐일레븐",
+    "sentiment": "POSITIVE",
+    "title": "세븐일레븐, '세계식량의 날' 소외계층 지원",
+    "description": "세븐일레븐은 세계식량의 날(10월16일)을 앞두고 소외된 이웃들을 위한 ESG(환경·사회·지배구조) 나눔활동을 했다고 12일 밝혔다. 세븐일레븐은 이날 오전 서울 광화문 앞 청계광장에서 열린 ‘푸드뱅크 나눔 페스티벌’...",
+    "link": "http://www.shinailbo.co.kr/news/articleView.html?idxno=1771010",
+    "related_count": 5,
+    "event_type": "COMMUNITY_CSR"
+  },
+  {
+    "date": "2023-10-11",
+    "company": "롯데슈퍼",
+    "sentiment": "NEGATIVE",
+    "title": "강남구 대치동 롯데슈퍼 은마점 기한 지난 축산물 적발...과징금 부과",
+    "description": "씨에스유통(주) 롯데슈퍼 은마점에서 유통기한이 지난 축산물을 보관하다가 적발됐다. 강남구는 지난달... 구는 축산물 위생관리법 위반으로 9월 19일부터 10월 4일까지 15일간의 영업정지 처분 대신 과징금 부과와 함께...",
+    "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1034260",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-11",
+    "company": "CJ온스타일",
+    "sentiment": "NEGATIVE",
+    "title": "\"처음이자 마지막 방송\"…롯데·CJ온스타일, 허위·과장 행위 최다",
+    "description": "허위·과장 행위가 가장 많았던 홈쇼핑 채널은 롯데홈쇼핑과 CJ온스타일로 나타났다. 최근 국회... 하지만 적발된 60건 중 가장 수위가 높은 방심위 법정 제재인 과징금 부과는 단 한 건도 없었다. 모두 주의 또는 경고...",
+    "link": "http://sports.chosun.com/news/ntype.htm?id=202310120100070030009684&servicedate=20231011",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-10",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "이마트 강릉점·영월 하이힐링원 소방안전관리 경연대회 대상",
+    "description": "이마트 강릉점과 영월 하이힐링원은 강원자치도지사 표창을 수상, 이달 24일부터 전국 소방안전관리능력... 예방안전과장은 “지속적인 소방안전관리 실무능력 경연대회 개최를 통해 각종 사고로부터 도민의 안전을...",
+    "link": "https://www.kwnews.co.kr/page/view/2023101018000486813",
+    "related_count": 1,
+    "event_type": "ESG_RATING_AWARD"
+  },
+  {
+    "date": "2023-10-10",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "KoELSA, 이마트 ‘승강기 사고 제로’ 지원",
+    "description": "KoELSA(한국승강기안전공단)가 전국의 이마트 승강설비 책임자를 대상으로 한달간 승강기 안전관리와 사고예방을 위한 역량강화 교육을 실시한다고 6일 밝혔다. KoELSA는 오는 10일부터 11월 12일까지 전국의 이마트...",
+    "link": "https://www.joongang.co.kr/article/25198284",
+    "related_count": 1,
+    "event_type": "EMPLOYEE_WELFARE"
+  },
+  {
+    "date": "2023-10-10",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "\"이번이 마지막 생방송\"... 소비자 우롱 홈쇼핑 1위는 롯데홈쇼핑",
+    "description": "소비자 기만행위 1위 홈쇼핑 채널은 롯데홈쇼핑이었으며 그다음으로 CJ온스타일이 꼽혔다. 다수 홈쇼핑... 하영제 의원은 “소비자를 기만하는 홈쇼핑 허위·과장 광고가 근절되지 않는 까닭은 과징금도 부여하지 않는...",
+    "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065599510927778",
+    "related_count": 5,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-10",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑·CJ온스타일, '허위·과장 광고' 최다 1·2위",
+    "description": "그러나 적발된 60건 중 가장 수위가 높은 방심위 법정 제재인 과징금 부과는 단 한 건도 없었다. 전부 주의 또는 경고 조치에 그쳤다. 채널별로는 롯데홈쇼핑이 10건으로 가장 많았고, CJ온스타일이 9건으로 2위에...",
+    "link": "https://www.thepublic.kr/news/articleView.html?idxno=204374",
+    "related_count": 5,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-09",
+    "company": "롯데홈쇼핑",
+    "sentiment": "NEGATIVE",
+    "title": "롯데홈쇼핑, 1위 올랐다…홈쇼핑 채널 중 ‘소비자 기만’ 최다",
+    "description": "롯데홈쇼핑과 CJ온스타일이 ‘처음이자 마지막’, ‘마지막 생방송’ 등 소비자를 우롱하는 허위·과장... 하 의원은 “소비자를 기만하는 홈쇼핑 허위·과장 광고가 근절되지 못하는 까닭은 과징금도 부여하지 않는...",
+    "link": "http://sports.khan.co.kr/news/sk_index.html?art_id=202310091407013&sec_id=564001&pt=nv",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-09",
+    "company": "CJ온스타일",
+    "sentiment": "NEGATIVE",
+    "title": "\"지금 안사면 없어요\" 소비자 우롱 홈쇼핑 1위 롯데·CJ온스타일",
+    "description": "그러나 적발된 60건 중 가장 수위가 높은 방심위 법정 제재인 과징금 부과는 단 한 건도 없었다. 전부 주의 또는 경고 조치에 그쳤다. 채널별로는 롯데홈쇼핑이 10건으로 가장 많았고, CJ온스타일이 9건으로 2위에...",
+    "link": "https://www.delighti.co.kr/news/articleView.html?idxno=68388",
+    "related_count": 1,
+    "event_type": "LEGAL_SANCTION"
+  },
+  {
+    "date": "2023-10-06",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "KoELSA, 이마트 승강설비 책임자 역량 강화",
+    "description": "국내 대형마트 3사와 이용자 안전사고 제로 공동선포식 모습 KoELSA(한국승강기안전공단)가 전국의 이마트 승강설비 책임자를 대상으로 한 달간 승강기 안전관리와 사고 예방을 위한 역량 강화 교육을 실시한다....",
+    "link": "http://www.energydaily.co.kr/news/articleView.html?idxno=140693",
+    "related_count": 4,
+    "event_type": "EMPLOYEE_WELFARE"
+  },
+  {
+    "date": "2023-10-06",
+    "company": "이마트",
+    "sentiment": "POSITIVE",
+    "title": "승강기안전공단, 이마트 '승강기 사고 제로' 지원",
+    "description": "한국승강기안전공단(KoELSA)은 전국의 이마트 승강설비 책임자를 대상으로 한달간 승강기 안전관리와 사고예방을 위한 역량강화 교육을 실시한다고 6일 밝혔다. 승강기안전공단은 오는 10일부터 11월 12일까지 전국의...",
+    "link": "https://www.bizwork.co.kr/news/articleView.html?idxno=242627",
+    "related_count": 2,
+    "event_type": "EMPLOYEE_WELFARE"
+  },
+  {
+    "date": "2023-10-05",
+    "company": "BGF",
+    "sentiment": "POSITIVE",
+    "title": "BGF리테일, 독립유공자 주거개선에 임직원 합심",
+    "description": "이날 봉사활동에는 CU 가맹점주와 BGF리테일 임직원이 참여했다. BGF리테일 관계자는 \"앞으로도 독립유공자분들의 숭고한 정신을 기억할 수 있는 다양한 애국 캠페인을 기획할 것\"이라고 말했다.",
+    "link": "http://www.fnnews.com/news/202310051832436607",
+    "related_count": 17,
+    "event_type": "COMMUNITY_CSR"
   }
 ]
